@@ -23,21 +23,21 @@
   <meta name="description" content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下：  1、一个@是由一个@字符和一个空格 字符包起来的。2、支持手写输入，只要符合就高亮显示。3、支持从列表选择，选择后插入光标所在位置并高亮。4、光标不能出现在一个@词中间，点击中间后自动移动到@词后面，长按滑动光标时也要越过@词。但是当用户长按选择文本时">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS中@功能的完整实现">
-<meta property="og:url" content="https://blog.lisong.pro/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/index.html">
+<meta property="og:url" content="https://blog.lisong.pro/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/index.html">
 <meta property="og:site_name" content="小松哥的博客">
 <meta property="og:description" content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下：  1、一个@是由一个@字符和一个空格 字符包起来的。2、支持手写输入，只要符合就高亮显示。3、支持从列表选择，选择后插入光标所在位置并高亮。4、光标不能出现在一个@词中间，点击中间后自动移动到@词后面，长按滑动光标时也要越过@词。但是当用户长按选择文本时">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1608265-df453bab14eb0d62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="https://upload-images.jianshu.io/upload_images/1608265-2d74a6961c6202f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
-<meta property="article:published_time" content="2018-05-26T15:31:55.000Z">
+<meta property="article:published_time" content="2018-05-26T21:31:55.000Z">
 <meta property="article:modified_time" content="2021-03-02T13:58:48.960Z">
 <meta property="article:author" content="小松哥">
 <meta property="article:tag" content="iOS, Python, OC, Swift">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip">
 
-<link rel="canonical" href="https://blog.lisong.pro/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/">
+<link rel="canonical" href="https://blog.lisong.pro/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/">
 
 
 <script id="page-configurations">
@@ -166,7 +166,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -189,7 +189,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2018-05-26 23:31:55" itemprop="dateCreated datePublished" datetime="2018-05-26T23:31:55+08:00">2018-05-26</time>
+              <time title="创建时间：2018-05-27 05:31:55" itemprop="dateCreated datePublished" datetime="2018-05-27T05:31:55+08:00">2018-05-27</time>
             </span>
               <span class="post-meta-item">
                 <span class="post-meta-item-icon">
@@ -200,7 +200,7 @@
               </span>
 
           
-            <span id="/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/" class="post-meta-item leancloud_visitors" data-flag-title="iOS中@功能的完整实现" title="阅读次数">
+            <span id="/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/" class="post-meta-item leancloud_visitors" data-flag-title="iOS中@功能的完整实现" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -215,8 +215,8 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2018/05/26/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
+    <a title="valine" href="/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2018/05/27/iOS%E4%B8%AD-%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/" itemprop="commentCount"></span>
     </a>
   </span>
   
@@ -289,7 +289,7 @@
       <i class="fa fa-chevron-left"></i> Runtime的运用和减少应用崩溃
     </a></div>
       <div class="post-nav-item">
-    <a href="/2019/03/10/iOSer%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84LLDB%E4%BB%8B%E7%BB%8D%E4%B8%8EChisel%E8%BF%9B%E9%98%B6/" rel="next" title="iOSer都要知道的LLDB介绍与Chisel进阶">
+    <a href="/2019/03/11/iOSer%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84LLDB%E4%BB%8B%E7%BB%8D%E4%B8%8EChisel%E8%BF%9B%E9%98%B6/" rel="next" title="iOSer都要知道的LLDB介绍与Chisel进阶">
       iOSer都要知道的LLDB介绍与Chisel进阶 <i class="fa fa-chevron-right"></i>
     </a></div>
     </div>
