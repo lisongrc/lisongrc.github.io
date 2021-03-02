@@ -1,0 +1,507 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下： ####颜色相关1.根据颜色生成纯色图片就是根据制定的颜色生成一张纯色的图片 1+ (UIImage *)imageWithColor:(">
+<meta property="og:type" content="article">
+<meta property="og:title" content="UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中">
+<meta property="og:url" content="https://blog.lisong.pro/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/index.html">
+<meta property="og:site_name" content="小松哥的博客">
+<meta property="og:description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下： ####颜色相关1.根据颜色生成纯色图片就是根据制定的颜色生成一张纯色的图片 1+ (UIImage *)imageWithColor:(">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip">
+<meta property="article:published_time" content="2016-09-04T12:37:30.000Z">
+<meta property="article:modified_time" content="2021-03-02T13:41:36.286Z">
+<meta property="article:author" content="小松哥">
+<meta property="article:tag" content="iOS, Python, OC, Swift">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip">
+
+<link rel="canonical" href="https://blog.lisong.pro/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中 | 小松哥的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小松哥的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-04 20:37:30" itemprop="dateCreated datePublished" datetime="2016-09-04T20:37:30+08:00">2016-09-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:41:36" itemprop="dateModified" datetime="2021-03-02T21:41:36+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" class="post-meta-item leancloud_visitors" data-flag-title="UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a target="_blank" rel="noopener" href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif"></p>
+<p>####颜色相关<br><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageWithColor:(UIColor *)color;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如设置UIImageView的图片为红色纯图片：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [UIImage imageWithColor:[UIColor redColor]];</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.取图片上某一像素的颜色</strong><br>有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。<br>需要注意的是这里要传的参数point是相对于图片上的点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIColor *)colorAtPixel:(CGPoint)point;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point &#x3D; [tap locationInView:tap.view];</span><br><span class="line">    UIImage *image &#x3D; self.imageView.image;</span><br><span class="line">    CGPoint pointInImage &#x3D; CGPointMake(point.x * image.size.width &#x2F; self.imageView.frame.size.width, point.y * image.size.height &#x2F; self.imageView.frame.size.height);</span><br><span class="line">    self.view.backgroundColor &#x3D; [image colorAtPixel:pointInImage];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>**3.获得灰度图 **<br>获取一张彩色图片的黑白图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage;</span><br></pre></td></tr></table></figure>
+<p>使用方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image convertToGrayImage];</span><br></pre></td></tr></table></figure>
+
+<p>####旋转相关<br><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)fixOrientation;</span><br></pre></td></tr></table></figure>
+<p>使用:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image fixOrientation];</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.按给定的方向旋转图片</strong><br>在做图片处理工具的时候，我们可能需要旋转图片。<br>这个方法的参数是系统枚举UIImageOrientation。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_ENUM(NSInteger, UIImageOrientation) &#123;</span><br><span class="line">    UIImageOrientationUp,            &#x2F;&#x2F; default orientation</span><br><span class="line">    UIImageOrientationDown,          &#x2F;&#x2F; 180 deg rotation</span><br><span class="line">    UIImageOrientationLeft,          &#x2F;&#x2F; 90 deg CCW</span><br><span class="line">    UIImageOrientationRight,         &#x2F;&#x2F; 90 deg CW</span><br><span class="line">    UIImageOrientationUpMirrored,    &#x2F;&#x2F; as above but image mirrored along other axis. horizontal flip</span><br><span class="line">    UIImageOrientationDownMirrored,  &#x2F;&#x2F; horizontal flip</span><br><span class="line">    UIImageOrientationLeftMirrored,  &#x2F;&#x2F; vertical flip</span><br><span class="line">    UIImageOrientationRightMirrored, &#x2F;&#x2F; vertical flip</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (UIImage*)rotate:(UIImageOrientation)orient;</span><br></pre></td></tr></table></figure>
+<p>使用，比如顺时针旋转180度：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image rotate:UIImageOrientationDown];</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.垂直翻转</strong><br>其实就是上面的方法传UIImageOrientationDownMirrored参数。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipVertical;</span><br></pre></td></tr></table></figure>
+<p><strong>4.水平翻转</strong><br>其实就是传UIImageOrientationUpMirrored参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal;</span><br></pre></td></tr></table></figure>
+<p><strong>5.将图片旋转degrees角度</strong><br>传入一个自定义的角度。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将图片旋转radians弧度</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByRadians:(CGFloat)radians;</span><br></pre></td></tr></table></figure>
+
+<p>####生成图相关<br><strong>1.截取image对象rect区域内的图像</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)subImageWithRect:(CGRect)rect;</span><br></pre></td></tr></table></figure>
+<p>** 2.压缩图片至指定尺寸**</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<p><strong>3.压缩图片至指定像素</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToPX:(CGFloat )toPX;</span><br></pre></td></tr></table></figure>
+<p><strong>4.生成一个size大小的平铺图片</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)getTiledImageWithSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<p><strong>5..UIView转化为UIImage</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageFromView:(UIView *)view;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将两个图片生成一张图片</strong><br>firstImage在下面，secondImage在上面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage*)mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;</span><br></pre></td></tr></table></figure>
+
+<p>####Gif相关<br>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIFData *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)theData;</span><br><span class="line"></span><br><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIF路径 *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)theURL;</span><br></pre></td></tr></table></figure>
+<p>使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSString *path &#x3D; [[NSBundle mainBundle] pathForResource:@&quot;gif&quot; ofType:@&quot;gif&quot;];</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:path]];</span><br><span class="line">&#x2F;&#x2F;或者</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
+<p>希望能帮到大家，持续更新中。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" rel="prev" title="Xcode方便开发的插件推荐">
+      <i class="fa fa-chevron-left"></i> Xcode方便开发的插件推荐
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" rel="next" title="看一遍就会的CocoaPods的安装和使用教程">
+      看一遍就会的CocoaPods的安装和使用教程 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="小松哥"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">小松哥</p>
+  <div class="site-description" itemprop="description">是缘是情是童真还是意外</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lisongrc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lisongrc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lisong.coder@gmail.com" title="E-Mail → mailto:lisong.coder@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小松哥</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'gYNONHv7rTCIi44RFd6xhlYi-gzGzoHsz',
+      appKey     : 'NCPWQOu8DblScfsmoFkTp1FJ',
+      placeholder: "Just go go",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

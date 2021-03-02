@@ -1,0 +1,1834 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+  </script>
+
+  <meta name="description" content="是缘是情是童真还是意外">
+<meta property="og:type" content="website">
+<meta property="og:title" content="小松哥的博客">
+<meta property="og:url" content="https://blog.lisong.pro/page/2/index.html">
+<meta property="og:site_name" content="小松哥的博客">
+<meta property="og:description" content="是缘是情是童真还是意外">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:author" content="小松哥">
+<meta property="article:tag" content="iOS, Python, OC, Swift">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://blog.lisong.pro/page/2/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : true,
+    isPost : false,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>小松哥的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小松哥的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+  </ul>
+</nav>
+
+
+
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content index posts-expand">
+            
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/" class="post-title-link" itemprop="url">Objective-C自动生成文档工具:appledoc</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-12-13 15:47:22" itemprop="dateCreated datePublished" datetime="2016-12-13T15:47:22+08:00">2016-12-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:52:26" itemprop="dateModified" datetime="2021-03-02T21:52:26+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/" class="post-meta-item leancloud_visitors" data-flag-title="Objective-C自动生成文档工具:appledoc" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。</p>
+<p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。</p>
+<p>经过查找，比较大众的有三个：</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="http://www.stack.nl/~dimitri/doxygen/index.html">doxygen</a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。</p>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="http://developer.apple.com/opensource/tools/headerdoc.html">headdoc</a> ：是 Xcode 自带的文档生成工具。在安装完 Xcode 后，就可以用命令行来生成对应的文档。不过它只生成以<code>/*! */</code>的格式的注释。不兼容 <code>/** */</code>格式的注释</p>
+<blockquote>
+</blockquote>
+<p><a target="_blank" rel="noopener" href="http://gentlebytes.com/appledoc/">appledoc</a>:  <a target="_blank" rel="noopener" href="https://github.com/tomaz/appledoc">Github地址</a> ，适于生成html文档和xcode帮助文档（docset）。可以兼容 <code>/** */</code>格式，也可以兼容 <code>/*! */</code>格式的注释。</p>
+<p>我感觉appledoc是最好的，所以在这里，我只介绍一下appledoc的使用，有兴趣的童鞋也可以研究下其他两种。</p>
+<p>####appledoc的安装<br>第一种：打开终端，输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git clone git:&#x2F;&#x2F;github.com&#x2F;tomaz&#x2F;appledoc.git</span><br><span class="line">cd appledoc</span><br><span class="line">sudo sh install-appledoc.sh</span><br></pre></td></tr></table></figure>
+<p>第二种：如果你装了homebrew，打开终端，输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install appledoc</span><br></pre></td></tr></table></figure>
+
+<p>####appledoc的使用<br>为了演示appledoc的使用，我在桌面新建了一个工程Test，然后在ViewController类里面加了一些注释：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-54c02d5dfefe5185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.h"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-1b5ceeb31f275a8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.m"></p>
+<p>然后演示appledoc的使用：</p>
+<p>#####1.在终端中使用<br>使用 appledoc 时，打开终端，进入项目所在目录，使用如下命令即可：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appledoc --output 输出路径 --project-name 工程名 --project-company 公司名 --company-id 公司ID .</span><br></pre></td></tr></table></figure>
+
+<p>例如我在这里使用的命令是：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appledoc --output .&#x2F;doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p>具体过程如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-38d08feeb2bd337c.gif?imageMogr2/auto-orient/strip" alt="生成Docset"></p>
+<p>appledoc 会扫描当前路径下的所有文件，然后生成好文档放到 doc 目录下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-75315ae0d0d5293b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="doc目录"></p>
+<p>编译出的Docset<br>默认会放在<code>~/Library/Developer/Shared/Documentation/DocSets</code>路径下，里面包含html的文档。首先显示生成的Docset的包内容，然后在Contents/Resources/Documents路径下，双击打开里面的index.html可以在浏览器中查看文档了。</p>
+<p>并且生成的Docset已经安装到Xcode中。重启Xcode后，在<code>Help—Documentation and API Reference</code>菜单下也可以看到生成的文档：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b0a83b380a0550e.gif?imageMogr2/auto-orient/strip" alt="在Xcode中查看"></p>
+<p>如果不想生成Docset，而是想生成html，就需要加一个<code>--no-create-docset</code>，这里我使用命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appledoc --no-create-docset --output .&#x2F;doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p>则会在doc目录下生成一个html文件夹，也是双击里面的index.html就可以在浏览器中查看文档了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4f6f78eb9d0d3911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="html文档"></p>
+<p>你也可以在终端用<code>appledoc --help</code>查看所有可用的参数。详细的信息可以查看官方的文档：<a target="_blank" rel="noopener" href="http://gentlebytes.com/appledoc/">http://gentlebytes.com/appledoc/</a></p>
+<p>#####2.在Xcode里使用<br>1.首先创建一个Aggregate类型的Target，取名Document<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dc46a5c77a483ecc.gif?imageMogr2/auto-orient/strip" alt="创建Target"></p>
+<p>2.选择Build Phases，点击左边的小加号，选择New Run Script Phase，建好了以后打开刚刚建立的Run Script，在框里输入命令，命令与终端一样，这里我们输入：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">appledoc --no-create-docset --output .&#x2F;doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-bdce67e2e0fae042.gif?imageMogr2/auto-orient/strip" alt="添加script"></p>
+<p>3..然后点左上角选择Document，编译一下，成功后文档就生成在doc目录下了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-163ba983a5c4ae7b.gif?imageMogr2/auto-orient/strip" alt="编译生成文档"></p>
+<p>####注释样式<br>因为appledoc是通过注释生成文档的，下面说说注释的样式，几种常见的有：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;&#x2F; Single line comment.</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;&#x2F; Single line comment spreading</span><br><span class="line">&#x2F;&#x2F;&#x2F; over multiple lines.</span><br><span class="line"></span><br><span class="line">&#x2F;** Single line comment. *&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;*! Single line comment *&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;** </span><br><span class="line"> * Single line comment spreading</span><br><span class="line"> * over multiple lines.</span><br><span class="line"> *&#x2F;</span><br><span class="line"></span><br><span class="line">&#x2F;** </span><br><span class="line"> Single line comment spreading</span><br><span class="line"> over multiple lines. No star</span><br><span class="line"> *&#x2F;</span><br></pre></td></tr></table></figure>
+<p>在Xcode里面，我们可以用<code>command + option + /</code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。<a target="_blank" rel="noopener" href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown">更多的注释格式可以看这里</a></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-title-link" itemprop="url">iOS中的静态库与动态库，区别、制作和使用</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-11-07 15:33:05" itemprop="dateCreated datePublished" datetime="2016-11-07T15:33:05+08:00">2016-11-07</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:51:28" itemprop="dateModified" datetime="2021-03-02T21:51:28+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-meta-item leancloud_visitors" data-flag-title="iOS中的静态库与动态库，区别、制作和使用" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：</p>
+<blockquote>
+<p>静态库：以<code>.a</code> 和 <code>.framework</code>为文件后缀名。<br>动态库：以<code>.tbd</code>(之前叫<code>.dylib</code>) 和 <code>.framework</code> 为文件后缀名。</p>
+</blockquote>
+<p>#####静态库与动态库的区别</p>
+<blockquote>
+<p>静态库：链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。<br>动态库：链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的<code>UIKit.framework</code>等），节省内存。</p>
+</blockquote>
+<blockquote>
+<p>但是苹果不让使用自己的动态库，否则审核就无法通过。</p>
+</blockquote>
+<p>我们先来看一下iOS设备有哪些架构，因为下面要用到：</p>
+<blockquote>
+<p>模拟器：<br>iPhone4s-iPnone5：i386<br>iPhone5s-iPhone7 Plus：x86_64</p>
+</blockquote>
+<blockquote>
+<p>真机:<br>iPhone3gs-iPhone4s：armv7<br>iPhone5-iPhone5c：armv7s<br>iPhone5s-iPhone7 Plus：arm64</p>
+</blockquote>
+<blockquote>
+<p>支持armv7的静态库可以在armv7s上正常运行。</p>
+</blockquote>
+<p>#####.a静态库的制作<br>1、先创建一个新的Xcode工程Test，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-f8f309461eadf0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9fbbdb7c25721b33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建工程"></p>
+<p>2、我们把默认生成的Test.h和Test.m删掉，重新创建一个类PrintString，在这个类里面添加一个单纯打印字符串的简单方法:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-2a3c78a381b5278c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.h"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-47e2d7c130863f6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.m"></p>
+<p>3、选择添加公开头文件<br>为了让使用者知道有哪些方法可以用，我们需要公开头文件，这里我们公开PrintString.h：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-85e2a208770188e6.gif?imageMogr2/auto-orient/strip" alt="选择添加公开头文件"></p>
+<p>4、修改配置<br>我们需要把<code>Build Active Architecture Only</code>修改为NO，否则生成的静态库就只支持当前选择设备的架构。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b8b14a2b4ef6f78b.gif?imageMogr2/auto-orient/strip" alt="修改配置"></p>
+<p>5、然后编译<br>我们分别选择<code>Generic iOS Device</code>和<code>任意一个模拟器</code>各编译一次，编译完后，我们会看到工程中Products文件夹下的libTest.a由红色变成了黑色，然后<code>show in finder</code>，看看生成的文件：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1c79cd8e8a108af4.gif?imageMogr2/auto-orient/strip" alt="Untitled.gif"></p>
+<p>我们看到它为真机和模拟器都生成了.a静态库。里面都包含我们选择公开的头文件。</p>
+<p>我们来看看静态库支持的框架：命令为<code>lipo -info 静态库名字</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-12282289b9b59f2b.gif?imageMogr2/auto-orient/strip" alt="查看静态库支持的框架"></p>
+<p>我们看到，<code>Debug-iphoneos</code>里面的静态库支持的架构有<code>armv7</code>和<code>arm64</code>所以它只能用于真机，在模拟器上会报错。<code>Debug-iphonesimulator</code>里面的静态库支持的架构有<code>i386</code>和<code>x86_64</code>，所以它只能用于模拟器，在真机上会报错。</p>
+<p>如果想要让模拟器和真机通用一个静态库，我们可以使用终端命令来实现。命令格式：<code>lipo -create 第一个.a文件的绝对路径 第二个.a文件的绝对路径 -output 最终的.a文件路径</code>:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-c4472265e6c2be4b.gif?imageMogr2/auto-orient/strip" alt="生成通用静态库"></p>
+<p>我们看到生成了一个新的<code>libTest.a</code>文件。这个静态库就支持所有模拟器和所有真机了。然后我们创建一个文件夹，把.a和头文件都放进去，我们最终需要使用的就是这个文件夹：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-8497f7c22f2a3729.gif?imageMogr2/auto-orient/strip" alt="新建文件夹"></p>
+<p>注意：为了开发方便，我们可以使用生成的通用静态库，但是最终上线的使用我们可以只导入真机的，这样工程的体积也会小一些。</p>
+<p>#####使用生成的.a静态库<br>新建一个工程，将上面的通用静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b374fe4aeb0712a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>#####.frameworke静态库的制作<br>1、先创建一个新的Xcode工程LibTest，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ecfa937ad49c0767.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-18f4b924be05fa55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建完成"></p>
+<p>创建完成后我们可以看到，工程本身自带一个<code>LibTest.h</code>文件和一个<code>Info.plist</code>文件。</p>
+<p>2、我们创建一个类<code>PrintString</code>，添加一个单纯打印字符串的简单方法:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-c3ea26c5d04b8481.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.h"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-633ec0acf041c1d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString"></p>
+<p>3、选择添加公开头文件<br>为了让使用者知道有哪些方法可以用，我们需要公开头文件，我们需要在 并且将<code>Target-&gt;Build Phases-&gt;Headers</code>中的<code>Projec</code>t中要暴露的头文件拖拽到<code>Pulic</code>里面，这里我们公开<code>PrintString.h</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9065d3303dfd7fba.gif?imageMogr2/auto-orient/strip" alt="选择添加公开头文件"></p>
+<p>注意：暴露出来的头文件中import的其他类也得添加到public中暴露出来。如果不想将import的类暴露出来，那么在头文件中用@class 然后在对应的.m文件中再import。</p>
+<p>4、设置支持所有架构（和.a制作一样）<br>5、修改生成的<code>Mach-O</code>格式，因为动态库也可以是以framework形式存在，所以需要设置，否则默认打出来的是动态库。将<code>target-&gt;BuildSetting-&gt;Mach-o Type</code> 设为<code>Static Library</code>（默认为<code>Dynamic Library</code>）:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9ac2a72c69317964.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改生成的Mach-O格式"></p>
+<p>6、编译<br>我们分别选择<code>Generic iOS Device</code>和<code>任意一个模拟器</code>各编译一次，编译完后，我们会看到工程中Products文件夹下的LibTest.framework由红色变成了黑色，然后<code>show in finder</code>，看看生成的文件：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1398e58020675a44.gif?imageMogr2/auto-orient/strip" alt="编译"></p>
+<p>我们看到它为真机和模拟器都生成了LibTest.framework静态库。</p>
+<p>我们来查看静态库支持的框架：与上面不同，命令为<code>lipo -info framework下的二进制文件名字</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-71c93893b2b4787e.gif?imageMogr2/auto-orient/strip" alt="查看静态库支持的框架"></p>
+<p>如果想要让模拟器和真机通用一个静态库，我们可以使用终端命令来实现。合并的命令与上面不同的是：framework静态库合并的不是framework,而是framework下的二进制文件，命令为：<br><code>lipo -create 第一个framework下二进制文件的绝对路径 第二个framework下二进制文件的绝对路径 -output 最终的二进制文件路径</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-2dfc39f53cf5d8b4.gif?imageMogr2/auto-orient/strip" alt="合并二进制文件"></p>
+<p>然后将任何一个framework中的二进制文件替换成合并后的二进制文件,然后把framework添加到要使用的项目中即可使用。</p>
+<p>#####使用生成的.framework静态库<br>新建一个工程，将静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-19407ac12a2506a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<p>注意：<br>如果静态库中有category类，则在使用静态库的项目配置中<code>Other Linker Flags</code>需要添加参数<code>-ObjC</code>或者<code>-all_load</code>。<br>如果创建的framework类中使用了<code>.tbd</code>，则需要在实际项目中导入<code>.tbd</code>动态库。</p>
+<p>#####运行调试静态库<br>如果你是开发静态库的人，你会发现上面的方法只是制作静态库，并没有办法运行看效果和调试bug，这时候我们可以这样：<br>1、新建一个专门用来开发静态库的正常工程Test：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1c5fbe82bb1c897e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建工程"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-0e64cd5eb6268d74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建好的工程"></p>
+<p>2、添加一个静态库的target<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d78a7606a7b2d70b.gif?imageMogr2/auto-orient/strip" alt="添加一个静态库的target"></p>
+<p>我们看到它生成了几样东西:</p>
+<blockquote>
+<p>一个framework的target：在这里面修改静态库的配置们，例如支持的架构、要暴露的头文件们和Mach-O的配置。<br>一个LibTest文件夹：静态库里面的类们都放在这里面。<br>product文件夹下面的LibTest.framework：在这里show in finder找到编译后生成的静态库。</p>
+</blockquote>
+<p>3、开发调试代码<br><img src="http://upload-images.jianshu.io/upload_images/1608265-f4ac760cb598db22.gif?imageMogr2/auto-orient/strip" alt="开发调试代码"></p>
+<p>我们看到程序可以正常运行，并可以在动态库里面蹲点运行。方便我们调试。</p>
+<p>4、确保代码没问题后，选择对应的target编译生成。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-51d077bb2bd12c60.gif?imageMogr2/auto-orient/strip" alt="编译生成"><br>5、后面的过程就与上面一样了。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/" class="post-title-link" itemprop="url">详细易懂的二维码的扫描、识别与生成</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-11-02 15:54:18" itemprop="dateCreated datePublished" datetime="2016-11-02T15:54:18+08:00">2016-11-02</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:50:33" itemprop="dateModified" datetime="2021-03-02T21:50:33+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/" class="post-meta-item leancloud_visitors" data-flag-title="详细易懂的二维码的扫描、识别与生成" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>ios7之前我们实现二维码扫描是借助第三方(<code>ZBar</code>，<code>ZXing</code>等)来实现的，在ios7之后系统自己提供二维码扫描的方法，性能也要比第三方更好。</p>
+<p>今天就来介绍一下原生二维码的使用，包括<code>扫描二维码</code>，<code>从图片扫描二维码</code>和<code>生成二维码</code>。讲解中只展示部分代码，具体请看<a target="_blank" rel="noopener" href="https://github.com/lisongrc/QRCodeDemo">Github Demo</a>，里面的代码不多，也很容易看懂。</p>
+<p>####扫描二维码<br>二维码扫描需要用到<code>AVFoundation.framework</code>，需要用先创建一个AVCaptureSession，然后设置输入输出流，以及扫描区域和支持的格式：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;获取摄像设备</span><br><span class="line">AVCaptureDevice *device &#x3D; [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">&#x2F;&#x2F;创建输入流</span><br><span class="line">AVCaptureDeviceInput *input &#x3D; [AVCaptureDeviceInput deviceInputWithDevice:device error:nil];</span><br><span class="line">if (!input)</span><br><span class="line">&#123;</span><br><span class="line">    return nil;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;创建输出流</span><br><span class="line">AVCaptureMetadataOutput *output &#x3D; [[AVCaptureMetadataOutput alloc] init];</span><br><span class="line">&#x2F;&#x2F;设置代理 在主线程里刷新</span><br><span class="line">[output setMetadataObjectsDelegate:self queue:dispatch_get_main_queue()];</span><br><span class="line">&#x2F;&#x2F;设置扫描区域的比例</span><br><span class="line">CGFloat width &#x3D; 300 &#x2F; CGRectGetHeight(self.view.frame);</span><br><span class="line">CGFloat height &#x3D; 300 &#x2F; CGRectGetWidth(self.view.frame);</span><br><span class="line">output.rectOfInterest &#x3D; CGRectMake((1 - width) &#x2F; 2, (1- height) &#x2F; 2, width, height);</span><br><span class="line"></span><br><span class="line">AVCaptureSession *session &#x3D; [[AVCaptureSession alloc] init];</span><br><span class="line">&#x2F;&#x2F;高质量采集率</span><br><span class="line">[session setSessionPreset:AVCaptureSessionPresetHigh];</span><br><span class="line">[session addInput:input];</span><br><span class="line">[session addOutput:output];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;设置扫码支持的编码格式(这里设置条形码和二维码兼容)</span><br><span class="line">output.metadataObjectTypes &#x3D; @[AVMetadataObjectTypeQRCode,</span><br><span class="line">                               AVMetadataObjectTypeEAN13Code,</span><br><span class="line">                               AVMetadataObjectTypeEAN8Code,</span><br><span class="line">                               AVMetadataObjectTypeCode128Code];</span><br></pre></td></tr></table></figure>
+
+<p>然后用这个<code>session</code>生成一个<code>AVCaptureVideoPreviewLayer</code>加到某个view的layer上，就可以实时显示摄像头捕捉的内容了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">AVCaptureVideoPreviewLayer *layer &#x3D; [AVCaptureVideoPreviewLayer layerWithSession:self.session];</span><br><span class="line">layer.videoGravity &#x3D; AVLayerVideoGravityResizeAspectFill;</span><br><span class="line">layer.frame &#x3D; self.view.layer.bounds;</span><br><span class="line">[self.view.layer insertSublayer:layer atIndex:0];</span><br></pre></td></tr></table></figure>
+
+<p>然后调用<code> [self.session startRunning];</code>开始捕获，当扫描出结果后会调用下面的代理方法，其中<code>metadataObject.stringValue</code>就是扫描后的结果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">#pragma mark - AVCaptureMetadataOutputObjectsDelegate</span><br><span class="line">-(void)captureOutput:(AVCaptureOutput *)captureOutput didOutputMetadataObjects:(NSArray *)metadataObjects fromConnection:(AVCaptureConnection *)connection</span><br><span class="line">&#123;</span><br><span class="line">    if (metadataObjects.count &gt; 0)</span><br><span class="line">    &#123;        </span><br><span class="line">        AVMetadataMachineReadableCodeObject *metadataObject &#x3D; [metadataObjects firstObject];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>为了在黑夜也可以很好的扫描，可以设置一个闪光灯的开关：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line">#pragma mark - 开关闪光灯</span><br><span class="line">- (void)rightBarButtonDidClick:(UIBarButtonItem *)item</span><br><span class="line">&#123;</span><br><span class="line">    self.flashOpen &#x3D; !self.flashOpen;</span><br><span class="line">    </span><br><span class="line">    AVCaptureDevice *device &#x3D; [AVCaptureDevice defaultDeviceWithMediaType:AVMediaTypeVideo];</span><br><span class="line">    </span><br><span class="line">    if ([device hasTorch] &amp;&amp; [device hasFlash])</span><br><span class="line">    &#123;</span><br><span class="line">        [device lockForConfiguration:nil];</span><br><span class="line">        </span><br><span class="line">        if (self.flashOpen)</span><br><span class="line">        &#123;</span><br><span class="line">            device.torchMode &#x3D; AVCaptureTorchModeOn;</span><br><span class="line">            device.flashMode &#x3D; AVCaptureFlashModeOn;</span><br><span class="line">        &#125;</span><br><span class="line">        else</span><br><span class="line">        &#123;</span><br><span class="line">            device.torchMode &#x3D; AVCaptureTorchModeOff;</span><br><span class="line">            device.flashMode &#x3D; AVCaptureFlashModeOff;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        [device unlockForConfiguration];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-268a61962145720c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="扫描二维码"><br>####从图片扫描<br>有时候我们需要从图片中扫描二维码，或者从相册选择一张图片，代码如下，具体可以看demo。其中<code>feature.messageString</code>就是扫描后的结果。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">- (void)findQRCodeFromImage:(UIImage *)image</span><br><span class="line">&#123;</span><br><span class="line">    CIDetector *detector &#x3D; [CIDetector detectorOfType:CIDetectorTypeQRCode</span><br><span class="line">                                              context:nil</span><br><span class="line">                                              options:@&#123;CIDetectorAccuracy:CIDetectorAccuracyHigh&#125;];</span><br><span class="line">    </span><br><span class="line">    NSArray *features &#x3D; [detector featuresInImage:[CIImage imageWithCGImage:image.CGImage]];</span><br><span class="line">    if (features.count &gt;&#x3D; 1)</span><br><span class="line">    &#123;</span><br><span class="line">        CIQRCodeFeature *feature &#x3D; [features firstObject];</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-2b1fa03e6a50237b.gif?imageMogr2/auto-orient/strip" alt="从图片扫描"></p>
+<p>####生成二维码<br>生成二维码的代码很简单，代码如下。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 生成指定大小的黑白二维码 *&#x2F;</span><br><span class="line">- (UIImage *)createQRImageWithString:(NSString *)string size:(CGSize)size</span><br><span class="line">&#123;</span><br><span class="line">    NSData *stringData &#x3D; [string dataUsingEncoding:NSUTF8StringEncoding];</span><br><span class="line">    </span><br><span class="line">    CIFilter *qrFilter &#x3D; [CIFilter filterWithName:@&quot;CIQRCodeGenerator&quot;];</span><br><span class="line">    &#x2F;&#x2F;    NSLog(@&quot;%@&quot;,qrFilter.inputKeys);</span><br><span class="line">    [qrFilter setValue:stringData forKey:@&quot;inputMessage&quot;];</span><br><span class="line">    [qrFilter setValue:@&quot;M&quot; forKey:@&quot;inputCorrectionLevel&quot;];</span><br><span class="line">    </span><br><span class="line">    CIImage *qrImage &#x3D; qrFilter.outputImage;</span><br><span class="line">    &#x2F;&#x2F;放大并绘制二维码 (上面生成的二维码很小，需要放大)</span><br><span class="line">    CGImageRef cgImage &#x3D; [[CIContext contextWithOptions:nil] createCGImage:qrImage fromRect:qrImage.extent];</span><br><span class="line">    UIGraphicsBeginImageContext(size);</span><br><span class="line">    CGContextRef context &#x3D; UIGraphicsGetCurrentContext();</span><br><span class="line">    CGContextSetInterpolationQuality(context, kCGInterpolationNone);</span><br><span class="line">    &#x2F;&#x2F;翻转一下图片 不然生成的QRCode就是上下颠倒的</span><br><span class="line">    CGContextScaleCTM(context, 1.0, -1.0);</span><br><span class="line">    CGContextDrawImage(context, CGContextGetClipBoundingBox(context), cgImage);</span><br><span class="line">    UIImage *codeImage &#x3D; UIGraphicsGetImageFromCurrentImageContext();</span><br><span class="line">    UIGraphicsEndImageContext();</span><br><span class="line">    </span><br><span class="line">    CGImageRelease(cgImage);</span><br><span class="line">    </span><br><span class="line">    return codeImage;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-dc0ad3554614009f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="黑白二维码"></p>
+<p>上面默认生成的时黑白二维码，不过我们也可以改颜色：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 为二维码改变颜色 *&#x2F;</span><br><span class="line">- (UIImage *)changeColorForQRImage:(UIImage *)image backColor:(UIColor *)backColor frontColor:(UIColor *)frontColor</span><br><span class="line">&#123;</span><br><span class="line">    CIFilter *colorFilter &#x3D; [CIFilter filterWithName:@&quot;CIFalseColor&quot;</span><br><span class="line">                                       keysAndValues:</span><br><span class="line">                             @&quot;inputImage&quot;,[CIImage imageWithCGImage:image.CGImage],</span><br><span class="line">                             @&quot;inputColor0&quot;,[CIColor colorWithCGColor:frontColor.CGColor],</span><br><span class="line">                             @&quot;inputColor1&quot;,[CIColor colorWithCGColor:backColor.CGColor],</span><br><span class="line">                             nil];</span><br><span class="line">    </span><br><span class="line">    return [UIImage imageWithCIImage:colorFilter.outputImage];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-7211754266ea9998.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="为二维码改变颜色"></p>
+<p>有的二维码也会在中心加一个小图片，例如用户头像，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 在二维码中心加一个小图 *&#x2F;</span><br><span class="line">- (UIImage *)addSmallImageForQRImage:(UIImage *)qrImage</span><br><span class="line">&#123;</span><br><span class="line">    UIGraphicsBeginImageContext(qrImage.size);</span><br><span class="line">    [qrImage drawInRect:CGRectMake(0, 0, qrImage.size.width, qrImage.size.height)];</span><br><span class="line">    UIImage *image &#x3D; [UIImage imageNamed:@&quot;small&quot;];</span><br><span class="line">    CGFloat imageW &#x3D; 50;</span><br><span class="line">    CGFloat imageX &#x3D; (qrImage.size.width - imageW) * 0.5;</span><br><span class="line">    CGFloat imgaeY &#x3D; (qrImage.size.height - imageW) * 0.5;</span><br><span class="line">    [image drawInRect:CGRectMake(imageX, imgaeY, imageW, imageW)];</span><br><span class="line">    UIImage *result &#x3D; UIGraphicsGetImageFromCurrentImageContext();</span><br><span class="line">    UIGraphicsEndImageContext();</span><br><span class="line">    return result;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-b904ed48d3a825fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="中心加小图的二维码"></p>
+<p>其实也可以扫描条形码，大家可以对着条形码试一试，代码都是通用的。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/" class="post-title-link" itemprop="url">UITableView自动计算cell高度并缓存，再也不用管高度啦</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-10-09 11:29:40" itemprop="dateCreated datePublished" datetime="2016-10-09T11:29:40+08:00">2016-10-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:49:36" itemprop="dateModified" datetime="2021-03-02T21:49:36+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/" class="post-meta-item leancloud_visitors" data-flag-title="UITableView自动计算cell高度并缓存，再也不用管高度啦" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。</p>
+<p>先奉上这篇文章的demo的Github地址：<a target="_blank" rel="noopener" href="https://github.com/lisongrc/UITableViewCellHeightDemo">UITableViewCellHeightDemo</a>。大家可以下载下来和文章配合看。</p>
+<p>####cell高度计算的历史<br>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath;</span><br></pre></td></tr></table></figure>
+<p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。</p>
+<p>后来也有一些人写了一些第三方去解决这个问题，例如<a target="_blank" rel="noopener" href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell">UITableView-FDTemplateLayoutCell</a>。只要给cell自上而下加好约束，它就可以帮我们去算cell的高度并且可以缓存，省去了我们自己写计算代码的成本。具体可以进链接里面看看它的demo。</p>
+<p>但是在iOS10的系统下， <code>FDTemplateLayoutCell</code>会卡界面，而且tableview的行数越多表现的越卡。</p>
+<p>而且苹果在iOS8之后，推出了一种超级简单的cell动态自适应的方法，使用起来比 <code>FDTemplateLayoutCell</code>也简单一些，而且现在iOS10都出来了，没有必要去支持iOS7了，所以最后我还是选择了用系统的办法。这样我们以后就再也不用写<code>heightForRowAtIndexPath</code>方法了哈哈哈。</p>
+<p>####系统的cell自适应高度的使用方法<br>首先我们需要把cell上的控件自上而下加好约束，如果对约束不熟悉的话建议看看下面这两篇文章学习一下：<br>[<a target="_blank" rel="noopener" href="https://www.raywenderlich.com/115440/auto-layout-tutorial-in-ios-9-part-1-getting-started-2">Auto Layout Tutorial in iOS 9 Part 1: Getting Started</a>(<a target="_blank" rel="noopener" href="http://www.raywenderlich.com/115440/auto-layout-tutorial-in-ios-9-part-1-getting-started-2">http://www.raywenderlich.com/115440/auto-layout-tutorial-in-ios-9-part-1-getting-started-2</a>)<br><a target="_blank" rel="noopener" href="http://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints"><a target="_blank" rel="noopener" href="https://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints">Auto Layout Tutorial in iOS 9 Part 2: Constraints</a></a></p>
+<p>用xib加约束和用masonry加代码约束都是可以的。注意约束一定要自上而下加好，让系统知道怎么去计算高度。在这篇文章的demo里面的cell加的约束是这样的：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-8e19466b6e4ac956.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cell约束"></p>
+<p>加好约束后，然后告诉tableView自己去适应高度就可以了。有两种写法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">self.tableView.rowHeight &#x3D; UITableViewAutomaticDimension;</span><br><span class="line">self.tableView.estimatedRowHeight &#x3D; 100;</span><br></pre></td></tr></table></figure>
+
+<p>或者直接写这个代理方法就可以了</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    return 100;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。</p>
+<p>来看下demo效果：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-118a76ca9e5bb550.gif?imageMogr2/auto-orient/strip" alt="demo"></p>
+<p>我们看到，cell已经自己适应内容算出了高度，是不是很方便呢哼哼。<br>具体的代码大家可以去demo看哦。</p>
+<p>其实section的header和footer也是可以自动适应的，对应的方法有：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForHeaderInSection:(NSInteger)section;</span><br><span class="line">- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForFooterInSection:(NSInteger)section;</span><br></pre></td></tr></table></figure>
+<p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。</p>
+<p>####可能遇到的问题和解决办法<br><strong>1.高度不对</strong><br>有时候有可能运行出来后看到cell的高度显示的不对，就像这样：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-198030f4098810eb.gif?imageMogr2/auto-orient/strip" alt="高度不对"><br>这个问题是因为约束没有满足自上而下，从而系统不知道怎么去计算。解决办法就是去修改约束，直到满足为止。一定要好好理解约束啊！</p>
+<p><strong>2.点击状态栏无法滚动到顶部</strong><br>我们知道，如果界面中有UIScrollView的话，点击状态栏会让其滚动到顶部，就像这样：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-d8ee37f4ebea29bd.gif?imageMogr2/auto-orient/strip" alt="点击状态栏会滚动到顶部"></p>
+<p>但是如果我们用了自动计算高度的方法，又调用了tableView的reloadData方法（例如我们的数据有分页的时候，加载完下一页的数据后会去刷新tableView）。这时候就会出现问题，点击状态栏就有几率不能精确滚动到顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0144754f8dff68eb.gif?imageMogr2/auto-orient/strip" alt="Untitled.gif"></p>
+<p>解决这个问题的办法是去缓存cell的高度，代码如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">@property (nonatomic, strong) NSMutableDictionary *heightAtIndexPath;&#x2F;&#x2F;缓存高度所用字典</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">#pragma mark - UITableViewDelegate</span><br><span class="line">-(CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    NSNumber *height &#x3D; [self.heightAtIndexPath objectForKey:indexPath];</span><br><span class="line">    if(height)</span><br><span class="line">    &#123;</span><br><span class="line">        return height.floatValue;</span><br><span class="line">    &#125;</span><br><span class="line">    else</span><br><span class="line">    &#123;</span><br><span class="line">        return 100;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    NSNumber *height &#x3D; @(cell.frame.size.height);</span><br><span class="line">    [self.heightAtIndexPath setObject:height forKey:indexPath];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。</p>
+<p>缓存高度之后，在demo里面多试几次，发现点击状态栏已经可以精确滚动回顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b09cef057ef8ba9a.gif?imageMogr2/auto-orient/strip" alt="用缓存高度解决了问题"></p>
+<p>这段代码其实可以写在viewController的基类里面，这样写一遍就可以每个地方都能缓存cell的高度了。详见demo。这样就完美了！</p>
+<p>好啦先说到这里吧，有问题记得联系我。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" class="post-title-link" itemprop="url">系统地学习正则表达式(二)：进阶篇</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-26 23:41:42" itemprop="dateCreated datePublished" datetime="2016-09-26T23:41:42+08:00">2016-09-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:48:18" itemprop="dateModified" datetime="2021-03-02T21:48:18+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" class="post-meta-item leancloud_visitors" data-flag-title="系统地学习正则表达式(二)：进阶篇" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>今天这篇我们将讲解<code>子表达式</code>和<code>后向引用</code>的使用。后面会持续更新。</p>
+<p>####理解子表达式<br>通过<code>(</code>和<code>)</code>括起来的就是子表达式。</p>
+<p>下面是一个例子：用来匹配IP 地址的正则表达式。 IP 地址是由” . “分隔的四组数字，如12.159.46.200。因为每个部分的数字都可以为一个、两个或者三个数字字符，这个匹配模式可以表示为<code>\d&#123;1,3&#125;</code>：</p>
+<blockquote>
+<p>正则表达式：<code>\d&#123;1,3&#125;\.\d&#123;1,3&#125;\.\d&#123;1,3&#125;\.\d&#123;1,3&#125;</code><br>待匹配文本：12.159.46.200<br>匹配后结果：<code>12.159.46.200 </code></p>
+</blockquote>
+<p>分析：每个<code>\d&#123;1,3&#125;</code>的实例都匹配了 IP 地址的一个数字。四个数字则是被<code> \. </code>表示的” . “分隔开的。<code>\d&#123;1,3&#125;\.</code>模式重复了三遍，因此可以使用重复操作来处理。下面是相同例子的另外一个版本：</p>
+<blockquote>
+<p>正则表达式：<code>(\d&#123;1,3&#125;\.)&#123;3&#125;\d&#123;1,3&#125;</code><br>待匹配文本：12.159.46.200<br>匹配后结果：<code>12.159.46.200</code></p>
+</blockquote>
+<p>分析：此模式可以和前面的效果是一样的。表达式<code>\d&#123;1,3&#125;\. </code>使用<code>(</code>和<code>)</code>括起来从而组成子表达式。<code>(\d&#123;1,3&#125;\.)&#123;3&#125;</code>重复了子表达式三次（也就是 IP 地址的前三个数字），最后的<code>\d&#123;1,3&#125;</code>匹配最后的数字。</p>
+<p>使用子表达式来分组是很重要的，尽管这个例子中根本不包括重复。来看一个例子：</p>
+<blockquote>
+<p>正则表达式：<code>19|20\d&#123;2&#125;</code><br>待匹配文本：1967-08-17<br>匹配后结果：<code>19</code>67-08-17</p>
+</blockquote>
+<p>分析：<code>19|20\d&#123;2&#125;</code>用来定位一个<code>前两个数字只能为 19或者20 </code>的四位数的年份。但是很显然这个正则并没有实现预想的效果。<code>|</code>操作符从左到右读取，将<code>19|20\d&#123;2&#125;</code>分析为要么<code>19</code> ，要么<code>20\d&#123;2&#125;</code>，也就是匹配数字 <code>19</code> 或者<code>20开头的四个数字字符</code>。</p>
+<p>解决方法是将<code>19|20</code>作为一个子表达式，<code>(19|20)\d&#123;2&#125;</code>就能够匹配所有19 和 20 开头的四个数字了。</p>
+<p>####嵌套子表达式<br>子表达式可以嵌套。实际上，子表达式可以一层一层嵌套在子表达式内。为了演示嵌套子表达式的用法，我们再来看看查找 IP 地址的例子。</p>
+<p>其实上面例子中<code>(\d&#123;1,3&#125;\.)&#123;3&#125;\d&#123;1,3&#125;</code>匹配IP 地址是有问题的，因为非法的 IP 地址也将被匹配。IP 地址中的每个数字都是小于 255 的。而上面的模式可以匹配 300甚至是999 ，而这些实际上都是非法的 IP 地址。</p>
+<p>下面定义了所有合法 IP 地址所需要满足的一种条件：</p>
+<blockquote>
+<p>所有的一位数和两位数<br>三位数的第一位为 1<br>如果三位数的第一位为 2 ，且第二位从 0 到 4<br>如果三位数的前二位为 25 ，且第三位从 0 到 5</p>
+</blockquote>
+<p>当定义了需要匹配的情况后，就比较容易实现可以工作的模式。下面是个例子：<br><code>(((\d&#123;1,2&#125;)|(1\d&#123;2&#125;)|(2[0-4]\d)|(25[0-5]))\.)&#123;3&#125;((\d&#123;1,2&#125;)|(1\d&#123;2&#125;)|(2[0-4]\d)|(25[0-5]))</code></p>
+<p>分析：这个模式可以工作的原因是一系列的嵌套子表达式。首先从<code>(((\d&#123;1,2&#125;)|(1\d&#123;2&#125;)|(2[0-4]\d)|(25[0-5]))\.)</code>子表达式开始。包含了四个嵌套子表达式。<code>(\d&#123;1,2&#125;)</code>可以匹配一位数和两位数(0到99)。<code>(1\d&#123;2&#125;)</code>匹配了任何第一位为 1 的三位数(100到199) 。<code>(2[0-4]\d)</code>匹配数字从 200 到 249 。<code>(25[0-5])</code>匹配数字从 250 到 255 。每个子表达式都是通过“ | ”包括在另一个子表达式中。在数字范围之后是<code>\.</code>表示的” . “，然后这个系列括起来作为子表达式并重复三遍（使用<code>&#123;3&#125;</code>）。最后，<code>((\d&#123;1,2&#125;)|(1\d&#123;2&#125;)|(2[0-4]\d)|(25[0-5]))</code>被用来匹配最后一个 IP 地址的数字（没有了<code>\.</code>后缀）。由于将四个数字都是限制在了 0 到 255 之间，所以此模式可以匹配所有的合法 IP 地址。</p>
+<p>####理解后向引用<br>HTML 开发者经常使用标题标签（<H1>到<H6>，包括相应的结束标签</H1>到</H6>）。假设你需要定位所有的标题标签：</p>
+<blockquote>
+<p>正则表达式：<code>&lt;[hH][1-6]&gt;.*?&lt;/[hH][1-6]&gt;</code><br>待匹配文本：<H1>title 1</H1> — <H6>title 6</H6><br>匹配后结果：<code>&lt;H1&gt;title 1&lt;/H1&gt;</code> — <code>&lt;H6&gt;title 6&lt;/H6&gt;</code></p>
+</blockquote>
+<p>分析：<code>&lt;[hH][1-6]&gt;</code>可以匹配所有的开始标签，而<code>&lt;/[hH][1-6]&gt;</code>可以匹配所有的结束标签。</p>
+<p>注意：我们这里使用了<code>.*?</code>而不是<code>.*</code>。正如在上一篇文章解释的一样，<code>*</code>的量词是贪婪的，所以模式<code>&lt;[hH][1-6]&gt;.*&lt;/[hH][1-6]&gt;</code>将匹配从<H1> 直到 </H6> 。所以可以使用非贪婪量词<code>.*?</code>来解决这个问题。</p>
+<p>接着看这个例子：</p>
+<blockquote>
+<p>正则表达式：<code>&lt;[hH][1-6]&gt;.*?&lt;/[hH][1-6]&gt;</code><br>待匹配文本：<H1>title</H6><br>匹配后结果：<code>&lt;H1&gt;title&lt;/H6&gt;</code></p>
+</blockquote>
+<p>分析：采用 <H1> 开始而采用 </H6> 的标题标签是非法的，但是现在的模式可以匹配。问题在于匹配的第二个部分（匹配结束的标签）没有办法知道匹配第一部分（匹配开始的标签）是什么。这时候就需要后向引用了。</p>
+<p>####使用后向引用匹配<br><code>后向应用</code>就是引用前面的子表达式。你可以将后向应用理解成变量。例如<code>\1</code>匹配模式中第一个子表达式。同理，<code>\2</code>将匹配第二个子表达式，<code>\3</code>将匹配第三个。我们结合例子来理解。一个子表达式可以通过后向引用根据需要引用多次。</p>
+<p>在上个例子中，<code>&lt;[hH][1-6]&gt;.*?&lt;/[hH][1-6]&gt;</code>会匹配非法的标题。我们可以使用后向引用来解决：</p>
+<blockquote>
+<p>正则表达式：<code>&lt;[hH]([1-6])&gt;.*?&lt;/[hH]\1&gt;</code><br>待匹配文本：<H1>title</H1>—<H1>title</H6><br>匹配后结果：<code>&lt;H1&gt;title&lt;/H1&gt;</code>—<H1>title</H6></p>
+</blockquote>
+<p>分析：就像以前一样，<code>&lt;[hH]([1-6])&gt;</code>将匹配任何的标题标签。但是和以前不一样的是，这里的<code>[1-6] </code>使用了小括号括起来成为了子表达式。这样，匹配结束标签的模式可以通过<code>&lt;/[hH]\1&gt;</code>中的<code>\1</code>来引用此子表达式。<code>(1-6)</code>是一个可以匹配数字 1 到 6 的子表达式，<code>\1</code>因此可以匹配相同的数字。在这种情况下，”<H1>title</H6>“将不能匹配。</p>
+<p>注意：后向引用只能够引用子表达式（需要使用小括号括起来），后向引用语法在不同的正则表达式实现中可能是不一样的。引用的匹配一般是从 1 开始。在大多数的正则表达式实现中，0 可以用来引用整个表达式。</p>
+<p>####执行替换操作<br>到现在为止我们所看到的正则表达式都是进行搜索，在一段文本中定位单词。正则表达式还可以用来执行替换操作。举个例子，将CA 替换成California和将MI替换成Michigan 并不是正则表达式需要完成的工作。尽管使用正则表达式也是合法的，但是没有必要这么做。事实上，在这里如果使用简单的字符串操作函数的话过程将会变得更加容易。</p>
+<p>让我们来看一个例子，将<code>313-555-1234</code>格式的电话号码重新格式化为<code>(313) 555-1234</code>格式：</p>
+<blockquote>
+<p>查找表达式：<code>(\d&#123;3&#125;)(-)(\d&#123;3&#125;)(-)(\d&#123;4&#125;)</code><br>替换表达式：<code>($1) $3-$5</code></p>
+</blockquote>
+<blockquote>
+<p>文本<br>313-555-1234<br>248-555-9999</p>
+</blockquote>
+<blockquote>
+<p>结果<br>(313) 555-1234<br>(248) 555-9999</p>
+</blockquote>
+<p>分析：<code>(\d&#123;3&#125;)(-)(\d&#123;3&#125;)(-)(\d&#123;4&#125;)</code>匹配了一个电话号码，并分成了五个子表达式。<code>(\d&#123;3&#125;)</code>匹配刚开始的三个数字并作为第一个子表达式，<code>(-)</code>匹配” - “并作为第二个子表达式，依此类推。这五个部分可以根据需要单独引用，<code>($1) $3-$5</code>只是使用了其中的三个子表达式。因此“313-555-1234”改变为了“(313) 555-1234”。</p>
+<p>####在Xcode中查找和替换文本：<br><strong>查找</strong><br><img src="http://upload-images.jianshu.io/upload_images/1608265-131169344bb76da1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查找"></p>
+<p><strong>替换</strong><br><img src="http://upload-images.jianshu.io/upload_images/1608265-1e294c9c99b5977b.gif?imageMogr2/auto-orient/strip" alt="替换"></p>
+<p>其实正则表达式还是很简单的，大家可以多找些例子熟悉一下。用的多了就熟了。</p>
+<p>####正则表达式在iOS中的使用。</p>
+<p>#####NSPredicate<br>NSPredicate通常用来验证一个字符串是不是符合某种格式，例如验证一个字符串是不是由数字和字母组成的：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;待匹配字符串</span><br><span class="line">NSString *string &#x3D; @&quot;song123&quot;;</span><br><span class="line">&#x2F;&#x2F;正则表达式</span><br><span class="line">NSString *regex &#x3D; @&quot;^[a-z0－9A-Z]*$&quot;;</span><br><span class="line">&#x2F;&#x2F;创建predicate</span><br><span class="line">NSPredicate *predicate &#x3D; [NSPredicate predicateWithFormat:@&quot;SELF MATCHES %@&quot;, regex];</span><br><span class="line">&#x2F;&#x2F;用predicate匹配string。result为匹配结果，YES or NO。</span><br><span class="line">BOOL result &#x3D; [predicate evaluateWithObject:string];</span><br></pre></td></tr></table></figure>
+<p>关于NSPredicate还有一些其他的可以使用方法们，具体可以查看官方API。</p>
+<p>#####NSString<br>NSString可以用正则来查找自己当中符合要求的子字符串，例如查找字符串中的数字：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;待匹配字符串</span><br><span class="line">NSString *string &#x3D; @&quot;song123&quot;;</span><br><span class="line">&#x2F;&#x2F;使用正则\d+去string中进行匹配，得到的时匹配到的range，在这里为&#123;4，3&#125;。</span><br><span class="line">NSRange range &#x3D; [string rangeOfString:@&quot;\\d+&quot; options:NSRegularExpressionSearch];</span><br><span class="line">&#x2F;&#x2F;如果匹配到就打印匹配到的子字符串，在这里为123。</span><br><span class="line">if (range.location !&#x3D; NSNotFound)</span><br><span class="line">&#123;</span><br><span class="line">    NSLog(@&quot;%@&quot;,[string substringWithRange:range]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>分析：<code>\d+</code>用来查找数字，<code>rangeOfString:options:</code>会返回一个NSRange，用来接收匹配的范围。<code>options</code>必须要用<code>NSRegularExpressionSearch</code>，代表用正则去匹配。<code>range.location==NSNotFound</code>的话代表匹配不到结果。当写正则字符串时，<code>\\ </code>需要写成<code>\\\\ </code> ，所以，<code>\d+</code>需要写成<code>\\\\d+</code>。</p>
+<p>#####NSRegularExpression<br>对于匹配字符串中的数字，我们也可以用到NSRegularExpression这个类实现。它可以用户来查找字符串中符合要求的<code>第一个匹配结果</code>或者<code>所有匹配结果</code>。</p>
+<p><strong>查找字符串中第一个匹配结果</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;待匹配字符串</span><br><span class="line">NSString *string &#x3D; @&quot;123abc45fgt7tyu&quot;;</span><br><span class="line">&#x2F;&#x2F;正则表达式</span><br><span class="line">NSString *pattern &#x3D; @&quot;\\d+&quot;;</span><br><span class="line">&#x2F;&#x2F;创建NSRegularExpression对象并指定正则表达式</span><br><span class="line">NSRegularExpression *regex &#x3D; [NSRegularExpression regularExpressionWithPattern:pattern</span><br><span class="line">                                                                       options:NSRegularExpressionCaseInsensitive</span><br><span class="line">                                                                         error:nil];</span><br><span class="line">&#x2F;&#x2F;查找第一个匹配结果，如果查找不到的话match会是nil</span><br><span class="line">NSTextCheckingResult *match &#x3D; [regex firstMatchInString:string</span><br><span class="line">                                                options:NSMatchingReportCompletion</span><br><span class="line">                                                  range:NSMakeRange(0, [string length])];</span><br><span class="line">if (match)</span><br><span class="line">&#123;</span><br><span class="line">    &#x2F;&#x2F;如果查找到就打印出来，结果为123</span><br><span class="line">    NSLog(@&quot;%@&quot;,[string substringWithRange:match.range]);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>分析：<code>firstMatchInString:options:range</code>会查找字符串中第一个匹配，所以<code>123abc45fgt7tyu</code>的匹配结果为<code>123</code>。</p>
+<p><strong>查找字符串中所有匹配结果</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;待匹配字符串</span><br><span class="line">NSString *string &#x3D; @&quot;123abc45fgt7tyu&quot;;</span><br><span class="line">&#x2F;&#x2F;正则表达式</span><br><span class="line">NSString *pattern &#x3D; @&quot;\\d+&quot;;</span><br><span class="line">&#x2F;&#x2F;创建NSRegularExpression对象并指定正则表达式</span><br><span class="line">NSRegularExpression *regex &#x3D; [NSRegularExpression regularExpressionWithPattern:pattern</span><br><span class="line">                                                                       options:NSRegularExpressionCaseInsensitive</span><br><span class="line">                                                                         error:nil];</span><br><span class="line">&#x2F;&#x2F;查找所有匹配结果</span><br><span class="line">NSArray* matches &#x3D; [regex matchesInString:string</span><br><span class="line">                                  options:NSMatchingReportProgress</span><br><span class="line">                                    range:NSMakeRange(0, [string length])];</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;如果有匹配就打印出来，结果为123 45 7</span><br><span class="line">if (matches.count &gt; 0)</span><br><span class="line">&#123;</span><br><span class="line">    for (NSTextCheckingResult *match in matches)</span><br><span class="line">    &#123;</span><br><span class="line">        NSLog(@&quot;%@&quot;,[string substringWithRange:match.range]);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>分析：<code>matchesInString:options:range:</code>会查找字符串中的所有匹配，结果是一个包含<code>NSTextCheckingResult</code>的数组。所以<code>123abc45fgt7tyu</code>的匹配结果为<code>123</code>、<code>45</code>和<code>7</code>。</p>
+<p>创建<code>NSRegularExpression</code>对象时的<code>options</code>参数为<code>NSRegularExpressionOptions</code>类型，可选值以及代表的意义如下：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_OPTIONS(NSUInteger, NSRegularExpressionOptions) &#123;</span><br><span class="line">    NSRegularExpressionCaseInsensitive             &#x3D; 1 &lt;&lt; 0,  &#x2F;&#x2F;不区分大小写</span><br><span class="line">    NSRegularExpressionAllowCommentsAndWhitespace  &#x3D; 1 &lt;&lt; 1,  &#x2F;&#x2F;忽略空白和注释</span><br><span class="line">    NSRegularExpressionIgnoreMetacharacters        &#x3D; 1 &lt;&lt; 2,  &#x2F;&#x2F;将所有的patter当作普通字符串</span><br><span class="line">    NSRegularExpressionDotMatchesLineSeparators    &#x3D; 1 &lt;&lt; 3,  &#x2F;&#x2F; 允许.匹配所有字符</span><br><span class="line">    NSRegularExpressionAnchorsMatchLines           &#x3D; 1 &lt;&lt; 4,  &#x2F;&#x2F; 允许^,$匹配每一行的开头和结尾</span><br><span class="line">    NSRegularExpressionUseUnixLineSeparators       &#x3D; 1 &lt;&lt; 5,  &#x2F;&#x2F; 只把\n识别为换行符</span><br><span class="line">    NSRegularExpressionUseUnicodeWordBoundaries    &#x3D; 1 &lt;&lt; 6   &#x2F;&#x2F; 使用 Unicode TR#29 规定的边界，否则，使用传统的正则表达式的词边界</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<p>关于NSRegularExpression还有一些其他的可以使用方法们，具体可以查看<a target="_blank" rel="noopener" href="https://developer.apple.com/reference/foundation/nsregularexpression?language=objc">这里</a>。</p>
+<p>####一些常用的正则：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">邮箱：^[a-zA-Z0-9]&#123;4,&#125;@[a-z0-9A-Z]&#123;2,&#125;\\.[a-zA-Z]&#123;2,&#125;$</span><br><span class="line">手机号码：^((13[0-9])|(15[^4\\D])|(18[0,2,5-9]))\\d&#123;8&#125;$</span><br><span class="line">大陆固定电话号码：^\\d&#123;4&#125;-|\\d&#123;3&#125;-)?(\\d&#123;8&#125;|\\d&#123;7&#125;$</span><br><span class="line">身份证号：\\d&#123;14&#125;[[0-9],0-9xX]</span><br><span class="line">Email地址：^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\.\\w+([-.]\\w+)*$</span><br><span class="line">纯数字：^[0-9]*$</span><br><span class="line">由数字和英文字母组成：^[A-Za-z0-9]+$</span><br><span class="line">QQ号：^[1-9][0-9]\&#123;4,\&#125;$</span><br><span class="line">中国邮政编码：^[1-9]\\d&#123;5&#125;(?!\\d)$</span><br><span class="line">URL：^http(s)?:&#x2F;&#x2F;([\\w-]+\\.)+[\\w-]+(&#x2F;[\\w- .&#x2F;?%&amp;&#x3D;]*)?$</span><br><span class="line">纯汉字：^[\u4e00-\u9fa5]&#123;0,&#125;$</span><br></pre></td></tr></table></figure>
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/" class="post-title-link" itemprop="url">系统地学习正则表达式(一)：基础篇</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-13 19:13:44" itemprop="dateCreated datePublished" datetime="2016-09-13T19:13:44+08:00">2016-09-13</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:46:47" itemprop="dateModified" datetime="2021-03-02T21:46:47+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/" class="post-meta-item leancloud_visitors" data-flag-title="系统地学习正则表达式(一)：基础篇" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>####什么是正则表达式<br>正则表达式就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，用来表达对字符串的一种过滤逻辑。</p>
+<p>通过正则表达式可以达到如下的目的：</p>
+<blockquote>
+<ol>
+<li>给定的字符串是否符合正则表达式的过滤逻辑（称作“匹配”）；</li>
+<li>可以通过正则表达式，从字符串中获取我们想要的特定部分。</li>
+</ol>
+</blockquote>
+<p>为了让大家更方便地学习，先推荐一个验证正则表达式的软件<code>Regextor</code>，具体可以看我的<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/b304515d225b">这篇文章</a>，里面还推荐了很多Mac上的好软件。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-2387f6323fd09a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Regextor"></p>
+<p>下面开始讲解正则表达式各种规则：</p>
+<p>####匹配普通文本字符<br>正则表达式可以只包含普通的文本，代表去精确匹配这个文本。例如:</p>
+<blockquote>
+<p>正则表达式：<code>song</code><br>待匹配文本：xiaosongge，xiaoSongge<br>匹配后结果：xiao<code>song</code>ge，xiaoSongge</p>
+</blockquote>
+<p>正则表达式默认是区分大小写的，所以<code>song</code>不会匹配 “Song” 。但是大部分的正则表达式实现都提供了一个选项表示不区分大小写。</p>
+<p>####匹配任意字符<br><code>.</code>用来匹配一个任意字符，例如：</p>
+<blockquote>
+<p>正则表达式：<code>c.t</code><br>待匹配文本：cat cet caaat dog<br>匹配后结果：<code>cat</code> <code>cet</code> caaat dog</p>
+</blockquote>
+<p>分析：<code>c.t</code>会匹配以” c “开头，以” t “结尾，中间为任意字符的字符串。</p>
+<p>同理，多个连续的<code>.</code>可以匹配多个连续的任意字符：</p>
+<blockquote>
+<p>正则表达式：<code>c..t</code><br>待匹配文本：cat cet caat dog<br>匹配后结果：cat cet <code>caat</code> dog</p>
+</blockquote>
+<p>####匹配特殊字符</p>
+<p><code>.</code>在正则表达式中含有特殊的意义，是一个特殊的字符。<code>\ </code>也是特殊字符，可以对特殊字符起到转义作用。如果你想匹配的是一个真正的” . “字符，需要在<code>.</code>前面加上<code>\ </code>对字符进行转义。所以，<code>\.</code>表示真正的” . “字符。</p>
+<blockquote>
+<p>正则表达式：<code>c\.t</code><br>待匹配文本：cat c.t dog<br>匹配后结果：cat <code>c.t</code> dog</p>
+</blockquote>
+<p>注意：因为<code>\ </code>也是特殊字符，所以想要匹配一个真正的” \ “字符，需要使用两个反斜线<code>\\\\ </code>：</p>
+<blockquote>
+<p>正则表达式：<code>c\\\t</code><br>待匹配文本：cat c\t dog<br>匹配后结果：cat <code>c\t</code> dog</p>
+</blockquote>
+<p>####使用字符集合<br>上面说到<code>.</code>能匹配一个任意字符，但是如果我想匹配几个特定字符怎么办？匹配一组特定的字符可以使用<code>[</code>和<code>]</code>元字符。</p>
+<blockquote>
+<p>正则表达式：<code>c[ab]t</code><br>待匹配文本：cat cbt cet<br>匹配后结果：<code>cat</code> <code>cbt</code> cet</p>
+</blockquote>
+<p>分析：<code>[ab]</code>会匹配” a “或者” b “。所以<code>c[ab]t</code>会匹配” cat “和” cbt “而不会匹配” cet “。</p>
+<p>####使用字符组区间<br>在上面的例子中，假如我想匹配<code>cet</code>怎么办，在<code>[]</code>里面多加一个吗？那如果我想匹配任意小写字母呢，往里面写几十个吗？虽然是可以的，但是太长了。这里我们可以用到<code>[a-z]</code>：</p>
+<blockquote>
+<p>正则表达式：<code>c[a-z]t</code><br>待匹配文本：cat cbt czt c2t<br>匹配后结果：<code>cat</code> <code>cbt</code> <code>czt</code> c2t</p>
+</blockquote>
+<p>分析：<code>c[a-z]t</code>表示以” c “开头，” t “结尾，中间为字母 “ a “ - “ z “ 的任意一个字母。</p>
+<p>类似的区间还有：</p>
+<blockquote>
+<ul>
+<li>[0-9] 和[0123456789]的功能一样。匹配所有的数字。</li>
+</ul>
+</blockquote>
+<ul>
+<li>[A-F] 匹配A到F的大写字符。</li>
+<li>[A-Z] 匹配所有的 A 到 Z 的大写字符。</li>
+<li>[a-z] 匹配所有的 a 到 z 的小写字符。</li>
+<li>[A-z] 匹配从 ASCII A 到 ASCII z 的所有字符（不仅仅匹配所有字母，还匹配在 ASCII 表中 A 到 z 中的字符，如 [ 和 ^ 等）。</li>
+<li>[A-Za-z0-9] 匹配所有的大小写字母和数字。</li>
+</ul>
+<p>####非字符集的匹配<br>字符集合一般用于指定一组需要匹配的字符。但是有些时候，你想要排除一组你不想匹配的字符。可以通过对于字符集合的否定来实现。例如：</p>
+<blockquote>
+<p>正则表达式：<code>c[^a-z]t</code><br>待匹配文本：cat cbt czt c2t cAt<br>匹配后结果：cat cbt czt <code>c2t</code> <code>cAt</code></p>
+</blockquote>
+<p>分析：这个和前面一个例子完全相反。<code>[a-z]</code> 匹配所有的小写字母，而 <code>[^a-z]</code> 匹配所有的不是小写字母的字符。</p>
+<p>注意，<code>^</code>字符是将字符集合中的所有字符都取消匹配。<br> <br>####元字符<br>元字符在正则表达式中有特殊的意义，上面我们已经说了几个元字符，比如<code>.</code>、<code>[</code>和<code>]</code>。这些字符不能直接表示自己的含义，例如，不能直接使用<code>[</code>来匹配” [ “，使用<code>.</code>来匹配” . “。</p>
+<p>所有的元字符都可以在前面加上反斜线转义，当转义后，字符将匹配自身而不是其特殊含义。例如，<code>\[</code>将匹配” [ “:</p>
+<blockquote>
+<p>正则表达式：<code>a\[b</code><br>待匹配文本：a[b ab a[[b<br>匹配后结果：<code>a[b</code> ab a[[b</p>
+</blockquote>
+<p>注意：<code>\ </code>用来转义元字符，这也意味着<code>\ </code>也是一个元字符。所以如果需要匹配真正的” \ “，可以使用<code>\\\ </code>：</p>
+<blockquote>
+<p>正则表达式：<code>a\\\b</code><br>待匹配文本：a\b a\b a[[b<br>匹配后结果：a\b <code>a\b</code> a[[b</p>
+</blockquote>
+<p><strong>空白字符</strong><br>有时候你可能需要匹配文本中不能打印的空白字符。例如，你希望能够找到所有的 Tab 字符，或者是所有的换行符。你可以使用下表中的特殊元字符：</p>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>[\b]</td>
+<td>退格符</td>
+</tr>
+<tr>
+<td>\f</td>
+<td>换页符</td>
+</tr>
+<tr>
+<td>\n</td>
+<td>换行</td>
+</tr>
+<tr>
+<td>\r</td>
+<td>回车</td>
+</tr>
+<tr>
+<td>\t</td>
+<td>制表符</td>
+</tr>
+<tr>
+<td>\v</td>
+<td>垂直制表符</td>
+</tr>
+</tbody></table>
+<p>例如<code>\r\n</code>将匹配一个回车换行组合，在 Windows 中表示一个文件换行。在 Linux 和 Unix 系统中，只需要使用<code>\n</code>即可。</p>
+<p>####匹配特定的字符类型</p>
+<p>有一些特殊的元字符可以用来匹配常用的字符集合。这些元字符被称为匹配字符类。你会发现使用它们是很方便的。</p>
+<p><strong>匹配数字或者非数字</strong><br>上面说到，[0-9] 可以匹配所有的数字。如果不想匹配任何数字，则可以使用[^0-9]。下表中列出了数字和非数字的类元字符：<br> <br>元字符 | 描述</p>
+<ul>
+<li>| -<br>\d | 任何数字 (同 [0-9])<br>\D | 任何非数字 (同 [^0-9])</li>
+</ul>
+<blockquote>
+<p>正则表达式：<code>c\dt</code><br>待匹配文本：cat c2t czt c9t<br>匹配后结果：cat <code>c2t</code> czt <code>c9t</code></p>
+</blockquote>
+<blockquote>
+<p>正则表达式：<code>c\Dt</code><br>待匹配文本：cat c2t czt c9t<br>匹配后结果：<code>cat</code> c2t <code>czt</code> c9t</p>
+</blockquote>
+<p><strong>匹配字母字符和非字母字符</strong><br>另外一个常用的类元字符是\w和\W：<br> <br>元字符 | 描述<br>-|-<br>\w |所有的文字数字式字符：大小写字母、数字和下划线 (同 [a-zA-Z0-9_])<br>\W | (同 [^a-zA-Z0-9_])</p>
+<blockquote>
+<p>正则表达式：<code>c\wt</code><br>待匹配文本：cat c2t czt c-t c\t<br>匹配后结果：<code>cat</code> <code>c2t</code> c-t c\t</p>
+</blockquote>
+<blockquote>
+<p>正则表达式：<code>c\Wt</code><br>待匹配文本：cat c2t c-t c\t<br>匹配后结果：cat c2t <code>c-t</code> <code>c\t</code></p>
+</blockquote>
+<p><strong>匹配空白和非空白</strong><br>最后一个将要遇到的匹配类是空白类：</p>
+<table>
+<thead>
+<tr>
+<th>元字符</th>
+<th>描述</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>\s</td>
+<td>所有的空白字符 (同 [\f\n\r\t\v])</td>
+</tr>
+<tr>
+<td>\S</td>
+<td>所有的非空白字符 (同 [^\f\n\r\t\v])</td>
+</tr>
+</tbody></table>
+<blockquote>
+<p>正则表达式：<code>c\st </code><br>待匹配文本：cat c t c2t c\t<br>匹配后结果：cat <code>c t</code> c2t c\t</p>
+</blockquote>
+<blockquote>
+<p>正则表达式：<code>c\St </code><br>待匹配文本：cat c t c2t c\t<br>匹配后结果：<code>cat</code> c t <code>c2t</code> <code>c\t</code></p>
+</blockquote>
+<p>####匹配一个或者更多字符<br><code>+</code>元字符表示匹配一个或者多个字符。例如，<code>a</code>将匹配”a”，而<code>a+</code>则匹配一个或者多个”a”。</p>
+<blockquote>
+<p>正则表达式：<code>cat</code><br>待匹配文本：ct cat caat caaat<br>匹配后结果：ct <code>cat</code> caat caaat</p>
+</blockquote>
+<blockquote>
+<p>正则表达式：<code>ca+t</code><br>待匹配文本：ct cat caat caaat<br>匹配后结果：ct <code>cat</code> <code>caat</code> <code>caaat</code></p>
+</blockquote>
+<p>当在字符集合上使用<code>+</code>的时候，需要将<code>+</code>符号放在集合外面：</p>
+<blockquote>
+<p>正则表达式：<code>c[0-9]+t</code><br>待匹配文本：ct c0t cat c123t<br>匹配后结果：ct <code>c0t</code> cat <code>c123t</code></p>
+</blockquote>
+<p>分析：<code>c[0-9]+t</code>表示以” c “开头，以” t “结尾，中间为一个或多个数字的字符串。</p>
+<p>当然，<code>[0-9+]</code>也是一个合法的正则表达式，但它表示一个包含 “ 0 “ - “ 9 “ 和 “ + “ 符号的字符集合。</p>
+<p>一般的，元字符如<code>.</code>和<code>+</code>等用于字符集合的时候是作为字面含义使用的，因此没有必要转义。但是对其进行转义也没错，所以，<code>[0-9+]</code>和<code>[0-9\+]</code>的功能是一样的。</p>
+<p>注意：<code>+</code>是一个元字符，匹配”+”需要使用转义<code>\+</code>。</p>
+<p>####匹配零个或者更多字符</p>
+<p>如果希望匹配零个或更多字符的时候，可以使用<code>*</code>元字符。</p>
+<blockquote>
+<p>正则表达式：<code>ca*t</code><br>待匹配文本：ct cat caat cbt<br>匹配后结果：<code>ct</code> <code>cat</code> <code>caat</code> cbt</p>
+</blockquote>
+<p>注意：<code>*</code>符号是元字符。为了能够匹配” * “，需要进行转义<code>\*</code>。</p>
+<p>####匹配零个或者一个字符</p>
+<p><code>?</code>匹配零个或者一个字符。所以，<code>?</code>非常适合于在文本中匹配一个可选的字符。</p>
+<blockquote>
+<p>正则表达式：<code>ca?t</code><br>待匹配文本：ct cat caat cbt<br>匹配后结果：<code>ct</code> <code>cat</code> caat cbt</p>
+</blockquote>
+<p>注意：<code>?</code>符号是元字符。为了能够匹配” ? “，需要进行转义<code>\?</code>。</p>
+<p>####使用匹配次数<br>正则表达式允许指定匹配的次数。次数可以在“ { ”和“ } ”之间指定。<br>注意：<code>&#123;</code>和<code>&#125;</code>也是元字符，在使用字面含义的时候需要转义。</p>
+<p><strong>精确次数匹配</strong><br>为了指定匹配的次数，你可以在<code>&#123;</code>和<code>&#125;</code>之间输入数字。例如，<code>&#123;3&#125;</code>将匹配 3 次前面出现的字符或集合：</p>
+<blockquote>
+<p>正则表达式：<code>ca&#123;3&#125;t</code><br>待匹配文本：ct cat caaat cbt<br>匹配后结果：ct cat <code>caaat</code> cbt</p>
+</blockquote>
+<p><strong>至少次数匹配</strong><br>我们也可以只指定匹配的最小值。例如，<code> &#123;2,&#125;</code>意味着匹配 2次或者更多次：</p>
+<blockquote>
+<p>正则表达式：<code>ca&#123;1,&#125;t</code><br>待匹配文本：ct cat caaat cbt<br>匹配后结果：ct <code>cat</code> <code>caaat</code> cbt</p>
+</blockquote>
+<p><strong>次数区间匹配</strong><br>我们还可以使用最小值和最大值来确定匹配的数量。例如，<code>&#123;2,3&#125;</code>意味着最少匹配 2次，最多匹配3次。 </p>
+<blockquote>
+<p>正则表达式：<code>ca&#123;2,3&#125;t</code><br>待匹配文本：ct cat caaat cbt<br>匹配后结果：ct cat <code>caaat</code> cbt</p>
+</blockquote>
+<p>所以<code>?</code>和<code>&#123;0,1&#125;</code>的功能是一样的，<code>+</code>和 <code>&#123;1,&#125;</code>的作用是一样的。</p>
+<p>####非贪婪匹配</p>
+<p>先看看下面的例子：</p>
+<blockquote>
+<p>正则表达式：<code>s.*g</code><br>待匹配文本：xiao song xiao song<br>匹配后结果：xiao <code>song xiao song</code></p>
+</blockquote>
+<p>分析：<code>s.*g</code>并没像预想中的匹配两个” song “，而是匹配了第一个” s “和最后一个 “ g “之间的所有文本。</p>
+<p>这是因为<code>*</code>和<code>+</code>都是贪婪匹配。也就是说，正则表达式总是寻找最大的匹配，而不是最小的，这是故意设计的。</p>
+<p>但是如果你不希望贪婪匹配的时候就要使用这些量词的非贪婪匹配（匹配尽可能少的字符）。非贪婪量词是在量词后面加上<code>?</code>：</p>
+<table>
+<thead>
+<tr>
+<th>贪婪量词</th>
+<th>非贪婪量词</th>
+</tr>
+</thead>
+</table>
+<ul>
+<li>| *?</li>
+</ul>
+<ul>
+<li>|+?<br>{n,} | {n,}?</li>
+</ul>
+<p><code>*?</code>是<code>*</code>的非贪婪版本，所以可以使用<code>*?</code>来修改上面的例子：</p>
+<blockquote>
+<p>正则表达式：<code>s.*?g</code><br>待匹配文本：xiao song xiao song<br>匹配后结果：xiao <code>song</code> xiao <code>song</code></p>
+</blockquote>
+<p>分析：可以看到<code>s.*?g</code>匹配到了两个” song “。</p>
+<p>####定义字符串边界<br>字符串边界匹配的元字符是<code>^</code>和<code>$</code>，分别用于字符串的开始和结束。</p>
+<p><code>^</code>用法如下：</p>
+<blockquote>
+<p>正则表达式：<code>^xiao</code></p>
+</blockquote>
+<p>待匹配文本：xiaosong<br>匹配后结果：<code>xiao</code>song</p>
+<blockquote>
+</blockquote>
+<p>待匹配文本：axiaosong<br>匹配后结果：axiaosong</p>
+<p>分析：<code>^xiao</code>匹配以” xiao “开头的字符串。</p>
+<p><code>$</code>用法如下：</p>
+<blockquote>
+<p>正则表达式：<code>song$</code></p>
+</blockquote>
+<p>待匹配文本：xiaosong<br>匹配后结果：xiao<code>song</code></p>
+<blockquote>
+</blockquote>
+<p>待匹配文本：xiaosonga<br>匹配后结果：xiaosonga</p>
+<p>分析：<code>song$</code>匹配以”song “结尾的字符串。</p>
+<p>共同使用：</p>
+<blockquote>
+<p>正则表达式：<code>^[0-9a-zA-Z]&#123;4,&#125;$</code></p>
+</blockquote>
+<p>待匹配文本：a1b234ABC<br>匹配后结果：<code>a1b234ABC</code></p>
+<blockquote>
+</blockquote>
+<p>待匹配文本：+a1b23=4ABC<br>匹配后结果：+a1b23=4ABC</p>
+<p>分析：<code>^[0-9a-zA-Z]&#123;4,&#125;$</code>匹配用数字或者字母组成的，并且位数大于等于四位的字符串。</p>
+<p>注意：<code>^</code>如果位于集合开始处的话，则表示否定；如果在集合外面，则将匹配字符串的开始位置。大家可以试试<code>[^0-9]</code>和<code>^[0-9]</code>的区别。</p>
+<p>####使用多行模式<br>但是<code>(?m)</code>可以启用多行模式。在多行模式下，正则表达式引擎将换行符作为字符串的分隔符，<code>^</code>将匹配文本的开始或者一行的开始，而<code>$</code>则可以匹配文本的结束或者是一行的结尾处。</p>
+<p>修改下上个例子：</p>
+<blockquote>
+<p>正则表达式：<code>(?m)^[0-9a-zA-Z]&#123;4,&#125;$</code></p>
+</blockquote>
+<p>待匹配文本：a1b234ABC<br>+a1b23=4ABC<br>ABC123456</p>
+<blockquote>
+</blockquote>
+<p>匹配后结果：<code>a1b234ABC</code><br>+a1b23=4ABC<br><code>ABC123456</code></p>
+<p>分析：<code>(?m)^[0-9a-zA-Z]&#123;4,&#125;$</code>会去匹配每行<code>用数字或者字母组成的，并且位数大于等于四位</code>的字符串。</p>
+<p>注意：如果使用多行模式的话，<code>(?m)</code>必须放置在正则表达式的开始。<br><code>(?m)</code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用<code>\A</code>匹配字符串的开始，<code>\Z</code>匹配字符串的结束。如果支持的话，则这些元字符的功能和<code>^</code>、<code>$</code>是一样的。但是这些元字符不能使用<code>(?m)</code>修饰，所以也不能用于多行模式。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/" class="post-title-link" itemprop="url">超详细的Xcode代码格式化教程，可自定义样式</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-10 21:44:04" itemprop="dateCreated datePublished" datetime="2016-09-10T21:44:04+08:00">2016-09-10</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:45:41" itemprop="dateModified" datetime="2021-03-02T21:45:41+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/" class="post-meta-item leancloud_visitors" data-flag-title="超详细的Xcode代码格式化教程，可自定义样式" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>###为什么要格式化代码<br>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。<br>在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。</p>
+<p>有了<code>ClangFormat</code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。</p>
+<p>###安装ClangFormat插件<br>可以手动安装(下载<a target="_blank" rel="noopener" href="https://github.com/travisjeffery/ClangFormat-Xcode">GitHub项目</a>编译)，也可以用<a target="_blank" rel="noopener" href="https://github.com/alcatraz/Alcatraz">Alcatraz</a>(插件管理器)安装，都很简单，具体可以看我的文章<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/51635869b027">《Xcode方便开发的插件推荐》</a>。</p>
+<p>装好后是下图这样的，我们可以看到它内置了<code>LLVM</code>、<code>Google</code>、<code>Chromium</code>、<code>Mozilla</code>、<code>WebKit</code>五种样式。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件菜单"></p>
+<p>###使用方法<br>通过菜单可以看到，它可以格式化选中的文字们，或者格式化选择的文件们。下面演示下<code>LLVM</code>样式下的格式化：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebca3898fbfb438a.gif?imageMogr2/auto-orient/strip" alt="LLVM样式下的格式化"></p>
+<p>###使用自定义样式<br>1、需要先把上面菜单里面的File选中，因为我们需要让它用我们自己写的配置文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-819361a437dcba49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选中File"></p>
+<p>2、在工程目录下创建配置文件<code>.clang-format</code>文件并编辑。<code>.clang-format</code>文件用的是<code>YAML</code>格式:里面要用的字段在后面会详细解释。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">key1: value1</span><br><span class="line"># 一个注释</span><br><span class="line">key2: value2</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip" alt="自定义样式格式化代码"></p>
+<p>当然如果你已经有<code>.clang-format</code>文件的话，直接拖动到项目根目录也可以。<br>文章结尾有我在用的<code>.clang-format</code>文件。</p>
+<p>温馨提示：<code>.clang-format</code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F;显示 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool true</span><br><span class="line">killall Finder</span><br><span class="line">&#x2F;&#x2F;隐藏 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool false</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+
+<p>###全局配置<br>上面我们是在项目根目录创建的<code>.clang-format</code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把<code>.clang-format</code>文件放在所有项目都在的一个最大根目录下就可以了。</p>
+<p>###让一段代码不受格式化影响<br>如果想让一段代码不受格式化影响，需要将他们包含在<code>// clang-format off</code> 和 <code>// clang-format on</code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6c78a84cca358db2.gif?imageMogr2/auto-orient/strip" alt="让一段代码不受格式化影响"></p>
+<p>###设置快捷键<br>首先你可以选中菜单中的 <code>Enable Format On Sava</code>，把它点<code>Disable Format On Sava</code>，这样以后每次按<code>⌘+S</code>保存文件时就可以自动格式化了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1084e334da53f3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-10 下午12.43.50.png"></p>
+<p>我们也可以给一些菜单设置快捷键，使用的时候不用每次去选择各级菜单了。比如我们给<code>Format Selected Text</code>设置快捷键：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4c570e4af91ed499.gif?imageMogr2/auto-orient/strip" alt="设置格式化快捷键"></p>
+<p>你也可以为其他菜单设置快捷键，其实呢，我用<code>Format Selected Text</code>的时候很少，每次都是想格式化的时候直接<code>⌘+S</code>就行了哈哈哈。</p>
+<p>###配置文件中属性的含义讲解<br>下面说一些配置文件的常用的参数介绍，其他的可以看官方文档：<a target="_blank" rel="noopener" href="http://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a>，其中小括号内代表他需的是什么类型的值。</p>
+<p><strong>BasedOnStyle</strong> (string)<br>基于哪种样式。除了文件中写出的定制属性外，别的没定制的属性都默认用这种样式的。<br>可选值有五种：</p>
+<figure class="highlight plain"><figcaption><span>coding standards](http://llvm.org/docs/CodingStandards.html)的样式。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;Google&#96;&#96;&#96;：一种遵循[Google’s C++ style guide](http:&#x2F;&#x2F;google-styleguide.googlecode.com&#x2F;svn&#x2F;trunk&#x2F;cppguide.xml)的样式。</span><br><span class="line">&#96;&#96;&#96;Chromium&#96;&#96;&#96;：一种遵循[Chromium’s style guide](http:&#x2F;&#x2F;www.chromium.org&#x2F;developers&#x2F;coding-style)的样式。</span><br><span class="line">&#96;&#96;&#96;Mozilla&#96;&#96;&#96;：一种遵循[Mozilla’s style guide](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Developer_Guide&#x2F;Coding_Style)的样式。</span><br><span class="line">&#96;&#96;&#96;WebKit&#96;&#96;&#96;：一种遵循[WebKit’s style guide](http:&#x2F;&#x2F;www.webkit.org&#x2F;coding&#x2F;coding-style.html)的样式。</span><br><span class="line"></span><br><span class="line">**AccessModifierOffset** (int)</span><br><span class="line">访问修饰词 (比如public) 前面额外需要加的缩进长度。默认为0。</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveAssignments** (bool)</span><br><span class="line">如果是true，把连续的赋值操作按&#x3D;对齐，默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-8f8ce880dfe20834.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveDeclarations** (bool)</span><br><span class="line">如果是true，把连续行的变量名对齐。默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-f6f5813271f55d32.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignTrailingComments** (bool)</span><br><span class="line">如果是true，对齐尾部注释。默认为false。</span><br><span class="line">![AlignTrailingComments-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-9aeb5efd657ce59e.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AllowShortCaseLabelsOnASingleLine** (bool)</span><br><span class="line">如果是true, 允许一个case在一行写完，默认为false。</span><br><span class="line">![AllowShortCaseLabelsOnASingleLine-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-ed5a85374909cd10.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**BreakBeforeBraces** (string)</span><br><span class="line">大括号前面是否换行，具体可选值看文档。一般用Allman，代表所有大括号都换行。</span><br><span class="line">![BreakBeforeBraces-Allman](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-52fa2344d0d9deba.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ColumnLimit** (unsigned)</span><br><span class="line">每行最多多少个字符，0不限制</span><br><span class="line"></span><br><span class="line">**IndentWidth** (unsigned)</span><br><span class="line">缩进宽度，默认为2，但是我们一般设置为4。</span><br><span class="line">![IndentWidth-4](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b23f5f1d0ce8986d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**IndentCaseLabels** (bool)</span><br><span class="line">switch的case缩进宽度，一般用true。默认为false，case会和switch对齐。</span><br><span class="line"></span><br><span class="line">**KeepEmptyLinesAtTheStartOfBlocks** (bool)</span><br><span class="line">是否保留block里面开始的空行们。默认为true。</span><br><span class="line"></span><br><span class="line">![KeepEmptyLinesAtTheStartOfBlocks-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-c113fbb4bb5f9107.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)</span><br><span class="line">**MaxEmptyLinesToKeep** (unsigned)</span><br><span class="line">最多可以有连续几行空行，默认为1。</span><br><span class="line">![MaxEmptyLinesToKeep-1](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-997b9eed8eda63ea.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCBlockIndentWidth**</span><br><span class="line">OC的block里面的缩进宽度，默认为4。</span><br><span class="line"></span><br><span class="line">**ObjCSpaceAfterProperty** (bool)</span><br><span class="line">OC里面，是否在@property后加空格。默认为false。</span><br><span class="line">![ObjCSpaceAfterProperty-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0759d6e90844a00d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCSpaceBeforeProtocolList** (bool)</span><br><span class="line">OC里面，是否在Protocol名字列表前面加空格，默认为true。</span><br><span class="line">![ObjCSpaceBeforeProtocolList-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-a750da85c92c20df.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**PointerAlignment** (string)</span><br><span class="line">指针的位置。默认为Right。</span><br><span class="line">可选值：</span><br><span class="line">Left：&#96;&#96;&#96;NSString* name&#96;&#96;&#96;</span><br><span class="line">Middle：&#96;&#96;&#96;NSString * name&#96;&#96;&#96;</span><br><span class="line">Right：&#96;&#96;&#96;NSString *name&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">**SpaceBeforeAssignmentOperators** (bool)</span><br><span class="line">&#96;&#96;&#96;&#x3D;&#96;&#96;&#96; 前面是否有空格。默认为true。</span><br><span class="line"></span><br><span class="line">**SpaceBeforeParens** (string)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。默认ControlStatements。</span><br><span class="line">可选值：</span><br><span class="line">Never: 从来不在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">ControlStatements:在控制语句(for&#x2F;if&#x2F;while...)的&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">Always:总会在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line"></span><br><span class="line">![SpaceBeforeParens-ControlStatements](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-70ecea9d5279030b.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line">**SpaceInEmptyParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;()&#96;&#96;&#96;里面插入一个空格。默认false。</span><br><span class="line"></span><br><span class="line">**SpacesBeforeTrailingComments** (unsigned)</span><br><span class="line">在尾部&#x2F;&#x2F;注释前面加几个空格。</span><br><span class="line">![SpacesBeforeTrailingComments-3](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0e3aecf7e11187da.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInAngles** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;&lt;&#96;&#96;&#96;后边和&#96;&#96;&#96;&gt;&#96;&#96;&#96;前边插入空格，默认为false。</span><br><span class="line">![SpacesInAngles-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-965992106a532ac1.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInContainerLiterals** (bool)</span><br><span class="line">&#96;&#96;&#96;@[]&#96;&#96;&#96;里面，是否在 &#96;&#96;&#96;[&#96;&#96;&#96; 后和 &#96;&#96;&#96;]&#96;&#96;&#96; 前加空格。默认为true。</span><br><span class="line">![SpacesInContainerLiterals-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-1a38aac48c0c1fe6.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;后面和&#96;&#96;&#96;)&#96;&#96;&#96;前面加空格，默认为false。</span><br><span class="line">![SpacesInParentheses-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b496ff2996fa1804.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">当项目里面有多种语言时，我们可以分别设置样式：</span><br></pre></td></tr></table></figure>
+<hr>
+<h1 id="我们默认用-LLVM-样式-缩进宽度为4。"><a href="#我们默认用-LLVM-样式-缩进宽度为4。" class="headerlink" title="我们默认用 LLVM 样式, 缩进宽度为4。"></a>我们默认用 LLVM 样式, 缩进宽度为4。</h1><p>BasedOnStyle: LLVM<br>IndentWidth: 4</p>
+<hr>
+<p>Language: Cpp</p>
+<h1 id="C-设置星号左对齐。"><a href="#C-设置星号左对齐。" class="headerlink" title="C++ 设置星号左对齐。"></a>C++ 设置星号左对齐。</h1><h2 id="PointerAlignment-Left"><a href="#PointerAlignment-Left" class="headerlink" title="PointerAlignment: Left"></a>PointerAlignment: Left</h2><p>Language: JavaScript</p>
+<h1 id="JavaScript-每行字符限制设置为100。"><a href="#JavaScript-每行字符限制设置为100。" class="headerlink" title="JavaScript 每行字符限制设置为100。"></a>JavaScript 每行字符限制设置为100。</h1><h2 id="ColumnLimit-100"><a href="#ColumnLimit-100" class="headerlink" title="ColumnLimit: 100"></a>ColumnLimit: 100</h2><p>Language: Proto</p>
+<h1 id="不格式化Proto文件。"><a href="#不格式化Proto文件。" class="headerlink" title="不格式化Proto文件。"></a>不格式化Proto文件。</h1><p>DisableFormat: true<br>…</p>
+<p>```</p>
+<p>这个是我在用的<a target="_blank" rel="noopener" href="https://github.com/lisongrc/clang-format">.clang-format</a>文件。大家可以下载下来自己修改一下再用。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-title-link" itemprop="url">看一遍就会的CocoaPods的安装和使用教程</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-08 00:47:54" itemprop="dateCreated datePublished" datetime="2016-09-08T00:47:54+08:00">2016-09-08</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:43:30" itemprop="dateModified" datetime="2021-03-02T21:43:30+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" class="post-meta-item leancloud_visitors" data-flag-title="看一遍就会的CocoaPods的安装和使用教程" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>##什么是CocoaPods？<br>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。</p>
+<p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。</p>
+<p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。</p>
+<p>##安装CocoaPods<br>1.首先更新gem到最新版本，在终端中输入：<code>$ sudo gem update --system</code>,注意不要把“$”复制上。等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="更新gem"></p>
+<p>2.删除自带的ruby镜像，终端输入：<code>gem sources --remove https://rubygems.org/</code>。<br>3.添加淘宝的镜像，终端输入：<code>gem sources -a https://gems.ruby-china.org/</code>(原来的淘宝镜像 <code>https://ruby.taobao.org/</code>已经不能用了)。<br>4.可以用<code>gem sources -l</code> 来检查使用替换镜像位置成功，结果应该只有 <code>https://gems.ruby-china.org/</code> 才对。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b51ee1565476195f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改镜像"></p>
+<p>5.安装CocoaPods，终端输入：<code>sudo gem install cocoapods</code>。<br>等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-aac3fb999f47a671.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装CocoaPods"></p>
+<p>6.然后配置下CocoaPods，终端输入：<code>pod setup</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-da73a2f6374ff2a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置CocoaPods"></p>
+<p>等待过程可能有点长，成功后会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-444760464dc47119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置成功"></p>
+<p>到这里CocoaPods就安装好了。</p>
+<p>##查找第三方库<br>比如查找MJExtension，终端输入：<code>pod search MJExtension</code>，第一次搜索他需要建索引，等待一会儿就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-861fe8b1d10fb218.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建索引中"></p>
+<p>完成后他会自动进入一个新的页面显示搜索结果，上下滑动查看更多，要退出的话按<code>wq</code>就可以了。以后再搜索就不需要建索引了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebbb361ab224f8ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查找结果"></p>
+<p>##引入第三方库到项目中<br>我先在桌面上新建一个Test项目，然后演示把MJExtension导进去。<br>刚开始的文件目录是这样的<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6d6542711c7e5354.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="原始目录.png"></p>
+<p>1,首先打开终端，cd到Test路径下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4e369e27dff1bdaa.gif?imageMogr2/auto-orient/strip" alt="Test"><br>2.然后生成并编辑一个Podfile文件，命令为<code>vim Podfile</code>，要导入的第三方都要在这里面写上。进去后需要先按<code>I</code>键进入编辑状态，写完后按<code>esc</code>，然后按<code>shift+zz</code>(或者先按<code>shift+:</code>,再按<code>wq</code>)就可以保存退出了。下面的动图里面都有。<br>Podfile的格式大概如下，其中’Test’为你的target的名字。<br>platform :ios,’8.0’<br>target ‘Test’ do<br>pod ‘MJExtension’, ‘~&gt; 3.0.13’<br>end<br>3.安装，命令为：<code>pod install</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-871f9b7d8a8d4ddb.gif?imageMogr2/auto-orient/strip" alt="安装第三方"></p>
+<p>安装成功之后，就可以去项目里面使用了。现在的项目文件变成了这样<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ea4c67a24307d77a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-07 23.23.19.png"></p>
+<p>之前我们一直是双击<code>Test.xcodeproj</code>打开项目，以后我们就要双击<code>Test.xcworkspace</code>打开了，打开后发现项目里面多了红色框的部分，可以看到MJExtension已经被引入了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3ccc26e945f9c96a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="多出来的文件"></p>
+<p>##使用第三方<br>你会发现当引入MJExtension的头文件时，可以<code>#import &lt;MJExtension.h&gt;</code>或者<code>#import &lt;MJExtension/MJExtension.h&gt;</code>，但是却不能在输入<code>#import &quot;MJExtension.h&quot;</code>的时候出现提示。虽然强制输入也可以编译通过，但是感觉很不爽。<br>解决这个问题的办法是在工程的<code>Build Settings</code>搜索<code>Search</code>，然后在<code>User header search paths</code>中添加<code>$(SRCROOT)</code>并选择<code>recursive</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d99fcc7b0cc5733d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="头文件不提示的解决办法"><br>现在就可以提示#import “MJExtension.h”啦。<br>然后我们就可以在项目里面使用MJExtension的方法啦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4cec4b4d7fcfa4a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="使用MJExtension"></p>
+<p>##增加新的第三方<br>如果使用过程中我还想添加其他的第三方怎么办，只要在Podfile里面接着添加，然后终端再执行<code>pod instal</code>l就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-de0abe938314e79d.gif?imageMogr2/auto-orient/strip" alt="新增第三方"></p>
+<p>##更新CocoaPods中的第三方们。<br>第三方库们都有人在维护升级，我们需要隔断时间就要更新下我们工程中第三方库的版本。只需要终端输入命令<code>pod update</code>就可以了。</p>
+<p>如果遇到<code>pod install</code>或者<code>pod update</code>慢的问题，原因在于当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。加参数的命令如下：<br><code>pod install --verbose --no-repo-update</code><br><code>pod update --verbose --no-repo-update</code></p>
+<p>##删除CocoaPods中的某些第三方们。<br>当我们需要去掉某个第三方库时，只需要在Podfile删除该引入该库的语句，然后执行<code>pod update</code>或者<code>pod install</code>就可以了。</p>
+<p>##将CocoaPods从项目中删除<br>如果你在以后的使用过程中不想用CocoaPods了怎么办？很简单，把多出来的东西们都删掉就可以了，不过为了项目正常运行，你需要手动导入已经使用的第三方们哦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d1ddb8792b25dbba.gif?imageMogr2/auto-orient/strip" alt="将CocoaPods从项目中删除"></p>
+<p>##升级CocoaPods<br>升级CocoaPods版本的命令和安装CocoaPods的命令一样，都是<code>sudo gem install cocoapods</code>。<br>如果老版本升级cocoapods的时候提示<code>Operation not permitted - /usr/bin/xcodeproj</code>，改用命令<code>sudo gem install -n /usr/local/bin cocoapods --pre</code>就可以了。</p>
+<p>##卸载CocoaPods<br>卸载CocoaPods的命令是<code>sudo gem uninstall cocoapods</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-8223f4baa3464e17.gif?imageMogr2/auto-orient/strip" alt="卸载CocoaPods"></p>
+<p>执行完命令后，最下面打印Successfully uninstalled cocoapods字样就代表已经成功卸载了。</p>
+<p>##CocoaPods Mac App的安装和使用<br>CocoaPods桌面应用版下载地址：<a target="_blank" rel="noopener" href="https://cocoapods.org/app">https://cocoapods.org/app</a><br>打开应用会提示你是否安装命令行工具，选择<code>install</code>就也可以在命令行使用Pod了。省去了上面的步骤们，方便快捷的使用CocoaPods。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-64fdfe34e7ba8fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="是否安装命令行工具"></p>
+<p>现在假如要给一个Test项目加入第三方库<br>1.选择File-New Podfile from Xcode Project，去选择项目的Project文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dfb7cdefde72d963.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择项目"></p>
+<p>2.填写自动生成的Podfile，并且安装。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-05b24b5b6c711a43.gif?imageMogr2/auto-orient/strip" alt="Podfile"></p>
+<p>然后就可以去打开工程了，是不是比命令行简单多了。<br>注意：Cocoapods.app 删掉并执行命令可能会报错：<code>Unable to locate the CocoaPods.app application bundle. Please ensure the application is available and launch it at least once</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-baedf94b4133ad6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="错误信息.png"></p>
+<p>这时候只要执行<code>sudo gem install -n /usr/local/bin cocoapods</code>命令就可以了。</p>
+<p>##CocoaPods官方使用指南<br>链接：<a target="_blank" rel="noopener" href="https://guides.cocoapods.org/">https://guides.cocoapods.org/</a><br>有什么不了解的或者遇到错误可以去这里查看一下。</p>
+<p>##XCode的CocoaPods插件<br><a target="_blank" rel="noopener" href="https://github.com/kattrali/cocoapods-xcode-plugin">CocoaPods-xcode-plugin</a>是一个XCode的插件，可以很方便的在Xcode通过pods安装各种第三方库。前提是终端已经安装好CocoaPods，使用方法大概如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-533856e1cdb3a9c5.gif?imageMogr2/auto-orient/strip" alt="CocoaPods插件使用"></p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" class="post-title-link" itemprop="url">UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-04 20:37:30" itemprop="dateCreated datePublished" datetime="2016-09-04T20:37:30+08:00">2016-09-04</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:41:36" itemprop="dateModified" datetime="2021-03-02T21:41:36+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" class="post-meta-item leancloud_visitors" data-flag-title="UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a target="_blank" rel="noopener" href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif"></p>
+<p>####颜色相关<br><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageWithColor:(UIColor *)color;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如设置UIImageView的图片为红色纯图片：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [UIImage imageWithColor:[UIColor redColor]];</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.取图片上某一像素的颜色</strong><br>有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。<br>需要注意的是这里要传的参数point是相对于图片上的点。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIColor *)colorAtPixel:(CGPoint)point;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point &#x3D; [tap locationInView:tap.view];</span><br><span class="line">    UIImage *image &#x3D; self.imageView.image;</span><br><span class="line">    CGPoint pointInImage &#x3D; CGPointMake(point.x * image.size.width &#x2F; self.imageView.frame.size.width, point.y * image.size.height &#x2F; self.imageView.frame.size.height);</span><br><span class="line">    self.view.backgroundColor &#x3D; [image colorAtPixel:pointInImage];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>**3.获得灰度图 **<br>获取一张彩色图片的黑白图片</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage;</span><br></pre></td></tr></table></figure>
+<p>使用方法：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image convertToGrayImage];</span><br></pre></td></tr></table></figure>
+
+<p>####旋转相关<br><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)fixOrientation;</span><br></pre></td></tr></table></figure>
+<p>使用:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image fixOrientation];</span><br></pre></td></tr></table></figure>
+
+<p><strong>2.按给定的方向旋转图片</strong><br>在做图片处理工具的时候，我们可能需要旋转图片。<br>这个方法的参数是系统枚举UIImageOrientation。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_ENUM(NSInteger, UIImageOrientation) &#123;</span><br><span class="line">    UIImageOrientationUp,            &#x2F;&#x2F; default orientation</span><br><span class="line">    UIImageOrientationDown,          &#x2F;&#x2F; 180 deg rotation</span><br><span class="line">    UIImageOrientationLeft,          &#x2F;&#x2F; 90 deg CCW</span><br><span class="line">    UIImageOrientationRight,         &#x2F;&#x2F; 90 deg CW</span><br><span class="line">    UIImageOrientationUpMirrored,    &#x2F;&#x2F; as above but image mirrored along other axis. horizontal flip</span><br><span class="line">    UIImageOrientationDownMirrored,  &#x2F;&#x2F; horizontal flip</span><br><span class="line">    UIImageOrientationLeftMirrored,  &#x2F;&#x2F; vertical flip</span><br><span class="line">    UIImageOrientationRightMirrored, &#x2F;&#x2F; vertical flip</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (UIImage*)rotate:(UIImageOrientation)orient;</span><br></pre></td></tr></table></figure>
+<p>使用，比如顺时针旋转180度：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image rotate:UIImageOrientationDown];</span><br></pre></td></tr></table></figure>
+
+<p><strong>3.垂直翻转</strong><br>其实就是上面的方法传UIImageOrientationDownMirrored参数。 </p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipVertical;</span><br></pre></td></tr></table></figure>
+<p><strong>4.水平翻转</strong><br>其实就是传UIImageOrientationUpMirrored参数。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal;</span><br></pre></td></tr></table></figure>
+<p><strong>5.将图片旋转degrees角度</strong><br>传入一个自定义的角度。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将图片旋转radians弧度</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByRadians:(CGFloat)radians;</span><br></pre></td></tr></table></figure>
+
+<p>####生成图相关<br><strong>1.截取image对象rect区域内的图像</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)subImageWithRect:(CGRect)rect;</span><br></pre></td></tr></table></figure>
+<p>** 2.压缩图片至指定尺寸**</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<p><strong>3.压缩图片至指定像素</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToPX:(CGFloat )toPX;</span><br></pre></td></tr></table></figure>
+<p><strong>4.生成一个size大小的平铺图片</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)getTiledImageWithSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<p><strong>5..UIView转化为UIImage</strong></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageFromView:(UIView *)view;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将两个图片生成一张图片</strong><br>firstImage在下面，secondImage在上面</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage*)mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;</span><br></pre></td></tr></table></figure>
+
+<p>####Gif相关<br>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIFData *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)theData;</span><br><span class="line"></span><br><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIF路径 *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)theURL;</span><br></pre></td></tr></table></figure>
+<p>使用：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSString *path &#x3D; [[NSBundle mainBundle] pathForResource:@&quot;gif&quot; ofType:@&quot;gif&quot;];</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:path]];</span><br><span class="line">&#x2F;&#x2F;或者</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
+<p>希望能帮到大家，持续更新中。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          
+            <a href="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-title-link" itemprop="url">Xcode方便开发的插件推荐</a>
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-08-26 17:40:39" itemprop="dateCreated datePublished" datetime="2016-08-26T17:40:39+08:00">2016-08-26</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="far fa-calendar-check"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2021-03-02 21:38:19" itemprop="dateModified" datetime="2021-03-02T21:38:19+08:00">2021-03-02</time>
+              </span>
+
+          
+            <span id="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" class="post-meta-item leancloud_visitors" data-flag-title="Xcode方便开发的插件推荐" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+          <p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：</p>
+<p><strong>Alcatraz</strong><br><a target="_blank" rel="noopener" href="https://github.com/alcatraz/Alcatraz">https://github.com/alcatraz/Alcatraz</a><br>Alcatraz 是一个帮你管理 Xcode 插件、模版以及颜色配置的工具。它可以直接集成到 Xcode 的图形界面中，让你感觉就像在使用 Xcode 自带的功能一样。<br>使用方法推荐巧哥的这篇文章：<br><a target="_blank" rel="noopener" href="http://blog.devtang.com/2014/03/05/use-alcatraz-to-manage-xcode-plugins/">http://blog.devtang.com/2014/03/05/use-alcatraz-to-manage-xcode-plugins/</a><br><img src="http://upload-images.jianshu.io/upload_images/1608265-b181647f65b1f930.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"><br>下面的这些插件都带有链接地址，安装方法可以使用Alcatraz，也可以在GitHub把工程下载下来，编译一遍，然后完全退出Xcode，重启Xcode，如果弹出选择菜单就选择Load Bundle.</p>
+<p><strong>KSImageNamed</strong><br>一款方便填写图片文件名称的插件。支持NSImage和UIImage，当你写到[UIImage imaged:的时候，插件会把项目中的图片名称提示出来，并且还有预览功能，对经常用代码生成图片视图的童鞋十分方便。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-a27a59a339cd31bf.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>FuzzyAutocomplete</strong><br><a target="_blank" rel="noopener" href="https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin">https://github.com/FuzzyAutocomplete/FuzzyAutocompletePlugin</a><br>强大的模糊匹配输入 让你写代码的时候再也不用费脑子去记住名字那么长的对象或者函数名了 好用到让你想哭，但是Xcode8出来后应该就不用了吧。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-972d83909db6b2a9.gif?imageMogr2/auto-orient/strip" alt="demo.gif"></p>
+<p><strong>FKConsole</strong><br><a target="_blank" rel="noopener" href="https://github.com/Forkong/FKConsole">https://github.com/Forkong/FKConsole</a><br>在控制台直接将UTF8编码转化为中文!<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0cc04be495958e08.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>ESTranslate</strong><br><a target="_blank" rel="noopener" href="https://github.com/EnjoySR/ESTranslate-Xcode">https://github.com/EnjoySR/ESTranslate-Xcode</a><br>快速翻译Xcode中代码单词以及句子!<br><img src="http://upload-images.jianshu.io/upload_images/1608265-e004973a7b38c92a.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>VVDocumenter</strong><br><a target="_blank" rel="noopener" href="https://github.com/onevcat/VVDocumenter-Xcode">https://github.com/onevcat/VVDocumenter-Xcode</a><br>喵大的又一力作 能够识别当前函数的参数和返回类型 帮助你快速编写符合规范的注释(目前是以Javadoc为标准)<br><img src="http://upload-images.jianshu.io/upload_images/1608265-29db9ad72c6772c7.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>RSImageOptimPlugin</strong><br><a target="_blank" rel="noopener" href="https://github.com/yeahdongcn/RSImageOptimPlugin">https://github.com/yeahdongcn/RSImageOptimPlugin</a><br>可使用 ImageOptim 对项目里的图片资源进行优化，减少安装包的体积。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-a505d35ab369ded0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>deriveddata</strong><br><a target="_blank" rel="noopener" href="https://github.com/kattrali/deriveddata-exterminator">https://github.com/kattrali/deriveddata-exterminator</a><br>如果你老是遇到Xcode抽风，显示一些编译的错误或警告，或者有些时候Xcode会出各种奇怪的问题，但是编译又能通过，清除Xcode缓存就可以解决这类问题。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d94b08800c98278a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>HOStringSense</strong><br><a target="_blank" rel="noopener" href="https://github.com/holtwick/HOStringSense-for-Xcode">https://github.com/holtwick/HOStringSense-for-Xcode</a><br>在编辑字符串的时候，它会在代码上方生成一个字数统计的提示框。当你需要编辑多行文本时，可以在弹出的文本框中编辑字符串内容，插件会自动进行字符转义的工作，并实时在代码中更新。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6629ca861b3f719b.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>OMColorSense</strong><br><a target="_blank" rel="noopener" href="https://github.com/omz/ColorSense-for-Xcode">https://github.com/omz/ColorSense-for-Xcode</a><br>一个简洁的可视化颜色插件。在你编辑颜色的RGB值的时候，会在代码上方出现一个小的色块，显示对应的颜色。点击色块还会弹出一个颜色编辑器，在编辑器中得到的色值会自动填入colorWithRed:green:blue:alpha:方法中，贴心！<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b4e9633761de122c.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>SCXcodeSwitchExpander</strong><br><a target="_blank" rel="noopener" href="https://github.com/stefanceriu/SCXcodeSwitchExpander">https://github.com/stefanceriu/SCXcodeSwitchExpander</a><br>Switch语句相当繁琐。虽然它清楚地列出了在每种情况下应该处理的方式，但一个个填入枚举值那真是浪费时间。SCXcodeSwitchExpander插件可以帮我们完成这个工作，它可以自动获得所有的枚举值填入相应的位置，而我们只需在每个枚举值下面填入对应的逻辑即可，方便极了！<br><img src="http://upload-images.jianshu.io/upload_images/1608265-e9e795f75b318cd9.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>XcodeBoost</strong><br><a target="_blank" rel="noopener" href="https://github.com/fortinmike/XcodeBoost">https://github.com/fortinmike/XcodeBoost</a><br>通过配置，我们可以使用光标或者不精确的选择就可以剪切或者拷贝代码行，可以在粘贴代码的时候不触发代码格式化，还可以通过在.m文件中拷贝方法，粘贴进.h文件的时候就可以得到自动格式成的方法声明，还有好些功能都可以实现。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-60120420aa9998af.gif?imageMogr2/auto-orient/strip" alt="image.gif"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-2c26b115ceb88f65.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>Xcode-Quick-Localization</strong><br><a target="_blank" rel="noopener" href="https://github.com/tappollo/Xcode-Quick-Localization">https://github.com/tappollo/Xcode-Quick-Localization</a><br>你是否已经厌倦了反复写NSLocalizedString？如果是，那么QuickLocalization插件可以助你一臂之力。当你在编辑字符串的时候，只需要按下option+shift+d，就可以将@“Any String”转换成NSLocalizedString(@”Any String”, nil)。而且还可以通过修改配置来定义要出现在comment字段中的内容。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-235bcc4782960995.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>XAlign</strong><br><a target="_blank" rel="noopener" href="https://github.com/qfish/XAlign">https://github.com/qfish/XAlign</a><br>一个格式化代码的插件，作为有洁癖的码农 看到不对齐的代码一定是不能忍的 XAlign可以轻松解决你的烦恼。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-c526e15dd0f42998.gif?imageMogr2/auto-orient/strip" alt="image.gif"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-ffea31ede7ac4b82.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>ClangFormat</strong><br><a target="_blank" rel="noopener" href="https://github.com/travisjeffery/ClangFormat-Xcode">https://github.com/travisjeffery/ClangFormat-Xcode</a><br>ClangFormat也是一款格式化代码的插件，开发者不仅可以实现对代码的自动或批量格式化，还可以进行自定义配置。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-19a2bac09a928cb0.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>CodePilot</strong><br><a target="_blank" rel="noopener" href="https://github.com/macoscope/CodePilot">https://github.com/macoscope/CodePilot</a><br>你要找的是文件？是文件夹？是代码？Never Mind，CMD+SHIFT+X调出CodePilot，输入任何你想到搜的东西吧！想搜appFinishLaunchingWithOptions？忘记咋拼了？没关系强大的代码搜索能力，appflaun一样也可以找到！超级强大的正则匹配，匹配任何你所想！<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ad9f3ad42ecf1f8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.png"></p>
+<p><strong>CocoaPods</strong><br><a target="_blank" rel="noopener" href="https://github.com/CocoaPods/CocoaPods">https://github.com/CocoaPods/CocoaPods</a><br>可以很方便的在Xcode通过pods安装各种第三方库。关于CocoaPods的使用请看<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/1711e131987d">这篇文章</a>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-a453aa881c850f8a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="CocoaPods"></p>
+<p><strong>RTImageAssets</strong><br><a target="_blank" rel="noopener" href="https://github.com/rickytan/RTImageAssets">https://github.com/rickytan/RTImageAssets</a><br>用来生成 @3x 的图片资源对应的 @2x 和 @1x 版本，只要拖拽高清图到 @3x 的位置上，然后按 Ctrl+Shift+A<br> 即可自动生成两张低清的补全空位。当然，如果你对图片质量要求不高的话，你也可以从 @2x 的图生成 @3x 版本。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-7d1c3404d2d40d7f.gif?imageMogr2/auto-orient/strip" alt="image.gif"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-b3ffc83ad76c95cb.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>JKBlockCommenter</strong><br><a target="_blank" rel="noopener" href="https://github.com/Johnykutty/JKBlockCommenter">https://github.com/Johnykutty/JKBlockCommenter</a><br>选中一段代码，按下⌘⌥/就可把这段代码包含在/**/之间，方便注释。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9947012caf2643b7.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>Auto-Importer</strong><br><a target="_blank" rel="noopener" href="https://github.com/citrusbyte/Auto-Importer-for-Xcode">https://github.com/citrusbyte/Auto-Importer-for-Xcode</a><br>可以搜索和自动导入头文件的一款Xcode插件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3147e0b7f02b11f5.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p><strong>ZLGotoSandboxPlugin</strong><br><a target="_blank" rel="noopener" href="https://github.com/MakeZL/ZLGotoSandboxPlugin">https://github.com/MakeZL/ZLGotoSandboxPlugin</a><br>一个看应用沙盒的插件。也可以用SimPholders，看 <a target="_blank" rel="noopener" href="http://www.jianshu.com/p/b304515d225b">这篇文章</a><br><img src="http://upload-images.jianshu.io/upload_images/1608265-9626bf84f45a9cb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ZLGotoSandboxPlugin.png"></p>
+<p><strong>FKRealGroup</strong><br><a target="_blank" rel="noopener" href="https://github.com/Forkong/FKRealGroup">https://github.com/Forkong/FKRealGroup</a><br>FKRealGroup是文件夹创建删除增强插件，会在编辑菜单中添加”New Real Group”和”Delete Real Group”两个选项。<br>Xcode本身的”New Group”选项只会创建一个虚拟文件夹，并不会在本地磁盘创建真实文件夹。<br>FKRealGroup可以解决这个问题。”New Real Group”选项会在相应磁盘目录创建一个真实的文件夹。<br>我们在Xcode中如果使用”Delete”选项去删除文件夹，如果此文件夹为真实文件夹，那么一般情况下，Xcode只会删除此真实文件夹内的文件，而文件夹却依然存在。<br>”Delete Real Group”可以解决这个问题。”Delete Real Group”会默认删除真实文件夹，移动到废纸篓里面。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-72085141b75ebe9d.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="image.jpg"></p>
+<p>** ActivatePowerMode**<br><a target="_blank" rel="noopener" href="https://github.com/poboke/ActivatePowerMode">https://github.com/poboke/ActivatePowerMode</a><br>一个装逼插件，打字的时候有一些特效。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-2fcacbdb8f87c496.gif?imageMogr2/auto-orient/strip" alt="image.gif"></p>
+<p>持续更新中……。</p>
+
+      
+    </div>
+
+    
+    
+    
+      <footer class="post-footer">
+        <div class="post-eof"></div>
+      </footer>
+  </article>
+  
+  
+  
+
+
+  
+  <nav class="pagination">
+    <a class="extend prev" rel="prev" href="/"><i class="fa fa-angle-left" aria-label="上一页"></i></a><a class="page-number" href="/">1</a><span class="page-number current">2</span><a class="page-number" href="/page/3/">3</a><a class="extend next" rel="next" href="/page/3/"><i class="fa fa-angle-right" aria-label="下一页"></i></a>
+  </nav>
+
+
+
+          </div>
+          
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="小松哥"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">小松哥</p>
+  <div class="site-description" itemprop="description">是缘是情是童真还是意外</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">22</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lisongrc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lisongrc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lisong.coder@gmail.com" title="E-Mail → mailto:lisong.coder@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小松哥</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
+  </div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'gYNONHv7rTCIi44RFd6xhlYi-gzGzoHsz',
+      appKey     : 'NCPWQOu8DblScfsmoFkTp1FJ',
+      placeholder: "Just go go",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>
