@@ -17,21 +17,21 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下： ####颜色相关1.根据颜色生成纯色图片就是根据制定的颜色生成一张纯色的图片 1+ (UIImage *)imageWithColor:(">
+  <meta name="description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下：">
 <meta property="og:type" content="article">
 <meta property="og:title" content="UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中">
 <meta property="og:url" content="https://blog.lisong.pro/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/index.html">
 <meta property="og:site_name" content="小松哥的博客">
-<meta property="og:description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下： ####颜色相关1.根据颜色生成纯色图片就是根据制定的颜色生成一张纯色的图片 1+ (UIImage *)imageWithColor:(">
+<meta property="og:description" content="有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看demo，效果如下：">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip">
 <meta property="article:published_time" content="2016-09-04T12:37:30.000Z">
-<meta property="article:modified_time" content="2021-03-02T13:41:36.286Z">
+<meta property="article:modified_time" content="2016-09-04T12:37:30.000Z">
 <meta property="article:author" content="小松哥">
-<meta property="article:tag" content="iOS, Python, OC, Swift">
+<meta property="article:tag" content="-UIImage">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip">
 
@@ -189,13 +189,15 @@
 
               <time title="创建时间：2016-09-04 20:37:30" itemprop="dateCreated datePublished" datetime="2016-09-04T20:37:30+08:00">2016-09-04</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-02 21:41:36" itemprop="dateModified" datetime="2021-03-02T21:41:36+08:00">2021-03-02</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
+                </span>
+            </span>
 
           
             <span id="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" class="post-meta-item leancloud_visitors" data-flag-title="UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中" title="阅读次数">
@@ -229,58 +231,64 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a target="_blank" rel="noopener" href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif"></p>
-<p>####颜色相关<br><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageWithColor:(UIColor *)color;</span><br></pre></td></tr></table></figure>
+        <meta name="referrer" content="no-referrer"/>
+
+<p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a target="_blank" rel="noopener" href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：</p>
+<img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif" style="zoom: 67%;" />
+
+<span id="more"></span>
+
+<h1 id="颜色相关"><a href="#颜色相关" class="headerlink" title="颜色相关"></a>颜色相关</h1><p><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageWithColor:(UIColor *</span>)color;</span><br></pre></td></tr></table></figure>
 <p>使用方法，比如设置UIImageView的图片为红色纯图片：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [UIImage imageWithColor:[UIColor redColor]];</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [UIImage imageWithColor:[UIColor redColor]]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>2.取图片上某一像素的颜色</strong><br>有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。<br>需要注意的是这里要传的参数point是相对于图片上的点。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIColor *)colorAtPixel:(CGPoint)point;</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIColor *)</span>colorAtPixel:<span class="params">(CGPoint)</span>point;</span><br></pre></td></tr></table></figure>
 <p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point &#x3D; [tap locationInView:tap.view];</span><br><span class="line">    UIImage *image &#x3D; self.imageView.image;</span><br><span class="line">    CGPoint pointInImage &#x3D; CGPointMake(point.x * image.size.width &#x2F; self.imageView.frame.size.width, point.y * image.size.height &#x2F; self.imageView.frame.size.height);</span><br><span class="line">    self.view.backgroundColor &#x3D; [image colorAtPixel:pointInImage];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight reasonml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point = <span class="literal">[<span class="identifier">tap</span> <span class="identifier">locationInView</span>:<span class="identifier">tap</span>.<span class="identifier">view</span>]</span>;</span><br><span class="line">    UIImage *image = self.imageView.image;</span><br><span class="line">    CGPoint pointInImage = <span class="constructor">CGPointMake(<span class="params">point</span>.<span class="params">x</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">width</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">width</span>, <span class="params">point</span>.<span class="params">y</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">height</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">height</span>)</span>;</span><br><span class="line">    self.view.backgroundColor = <span class="literal">[<span class="identifier">image</span> <span class="identifier">colorAtPixel</span>:<span class="identifier">pointInImage</span>]</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>**3.获得灰度图 **<br>获取一张彩色图片的黑白图片</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage;</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>使用方法：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image convertToGrayImage];</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image convertToGrayImage]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 
-<p>####旋转相关<br><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)fixOrientation;</span><br></pre></td></tr></table></figure>
+<h1 id="旋转相关"><a href="#旋转相关" class="headerlink" title="旋转相关"></a>旋转相关</h1><p><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)fixOrientation<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p>使用:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image fixOrientation];</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image fixOrientation]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>2.按给定的方向旋转图片</strong><br>在做图片处理工具的时候，我们可能需要旋转图片。<br>这个方法的参数是系统枚举UIImageOrientation。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">typedef NS_ENUM(NSInteger, UIImageOrientation) &#123;</span><br><span class="line">    UIImageOrientationUp,            &#x2F;&#x2F; default orientation</span><br><span class="line">    UIImageOrientationDown,          &#x2F;&#x2F; 180 deg rotation</span><br><span class="line">    UIImageOrientationLeft,          &#x2F;&#x2F; 90 deg CCW</span><br><span class="line">    UIImageOrientationRight,         &#x2F;&#x2F; 90 deg CW</span><br><span class="line">    UIImageOrientationUpMirrored,    &#x2F;&#x2F; as above but image mirrored along other axis. horizontal flip</span><br><span class="line">    UIImageOrientationDownMirrored,  &#x2F;&#x2F; horizontal flip</span><br><span class="line">    UIImageOrientationLeftMirrored,  &#x2F;&#x2F; vertical flip</span><br><span class="line">    UIImageOrientationRightMirrored, &#x2F;&#x2F; vertical flip</span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (UIImage*)rotate:(UIImageOrientation)orient;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSInteger</span>, <span class="built_in">UIImageOrientation</span>) &#123;</span><br><span class="line">    <span class="built_in">UIImageOrientationUp</span>,            <span class="comment">// default orientation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDown</span>,          <span class="comment">// 180 deg rotation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeft</span>,          <span class="comment">// 90 deg CCW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRight</span>,         <span class="comment">// 90 deg CW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationUpMirrored</span>,    <span class="comment">// as above but image mirrored along other axis. horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDownMirrored</span>,  <span class="comment">// horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeftMirrored</span>,  <span class="comment">// vertical flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRightMirrored</span>, <span class="comment">// vertical flip</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">UIImage</span>*)rotate:(<span class="built_in">UIImageOrientation</span>)orient;</span><br></pre></td></tr></table></figure>
 <p>使用，比如顺时针旋转180度：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">self.imageView.image &#x3D; [image rotate:UIImageOrientationDown];</span><br></pre></td></tr></table></figure>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image rotate:UIImageOrientationDown]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 
 <p><strong>3.垂直翻转</strong><br>其实就是上面的方法传UIImageOrientationDownMirrored参数。 </p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipVertical;</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipVertical<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p><strong>4.水平翻转</strong><br>其实就是传UIImageOrientationUpMirrored参数。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal;</span><br></pre></td></tr></table></figure>
+<figure class="highlight abnf"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal<span class="comment">;</span></span><br></pre></td></tr></table></figure>
 <p><strong>5.将图片旋转degrees角度</strong><br>传入一个自定义的角度。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByDegrees:<span class="params">(CGFloat)</span>degrees;</span><br></pre></td></tr></table></figure>
 <p><strong>6.将图片旋转radians弧度</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)imageRotatedByRadians:(CGFloat)radians;</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByRadians:<span class="params">(CGFloat)</span>radians;</span><br></pre></td></tr></table></figure>
 
-<p>####生成图相关<br><strong>1.截取image对象rect区域内的图像</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)subImageWithRect:(CGRect)rect;</span><br></pre></td></tr></table></figure>
-<p>** 2.压缩图片至指定尺寸**</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<h1 id="生成图相关"><a href="#生成图相关" class="headerlink" title="生成图相关"></a>生成图相关</h1><p><strong>1.截取image对象rect区域内的图像</strong></p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>subImageWithRect:<span class="params">(CGRect)</span>rect;</span><br></pre></td></tr></table></figure>
+<p><strong>2.压缩图片至指定尺寸</strong></p>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
 <p><strong>3.压缩图片至指定像素</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)rescaleImageToPX:(CGFloat )toPX;</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToPX:<span class="params">(CGFloat )</span>toPX;</span><br></pre></td></tr></table></figure>
 <p><strong>4.生成一个size大小的平铺图片</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- (UIImage *)getTiledImageWithSize:(CGSize)size;</span><br></pre></td></tr></table></figure>
+<figure class="highlight erlang"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>getTiledImageWithSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
 <p><strong>5..UIView转化为UIImage</strong></p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage *)imageFromView:(UIView *)view;</span><br></pre></td></tr></table></figure>
+<figure class="highlight markdown"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageFromView:(UIView *</span>)view;</span><br></pre></td></tr></table></figure>
 <p><strong>6.将两个图片生成一张图片</strong><br>firstImage在下面，secondImage在上面</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (UIImage*)mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;</span><br></pre></td></tr></table></figure>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">+ (<span class="built_in">UIImage</span>*)mergeImage:(<span class="built_in">UIImage</span>*)firstImage withImage:(<span class="built_in">UIImage</span>*)secondImage;</span><br></pre></td></tr></table></figure>
 
-<p>####Gif相关<br>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIFData *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)theData;</span><br><span class="line"></span><br><span class="line">&#x2F;** 用一个Gif生成UIImage，传入一个GIF路径 *&#x2F;</span><br><span class="line">+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)theURL;</span><br></pre></td></tr></table></figure>
+<h1 id="Gif相关"><a href="#Gif相关" class="headerlink" title="Gif相关"></a>Gif相关</h1><p>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIFData */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFData:(<span class="built_in">NSData</span> *)theData;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIF路径 */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFURL:(<span class="built_in">NSURL</span> *)theURL;</span><br></pre></td></tr></table></figure>
 <p>使用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">NSString *path &#x3D; [[NSBundle mainBundle] pathForResource:@&quot;gif&quot; ofType:@&quot;gif&quot;];</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:path]];</span><br><span class="line">&#x2F;&#x2F;或者</span><br><span class="line">self.imageView.image &#x3D; [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
+<figure class="highlight objectivec"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSString</span> *path = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:<span class="string">@&quot;gif&quot;</span> ofType:<span class="string">@&quot;gif&quot;</span>];</span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFURL:[<span class="built_in">NSURL</span> fileURLWithPath:path]];</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFData:[<span class="built_in">NSData</span> dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
 <p>希望能帮到大家，持续更新中。</p>
 
     </div>
@@ -290,6 +298,9 @@
     
 
       <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/UIImage/" rel="tag"># -UIImage</a>
+          </div>
 
         
 
@@ -363,6 +374,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%A2%9C%E8%89%B2%E7%9B%B8%E5%85%B3"><span class="nav-number">1.</span> <span class="nav-text">颜色相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E6%97%8B%E8%BD%AC%E7%9B%B8%E5%85%B3"><span class="nav-number">2.</span> <span class="nav-text">旋转相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E7%94%9F%E6%88%90%E5%9B%BE%E7%9B%B8%E5%85%B3"><span class="nav-number">3.</span> <span class="nav-text">生成图相关</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Gif%E7%9B%B8%E5%85%B3"><span class="nav-number">4.</span> <span class="nav-text">Gif相关</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -381,6 +393,18 @@
           <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -413,15 +437,13 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2016 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">小松哥</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
         
 

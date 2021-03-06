@@ -17,15 +17,15 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":false,"show_result":false,"style":null},"back2top":{"enable":true,"sidebar":false,"scrollpercent":false},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：  静态库：以.a 和 .framework为文件后缀名。动态库：以.tbd(之前叫.dylib) 和 .framework 为文件后缀名。  #####静态库与动态库的区别  静态库：链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。动态库：链接时不复">
+  <meta name="description" content="如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：  静态库：以.a 和 .framework为文件后缀名。动态库：以.tbd(之前叫.dylib) 和 .framework 为文件后缀名。">
 <meta property="og:type" content="article">
 <meta property="og:title" content="iOS中的静态库与动态库，区别、制作和使用">
 <meta property="og:url" content="https://blog.lisong.pro/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="小松哥的博客">
-<meta property="og:description" content="如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：  静态库：以.a 和 .framework为文件后缀名。动态库：以.tbd(之前叫.dylib) 和 .framework 为文件后缀名。  #####静态库与动态库的区别  静态库：链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。动态库：链接时不复">
+<meta property="og:description" content="如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：  静态库：以.a 和 .framework为文件后缀名。动态库：以.tbd(之前叫.dylib) 和 .framework 为文件后缀名。">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-f8f309461eadf0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-9fbbdb7c25721b33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
@@ -54,7 +54,7 @@
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-f4ac760cb598db22.gif?imageMogr2/auto-orient/strip">
 <meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-51d077bb2bd12c60.gif?imageMogr2/auto-orient/strip">
 <meta property="article:published_time" content="2016-11-07T07:33:05.000Z">
-<meta property="article:modified_time" content="2021-03-02T13:51:28.811Z">
+<meta property="article:modified_time" content="2016-11-07T07:33:05.000Z">
 <meta property="article:author" content="小松哥">
 <meta property="article:tag" content="iOS, Python, OC, Swift">
 <meta name="twitter:card" content="summary">
@@ -214,13 +214,15 @@
 
               <time title="创建时间：2016-11-07 15:33:05" itemprop="dateCreated datePublished" datetime="2016-11-07T15:33:05+08:00">2016-11-07</time>
             </span>
-              <span class="post-meta-item">
-                <span class="post-meta-item-icon">
-                  <i class="far fa-calendar-check"></i>
-                </span>
-                <span class="post-meta-item-text">更新于</span>
-                <time title="修改时间：2021-03-02 21:51:28" itemprop="dateModified" datetime="2021-03-02T21:51:28+08:00">2021-03-02</time>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
               </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
+                </span>
+            </span>
 
           
             <span id="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/" class="post-meta-item leancloud_visitors" data-flag-title="iOS中的静态库与动态库，区别、制作和使用" title="阅读次数">
@@ -254,28 +256,25 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：</p>
+        <meta name="referrer" content="no-referrer"/>
+
+<p>如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：</p>
 <blockquote>
 <p>静态库：以<code>.a</code> 和 <code>.framework</code>为文件后缀名。<br>动态库：以<code>.tbd</code>(之前叫<code>.dylib</code>) 和 <code>.framework</code> 为文件后缀名。</p>
 </blockquote>
-<p>#####静态库与动态库的区别</p>
-<blockquote>
+<span id="more"></span>
+
+<h1 id="静态库与动态库的区别"><a href="#静态库与动态库的区别" class="headerlink" title="静态库与动态库的区别"></a>静态库与动态库的区别</h1><blockquote>
 <p>静态库：链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。<br>动态库：链接时不复制，程序运行时由系统动态加载到内存，系统只加载一次，多个程序共用（如系统的<code>UIKit.framework</code>等），节省内存。</p>
-</blockquote>
-<blockquote>
 <p>但是苹果不让使用自己的动态库，否则审核就无法通过。</p>
 </blockquote>
 <p>我们先来看一下iOS设备有哪些架构，因为下面要用到：</p>
 <blockquote>
 <p>模拟器：<br>iPhone4s-iPnone5：i386<br>iPhone5s-iPhone7 Plus：x86_64</p>
-</blockquote>
-<blockquote>
 <p>真机:<br>iPhone3gs-iPhone4s：armv7<br>iPhone5-iPhone5c：armv7s<br>iPhone5s-iPhone7 Plus：arm64</p>
-</blockquote>
-<blockquote>
 <p>支持armv7的静态库可以在armv7s上正常运行。</p>
 </blockquote>
-<p>#####.a静态库的制作<br>1、先创建一个新的Xcode工程Test，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-f8f309461eadf0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9fbbdb7c25721b33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建工程"></p>
+<h1 id="a静态库的制作"><a href="#a静态库的制作" class="headerlink" title=".a静态库的制作"></a>.a静态库的制作</h1><p>1、先创建一个新的Xcode工程Test，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-f8f309461eadf0fc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9fbbdb7c25721b33.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建工程"></p>
 <p>2、我们把默认生成的Test.h和Test.m删掉，重新创建一个类PrintString，在这个类里面添加一个单纯打印字符串的简单方法:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-2a3c78a381b5278c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.h"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-47e2d7c130863f6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.m"></p>
 <p>3、选择添加公开头文件<br>为了让使用者知道有哪些方法可以用，我们需要公开头文件，这里我们公开PrintString.h：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-85e2a208770188e6.gif?imageMogr2/auto-orient/strip" alt="选择添加公开头文件"></p>
 <p>4、修改配置<br>我们需要把<code>Build Active Architecture Only</code>修改为NO，否则生成的静态库就只支持当前选择设备的架构。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b8b14a2b4ef6f78b.gif?imageMogr2/auto-orient/strip" alt="修改配置"></p>
@@ -286,8 +285,8 @@
 <p>如果想要让模拟器和真机通用一个静态库，我们可以使用终端命令来实现。命令格式：<code>lipo -create 第一个.a文件的绝对路径 第二个.a文件的绝对路径 -output 最终的.a文件路径</code>:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-c4472265e6c2be4b.gif?imageMogr2/auto-orient/strip" alt="生成通用静态库"></p>
 <p>我们看到生成了一个新的<code>libTest.a</code>文件。这个静态库就支持所有模拟器和所有真机了。然后我们创建一个文件夹，把.a和头文件都放进去，我们最终需要使用的就是这个文件夹：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-8497f7c22f2a3729.gif?imageMogr2/auto-orient/strip" alt="新建文件夹"></p>
 <p>注意：为了开发方便，我们可以使用生成的通用静态库，但是最终上线的使用我们可以只导入真机的，这样工程的体积也会小一些。</p>
-<p>#####使用生成的.a静态库<br>新建一个工程，将上面的通用静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b374fe4aeb0712a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
-<p>#####.frameworke静态库的制作<br>1、先创建一个新的Xcode工程LibTest，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ecfa937ad49c0767.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-18f4b924be05fa55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建完成"></p>
+<h1 id="使用生成的-a静态库"><a href="#使用生成的-a静态库" class="headerlink" title="使用生成的.a静态库"></a>使用生成的.a静态库</h1><p>新建一个工程，将上面的通用静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b374fe4aeb0712a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h1 id="frameworke静态库的制作"><a href="#frameworke静态库的制作" class="headerlink" title=".frameworke静态库的制作"></a>.frameworke静态库的制作</h1><p>1、先创建一个新的Xcode工程LibTest，需要选择下面这个模板：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ecfa937ad49c0767.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>创建完成后是这个样子的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-18f4b924be05fa55.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建完成"></p>
 <p>创建完成后我们可以看到，工程本身自带一个<code>LibTest.h</code>文件和一个<code>Info.plist</code>文件。</p>
 <p>2、我们创建一个类<code>PrintString</code>，添加一个单纯打印字符串的简单方法:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-c3ea26c5d04b8481.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString.h"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-633ec0acf041c1d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="PrintString"></p>
 <p>3、选择添加公开头文件<br>为了让使用者知道有哪些方法可以用，我们需要公开头文件，我们需要在 并且将<code>Target-&gt;Build Phases-&gt;Headers</code>中的<code>Projec</code>t中要暴露的头文件拖拽到<code>Pulic</code>里面，这里我们公开<code>PrintString.h</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-9065d3303dfd7fba.gif?imageMogr2/auto-orient/strip" alt="选择添加公开头文件"></p>
@@ -298,9 +297,9 @@
 <p>我们来查看静态库支持的框架：与上面不同，命令为<code>lipo -info framework下的二进制文件名字</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-71c93893b2b4787e.gif?imageMogr2/auto-orient/strip" alt="查看静态库支持的框架"></p>
 <p>如果想要让模拟器和真机通用一个静态库，我们可以使用终端命令来实现。合并的命令与上面不同的是：framework静态库合并的不是framework,而是framework下的二进制文件，命令为：<br><code>lipo -create 第一个framework下二进制文件的绝对路径 第二个framework下二进制文件的绝对路径 -output 最终的二进制文件路径</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-2dfc39f53cf5d8b4.gif?imageMogr2/auto-orient/strip" alt="合并二进制文件"></p>
 <p>然后将任何一个framework中的二进制文件替换成合并后的二进制文件,然后把framework添加到要使用的项目中即可使用。</p>
-<p>#####使用生成的.framework静态库<br>新建一个工程，将静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-19407ac12a2506a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
+<h1 id="使用生成的-framework静态库"><a href="#使用生成的-framework静态库" class="headerlink" title="使用生成的.framework静态库"></a>使用生成的.framework静态库</h1><p>新建一个工程，将静态库拖进去，导入头文件，就可以使用里面的方法了。经过试验，我们生成的静态库在真机上和模拟器上都能成功打印字符串：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-19407ac12a2506a3.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Paste_Image.png"></p>
 <p>注意：<br>如果静态库中有category类，则在使用静态库的项目配置中<code>Other Linker Flags</code>需要添加参数<code>-ObjC</code>或者<code>-all_load</code>。<br>如果创建的framework类中使用了<code>.tbd</code>，则需要在实际项目中导入<code>.tbd</code>动态库。</p>
-<p>#####运行调试静态库<br>如果你是开发静态库的人，你会发现上面的方法只是制作静态库，并没有办法运行看效果和调试bug，这时候我们可以这样：<br>1、新建一个专门用来开发静态库的正常工程Test：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1c5fbe82bb1c897e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建工程"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-0e64cd5eb6268d74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建好的工程"></p>
+<h1 id="运行调试静态库"><a href="#运行调试静态库" class="headerlink" title="运行调试静态库"></a>运行调试静态库</h1><p>如果你是开发静态库的人，你会发现上面的方法只是制作静态库，并没有办法运行看效果和调试bug，这时候我们可以这样：<br>1、新建一个专门用来开发静态库的正常工程Test：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1c5fbe82bb1c897e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="新建工程"><br><img src="http://upload-images.jianshu.io/upload_images/1608265-0e64cd5eb6268d74.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建好的工程"></p>
 <p>2、添加一个静态库的target<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d78a7606a7b2d70b.gif?imageMogr2/auto-orient/strip" alt="添加一个静态库的target"></p>
 <p>我们看到它生成了几样东西:</p>
 <blockquote>
@@ -390,6 +389,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%E7%9A%84%E5%8C%BA%E5%88%AB"><span class="nav-number">1.</span> <span class="nav-text">静态库与动态库的区别</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#a%E9%9D%99%E6%80%81%E5%BA%93%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">2.</span> <span class="nav-text">.a静态库的制作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E7%9A%84-a%E9%9D%99%E6%80%81%E5%BA%93"><span class="nav-number">3.</span> <span class="nav-text">使用生成的.a静态库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#frameworke%E9%9D%99%E6%80%81%E5%BA%93%E7%9A%84%E5%88%B6%E4%BD%9C"><span class="nav-number">4.</span> <span class="nav-text">.frameworke静态库的制作</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E7%94%9F%E6%88%90%E7%9A%84-framework%E9%9D%99%E6%80%81%E5%BA%93"><span class="nav-number">5.</span> <span class="nav-text">使用生成的.framework静态库</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%BF%90%E8%A1%8C%E8%B0%83%E8%AF%95%E9%9D%99%E6%80%81%E5%BA%93"><span class="nav-number">6.</span> <span class="nav-text">运行调试静态库</span></a></li></ol></div>
       </div>
       <!--/noindex-->
 
@@ -408,6 +408,18 @@
           <span class="site-state-item-count">22</span>
           <span class="site-state-item-name">日志</span>
         </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">17</span>
+        <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
 </div>
@@ -440,15 +452,13 @@
 
 <div class="copyright">
   
-  &copy; 
+  &copy; 2016 – 
   <span itemprop="copyrightYear">2021</span>
   <span class="with-love">
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">小松哥</span>
 </div>
-  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> & <a href="https://theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Gemini</a> 强力驱动
-  </div>
 
         
 
