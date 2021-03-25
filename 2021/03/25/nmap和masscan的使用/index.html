@@ -20,27 +20,19 @@
     var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
   </script>
 
-  <meta name="description" content="你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。">
-<meta property="og:type" content="article">
-<meta property="og:title" content="给博客绑定域名并启用HTTPS">
-<meta property="og:url" content="https://blog.lisong.pro/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/index.html">
+  <meta property="og:type" content="article">
+<meta property="og:title" content="nmap和masscan的使用">
+<meta property="og:url" content="https://blog.lisong.pro/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="小松哥的博客">
-<meta property="og:description" content="你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://blog.lisong.pro/images/NewPagesDomain.png">
-<meta property="og:image" content="https://blog.lisong.pro/images/PagesDomain.png">
-<meta property="og:image" content="https://blog.lisong.pro/images/DnsPod%E9%85%8D%E7%BD%AEGitLab.png">
-<meta property="og:image" content="https://blog.lisong.pro/images/github_domain.png">
-<meta property="og:image" content="https://blog.lisong.pro/images/DnsPod%E9%85%8D%E7%BD%AEGitHub.png">
-<meta property="article:published_time" content="2021-03-01T17:12:48.000Z">
-<meta property="article:modified_time" content="2021-03-01T17:12:48.000Z">
+<meta property="article:published_time" content="2021-03-25T14:53:10.000Z">
+<meta property="article:modified_time" content="2021-03-25T14:53:10.000Z">
 <meta property="article:author" content="小松哥">
-<meta property="article:tag" content="blog">
-<meta property="article:tag" content="Hexo">
+<meta property="article:tag" content="masscan">
+<meta property="article:tag" content="nmap">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://blog.lisong.pro/images/NewPagesDomain.png">
 
-<link rel="canonical" href="https://blog.lisong.pro/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/">
+<link rel="canonical" href="https://blog.lisong.pro/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
 
 <script id="page-configurations">
@@ -53,7 +45,7 @@
   };
 </script>
 
-  <title>给博客绑定域名并启用HTTPS | 小松哥的博客</title>
+  <title>nmap和masscan的使用 | 小松哥的博客</title>
   
 
 
@@ -169,7 +161,7 @@
   
   
   <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
-    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="image" content="/images/avatar.jpg">
@@ -182,7 +174,7 @@
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          给博客绑定域名并启用HTTPS
+          nmap和masscan的使用
         </h1>
 
         <div class="post-meta">
@@ -192,7 +184,7 @@
               </span>
               <span class="post-meta-item-text">发表于</span>
 
-              <time title="创建时间：2021-03-02 01:12:48" itemprop="dateCreated datePublished" datetime="2021-03-02T01:12:48+08:00">2021-03-02</time>
+              <time title="创建时间：2021-03-25 22:53:10" itemprop="dateCreated datePublished" datetime="2021-03-25T22:53:10+08:00">2021-03-25</time>
             </span>
             <span class="post-meta-item">
               <span class="post-meta-item-icon">
@@ -200,12 +192,12 @@
               </span>
               <span class="post-meta-item-text">分类于</span>
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/blog/" itemprop="url" rel="index"><span itemprop="name">blog</span></a>
+                  <a href="/categories/Linux/" itemprop="url" rel="index"><span itemprop="name">Linux</span></a>
                 </span>
             </span>
 
           
-            <span id="/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/" class="post-meta-item leancloud_visitors" data-flag-title="给博客绑定域名并启用HTTPS" title="阅读次数">
+            <span id="/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/" class="post-meta-item leancloud_visitors" data-flag-title="nmap和masscan的使用" title="阅读次数">
               <span class="post-meta-item-icon">
                 <i class="fa fa-eye"></i>
               </span>
@@ -220,12 +212,13 @@
       </span>
       <span class="post-meta-item-text">Valine：</span>
     
-    <a title="valine" href="/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/#valine-comments" itemprop="discussionUrl">
-      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/02/%E7%BB%99%E5%8D%9A%E5%AE%A2%E7%BB%91%E5%AE%9A%E5%9F%9F%E5%90%8D%E5%B9%B6%E5%90%AF%E7%94%A8HTTPS/" itemprop="commentCount"></span>
+    <a title="valine" href="/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2021/03/25/nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/" itemprop="commentCount"></span>
     </a>
   </span>
   
   
+            <div class="post-description"> </div>
 
         </div>
       </header>
@@ -236,24 +229,61 @@
     <div class="post-body" itemprop="articleBody">
 
       
-        <p>你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。</p>
+        <p><a target="_blank" rel="noopener" href="https://nmap.org/man/zh/">nmap</a> 和 <a target="_blank" rel="noopener" href="https://github.com/robertdavidgraham/masscan">masscan</a> 都是出名的端口扫描工具，本文讲解一下大概怎么使用。</p>
 <span id="more"></span>
 
-<h1 id="GitLab-Pages"><a href="#GitLab-Pages" class="headerlink" title="GitLab Pages"></a>GitLab Pages</h1><p>在仓库的 <code>Settings -&gt; Pages</code> 里面，点击 <code>New Domain</code> 出现这个界面：</p>
-<p><img src="/images/NewPagesDomain.png"></p>
-<p>输入自己的域名然后点击 <code>Create</code> 出现这个界面：</p>
-<p><img src="/images/PagesDomain.png"></p>
-<p>可以看到，它让我们加一个 <code>CNAME</code> 记录将域名解析到gitlab.io上，然后需要设置一个 <code>TXT</code> 记录为那一长串字符。比如在 <code>DNSPod</code> 里是这样设置的：</p>
-<p><img src="/images/DnsPod%E9%85%8D%E7%BD%AEGitLab.png"></p>
-<p>GitLab还会用 <code> Let&#39;s Encrypt</code> 为我们自动生成证书，这样就可以启用HTTPS了。</p>
-<p>配置完成后稍等一会，就可以用自己的域名访问GitLab博客了。</p>
-<h1 id="GitHub-Pages"><a href="#GitHub-Pages" class="headerlink" title="GitHub Pages"></a>GitHub Pages</h1><p>在仓库的 <code>GitHub Pages -&gt; Custom domain</code> 里输入自己的域名，点击 <code>Save</code> ；然后勾选上 <code>Enforce HTTPS</code> 启用HTTPS（可能需要等一会才可以勾选）。</p>
-<p><img src="/images/github_domain.png"></p>
-<p>然后需要加一个 <code>CNAME</code> 记录将域名解析到github.io上，比如在 <code>DNSPod</code> 里是这样设置的：</p>
-<p><img src="/images/DnsPod%E9%85%8D%E7%BD%AEGitHub.png"></p>
-<p>配置完成后稍等一会，就可以用自己的域名访问GitHub博客了。</p>
-<p>为了防止以后每次 <code>hexo d</code> 会清空 <code>CNAME</code> 文件导致GitHub Pages域名解绑，需要在本地博客的 <code>source</code>目录下创建一个 <code>CNAME</code> 文件，文件内容为你的域名，例如：</p>
-<figure class="highlight stylus"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">blog<span class="selector-class">.lisong</span>.com</span><br></pre></td></tr></table></figure>
+<h1 id="nmap"><a href="#nmap" class="headerlink" title="nmap"></a>nmap</h1><p>nmap是一个老牌的互联网端口扫描器。</p>
+<h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install nmap</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用"><a href="#使用" class="headerlink" title="使用"></a>使用</h2><p>一个最简单的例子，扫描ip <code>10.0.0.0</code>的一些已知协议的端口：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0</span><br></pre></td></tr></table></figure>
+
+<p>不判断主机是否在线：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0 -Pn</span><br></pre></td></tr></table></figure>
+
+<p>扫描多个ip:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0/24 -Pn</span><br><span class="line">nmap 10.0.1-255.1-255 -Pn</span><br></pre></td></tr></table></figure>
+
+<p>扫描指定端口：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0 -Pn -p20-200,7777,8888</span><br></pre></td></tr></table></figure>
+
+<p>只显示开放端口：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0 -Pn -p0-65525 --open</span><br></pre></td></tr></table></figure>
+
+<p>从文件读取要扫描的ip：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap -Pn --open -iL ip.txt</span><br></pre></td></tr></table></figure>
+
+<p>将结果输出到文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">nmap 10.0.0.0/8 -Pn --open -oG result.txt</span><br></pre></td></tr></table></figure>
+
+<h1 id="masscan"><a href="#masscan" class="headerlink" title="masscan"></a>masscan</h1><p>masscan号称是最快的互联网端口扫描器，可以在六分钟内扫遍互联网。也支持nmap的一些参数设置。</p>
+<h2 id="安装-1"><a href="#安装-1" class="headerlink" title="安装"></a>安装</h2><figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">brew install masscan</span><br></pre></td></tr></table></figure>
+
+<h2 id="使用-1"><a href="#使用-1" class="headerlink" title="使用"></a>使用</h2><p>一个最简单的例子，扫描ip <code>10.0.0.0</code>的80端口:</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan -p80 10.0.0.0</span><br></pre></td></tr></table></figure>
+
+<p>扫描ip段的多端口：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan -p80 10.0.0.0/8</span><br></pre></td></tr></table></figure>
+
+<p>扫描多端口：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan 10.0.0.0/8 -p0-65535</span><br></pre></td></tr></table></figure>
+
+<p>设置扫描速度：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan 10.0.0.0/8 -p0-65535 --max-rate 10000</span><br></pre></td></tr></table></figure>
+
+<p>将结果输出到文件：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">masscan 10.0.0.0/8 -p0-65535 --max-rate 10000 -oJ result.json</span><br><span class="line">masscan 10.0.0.0/8 -p0-65535 --max-rate 10000 -oL result.txt</span><br></pre></td></tr></table></figure>
+
+<p>从文件读取要扫描的ip：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan -p0-65535 --max-rate 10000 -iL ip.txt -oJ result.json</span><br></pre></td></tr></table></figure>
+
+<p>使用配置文件：</p>
+<figure class="highlight ini"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># myscan.conf</span></span><br><span class="line"><span class="attr">rate</span> = <span class="number">100000.00</span></span><br><span class="line"><span class="attr">output-format</span> = xml</span><br><span class="line"><span class="attr">output-status</span> = all</span><br><span class="line"><span class="attr">output-filename</span> = scan.xml</span><br><span class="line"><span class="attr">ports</span> = <span class="number">0</span>-<span class="number">65535</span></span><br><span class="line"><span class="attr">range</span> = <span class="number">0.0</span>.<span class="number">0.0</span>-<span class="number">255.255</span>.<span class="number">255.255</span></span><br><span class="line"><span class="attr">excludefile</span> = exclude.txt</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">masscan -c myscan.conf</span><br></pre></td></tr></table></figure>
+
+<p>更过高级和详细的用法可以去看官方文档。</p>
+
     </div>
 
     
@@ -262,8 +292,8 @@
 
       <footer class="post-footer">
           <div class="post-tags">
-              <a href="/tags/blog/" rel="tag"># blog</a>
-              <a href="/tags/Hexo/" rel="tag"># Hexo</a>
+              <a href="/tags/masscan/" rel="tag"># masscan</a>
+              <a href="/tags/nmap/" rel="tag"># nmap</a>
           </div>
 
         
@@ -272,13 +302,10 @@
         
     <div class="post-nav">
       <div class="post-nav-item">
-    <a href="/2021/02/28/Hexo%E6%90%AD%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E5%B9%B6%E9%83%A8%E7%BD%B2%E5%88%B0Gitlab%E5%92%8CGitHub/" rel="prev" title="Hexo搭建个人博客并部署到Gitlab和GitHub">
-      <i class="fa fa-chevron-left"></i> Hexo搭建个人博客并部署到Gitlab和GitHub
+    <a href="/2021/03/06/Xcode%E5%A5%BD%E7%94%A8%E7%9A%84%E5%BF%AB%E6%8D%B7%E9%94%AE/" rel="prev" title="Xcode好用的快捷键">
+      <i class="fa fa-chevron-left"></i> Xcode好用的快捷键
     </a></div>
-      <div class="post-nav-item">
-    <a href="/2021/03/02/Hexo%E5%88%87%E6%8D%A2NexT%E4%B8%BB%E9%A2%98/" rel="next" title="Hexo切换NexT主题">
-      Hexo切换NexT主题 <i class="fa fa-chevron-right"></i>
-    </a></div>
+      <div class="post-nav-item"></div>
     </div>
       </footer>
     
@@ -338,7 +365,7 @@
 
       <!--noindex-->
       <div class="post-toc-wrap sidebar-panel">
-          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#GitLab-Pages"><span class="nav-number">1.</span> <span class="nav-text">GitLab Pages</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#GitHub-Pages"><span class="nav-number">2.</span> <span class="nav-text">GitHub Pages</span></a></li></ol></div>
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#nmap"><span class="nav-number">1.</span> <span class="nav-text">nmap</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85"><span class="nav-number">1.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8"><span class="nav-number">1.2.</span> <span class="nav-text">使用</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#masscan"><span class="nav-number">2.</span> <span class="nav-text">masscan</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E5%AE%89%E8%A3%85-1"><span class="nav-number">2.1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8-1"><span class="nav-number">2.2.</span> <span class="nav-text">使用</span></a></li></ol></li></ol></div>
       </div>
       <!--/noindex-->
 
