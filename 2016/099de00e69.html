@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 5.4.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/all.min.css">
+
+<script id="hexo-configurations">
+    var NexT = window.NexT || {};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
+  </script>
+
+  <meta name="description" content="为什么要格式化代码当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。 有了ClangFormat插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。">
+<meta property="og:type" content="article">
+<meta property="og:title" content="超详细的Xcode代码格式化教程，可自定义样式">
+<meta property="og:url" content="https://blog.lisong.pro/2016/099de00e69.html">
+<meta property="og:site_name" content="小松哥的博客">
+<meta property="og:description" content="为什么要格式化代码当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。 有了ClangFormat插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-ebca3898fbfb438a.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-819361a437dcba49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-6c78a84cca358db2.gif?imageMogr2/auto-orient/strip">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-1084e334da53f3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+<meta property="og:image" content="http://upload-images.jianshu.io/upload_images/1608265-4c570e4af91ed499.gif?imageMogr2/auto-orient/strip">
+<meta property="article:published_time" content="2016-09-10T13:44:04.000Z">
+<meta property="article:modified_time" content="2016-09-10T13:44:04.000Z">
+<meta property="article:author" content="小松哥">
+<meta property="article:tag" content="Xcode">
+<meta property="article:tag" content="ClangFormat">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240">
+
+<link rel="canonical" href="https://blog.lisong.pro/2016/099de00e69.html">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome : false,
+    isPost : true,
+    lang   : 'zh-CN'
+  };
+</script>
+
+  <title>超详细的Xcode代码格式化教程，可自定义样式 | 小松哥的博客</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+
+  <div class="site-meta">
+
+    <a href="/" class="brand" rel="start">
+      <span class="logo-line-before"><i></i></span>
+      <h1 class="site-title">小松哥的博客</h1>
+      <span class="logo-line-after"><i></i></span>
+    </a>
+  </div>
+
+  <div class="site-nav-right">
+    <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
+    </div>
+  </div>
+</div>
+
+
+
+
+<nav class="site-nav">
+  <ul id="menu" class="main-menu menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-home fa-fw"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-tags">
+
+    <a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>标签</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+</nav>
+
+
+
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
+
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+  <div class="reading-progress-bar"></div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content post posts-expand">
+            
+
+    
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block" lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://blog.lisong.pro/2016/099de00e69.html">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="小松哥">
+      <meta itemprop="description" content="是缘是情是童真还是意外">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="小松哥的博客">
+    </span>
+      <header class="post-header">
+        <h1 class="post-title" itemprop="name headline">
+          超详细的Xcode代码格式化教程，可自定义样式
+        </h1>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-calendar"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-09-10 21:44:04" itemprop="dateCreated datePublished" datetime="2016-09-10T21:44:04+08:00">2016-09-10</time>
+            </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="far fa-folder"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/iOS/" itemprop="url" rel="index"><span itemprop="name">iOS</span></a>
+                </span>
+            </span>
+
+          
+            <span id="/2016/099de00e69.html" class="post-meta-item leancloud_visitors" data-flag-title="超详细的Xcode代码格式化教程，可自定义样式" title="阅读次数">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-eye"></i>
+              </span>
+              <span class="post-meta-item-text">阅读次数：</span>
+              <span class="leancloud-visitors-count"></span>
+            </span>
+  
+  <span class="post-meta-item">
+    
+      <span class="post-meta-item-icon">
+        <i class="far fa-comment"></i>
+      </span>
+      <span class="post-meta-item-text">Valine：</span>
+    
+    <a title="valine" href="/2016/099de00e69.html#valine-comments" itemprop="discussionUrl">
+      <span class="post-comments-count valine-comment-count" data-xid="/2016/099de00e69.html" itemprop="commentCount"></span>
+    </a>
+  </span>
+  
+  <br>
+            <span class="post-meta-item" title="本文字数">
+              <span class="post-meta-item-icon">
+                <i class="far fa-file-word"></i>
+              </span>
+                <span class="post-meta-item-text">本文字数：</span>
+              <span>7k</span>
+            </span>
+            <span class="post-meta-item" title="阅读时长">
+              <span class="post-meta-item-icon">
+                <i class="far fa-clock"></i>
+              </span>
+                <span class="post-meta-item-text">阅读时长 &asymp;</span>
+              <span>6 分钟</span>
+            </span>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <meta name="referrer" content="no-referrer"/>
+
+<h1 id="为什么要格式化代码"><a href="#为什么要格式化代码" class="headerlink" title="为什么要格式化代码"></a>为什么要格式化代码</h1><p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。<br>在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。</p>
+<p>有了<code>ClangFormat</code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。</p>
+<span id="more"></span>
+
+<h1 id="安装ClangFormat插件"><a href="#安装ClangFormat插件" class="headerlink" title="安装ClangFormat插件"></a>安装ClangFormat插件</h1><p>可以手动安装(下载<a target="_blank" rel="noopener" href="https://github.com/travisjeffery/ClangFormat-Xcode">GitHub项目</a>编译)，也可以用<a target="_blank" rel="noopener" href="https://github.com/alcatraz/Alcatraz">Alcatraz</a>(插件管理器)安装，都很简单，具体可以看我的文章<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/51635869b027">《Xcode方便开发的插件推荐》</a>。</p>
+<p>装好后是下图这样的，我们可以看到它内置了<code>LLVM</code>、<code>Google</code>、<code>Chromium</code>、<code>Mozilla</code>、<code>WebKit</code>五种样式。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件菜单"></p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>通过菜单可以看到，它可以格式化选中的文字们，或者格式化选择的文件们。下面演示下<code>LLVM</code>样式下的格式化：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebca3898fbfb438a.gif?imageMogr2/auto-orient/strip" alt="LLVM样式下的格式化"></p>
+<h1 id="使用自定义样式"><a href="#使用自定义样式" class="headerlink" title="使用自定义样式"></a>使用自定义样式</h1><p>1、需要先把上面菜单里面的File选中，因为我们需要让它用我们自己写的配置文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-819361a437dcba49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选中File"></p>
+<p>2、在工程目录下创建配置文件<code>.clang-format</code>文件并编辑。<code>.clang-format</code>文件用的是<code>YAML</code>格式:里面要用的字段在后面会详细解释。</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">key1:</span> <span class="string">value1</span></span><br><span class="line"><span class="comment"># 一个注释</span></span><br><span class="line"><span class="attr">key2:</span> <span class="string">value2</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip" alt="自定义样式格式化代码"></p>
+<p>当然如果你已经有<code>.clang-format</code>文件的话，直接拖动到项目根目录也可以。<br>文章结尾有我在用的<code>.clang-format</code>文件。</p>
+<p>温馨提示：<code>.clang-format</code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">//显示 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool true</span><br><span class="line">killall Finder</span><br><span class="line">//隐藏 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool false</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+
+<h1 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h1><p>上面我们是在项目根目录创建的<code>.clang-format</code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把<code>.clang-format</code>文件放在所有项目都在的一个最大根目录下就可以了。</p>
+<p>###让一段代码不受格式化影响<br>如果想让一段代码不受格式化影响，需要将他们包含在<code>// clang-format off</code> 和 <code>// clang-format on</code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6c78a84cca358db2.gif?imageMogr2/auto-orient/strip" alt="让一段代码不受格式化影响"></p>
+<h1 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h1><p>首先你可以选中菜单中的 <code>Enable Format On Sava</code>，把它点<code>Disable Format On Sava</code>，这样以后每次按<code>⌘+S</code>保存文件时就可以自动格式化了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1084e334da53f3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-10 下午12.43.50.png"></p>
+<p>我们也可以给一些菜单设置快捷键，使用的时候不用每次去选择各级菜单了。比如我们给<code>Format Selected Text</code>设置快捷键：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4c570e4af91ed499.gif?imageMogr2/auto-orient/strip" alt="设置格式化快捷键"></p>
+<p>你也可以为其他菜单设置快捷键，其实呢，我用<code>Format Selected Text</code>的时候很少，每次都是想格式化的时候直接<code>⌘+S</code>就行了哈哈哈。</p>
+<h1 id="配置文件中属性的含义讲解"><a href="#配置文件中属性的含义讲解" class="headerlink" title="配置文件中属性的含义讲解"></a>配置文件中属性的含义讲解</h1><p>下面说一些配置文件的常用的参数介绍，其他的可以看官方文档：<a target="_blank" rel="noopener" href="http://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a>，其中小括号内代表他需的是什么类型的值。</p>
+<p><strong>BasedOnStyle</strong> (string)<br>基于哪种样式。除了文件中写出的定制属性外，别的没定制的属性都默认用这种样式的。<br>可选值有五种：</p>
+<figure class="highlight plain"><figcaption><span>coding standards](http://llvm.org/docs/CodingStandards.html)的样式。</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br></pre></td><td class="code"><pre><span class="line">&#96;&#96;&#96;Google&#96;&#96;&#96;：一种遵循[Google’s C++ style guide](http:&#x2F;&#x2F;google-styleguide.googlecode.com&#x2F;svn&#x2F;trunk&#x2F;cppguide.xml)的样式。</span><br><span class="line">&#96;&#96;&#96;Chromium&#96;&#96;&#96;：一种遵循[Chromium’s style guide](http:&#x2F;&#x2F;www.chromium.org&#x2F;developers&#x2F;coding-style)的样式。</span><br><span class="line">&#96;&#96;&#96;Mozilla&#96;&#96;&#96;：一种遵循[Mozilla’s style guide](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Developer_Guide&#x2F;Coding_Style)的样式。</span><br><span class="line">&#96;&#96;&#96;WebKit&#96;&#96;&#96;：一种遵循[WebKit’s style guide](http:&#x2F;&#x2F;www.webkit.org&#x2F;coding&#x2F;coding-style.html)的样式。</span><br><span class="line"></span><br><span class="line">**AccessModifierOffset** (int)</span><br><span class="line">访问修饰词 (比如public) 前面额外需要加的缩进长度。默认为0。</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveAssignments** (bool)</span><br><span class="line">如果是true，把连续的赋值操作按&#x3D;对齐，默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-8f8ce880dfe20834.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveDeclarations** (bool)</span><br><span class="line">如果是true，把连续行的变量名对齐。默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-f6f5813271f55d32.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignTrailingComments** (bool)</span><br><span class="line">如果是true，对齐尾部注释。默认为false。</span><br><span class="line">![AlignTrailingComments-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-9aeb5efd657ce59e.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AllowShortCaseLabelsOnASingleLine** (bool)</span><br><span class="line">如果是true, 允许一个case在一行写完，默认为false。</span><br><span class="line">![AllowShortCaseLabelsOnASingleLine-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-ed5a85374909cd10.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**BreakBeforeBraces** (string)</span><br><span class="line">大括号前面是否换行，具体可选值看文档。一般用Allman，代表所有大括号都换行。</span><br><span class="line">![BreakBeforeBraces-Allman](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-52fa2344d0d9deba.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ColumnLimit** (unsigned)</span><br><span class="line">每行最多多少个字符，0不限制</span><br><span class="line"></span><br><span class="line">**IndentWidth** (unsigned)</span><br><span class="line">缩进宽度，默认为2，但是我们一般设置为4。</span><br><span class="line">![IndentWidth-4](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b23f5f1d0ce8986d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**IndentCaseLabels** (bool)</span><br><span class="line">switch的case缩进宽度，一般用true。默认为false，case会和switch对齐。</span><br><span class="line"></span><br><span class="line">**KeepEmptyLinesAtTheStartOfBlocks** (bool)</span><br><span class="line">是否保留block里面开始的空行们。默认为true。</span><br><span class="line"></span><br><span class="line">![KeepEmptyLinesAtTheStartOfBlocks-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-c113fbb4bb5f9107.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)</span><br><span class="line">**MaxEmptyLinesToKeep** (unsigned)</span><br><span class="line">最多可以有连续几行空行，默认为1。</span><br><span class="line">![MaxEmptyLinesToKeep-1](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-997b9eed8eda63ea.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCBlockIndentWidth**</span><br><span class="line">OC的block里面的缩进宽度，默认为4。</span><br><span class="line"></span><br><span class="line">**ObjCSpaceAfterProperty** (bool)</span><br><span class="line">OC里面，是否在@property后加空格。默认为false。</span><br><span class="line">![ObjCSpaceAfterProperty-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0759d6e90844a00d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCSpaceBeforeProtocolList** (bool)</span><br><span class="line">OC里面，是否在Protocol名字列表前面加空格，默认为true。</span><br><span class="line">![ObjCSpaceBeforeProtocolList-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-a750da85c92c20df.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**PointerAlignment** (string)</span><br><span class="line">指针的位置。默认为Right。</span><br><span class="line">可选值：</span><br><span class="line">Left：&#96;&#96;&#96;NSString* name&#96;&#96;&#96;</span><br><span class="line">Middle：&#96;&#96;&#96;NSString * name&#96;&#96;&#96;</span><br><span class="line">Right：&#96;&#96;&#96;NSString *name&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">**SpaceBeforeAssignmentOperators** (bool)</span><br><span class="line">&#96;&#96;&#96;&#x3D;&#96;&#96;&#96; 前面是否有空格。默认为true。</span><br><span class="line"></span><br><span class="line">**SpaceBeforeParens** (string)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。默认ControlStatements。</span><br><span class="line">可选值：</span><br><span class="line">Never: 从来不在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">ControlStatements:在控制语句(for&#x2F;if&#x2F;while...)的&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">Always:总会在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line"></span><br><span class="line">![SpaceBeforeParens-ControlStatements](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-70ecea9d5279030b.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line">**SpaceInEmptyParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;()&#96;&#96;&#96;里面插入一个空格。默认false。</span><br><span class="line"></span><br><span class="line">**SpacesBeforeTrailingComments** (unsigned)</span><br><span class="line">在尾部&#x2F;&#x2F;注释前面加几个空格。</span><br><span class="line">![SpacesBeforeTrailingComments-3](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0e3aecf7e11187da.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInAngles** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;&lt;&#96;&#96;&#96;后边和&#96;&#96;&#96;&gt;&#96;&#96;&#96;前边插入空格，默认为false。</span><br><span class="line">![SpacesInAngles-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-965992106a532ac1.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInContainerLiterals** (bool)</span><br><span class="line">&#96;&#96;&#96;@[]&#96;&#96;&#96;里面，是否在 &#96;&#96;&#96;[&#96;&#96;&#96; 后和 &#96;&#96;&#96;]&#96;&#96;&#96; 前加空格。默认为true。</span><br><span class="line">![SpacesInContainerLiterals-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-1a38aac48c0c1fe6.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;后面和&#96;&#96;&#96;)&#96;&#96;&#96;前面加空格，默认为false。</span><br><span class="line">![SpacesInParentheses-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b496ff2996fa1804.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">当项目里面有多种语言时，我们可以分别设置样式：</span><br><span class="line">&#96;&#96;&#96;yaml</span><br><span class="line">---</span><br><span class="line"># 我们默认用 LLVM 样式, 缩进宽度为4。</span><br><span class="line">BasedOnStyle: LLVM</span><br><span class="line">IndentWidth: 4</span><br><span class="line">---</span><br><span class="line">Language: Cpp</span><br><span class="line"># C++ 设置星号左对齐。</span><br><span class="line">PointerAlignment: Left</span><br><span class="line">---</span><br><span class="line">Language: JavaScript</span><br><span class="line"># JavaScript 每行字符限制设置为100。</span><br><span class="line">ColumnLimit: 100</span><br><span class="line">---</span><br><span class="line">Language: Proto</span><br><span class="line"># 不格式化Proto文件。</span><br><span class="line">DisableFormat: true</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>这个是我在用的<a target="_blank" rel="noopener" href="https://github.com/lisongrc/clang-format">.clang-format</a>文件。大家可以下载下来自己修改一下再用。</p>
+
+    </div>
+
+    
+    
+    
+
+      <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/Xcode/" rel="tag"># Xcode</a>
+              <a href="/tags/ClangFormat/" rel="tag"># ClangFormat</a>
+          </div>
+
+        
+
+
+        
+    <div class="post-nav">
+      <div class="post-nav-item">
+    <a href="/2016/09750b7a66.html" rel="prev" title="看一遍就会的CocoaPods的安装和使用教程">
+      <i class="fa fa-chevron-left"></i> 看一遍就会的CocoaPods的安装和使用教程
+    </a></div>
+      <div class="post-nav-item">
+    <a href="/2016/09835121d0.html" rel="next" title="系统地学习正则表达式(一)：基础篇">
+      系统地学习正则表达式(一)：基础篇 <i class="fa fa-chevron-right"></i>
+    </a></div>
+    </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+
+
+          </div>
+          
+    <div class="comments" id="valine-comments"></div>
+
+<script>
+  window.addEventListener('tabs:register', () => {
+    let { activeClass } = CONFIG.comments;
+    if (CONFIG.comments.storage) {
+      activeClass = localStorage.getItem('comments_active') || activeClass;
+    }
+    if (activeClass) {
+      let activeTab = document.querySelector(`a[href="#comment-${activeClass}"]`);
+      if (activeTab) {
+        activeTab.click();
+      }
+    }
+  });
+  if (CONFIG.comments.storage) {
+    window.addEventListener('tabs:click', event => {
+      if (!event.target.matches('.tabs-comment .tab-content .tab-pane')) return;
+      let commentClass = event.target.classList[1];
+      localStorage.setItem('comments_active', commentClass);
+    });
+  }
+</script>
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%B8%BA%E4%BB%80%E4%B9%88%E8%A6%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E4%BB%A3%E7%A0%81"><span class="nav-text">为什么要格式化代码</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%AE%89%E8%A3%85ClangFormat%E6%8F%92%E4%BB%B6"><span class="nav-text">安装ClangFormat插件</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="nav-text">使用方法</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E4%BD%BF%E7%94%A8%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F"><span class="nav-text">使用自定义样式</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E5%85%A8%E5%B1%80%E9%85%8D%E7%BD%AE"><span class="nav-text">全局配置</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E8%AE%BE%E7%BD%AE%E5%BF%AB%E6%8D%B7%E9%94%AE"><span class="nav-text">设置快捷键</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#%E9%85%8D%E7%BD%AE%E6%96%87%E4%BB%B6%E4%B8%AD%E5%B1%9E%E6%80%A7%E7%9A%84%E5%90%AB%E4%B9%89%E8%AE%B2%E8%A7%A3"><span class="nav-text">配置文件中属性的含义讲解</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="小松哥"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">小松哥</p>
+  <div class="site-description" itemprop="description">是缘是情是童真还是意外</div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">25</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+          
+        <span class="site-state-item-count">20</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/lisongrc" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;lisongrc" rel="noopener" target="_blank"><i class="fab fa-github fa-fw"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="mailto:lisong.coder@gmail.com" title="E-Mail → mailto:lisong.coder@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://jq.qq.com/?_wv=1027&k=eku48u8p" title="iOS群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;eku48u8p" rel="noopener" target="_blank"><i class="fab fa-apple fa-fw"></i>iOS群</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://jq.qq.com/?_wv=1027&k=9KRFLBd3" title="Python群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;9KRFLBd3" rel="noopener" target="_blank"><i class="fab fa-python fa-fw"></i>Python群</a>
+      </span>
+  </div>
+
+
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/u/c5fc709d0cc8" title="https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;c5fc709d0cc8" rel="noopener" target="_blank">我的简书</a>
+        </li>
+    </ul>
+  </div>
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+        
+
+<div class="copyright">
+  
+  &copy; 2016 – 
+  <span itemprop="copyrightYear">2021</span>
+  <span class="with-love">
+    <i class="fa fa-heart"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">小松哥</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">114k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:44</span>
+</div>
+
+        
+
+
+
+
+
+
+
+
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+
+<script src="/js/utils.js"></script>
+
+<script src="/js/motion.js"></script>
+
+
+<script src="/js/schemes/pisces.js"></script>
+
+
+<script src="/js/next-boot.js"></script>
+
+
+
+
+  
+
+
+
+
+  
+<script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+
+<script>
+NexT.utils.loadComments(document.querySelector('#valine-comments'), () => {
+  NexT.utils.getScript('//unpkg.com/valine/dist/Valine.min.js', () => {
+    var GUEST = ['nick', 'mail', 'link'];
+    var guest = 'nick,mail,link';
+    guest = guest.split(',').filter(item => {
+      return GUEST.includes(item);
+    });
+    new Valine({
+      el         : '#valine-comments',
+      verify     : false,
+      notify     : false,
+      appId      : 'gYNONHv7rTCIi44RFd6xhlYi-gzGzoHsz',
+      appKey     : 'NCPWQOu8DblScfsmoFkTp1FJ',
+      placeholder: "Just go go",
+      avatar     : 'wavatar',
+      meta       : guest,
+      pageSize   : '10' || 10,
+      visitor    : true,
+      lang       : 'zh-cn' || 'zh-cn',
+      path       : location.pathname,
+      recordIP   : true,
+      serverURLs : ''
+    });
+  }, window.Valine);
+});
+</script>
+
+</body>
+</html>

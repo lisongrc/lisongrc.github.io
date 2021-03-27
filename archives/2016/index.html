@@ -17,7 +17,7 @@
 
 <script id="hexo-configurations">
     var NexT = window.NexT || {};
-    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":false,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}}};
+    var CONFIG = {"hostname":"blog.lisong.pro","root":"/","scheme":"Gemini","version":"7.8.0","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12,"onmobile":false},"copycode":{"enable":true,"show_result":true,"style":"mac"},"back2top":{"enable":true,"sidebar":false,"scrollpercent":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"fancybox":false,"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"algolia":{"hits":{"per_page":10},"labels":{"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}},"localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},"motion":{"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},"path":"search.xml"};
   </script>
 
   <meta name="description" content="是缘是情是童真还是意外">
@@ -102,6 +102,7 @@
 
   <div class="site-nav-right">
     <div class="toggle popup-trigger">
+        <i class="fa fa-search fa-fw fa-lg"></i>
     </div>
   </div>
 </div>
@@ -131,11 +132,38 @@
     <a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>归档</a>
 
   </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
   </ul>
 </nav>
 
 
 
+  <div class="search-pop-overlay">
+    <div class="popup search-popup">
+        <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocapitalize="off"
+           placeholder="搜索..." spellcheck="false"
+           type="search" class="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result">
+  <div id="no-result">
+    <i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>
+  </div>
+</div>
+
+    </div>
+  </div>
 
 </div>
     </header>
@@ -162,7 +190,7 @@
   <div class="post-block">
     <div class="posts-collapse">
       <div class="collection-title">
-        <span class="collection-header">嗯..! 目前共计 24 篇日志。 继续努力。</span>
+        <span class="collection-header">嗯..! 目前共计 25 篇日志。 继续努力。</span>
       </div>
 
       
@@ -182,7 +210,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/12/13/Objective-C%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7-appledoc/" itemprop="url">
+          <a class="post-title-link" href="/2016/12db31073b.html" itemprop="url">
             <span itemprop="name">Objective-C自动生成文档工具:appledoc</span>
           </a>
       </div>
@@ -202,7 +230,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/11/07/iOS%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%EF%BC%8C%E5%8C%BA%E5%88%AB%E3%80%81%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/" itemprop="url">
+          <a class="post-title-link" href="/2016/1137f4228b.html" itemprop="url">
             <span itemprop="name">iOS中的静态库与动态库，区别、制作和使用</span>
           </a>
       </div>
@@ -222,7 +250,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/11/02/%E8%AF%A6%E7%BB%86%E6%98%93%E6%87%82%E7%9A%84%E4%BA%8C%E7%BB%B4%E7%A0%81%E7%9A%84%E6%89%AB%E6%8F%8F%E3%80%81%E8%AF%86%E5%88%AB%E4%B8%8E%E7%94%9F%E6%88%90/" itemprop="url">
+          <a class="post-title-link" href="/2016/11963e6639.html" itemprop="url">
             <span itemprop="name">详细易懂的二维码的扫描、识别与生成</span>
           </a>
       </div>
@@ -242,7 +270,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/10/09/UITableView%E8%87%AA%E5%8A%A8%E8%AE%A1%E7%AE%97cell%E9%AB%98%E5%BA%A6%E5%B9%B6%E7%BC%93%E5%AD%98%EF%BC%8C%E5%86%8D%E4%B9%9F%E4%B8%8D%E7%94%A8%E7%AE%A1%E9%AB%98%E5%BA%A6%E5%95%A6/" itemprop="url">
+          <a class="post-title-link" href="/2016/1055050fbf.html" itemprop="url">
             <span itemprop="name">UITableView自动计算cell高度并缓存，再也不用管高度啦</span>
           </a>
       </div>
@@ -262,7 +290,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/09/26/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%BA%8C-%EF%BC%9A%E8%BF%9B%E9%98%B6%E7%AF%87/" itemprop="url">
+          <a class="post-title-link" href="/2016/0923aaaabf.html" itemprop="url">
             <span itemprop="name">系统地学习正则表达式(二)：进阶篇</span>
           </a>
       </div>
@@ -282,7 +310,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/09/13/%E7%B3%BB%E7%BB%9F%E5%9C%B0%E5%AD%A6%E4%B9%A0%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F-%E4%B8%80-%EF%BC%9A%E5%9F%BA%E7%A1%80%E7%AF%87/" itemprop="url">
+          <a class="post-title-link" href="/2016/09835121d0.html" itemprop="url">
             <span itemprop="name">系统地学习正则表达式(一)：基础篇</span>
           </a>
       </div>
@@ -302,7 +330,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/09/10/%E8%B6%85%E8%AF%A6%E7%BB%86%E7%9A%84Xcode%E4%BB%A3%E7%A0%81%E6%A0%BC%E5%BC%8F%E5%8C%96%E6%95%99%E7%A8%8B%EF%BC%8C%E5%8F%AF%E8%87%AA%E5%AE%9A%E4%B9%89%E6%A0%B7%E5%BC%8F/" itemprop="url">
+          <a class="post-title-link" href="/2016/099de00e69.html" itemprop="url">
             <span itemprop="name">超详细的Xcode代码格式化教程，可自定义样式</span>
           </a>
       </div>
@@ -322,7 +350,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/09/08/%E7%9C%8B%E4%B8%80%E9%81%8D%E5%B0%B1%E4%BC%9A%E7%9A%84CocoaPods%E7%9A%84%E5%AE%89%E8%A3%85%E5%92%8C%E4%BD%BF%E7%94%A8%E6%95%99%E7%A8%8B/" itemprop="url">
+          <a class="post-title-link" href="/2016/09750b7a66.html" itemprop="url">
             <span itemprop="name">看一遍就会的CocoaPods的安装和使用教程</span>
           </a>
       </div>
@@ -342,7 +370,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/09/04/UIImage%E5%9B%BE%E7%89%87%E5%A4%84%E7%90%86%EF%BC%8C%E6%97%8B%E8%BD%AC%E3%80%81%E6%88%AA%E5%8F%96%E3%80%81%E5%B9%B3%E9%93%BA%E3%80%81%E7%BC%A9%E6%94%BE%E7%AD%89%E6%93%8D%E4%BD%9C%EF%BC%8C%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/" itemprop="url">
+          <a class="post-title-link" href="/2016/095d76ea11.html" itemprop="url">
             <span itemprop="name">UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</span>
           </a>
       </div>
@@ -362,7 +390,7 @@
       </div>
 
       <div class="post-title">
-          <a class="post-title-link" href="/2016/08/26/Xcode%E6%96%B9%E4%BE%BF%E5%BC%80%E5%8F%91%E7%9A%84%E6%8F%92%E4%BB%B6%E6%8E%A8%E8%8D%90/" itemprop="url">
+          <a class="post-title-link" href="/2016/087d8ef64b.html" itemprop="url">
             <span itemprop="name">Xcode方便开发的插件推荐</span>
           </a>
       </div>
@@ -447,7 +475,7 @@
       <div class="site-state-item site-state-posts">
           <a href="/archives/">
         
-          <span class="site-state-item-count">24</span>
+          <span class="site-state-item-count">25</span>
           <span class="site-state-item-name">日志</span>
         </a>
       </div>
@@ -460,7 +488,7 @@
       <div class="site-state-item site-state-tags">
             <a href="/tags/">
           
-        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-count">20</span>
         <span class="site-state-item-name">标签</span></a>
       </div>
   </nav>
@@ -472,9 +500,25 @@
       <span class="links-of-author-item">
         <a href="mailto:lisong.coder@gmail.com" title="E-Mail → mailto:lisong.coder@gmail.com" rel="noopener" target="_blank"><i class="fa fa-envelope fa-fw"></i>E-Mail</a>
       </span>
+      <span class="links-of-author-item">
+        <a href="https://jq.qq.com/?_wv=1027&k=eku48u8p" title="iOS群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;eku48u8p" rel="noopener" target="_blank"><i class="fab fa-apple fa-fw"></i>iOS群</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://jq.qq.com/?_wv=1027&k=9KRFLBd3" title="Python群 → https:&#x2F;&#x2F;jq.qq.com&#x2F;?_wv&#x3D;1027&amp;k&#x3D;9KRFLBd3" rel="noopener" target="_blank"><i class="fab fa-python fa-fw"></i>Python群</a>
+      </span>
   </div>
 
 
+  <div class="links-of-blogroll motion-element">
+    <div class="links-of-blogroll-title"><i class="fa fa-link fa-fw"></i>
+      友情链接
+    </div>
+    <ul class="links-of-blogroll-list">
+        <li class="links-of-blogroll-item">
+          <a href="https://www.jianshu.com/u/c5fc709d0cc8" title="https:&#x2F;&#x2F;www.jianshu.com&#x2F;u&#x2F;c5fc709d0cc8" rel="noopener" target="_blank">我的简书</a>
+        </li>
+    </ul>
+  </div>
 
       </div>
 
@@ -500,6 +544,16 @@
     <i class="fa fa-heart"></i>
   </span>
   <span class="author" itemprop="copyrightHolder">小松哥</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-chart-area"></i>
+    </span>
+    <span title="站点总字数">114k</span>
+    <span class="post-meta-divider">|</span>
+    <span class="post-meta-item-icon">
+      <i class="fa fa-coffee"></i>
+    </span>
+    <span title="站点阅读时长">1:44</span>
 </div>
 
         
@@ -536,6 +590,10 @@
   
 
 
+
+
+  
+<script src="/js/local-search.js"></script>
 
 
 
