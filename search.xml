@@ -80,6 +80,57 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux使用相关的一些东西</title>
+    <url>/2021/0391370673.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用<a href="https://www.debian.org/">Debian</a>，所以这些基本上都是在Debian环境下的。</p>
+<span id="more"></span>
+
+<h1 id="启用root帐户登录ssh"><a href="#启用root帐户登录ssh" class="headerlink" title="启用root帐户登录ssh"></a>启用root帐户登录ssh</h1><p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 <code>/etc/ssh/sshd_config</code> ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">PermitRootLogin prohibit-password</span></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
+
+<p>然后重启ssh服务，就可以root用户登录ssh了：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
+<h1 id="设置或者修改时区"><a href="#设置或者修改时区" class="headerlink" title="设置或者修改时区"></a>设置或者修改时区</h1><p>检查当前时区：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure>
+
+<p>修改时区：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone your_time_zone</span><br></pre></td></tr></table></figure>
+
+<p>例如修改为Shanghai:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone Asia/Shanghai</span><br></pre></td></tr></table></figure>
+
+<p>至于具体有哪些时区可用呢，可以用 <code>timedatectl list-timezones</code> 命令查看或者去 <code>/usr/share/zoneinfo</code> 目录里面看。</p>
+<h1 id="自定义开机启动项"><a href="#自定义开机启动项" class="headerlink" title="自定义开机启动项"></a>自定义开机启动项</h1><p>首先，进入 <code>/etc/init.d</code> 目录中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/init.d/</span><br></pre></td></tr></table></figure>
+
+<p>你会发现里面已经有一些启动项了。然后我们创建一个自己的：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim MyTest</span><br></pre></td></tr></table></figure>
+
+<p>在里面输入以下内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## BEGIN INIT INFO</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Provides: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Start: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Stop: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Start: 2 3 4 5</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Stop: 0 1 6</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Short-Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## END INIT INFO</span></span></span><br><span class="line"></span><br><span class="line">echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</span><br><span class="line"></span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
+
+<p>这个是一个大概的模板，其中 <code>echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</code> 部分就是系统启动时要执行的命令，意思在指定文件里写入一句话。你可以在根据自己的需要写一些命令。</p>
+<p>写完保存之后，给文件加上可执行的属性：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod +x MyTest</span><br></pre></td></tr></table></figure>
+
+<p>然后，将脚本加入开机启动项中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d MyTest defaults</span><br></pre></td></tr></table></figure>
+
+<p>如果需要删除这个开机启动项，则使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d -f MyTest remove</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Debian</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Hexo搭建个人博客并部署到Gitlab和GitHub</title>
     <url>/2021/02d52b09e8.html</url>
     <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>之前在一些平台写过一段时间博客，后来由于各种原因就慢慢荒废了；最近心血来潮想要把一些东西记录下来，所以决定搭建一个博客玩玩。</p>
@@ -135,57 +186,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Linux使用相关的一些东西</title>
-    <url>/2021/0391370673.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用<a href="https://www.debian.org/">Debian</a>，所以这些基本上都是在Debian环境下的。</p>
-<span id="more"></span>
-
-<h1 id="启用root帐户登录ssh"><a href="#启用root帐户登录ssh" class="headerlink" title="启用root帐户登录ssh"></a>启用root帐户登录ssh</h1><p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 <code>/etc/ssh/sshd_config</code> ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">PermitRootLogin prohibit-password</span></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
-
-<p>然后重启ssh服务，就可以root用户登录ssh了：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
-
-<h1 id="设置或者修改时区"><a href="#设置或者修改时区" class="headerlink" title="设置或者修改时区"></a>设置或者修改时区</h1><p>检查当前时区：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure>
-
-<p>修改时区：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone your_time_zone</span><br></pre></td></tr></table></figure>
-
-<p>例如修改为Shanghai:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone Asia/Shanghai</span><br></pre></td></tr></table></figure>
-
-<p>至于具体有哪些时区可用呢，可以用 <code>timedatectl list-timezones</code> 命令查看或者去 <code>/usr/share/zoneinfo</code> 目录里面看。</p>
-<h1 id="自定义开机启动项"><a href="#自定义开机启动项" class="headerlink" title="自定义开机启动项"></a>自定义开机启动项</h1><p>首先，进入 <code>/etc/init.d</code> 目录中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/init.d/</span><br></pre></td></tr></table></figure>
-
-<p>你会发现里面已经有一些启动项了。然后我们创建一个自己的：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim MyTest</span><br></pre></td></tr></table></figure>
-
-<p>在里面输入以下内容：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## BEGIN INIT INFO</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Provides: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Start: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Stop: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Start: 2 3 4 5</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Stop: 0 1 6</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Short-Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## END INIT INFO</span></span></span><br><span class="line"></span><br><span class="line">echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</span><br><span class="line"></span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
-
-<p>这个是一个大概的模板，其中 <code>echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</code> 部分就是系统启动时要执行的命令，意思在指定文件里写入一句话。你可以在根据自己的需要写一些命令。</p>
-<p>写完保存之后，给文件加上可执行的属性：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod +x MyTest</span><br></pre></td></tr></table></figure>
-
-<p>然后，将脚本加入开机启动项中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d MyTest defaults</span><br></pre></td></tr></table></figure>
-
-<p>如果需要删除这个开机启动项，则使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d -f MyTest remove</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Debian</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac上好用的软件推荐，持续更新</title>
     <url>/2021/04e9bf20fb.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -234,6 +234,10 @@
 <p><img src="/images/GitNote.jpeg" alt="GitNote"></p>
 <h1 id="Google-Drive-File-Stream"><a href="#Google-Drive-File-Stream" class="headerlink" title="Google Drive File Stream"></a><a href="https://www.google.com/intl/zh-CN_ALL/drive/download/">Google Drive File Stream</a></h1><p>谷歌硬盘同步工具，可根据不同的文件夹设置在线还是离线使用。</p>
 <p><img src="/images/GoogleDriveFileStream.png" alt="GoogleDriveFileStream"></p>
+<h1 id="Typora"><a href="#Typora" class="headerlink" title="Typora"></a><a href="https://typora.io/">Typora</a></h1><p>Typora 是一款支持实时预览的 Markdown 文本编辑器</p>
+<p><img src="https://typora.io/img/new/lists.png" alt="Typora"></p>
+<h1 id="marktext"><a href="#marktext" class="headerlink" title="marktext"></a><a href="https://github.com/marktext/marktext">marktext</a></h1><p>一款开源的编写Markdown的工具。</p>
+<p><img src="https://raw.githubusercontent.com/marktext/marktext/develop/docs/marktext.png" alt="marktext"></p>
 ]]></content>
       <categories>
         <category>Mac</category>
@@ -640,48 +644,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS 9 通用链接（Universal Links）</title>
-    <url>/2017/0242f0d4d.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<h1 id="什么是Universal-Links"><a href="#什么是Universal-Links" class="headerlink" title="什么是Universal Links?"></a>什么是Universal Links?</h1><p>在iOS9之前，对于从各种从浏览器、Safari中唤醒APP的需求，我们通常只能使用scheme。但是这种方式需要提前判断系统中是否安装了能够响应此scheme的app，并且这种方式在微信中是被禁用了的。</p>
-<p>Universal Links是iOS9推出的一项功能，使你的应用可以通过传统的HTTP链接来启动APP(如果iOS设备上已经安装了你的app，不管在微信里还是在哪里)， 或者打开网页(iOS设备上没有安装你的app)。</p>
-<p>下面简单说下怎么使用Universal Links，具体的可以看<a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html">官方的说明文档</a></p>
-<span id="more"></span>
-
-<h1 id="怎么使用Universal-Links"><a href="#怎么使用Universal-Links" class="headerlink" title="怎么使用Universal Links"></a>怎么使用Universal Links</h1><p>1.先决条件：你必须有一个域名,且这个域名需要支持https。</p>
-<p>2.需要在开发者中心做配置：找到对应的App ID，在Application Services列表里有Associated Domains一条，把它变为Enabled就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-fc8dfd8dbab131b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置App ID支持Associated Domains"></p>
-<p>3.打开工程配置中的Associated Domains，在其中的Domains中填入你想支持的域名，必须以**applinks:**为前缀。</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-6e3f53186f74a1fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置项目中的Associated Domains"></p>
-<p>4.创建一个内容为json格式的文件，苹果将会在合适的时候，从我们在项目中填入的域名请求这个文件。这个文件名必须为<strong>apple-app-site-association</strong>，没有后缀名，文件内容大概是这样子：</p>
-<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;applinks&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;apps&quot;</span>: [],</span><br><span class="line">        <span class="attr">&quot;details&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">&quot;appID&quot;</span>: <span class="string">&quot;9JA89QQLNQ.com.apple.wwdc&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;paths&quot;</span>: [ <span class="string">&quot;/wwdc/news/&quot;</span>, <span class="string">&quot;/videos/wwdc/2015/*&quot;</span>]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">&quot;appID&quot;</span>: <span class="string">&quot;ABCD1234.com.apple.wwdc&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;paths&quot;</span>: [ <span class="string">&quot;*&quot;</span> ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>说明：</p>
-<blockquote>
-<p>appID：组成方式是 teamId.yourapp’s bundle identifier。如上面的 9JA89QQLNQ就是teamId。登陆开发者中心，在Account - Membership里面可以找到Team ID。</p>
-<p>paths：设定你的app支持的路径列表，只有这些指定的路径的链接，才能被app所处理。星号的写法代表了可识别域名下所有链接。</p>
-</blockquote>
-<p><a href="http://www.jackivers.me/blog/2015/9/17/list-of-universal-link-ios-9-apps">这篇博客</a>里有很多其他公司的例子，可以参考一下。也有可能有的公司的已经不再适用，可以换换其他公司的。</p>
-<p>5.上传该文件到你的域名所对应的根目录或者<code>.well-known</code>目录下，这是为了苹果能获取到你上传的文件。上传完后,自己先访问一下,看看是否能够获取到，当你在浏览器中输入这个文件链接后，应该是直接下载apple-app-site-association文件。</p>
-<h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><p>在iOS设备中的备忘录中输入App能识别的链接，然后直接点击此链接，就会直接跳转到你的app了。或是长按，在出现的弹出菜单中第二项是<code>在’XXX’中打开</code>，这也代表着成功：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-a9c2e6fd884a88e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现菜单"></p>
-<p>或是你将要测试的网址在safari中打开，在出现的网页上方下滑，可以看到有<code>在”XX”应用中打开</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-a7f64aa8f3ad665d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现菜单"></p>
-<p>在微信的网页浏览器中也是可以的，虽然微信屏蔽了所有的scheme方式跳转到其它app，但是Universal Links是由系统直接处理的，微信屏蔽不了，这也就实现了从微信跳转到我们的app。</p>
-<p>苹果为了方便开发者，提供了一个网页来验证我们编写的这个apple-app-site-association是否合法有效，进入<a href="https://search.developer.apple.com/appsearch-validation-tool/">验证网址</a>进行验证：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-67e0333a4815fcf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="验证链接"></p>
-<h1 id="进入app后的处理"><a href="#进入app后的处理" class="headerlink" title="进入app后的处理"></a>进入app后的处理</h1><p>现在用户点击某个链接，直接可以进我们的app了，但是我们的目的是要能够获取到用户进来的链接，根据链接来展示给用户相应的内容。<br>我们需要在工程里的 AppDelegate 里实现方法</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)application:(<span class="built_in">UIApplication</span> *)application continueUserActivity:(<span class="built_in">NSUserActivity</span> *)userActivity restorationHandler:(<span class="keyword">void</span> (^)(<span class="built_in">NSArray</span> * _Nullable))restorationHandler</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ([userActivity.activityType isEqualToString:<span class="built_in">NSUserActivityTypeBrowsingWeb</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSURL</span> *url = userActivity.webpageURL;</span><br><span class="line">        <span class="keyword">if</span> (url是我们希望处理的)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//进行我们的处理</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            [[<span class="built_in">UIApplication</span> sharedApplication] openURL:url];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>前端开发经常面临跨域问题，必须要求跨域，如果不跨域，就不行。<br>只有当前webview的url域名，与跳转目标url域名不一致时，Universal Link 才生效。</p>
-<p>好了先说到这里，如果遇到什么问题可以详细看<a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html">官方的说明文档</a>。</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Universal Links</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOSer都要知道的LLDB介绍与Chisel进阶</title>
     <url>/2019/035053e96d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -792,6 +754,48 @@
       <categories>
         <category>iOS</category>
       </categories>
+  </entry>
+  <entry>
+    <title>iOS 9 通用链接（Universal Links）</title>
+    <url>/2017/0242f0d4d.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<h1 id="什么是Universal-Links"><a href="#什么是Universal-Links" class="headerlink" title="什么是Universal Links?"></a>什么是Universal Links?</h1><p>在iOS9之前，对于从各种从浏览器、Safari中唤醒APP的需求，我们通常只能使用scheme。但是这种方式需要提前判断系统中是否安装了能够响应此scheme的app，并且这种方式在微信中是被禁用了的。</p>
+<p>Universal Links是iOS9推出的一项功能，使你的应用可以通过传统的HTTP链接来启动APP(如果iOS设备上已经安装了你的app，不管在微信里还是在哪里)， 或者打开网页(iOS设备上没有安装你的app)。</p>
+<p>下面简单说下怎么使用Universal Links，具体的可以看<a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html">官方的说明文档</a></p>
+<span id="more"></span>
+
+<h1 id="怎么使用Universal-Links"><a href="#怎么使用Universal-Links" class="headerlink" title="怎么使用Universal Links"></a>怎么使用Universal Links</h1><p>1.先决条件：你必须有一个域名,且这个域名需要支持https。</p>
+<p>2.需要在开发者中心做配置：找到对应的App ID，在Application Services列表里有Associated Domains一条，把它变为Enabled就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-fc8dfd8dbab131b6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置App ID支持Associated Domains"></p>
+<p>3.打开工程配置中的Associated Domains，在其中的Domains中填入你想支持的域名，必须以**applinks:**为前缀。</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-6e3f53186f74a1fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置项目中的Associated Domains"></p>
+<p>4.创建一个内容为json格式的文件，苹果将会在合适的时候，从我们在项目中填入的域名请求这个文件。这个文件名必须为<strong>apple-app-site-association</strong>，没有后缀名，文件内容大概是这样子：</p>
+<figure class="highlight json"><table><tr><td class="code"><pre><span class="line">&#123;</span><br><span class="line">    <span class="attr">&quot;applinks&quot;</span>: &#123;</span><br><span class="line">        <span class="attr">&quot;apps&quot;</span>: [],</span><br><span class="line">        <span class="attr">&quot;details&quot;</span>: [</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">&quot;appID&quot;</span>: <span class="string">&quot;9JA89QQLNQ.com.apple.wwdc&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;paths&quot;</span>: [ <span class="string">&quot;/wwdc/news/&quot;</span>, <span class="string">&quot;/videos/wwdc/2015/*&quot;</span>]</span><br><span class="line">            &#125;,</span><br><span class="line">            &#123;</span><br><span class="line">                <span class="attr">&quot;appID&quot;</span>: <span class="string">&quot;ABCD1234.com.apple.wwdc&quot;</span>,</span><br><span class="line">                <span class="attr">&quot;paths&quot;</span>: [ <span class="string">&quot;*&quot;</span> ]</span><br><span class="line">            &#125;</span><br><span class="line">        ]</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>说明：</p>
+<blockquote>
+<p>appID：组成方式是 teamId.yourapp’s bundle identifier。如上面的 9JA89QQLNQ就是teamId。登陆开发者中心，在Account - Membership里面可以找到Team ID。</p>
+<p>paths：设定你的app支持的路径列表，只有这些指定的路径的链接，才能被app所处理。星号的写法代表了可识别域名下所有链接。</p>
+</blockquote>
+<p><a href="http://www.jackivers.me/blog/2015/9/17/list-of-universal-link-ios-9-apps">这篇博客</a>里有很多其他公司的例子，可以参考一下。也有可能有的公司的已经不再适用，可以换换其他公司的。</p>
+<p>5.上传该文件到你的域名所对应的根目录或者<code>.well-known</code>目录下，这是为了苹果能获取到你上传的文件。上传完后,自己先访问一下,看看是否能够获取到，当你在浏览器中输入这个文件链接后，应该是直接下载apple-app-site-association文件。</p>
+<h1 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h1><p>在iOS设备中的备忘录中输入App能识别的链接，然后直接点击此链接，就会直接跳转到你的app了。或是长按，在出现的弹出菜单中第二项是<code>在’XXX’中打开</code>，这也代表着成功：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-a9c2e6fd884a88e8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现菜单"></p>
+<p>或是你将要测试的网址在safari中打开，在出现的网页上方下滑，可以看到有<code>在”XX”应用中打开</code>：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-a7f64aa8f3ad665d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="出现菜单"></p>
+<p>在微信的网页浏览器中也是可以的，虽然微信屏蔽了所有的scheme方式跳转到其它app，但是Universal Links是由系统直接处理的，微信屏蔽不了，这也就实现了从微信跳转到我们的app。</p>
+<p>苹果为了方便开发者，提供了一个网页来验证我们编写的这个apple-app-site-association是否合法有效，进入<a href="https://search.developer.apple.com/appsearch-validation-tool/">验证网址</a>进行验证：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-67e0333a4815fcf0.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="验证链接"></p>
+<h1 id="进入app后的处理"><a href="#进入app后的处理" class="headerlink" title="进入app后的处理"></a>进入app后的处理</h1><p>现在用户点击某个链接，直接可以进我们的app了，但是我们的目的是要能够获取到用户进来的链接，根据链接来展示给用户相应的内容。<br>我们需要在工程里的 AppDelegate 里实现方法</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)application:(<span class="built_in">UIApplication</span> *)application continueUserActivity:(<span class="built_in">NSUserActivity</span> *)userActivity restorationHandler:(<span class="keyword">void</span> (^)(<span class="built_in">NSArray</span> * _Nullable))restorationHandler</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ([userActivity.activityType isEqualToString:<span class="built_in">NSUserActivityTypeBrowsingWeb</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSURL</span> *url = userActivity.webpageURL;</span><br><span class="line">        <span class="keyword">if</span> (url是我们希望处理的)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//进行我们的处理</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">else</span></span><br><span class="line">        &#123;</span><br><span class="line">            [[<span class="built_in">UIApplication</span> sharedApplication] openURL:url];</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h1 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h1><p>前端开发经常面临跨域问题，必须要求跨域，如果不跨域，就不行。<br>只有当前webview的url域名，与跳转目标url域名不一致时，Universal Link 才生效。</p>
+<p>好了先说到这里，如果遇到什么问题可以详细看<a href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html">官方的说明文档</a>。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Universal Links</tag>
+      </tags>
   </entry>
   <entry>
     <title>iOS中使用Fastlane实现自动化打包和发布</title>
@@ -1238,6 +1242,7 @@
 <li><a href="https://theme-next.iissnan.com/">NexT</a> ：NexT 使用文档</li>
 <li><a href="https://leetcode-cn.com/">leetcode</a> ：练习算法</li>
 <li><a href="https://app.quicktype.io/">quicktype</a> ： json解析为多种语言</li>
+<li><a href="https://opensource.tencent.com/projects">腾讯开源项目</a> </li>
 <li></li>
 </ul>
 ]]></content>
