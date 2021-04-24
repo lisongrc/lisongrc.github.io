@@ -228,14 +228,14 @@
 
   
   <url>
-    <loc>https://blog.lisong.pro/tags/CocoaLumberjack/</loc>
+    <loc>https://blog.lisong.pro/tags/Chrome/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.lisong.pro/tags/Chrome/</loc>
+    <loc>https://blog.lisong.pro/tags/CocoaLumberjack/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -263,20 +263,6 @@
   </url>
   
   <url>
-    <loc>https://blog.lisong.pro/tags/Xcode/</loc>
-    <lastmod>2021-04-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.lisong.pro/tags/appledoc/</loc>
-    <lastmod>2021-04-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.lisong.pro/tags/%E8%BD%AF%E4%BB%B6/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
@@ -291,6 +277,20 @@
   </url>
   
   <url>
+    <loc>https://blog.lisong.pro/tags/Xcode/</loc>
+    <lastmod>2021-04-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.lisong.pro/tags/appledoc/</loc>
+    <lastmod>2021-04-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.lisong.pro/tags/runtime/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
@@ -298,14 +298,14 @@
   </url>
   
   <url>
-    <loc>https://blog.lisong.pro/tags/UIImage/</loc>
+    <loc>https://blog.lisong.pro/tags/UITableView/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.lisong.pro/tags/UITableView/</loc>
+    <loc>https://blog.lisong.pro/tags/UIImage/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -361,6 +361,13 @@
   </url>
   
   <url>
+    <loc>https://blog.lisong.pro/tags/%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2021-04-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.lisong.pro/tags/regular/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
@@ -369,13 +376,6 @@
   
   <url>
     <loc>https://blog.lisong.pro/tags/CocoaPods/</loc>
-    <lastmod>2021-04-24</lastmod>
-    <changefreq>daily</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.lisong.pro/tags/%E7%BD%91%E7%AB%99/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
@@ -398,14 +398,14 @@
 
   
   <url>
-    <loc>https://blog.lisong.pro/categories/iOS/</loc>
+    <loc>https://blog.lisong.pro/categories/Mac/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://blog.lisong.pro/categories/Mac/</loc>
+    <loc>https://blog.lisong.pro/categories/iOS/</loc>
     <lastmod>2021-04-24</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

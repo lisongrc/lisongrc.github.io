@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>Chrome好用的插件，持续更新</title>
+    <url>/2021/045dc07d30.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>本文总结一些Chrome上好用的插件们。</p>
+<span id="more"></span>
+
+<h1 id="扩展管理器（Extension-Manager）"><a href="#扩展管理器（Extension-Manager）" class="headerlink" title="扩展管理器（Extension Manager）"></a><a href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco">扩展管理器（Extension Manager）</a></h1><p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。</p>
+<p><img src="https://lh3.googleusercontent.com/i1quYLmDyiU7N5ES24UQEj74GRSnnMn7eBRwXLBfUK6zwaqWDzmmRAPH6YI7ih0aVKXdH9giVh5W7OjDs4sGdor_=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a><a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></h1><p>AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！</p>
+<h1 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></h1><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。</p>
+<p><img src="https://lh3.googleusercontent.com/MhMg9fwCD5qVhqcSCRfhIYqz5_xUfrziMtZ-Vtwlb2BT2wFkFuy_CWGtc9Gx4GtzO6qP3FTzCXy3jN-PqOgBlPbYqA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Awesome-Screenshot"><a href="#Awesome-Screenshot" class="headerlink" title="Awesome Screenshot"></a><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj">Awesome Screenshot</a></h1><p>截图和录屏2合1的工具，支持截取整个页面，快速分享屏幕。</p>
+<h1 id="JSON-handle"><a href="#JSON-handle" class="headerlink" title="JSON-handle"></a><a href="https://chrome.google.com/webstore/detail/json-handle/iahnhfdhidomcpggpaimmmahffihkfnj">JSON-handle</a></h1><p>对JSON格式的内容进行浏览和编辑，以树形图样式展现JSON文档，并可实时编辑。</p>
+<p><img src="https://lh3.googleusercontent.com/Q7b4wi7gG4SJhFxT3n633dFHVcm1XNn7UUA87bblaUoT32aUQrn6VygY_vzH7W6yE2of4ypEzrJetlO9LDHzFzucoA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="恢复关闭的标签"><a href="#恢复关闭的标签" class="headerlink" title="恢复关闭的标签"></a><a href="https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E7%9A%84%E6%A0%87%E7%AD%BE/nhdghhbkaaohocakiepiogjhlllekfma">恢复关闭的标签</a></h1><p>只要点击弹窗可让您轻而易举的撤销关闭的标签！</p>
+<p><img src="https://lh3.googleusercontent.com/MWOJm5K3Ur5f0ZN1yp_O-wK1SMSwMVYZd4pEbDlz4fy3sy-a-n3GaM4UThgkzIMdDMSJ1j9HJPL5QqNCd0Ixw8lhtLw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="工具喵"><a href="#工具喵" class="headerlink" title="工具喵"></a><a href="https://chrome.google.com/webstore/detail/%E5%B7%A5%E5%85%B7%E5%96%B5/coppgeobilocdhiclhgmadabblhfjgpm">工具喵</a></h1><p>工具喵（开发常用工具）：Unix时间戳、URL编码/解码、IP地址查询、MD5加密、BASE64编码/解码、随机字符串</p>
+<p><img src="https://lh3.googleusercontent.com/HZuYXNH40knDyCi7aYg_r2Uwq2mNfHUpSqFtLuYtvZ9clPmR_XX3f0JPPu6r3VwBD0vBFmutzjLgfGQ9mIF0M96-Rw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Speedtest-by-Ookla"><a href="#Speedtest-by-Ookla" class="headerlink" title="Speedtest by Ookla"></a><a href="https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh">Speedtest by Ookla</a></h1><p>测试网络表现和网站加载速度</p>
+<p><img src="https://lh3.googleusercontent.com/XL7wsubp9oQ6UoHKaoFv_XKTrVWIsQwTXupHytkb8Wv7qtCg6lWJjKXFW6SupavIyD-KqXSzREQM_xGLiPhcYbtDlA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a><a href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus</a></h1><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频/音频和内容专辑。</p>
+<p><img src="https://lh3.googleusercontent.com/Ggd8q0G7oLNkaBMH5ZpBOUQOSh6xUttQkQPXJlwcAWJH89-NOjj1yRJZT0E-Os3bEGo-MMnoNuDDgwQudFpV0PWwLg=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Image-Downloader"><a href="#Image-Downloader" class="headerlink" title="Image Downloader"></a><a href="https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj">Image Downloader</a></h1><p>显示和下载一个网页上的图片们</p>
+<p><img src="https://lh3.googleusercontent.com/LMhuL15xpcXQsblr8OJIcIh0GGqElLqYq1SPn4Pt3DG6FSJQz0Vh8gD88mzHA8Bhrlcb5Kd7wGvCv7Tuh6AkzYDrD-M=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="GIPHY-for-Chrome"><a href="#GIPHY-for-Chrome" class="headerlink" title="GIPHY for Chrome"></a><a href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi">GIPHY for Chrome</a></h1><p>搜索gif图片</p>
+<p><img src="https://lh3.googleusercontent.com/l_kDiZth-ROWbXLKLTN0Vxe7ID69uOBMVYGTv7RCM8dzX6UTsqAPkjfKmPygZ71legxtUGV_hC6oPxVsU5GcLKP1Sg=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Octotree-GitHub-code-tree"><a href="#Octotree-GitHub-code-tree" class="headerlink" title="Octotree - GitHub code tree"></a><a href="https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc">Octotree - GitHub code tree</a></h1><p>更方便地浏览Github的代码</p>
+<p><img src="https://lh3.googleusercontent.com/1EP4WO0Y8yCHR3k_YohUBvlZuKmVsaV8jhii3YpRxytaFlLKVBIxckIUw9iZcU6H4MhqLmtgFINmJx3xGE1FPlHl6bo=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Native-HLS-Playback"><a href="#Native-HLS-Playback" class="headerlink" title="Native HLS Playback"></a><a href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof">Native HLS Playback</a></h1><p>播放m3u8视频</p>
+<p><img src="https://lh3.googleusercontent.com/A4jwtVSlIjDNjF0DhASdTXvSJzdIuHzSMnJwE2qZudPuPqzVYiTHg_6t0uXm920cIlQP1OeP8p8m4Rik_1qhH7u4ig=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="购物党自动比价工具"><a href="#购物党自动比价工具" class="headerlink" title="购物党自动比价工具"></a><a href="https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah">购物党自动比价工具</a></h1><p>浏览商品页面时，自动查询180天历史价格、比较同款商品的全网最低价、提示促销和隐藏优惠券、一旦降价还能通过微信提醒你，海淘、二手房和Steam游戏也能比价！</p>
+<p><img src="https://lh3.googleusercontent.com/jAQ34Jca1rZH3XRyI5G0k6xzJDzt75dfNOkrS-edfeyjfpP0lfGG2w6BACobyyjNlYG-lGCt2i-9i830LKiaVIhsFw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a><a href="https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></h1><p>在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源。</p>
+<p><img src="https://lh3.googleusercontent.com/eqXFbVdPoGwnBDRsAtUiaQ0Mzijt6_bpBLmHE7yOBRjCjTWheH806Pw7m-fSsPWVvBt-KMP2iQPthhReUUc0910q=w640-h400-e365-rj-sc0x00ffffff"></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Chrome</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>CocoaLumberjack：简单好用的Log库</title>
     <url>/2017/01269a2739.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -48,50 +92,6 @@
       </categories>
       <tags>
         <tag>CocoaLumberjack</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Chrome好用的插件，持续更新</title>
-    <url>/2021/045dc07d30.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>本文总结一些Chrome上好用的插件们。</p>
-<span id="more"></span>
-
-<h1 id="扩展管理器（Extension-Manager）"><a href="#扩展管理器（Extension-Manager）" class="headerlink" title="扩展管理器（Extension Manager）"></a><a href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco">扩展管理器（Extension Manager）</a></h1><p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。</p>
-<p><img src="https://lh3.googleusercontent.com/i1quYLmDyiU7N5ES24UQEj74GRSnnMn7eBRwXLBfUK6zwaqWDzmmRAPH6YI7ih0aVKXdH9giVh5W7OjDs4sGdor_=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a><a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></h1><p>AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！</p>
-<h1 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></h1><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。</p>
-<p><img src="https://lh3.googleusercontent.com/MhMg9fwCD5qVhqcSCRfhIYqz5_xUfrziMtZ-Vtwlb2BT2wFkFuy_CWGtc9Gx4GtzO6qP3FTzCXy3jN-PqOgBlPbYqA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Awesome-Screenshot"><a href="#Awesome-Screenshot" class="headerlink" title="Awesome Screenshot"></a><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj">Awesome Screenshot</a></h1><p>截图和录屏2合1的工具，支持截取整个页面，快速分享屏幕。</p>
-<h1 id="JSON-handle"><a href="#JSON-handle" class="headerlink" title="JSON-handle"></a><a href="https://chrome.google.com/webstore/detail/json-handle/iahnhfdhidomcpggpaimmmahffihkfnj">JSON-handle</a></h1><p>对JSON格式的内容进行浏览和编辑，以树形图样式展现JSON文档，并可实时编辑。</p>
-<p><img src="https://lh3.googleusercontent.com/Q7b4wi7gG4SJhFxT3n633dFHVcm1XNn7UUA87bblaUoT32aUQrn6VygY_vzH7W6yE2of4ypEzrJetlO9LDHzFzucoA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="恢复关闭的标签"><a href="#恢复关闭的标签" class="headerlink" title="恢复关闭的标签"></a><a href="https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E7%9A%84%E6%A0%87%E7%AD%BE/nhdghhbkaaohocakiepiogjhlllekfma">恢复关闭的标签</a></h1><p>只要点击弹窗可让您轻而易举的撤销关闭的标签！</p>
-<p><img src="https://lh3.googleusercontent.com/MWOJm5K3Ur5f0ZN1yp_O-wK1SMSwMVYZd4pEbDlz4fy3sy-a-n3GaM4UThgkzIMdDMSJ1j9HJPL5QqNCd0Ixw8lhtLw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="工具喵"><a href="#工具喵" class="headerlink" title="工具喵"></a><a href="https://chrome.google.com/webstore/detail/%E5%B7%A5%E5%85%B7%E5%96%B5/coppgeobilocdhiclhgmadabblhfjgpm">工具喵</a></h1><p>工具喵（开发常用工具）：Unix时间戳、URL编码/解码、IP地址查询、MD5加密、BASE64编码/解码、随机字符串</p>
-<p><img src="https://lh3.googleusercontent.com/HZuYXNH40knDyCi7aYg_r2Uwq2mNfHUpSqFtLuYtvZ9clPmR_XX3f0JPPu6r3VwBD0vBFmutzjLgfGQ9mIF0M96-Rw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Speedtest-by-Ookla"><a href="#Speedtest-by-Ookla" class="headerlink" title="Speedtest by Ookla"></a><a href="https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh">Speedtest by Ookla</a></h1><p>测试网络表现和网站加载速度</p>
-<p><img src="https://lh3.googleusercontent.com/XL7wsubp9oQ6UoHKaoFv_XKTrVWIsQwTXupHytkb8Wv7qtCg6lWJjKXFW6SupavIyD-KqXSzREQM_xGLiPhcYbtDlA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a><a href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus</a></h1><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频/音频和内容专辑。</p>
-<p><img src="https://lh3.googleusercontent.com/Ggd8q0G7oLNkaBMH5ZpBOUQOSh6xUttQkQPXJlwcAWJH89-NOjj1yRJZT0E-Os3bEGo-MMnoNuDDgwQudFpV0PWwLg=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Image-Downloader"><a href="#Image-Downloader" class="headerlink" title="Image Downloader"></a><a href="https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj">Image Downloader</a></h1><p>显示和下载一个网页上的图片们</p>
-<p><img src="https://lh3.googleusercontent.com/LMhuL15xpcXQsblr8OJIcIh0GGqElLqYq1SPn4Pt3DG6FSJQz0Vh8gD88mzHA8Bhrlcb5Kd7wGvCv7Tuh6AkzYDrD-M=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="GIPHY-for-Chrome"><a href="#GIPHY-for-Chrome" class="headerlink" title="GIPHY for Chrome"></a><a href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi">GIPHY for Chrome</a></h1><p>搜索gif图片</p>
-<p><img src="https://lh3.googleusercontent.com/l_kDiZth-ROWbXLKLTN0Vxe7ID69uOBMVYGTv7RCM8dzX6UTsqAPkjfKmPygZ71legxtUGV_hC6oPxVsU5GcLKP1Sg=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Octotree-GitHub-code-tree"><a href="#Octotree-GitHub-code-tree" class="headerlink" title="Octotree - GitHub code tree"></a><a href="https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc">Octotree - GitHub code tree</a></h1><p>更方便地浏览Github的代码</p>
-<p><img src="https://lh3.googleusercontent.com/1EP4WO0Y8yCHR3k_YohUBvlZuKmVsaV8jhii3YpRxytaFlLKVBIxckIUw9iZcU6H4MhqLmtgFINmJx3xGE1FPlHl6bo=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Native-HLS-Playback"><a href="#Native-HLS-Playback" class="headerlink" title="Native HLS Playback"></a><a href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof">Native HLS Playback</a></h1><p>播放m3u8视频</p>
-<p><img src="https://lh3.googleusercontent.com/A4jwtVSlIjDNjF0DhASdTXvSJzdIuHzSMnJwE2qZudPuPqzVYiTHg_6t0uXm920cIlQP1OeP8p8m4Rik_1qhH7u4ig=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="购物党自动比价工具"><a href="#购物党自动比价工具" class="headerlink" title="购物党自动比价工具"></a><a href="https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah">购物党自动比价工具</a></h1><p>浏览商品页面时，自动查询180天历史价格、比较同款商品的全网最低价、提示促销和隐藏优惠券、一旦降价还能通过微信提醒你，海淘、二手房和Steam游戏也能比价！</p>
-<p><img src="https://lh3.googleusercontent.com/jAQ34Jca1rZH3XRyI5G0k6xzJDzt75dfNOkrS-edfeyjfpP0lfGG2w6BACobyyjNlYG-lGCt2i-9i830LKiaVIhsFw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a><a href="https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></h1><p>在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源。</p>
-<p><img src="https://lh3.googleusercontent.com/eqXFbVdPoGwnBDRsAtUiaQ0Mzijt6_bpBLmHE7yOBRjCjTWheH806Pw7m-fSsPWVvBt-KMP2iQPthhReUUc0910q=w640-h400-e365-rj-sc0x00ffffff"></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Chrome</tag>
       </tags>
   </entry>
   <entry>
@@ -179,61 +179,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Objective-C自动生成文档工具:appledoc</title>
-    <url>/2016/12db31073b.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。</p>
-<p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。</p>
-<p>经过查找，比较大众的有三个：</p>
-<span id="more"></span>
-
-<blockquote>
-<p><a href="http://www.stack.nl/~dimitri/doxygen/index.html">doxygen</a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。</p>
-<p><a href="http://developer.apple.com/opensource/tools/headerdoc.html">headdoc</a> ：是 Xcode 自带的文档生成工具。在安装完 Xcode 后，就可以用命令行来生成对应的文档。不过它只生成以<code>/*! */</code>的格式的注释。不兼容 <code>/** */</code>格式的注释</p>
-<p><a href="http://gentlebytes.com/appledoc/">appledoc</a>:  <a href="https://github.com/tomaz/appledoc">Github地址</a> ，适于生成html文档和xcode帮助文档（docset）。可以兼容 <code>/** */</code>格式，也可以兼容 <code>/*! */</code>格式的注释。</p>
-</blockquote>
-<p>我感觉appledoc是最好的，所以在这里，我只介绍一下appledoc的使用，有兴趣的童鞋也可以研究下其他两种。</p>
-<h1 id="appledoc的安装"><a href="#appledoc的安装" class="headerlink" title="appledoc的安装"></a>appledoc的安装</h1><p>第一种：打开终端，输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git://github.com/tomaz/appledoc.git</span><br><span class="line">cd appledoc</span><br><span class="line">sudo sh install-appledoc.sh</span><br></pre></td></tr></table></figure>
-<p>第二种：如果你装了homebrew，打开终端，输入以下命令：</p>
-<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">brew install appledoc</span><br></pre></td></tr></table></figure>
-
-<h1 id="appledoc的使用"><a href="#appledoc的使用" class="headerlink" title="appledoc的使用"></a>appledoc的使用</h1><p>为了演示appledoc的使用，我在桌面新建了一个工程Test，然后在ViewController类里面加了一些注释：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-54c02d5dfefe5185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.h"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-1b5ceeb31f275a8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.m"></p>
-<p>然后演示appledoc的使用：</p>
-<h2 id="1-在终端中使用"><a href="#1-在终端中使用" class="headerlink" title="1.在终端中使用"></a>1.在终端中使用</h2><p>使用 appledoc 时，打开终端，进入项目所在目录，使用如下命令即可：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --output 输出路径 --project-name 工程名 --project-company 公司名 --company-id 公司ID .</span><br></pre></td></tr></table></figure>
-
-<p>例如我在这里使用的命令是：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
-<p>具体过程如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-38d08feeb2bd337c.gif?imageMogr2/auto-orient/strip" alt="生成Docset"></p>
-<p>appledoc 会扫描当前路径下的所有文件，然后生成好文档放到 doc 目录下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-75315ae0d0d5293b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="doc目录"></p>
-<p>编译出的Docset<br>默认会放在<code>~/Library/Developer/Shared/Documentation/DocSets</code>路径下，里面包含html的文档。首先显示生成的Docset的包内容，然后在Contents/Resources/Documents路径下，双击打开里面的index.html可以在浏览器中查看文档了。</p>
-<p>并且生成的Docset已经安装到Xcode中。重启Xcode后，在<code>Help—Documentation and API Reference</code>菜单下也可以看到生成的文档：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b0a83b380a0550e.gif?imageMogr2/auto-orient/strip" alt="在Xcode中查看"></p>
-<p>如果不想生成Docset，而是想生成html，就需要加一个<code>--no-create-docset</code>，这里我使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
-<p>则会在doc目录下生成一个html文件夹，也是双击里面的index.html就可以在浏览器中查看文档了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4f6f78eb9d0d3911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="html文档"></p>
-<p>你也可以在终端用<code>appledoc --help</code>查看所有可用的参数。详细的信息可以查看官方的文档：<a href="http://gentlebytes.com/appledoc/">http://gentlebytes.com/appledoc/</a></p>
-<h2 id="2-在Xcode里使用"><a href="#2-在Xcode里使用" class="headerlink" title="2.在Xcode里使用"></a>2.在Xcode里使用</h2><p>1.首先创建一个Aggregate类型的Target，取名Document<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dc46a5c77a483ecc.gif?imageMogr2/auto-orient/strip" alt="创建Target"></p>
-<p>2.选择Build Phases，点击左边的小加号，选择New Run Script Phase，建好了以后打开刚刚建立的Run Script，在框里输入命令，命令与终端一样，这里我们输入：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-bdce67e2e0fae042.gif?imageMogr2/auto-orient/strip" alt="添加script"></p>
-<p>3..然后点左上角选择Document，编译一下，成功后文档就生成在doc目录下了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-163ba983a5c4ae7b.gif?imageMogr2/auto-orient/strip" alt="编译生成文档"></p>
-<h1 id="注释样式"><a href="#注释样式" class="headerlink" title="注释样式"></a>注释样式</h1><p>因为appledoc是通过注释生成文档的，下面说说注释的样式，几种常见的有：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">/// Single line comment.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/// Single line comment spreading</span></span><br><span class="line"><span class="comment">/// over multiple lines.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** Single line comment. */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*! Single line comment */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment"> * Single line comment spreading</span></span><br><span class="line"><span class="comment"> * over multiple lines.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment"> Single line comment spreading</span></span><br><span class="line"><span class="comment"> over multiple lines. No star</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
-<p>在Xcode里面，我们可以用<code>command + option + /</code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。<a href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown">更多的注释格式可以看这里</a></p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Xcode</tag>
-        <tag>appledoc</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Mac上好用的软件推荐，持续更新</title>
     <url>/2021/04e9bf20fb.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -255,6 +200,8 @@
 <h1 id="WeiboX"><a href="#WeiboX" class="headerlink" title="WeiboX"></a><a href="http://weiboformac.sinaapp.com/">WeiboX</a></h1><p>几乎是全功能微博，用它看大图和看视频比手机爽多了有木有。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0ec9f1e32458cf40.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="WeiboX.png"></p>
 <h1 id="SwitchHosts"><a href="#SwitchHosts" class="headerlink" title="SwitchHosts"></a><a href="https://github.com/oldj/SwitchHosts">SwitchHosts</a></h1><p>管理hosts文件的工具。</p>
 <p><img src="/images/SwitchHosts.png" alt="SwitchHosts"></p>
+<h1 id="Downie"><a href="#Downie" class="headerlink" title="Downie"></a><a href="https://software.charliemonroe.net/downie/">Downie</a></h1><p>Downie 是 macOS 上的知名视频下载工具，支持全球超过 1000 个在线视频网站的下载</p>
+<p><img src="https://software.charliemonroe.net/img/downie/downie_title.png"></p>
 <h1 id="Snip"><a href="#Snip" class="headerlink" title="Snip"></a><a href="http://www.snip.qq.com/">Snip</a></h1><p>腾讯出品的简单高效的截图工具，可以滚屏截网页全屏，也可以截取完简单编辑图片，例如加箭头、写文字等等。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0b25cdee88bead6d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Snip.png"></p>
 <h1 id="XMind"><a href="#XMind" class="headerlink" title="XMind"></a><a href="http://www.xmindchina.net/">XMind</a></h1><p>思维导图工具，在易用性和灵活性方面引人瞩目。将脑中的源源不断涌现的想法完美的展现出来，其思维导图与其他导图图表等更是简单易用，吸引着人们的眼球。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-e94ea89f48d3167c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="XMind.png"></p>
 <h1 id="imageoptim"><a href="#imageoptim" class="headerlink" title="imageoptim"></a><a href="https://imageoptim.com/mac">imageoptim</a></h1><p>优化图片体积的应用，直接把图片拖进去就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d8ae8f2cdb1ed46c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ImageOptim.png"></p>
@@ -346,6 +293,61 @@
       </tags>
   </entry>
   <entry>
+    <title>Objective-C自动生成文档工具:appledoc</title>
+    <url>/2016/12db31073b.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。</p>
+<p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。</p>
+<p>经过查找，比较大众的有三个：</p>
+<span id="more"></span>
+
+<blockquote>
+<p><a href="http://www.stack.nl/~dimitri/doxygen/index.html">doxygen</a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。</p>
+<p><a href="http://developer.apple.com/opensource/tools/headerdoc.html">headdoc</a> ：是 Xcode 自带的文档生成工具。在安装完 Xcode 后，就可以用命令行来生成对应的文档。不过它只生成以<code>/*! */</code>的格式的注释。不兼容 <code>/** */</code>格式的注释</p>
+<p><a href="http://gentlebytes.com/appledoc/">appledoc</a>:  <a href="https://github.com/tomaz/appledoc">Github地址</a> ，适于生成html文档和xcode帮助文档（docset）。可以兼容 <code>/** */</code>格式，也可以兼容 <code>/*! */</code>格式的注释。</p>
+</blockquote>
+<p>我感觉appledoc是最好的，所以在这里，我只介绍一下appledoc的使用，有兴趣的童鞋也可以研究下其他两种。</p>
+<h1 id="appledoc的安装"><a href="#appledoc的安装" class="headerlink" title="appledoc的安装"></a>appledoc的安装</h1><p>第一种：打开终端，输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">git clone git://github.com/tomaz/appledoc.git</span><br><span class="line">cd appledoc</span><br><span class="line">sudo sh install-appledoc.sh</span><br></pre></td></tr></table></figure>
+<p>第二种：如果你装了homebrew，打开终端，输入以下命令：</p>
+<figure class="highlight sh"><table><tr><td class="code"><pre><span class="line">brew install appledoc</span><br></pre></td></tr></table></figure>
+
+<h1 id="appledoc的使用"><a href="#appledoc的使用" class="headerlink" title="appledoc的使用"></a>appledoc的使用</h1><p>为了演示appledoc的使用，我在桌面新建了一个工程Test，然后在ViewController类里面加了一些注释：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-54c02d5dfefe5185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.h"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-1b5ceeb31f275a8e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="ViewController.m"></p>
+<p>然后演示appledoc的使用：</p>
+<h2 id="1-在终端中使用"><a href="#1-在终端中使用" class="headerlink" title="1.在终端中使用"></a>1.在终端中使用</h2><p>使用 appledoc 时，打开终端，进入项目所在目录，使用如下命令即可：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --output 输出路径 --project-name 工程名 --project-company 公司名 --company-id 公司ID .</span><br></pre></td></tr></table></figure>
+
+<p>例如我在这里使用的命令是：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p>具体过程如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-38d08feeb2bd337c.gif?imageMogr2/auto-orient/strip" alt="生成Docset"></p>
+<p>appledoc 会扫描当前路径下的所有文件，然后生成好文档放到 doc 目录下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-75315ae0d0d5293b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="doc目录"></p>
+<p>编译出的Docset<br>默认会放在<code>~/Library/Developer/Shared/Documentation/DocSets</code>路径下，里面包含html的文档。首先显示生成的Docset的包内容，然后在Contents/Resources/Documents路径下，双击打开里面的index.html可以在浏览器中查看文档了。</p>
+<p>并且生成的Docset已经安装到Xcode中。重启Xcode后，在<code>Help—Documentation and API Reference</code>菜单下也可以看到生成的文档：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3b0a83b380a0550e.gif?imageMogr2/auto-orient/strip" alt="在Xcode中查看"></p>
+<p>如果不想生成Docset，而是想生成html，就需要加一个<code>--no-create-docset</code>，这里我使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p>则会在doc目录下生成一个html文件夹，也是双击里面的index.html就可以在浏览器中查看文档了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4f6f78eb9d0d3911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="html文档"></p>
+<p>你也可以在终端用<code>appledoc --help</code>查看所有可用的参数。详细的信息可以查看官方的文档：<a href="http://gentlebytes.com/appledoc/">http://gentlebytes.com/appledoc/</a></p>
+<h2 id="2-在Xcode里使用"><a href="#2-在Xcode里使用" class="headerlink" title="2.在Xcode里使用"></a>2.在Xcode里使用</h2><p>1.首先创建一个Aggregate类型的Target，取名Document<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dc46a5c77a483ecc.gif?imageMogr2/auto-orient/strip" alt="创建Target"></p>
+<p>2.选择Build Phases，点击左边的小加号，选择New Run Script Phase，建好了以后打开刚刚建立的Run Script，在框里输入命令，命令与终端一样，这里我们输入：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-bdce67e2e0fae042.gif?imageMogr2/auto-orient/strip" alt="添加script"></p>
+<p>3..然后点左上角选择Document，编译一下，成功后文档就生成在doc目录下了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-163ba983a5c4ae7b.gif?imageMogr2/auto-orient/strip" alt="编译生成文档"></p>
+<h1 id="注释样式"><a href="#注释样式" class="headerlink" title="注释样式"></a>注释样式</h1><p>因为appledoc是通过注释生成文档的，下面说说注释的样式，几种常见的有：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">/// Single line comment.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/// Single line comment spreading</span></span><br><span class="line"><span class="comment">/// over multiple lines.</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** Single line comment. */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*! Single line comment */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment"> * Single line comment spreading</span></span><br><span class="line"><span class="comment"> * over multiple lines.</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/** </span></span><br><span class="line"><span class="comment"> Single line comment spreading</span></span><br><span class="line"><span class="comment"> over multiple lines. No star</span></span><br><span class="line"><span class="comment"> */</span></span><br></pre></td></tr></table></figure>
+<p>在Xcode里面，我们可以用<code>command + option + /</code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。<a href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown">更多的注释格式可以看这里</a></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Xcode</tag>
+        <tag>appledoc</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Runtime的运用和减少应用崩溃</title>
     <url>/2017/06dfe7f658.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -415,6 +417,54 @@
       </categories>
       <tags>
         <tag>runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title>
+    <url>/2016/1055050fbf.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。</p>
+<p>先奉上这篇文章的demo的Github地址：<a href="https://github.com/lisongrc/UITableViewCellHeightDemo">UITableViewCellHeightDemo</a>。大家可以下载下来和文章配合看。</p>
+<span id="more"></span>
+
+<h1 id="cell高度计算的历史"><a href="#cell高度计算的历史" class="headerlink" title="cell高度计算的历史"></a>cell高度计算的历史</h1><p>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView heightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath;</span><br></pre></td></tr></table></figure>
+<p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。</p>
+<p>后来也有一些人写了一些第三方去解决这个问题，例如<a href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell">UITableView-FDTemplateLayoutCell</a>。只要给cell自上而下加好约束，它就可以帮我们去算cell的高度并且可以缓存，省去了我们自己写计算代码的成本。具体可以进链接里面看看它的demo。</p>
+<p>但是在iOS10的系统下， <code>FDTemplateLayoutCell</code>会卡界面，而且tableview的行数越多表现的越卡。</p>
+<p>而且苹果在iOS8之后，推出了一种超级简单的cell动态自适应的方法，使用起来比 <code>FDTemplateLayoutCell</code>也简单一些，而且现在iOS10都出来了，没有必要去支持iOS7了，所以最后我还是选择了用系统的办法。这样我们以后就再也不用写<code>heightForRowAtIndexPath</code>方法了哈哈哈。</p>
+<h1 id="系统的cell自适应高度的使用方法"><a href="#系统的cell自适应高度的使用方法" class="headerlink" title="系统的cell自适应高度的使用方法"></a>系统的cell自适应高度的使用方法</h1><p>首先我们需要把cell上的控件自上而下加好约束，如果对约束不熟悉的话建议看看下面这两篇文章学习一下：<br>[<a href="https://www.raywenderlich.com/115440/auto-layout-tutorial-in-ios-9-part-1-getting-started-2">Auto Layout Tutorial in iOS 9 Part 1: Getting Started</a><br><a href="http://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints"><a href="https://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints">Auto Layout Tutorial in iOS 9 Part 2: Constraints</a></a></p>
+<p>用xib加约束和用masonry加代码约束都是可以的。注意约束一定要自上而下加好，让系统知道怎么去计算高度。在这篇文章的demo里面的cell加的约束是这样的：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-8e19466b6e4ac956.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cell约束"></p>
+<p>加好约束后，然后告诉tableView自己去适应高度就可以了。有两种写法：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">self</span>.tableView.rowHeight = <span class="built_in">UITableViewAutomaticDimension</span>;</span><br><span class="line"><span class="keyword">self</span>.tableView.estimatedRowHeight = <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+
+<p>或者直接写这个代理方法就可以了</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">100</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。</p>
+<p>来看下demo效果：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-118a76ca9e5bb550.gif?imageMogr2/auto-orient/strip" alt="demo"></p>
+<p>我们看到，cell已经自己适应内容算出了高度，是不是很方便呢哼哼。<br>具体的代码大家可以去demo看哦。</p>
+<p>其实section的header和footer也是可以自动适应的，对应的方法有：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForHeaderInSection:(<span class="built_in">NSInteger</span>)section;</span><br><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForFooterInSection:(<span class="built_in">NSInteger</span>)section;</span><br></pre></td></tr></table></figure>
+<p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。</p>
+<h1 id="可能遇到的问题和解决办法"><a href="#可能遇到的问题和解决办法" class="headerlink" title="可能遇到的问题和解决办法"></a>可能遇到的问题和解决办法</h1><p><strong>1.高度不对</strong><br>有时候有可能运行出来后看到cell的高度显示的不对，就像这样：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-198030f4098810eb.gif?imageMogr2/auto-orient/strip" alt="高度不对"><br>这个问题是因为约束没有满足自上而下，从而系统不知道怎么去计算。解决办法就是去修改约束，直到满足为止。一定要好好理解约束啊！</p>
+<p><strong>2.点击状态栏无法滚动到顶部</strong><br>我们知道，如果界面中有UIScrollView的话，点击状态栏会让其滚动到顶部，就像这样：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-d8ee37f4ebea29bd.gif?imageMogr2/auto-orient/strip" alt="点击状态栏会滚动到顶部"></p>
+<p>但是如果我们用了自动计算高度的方法，又调用了tableView的reloadData方法（例如我们的数据有分页的时候，加载完下一页的数据后会去刷新tableView）。这时候就会出现问题，点击状态栏就有几率不能精确滚动到顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0144754f8dff68eb.gif?imageMogr2/auto-orient/strip" alt="Untitled.gif"></p>
+<p>解决这个问题的办法是去缓存cell的高度，代码如下：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="built_in">NSMutableDictionary</span> *heightAtIndexPath;<span class="comment">//缓存高度所用字典</span></span><br></pre></td></tr></table></figure>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITableViewDelegate</span></span><br><span class="line">-(<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSNumber</span> *height = [<span class="keyword">self</span>.heightAtIndexPath objectForKey:indexPath];</span><br><span class="line">    <span class="keyword">if</span>(height)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> height.floatValue;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)tableView:(<span class="built_in">UITableView</span> *)tableView willDisplayCell:(<span class="built_in">UITableViewCell</span> *)cell forRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSNumber</span> *height = @(cell.frame.size.height);</span><br><span class="line">    [<span class="keyword">self</span>.heightAtIndexPath setObject:height forKey:indexPath];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。</p>
+<p>缓存高度之后，在demo里面多试几次，发现点击状态栏已经可以精确滚动回顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b09cef057ef8ba9a.gif?imageMogr2/auto-orient/strip" alt="用缓存高度解决了问题"></p>
+<p>这段代码其实可以写在viewController的基类里面，这样写一遍就可以每个地方都能缓存cell的高度了。详见demo。这样就完美了！</p>
+<p>好啦先说到这里吧，有问题记得联系我。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>UITableView</tag>
       </tags>
   </entry>
   <entry>
@@ -488,51 +538,80 @@
       </tags>
   </entry>
   <entry>
-    <title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title>
-    <url>/2016/1055050fbf.html</url>
+    <title>Xcode好用的快捷键</title>
+    <url>/2021/034535997.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
 
-<p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。</p>
-<p>先奉上这篇文章的demo的Github地址：<a href="https://github.com/lisongrc/UITableViewCellHeightDemo">UITableViewCellHeightDemo</a>。大家可以下载下来和文章配合看。</p>
+<p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。</p>
 <span id="more"></span>
 
-<h1 id="cell高度计算的历史"><a href="#cell高度计算的历史" class="headerlink" title="cell高度计算的历史"></a>cell高度计算的历史</h1><p>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView heightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath;</span><br></pre></td></tr></table></figure>
-<p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。</p>
-<p>后来也有一些人写了一些第三方去解决这个问题，例如<a href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell">UITableView-FDTemplateLayoutCell</a>。只要给cell自上而下加好约束，它就可以帮我们去算cell的高度并且可以缓存，省去了我们自己写计算代码的成本。具体可以进链接里面看看它的demo。</p>
-<p>但是在iOS10的系统下， <code>FDTemplateLayoutCell</code>会卡界面，而且tableview的行数越多表现的越卡。</p>
-<p>而且苹果在iOS8之后，推出了一种超级简单的cell动态自适应的方法，使用起来比 <code>FDTemplateLayoutCell</code>也简单一些，而且现在iOS10都出来了，没有必要去支持iOS7了，所以最后我还是选择了用系统的办法。这样我们以后就再也不用写<code>heightForRowAtIndexPath</code>方法了哈哈哈。</p>
-<h1 id="系统的cell自适应高度的使用方法"><a href="#系统的cell自适应高度的使用方法" class="headerlink" title="系统的cell自适应高度的使用方法"></a>系统的cell自适应高度的使用方法</h1><p>首先我们需要把cell上的控件自上而下加好约束，如果对约束不熟悉的话建议看看下面这两篇文章学习一下：<br>[<a href="https://www.raywenderlich.com/115440/auto-layout-tutorial-in-ios-9-part-1-getting-started-2">Auto Layout Tutorial in iOS 9 Part 1: Getting Started</a><br><a href="http://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints"><a href="https://www.raywenderlich.com/115444/auto-layout-tutorial-in-ios-9-part-2-constraints">Auto Layout Tutorial in iOS 9 Part 2: Constraints</a></a></p>
-<p>用xib加约束和用masonry加代码约束都是可以的。注意约束一定要自上而下加好，让系统知道怎么去计算高度。在这篇文章的demo里面的cell加的约束是这样的：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-8e19466b6e4ac956.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="cell约束"></p>
-<p>加好约束后，然后告诉tableView自己去适应高度就可以了。有两种写法：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">self</span>.tableView.rowHeight = <span class="built_in">UITableViewAutomaticDimension</span>;</span><br><span class="line"><span class="keyword">self</span>.tableView.estimatedRowHeight = <span class="number">100</span>;</span><br></pre></td></tr></table></figure>
+<h1 id="对应键位"><a href="#对应键位" class="headerlink" title="对应键位"></a>对应键位</h1><blockquote>
+<p>⌘：command</p>
+<p>⌥：option </p>
+<p>⌃：control</p>
+<p>⇧：shift</p>
+</blockquote>
+<h1 id="Xcode常用快捷键"><a href="#Xcode常用快捷键" class="headerlink" title="Xcode常用快捷键"></a>Xcode常用快捷键</h1><table>
+<thead>
+<tr>
+<th>快捷键</th>
+<th>含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>⌘ + [ ]</td>
+<td>左右移动代码</td>
+</tr>
+<tr>
+<td>⌘ + ⌥ + [ ]</td>
+<td>上下移动代码</td>
+</tr>
+<tr>
+<td>⌃ + D</td>
+<td>删除光标右侧字符</td>
+</tr>
+<tr>
+<td>⌃ + K</td>
+<td>删除本行光标后面所有字符</td>
+</tr>
+<tr>
+<td>⌃ + \</td>
+<td>依次回到编辑过的地方</td>
+</tr>
+<tr>
+<td>⌘ + ⌃ + ↑↓</td>
+<td><code>.h</code>与<code>.m</code>之间切换</td>
+</tr>
+<tr>
+<td>⌘ + ⌃ + E</td>
+<td>批量高亮并修改一个变量</td>
+</tr>
+<tr>
+<td>⌘ + ⌃ + J</td>
+<td>跳到类或者变量定义的地方</td>
+</tr>
+<tr>
+<td>⌘ + L</td>
+<td>快速跳转到特定行</td>
+</tr>
+<tr>
+<td>⌘ + ⇧ + j</td>
+<td>快速定位当前文件在项目文件中的位置</td>
+</tr>
+<tr>
+<td>⌘ + ⇧ + O</td>
+<td>快速搜索打开文件和类</td>
+</tr>
+</tbody></table>
+<h1 id="CheatSheet"><a href="#CheatSheet" class="headerlink" title="CheatSheet"></a>CheatSheet</h1><p>大家可以安装CheatSheet这个app，然后长按⌘键就会出现当前使用的app的快捷键。这样如果忘了某个快捷键可以快速查找。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install cheatsheet</span><br></pre></td></tr></table></figure>
 
-<p>或者直接写这个代理方法就可以了</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">return</span> <span class="number">100</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。</p>
-<p>来看下demo效果：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-118a76ca9e5bb550.gif?imageMogr2/auto-orient/strip" alt="demo"></p>
-<p>我们看到，cell已经自己适应内容算出了高度，是不是很方便呢哼哼。<br>具体的代码大家可以去demo看哦。</p>
-<p>其实section的header和footer也是可以自动适应的，对应的方法有：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForHeaderInSection:(<span class="built_in">NSInteger</span>)section;</span><br><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForFooterInSection:(<span class="built_in">NSInteger</span>)section;</span><br></pre></td></tr></table></figure>
-<p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。</p>
-<h1 id="可能遇到的问题和解决办法"><a href="#可能遇到的问题和解决办法" class="headerlink" title="可能遇到的问题和解决办法"></a>可能遇到的问题和解决办法</h1><p><strong>1.高度不对</strong><br>有时候有可能运行出来后看到cell的高度显示的不对，就像这样：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-198030f4098810eb.gif?imageMogr2/auto-orient/strip" alt="高度不对"><br>这个问题是因为约束没有满足自上而下，从而系统不知道怎么去计算。解决办法就是去修改约束，直到满足为止。一定要好好理解约束啊！</p>
-<p><strong>2.点击状态栏无法滚动到顶部</strong><br>我们知道，如果界面中有UIScrollView的话，点击状态栏会让其滚动到顶部，就像这样：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-d8ee37f4ebea29bd.gif?imageMogr2/auto-orient/strip" alt="点击状态栏会滚动到顶部"></p>
-<p>但是如果我们用了自动计算高度的方法，又调用了tableView的reloadData方法（例如我们的数据有分页的时候，加载完下一页的数据后会去刷新tableView）。这时候就会出现问题，点击状态栏就有几率不能精确滚动到顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-0144754f8dff68eb.gif?imageMogr2/auto-orient/strip" alt="Untitled.gif"></p>
-<p>解决这个问题的办法是去缓存cell的高度，代码如下：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">@property</span> (<span class="keyword">nonatomic</span>, <span class="keyword">strong</span>) <span class="built_in">NSMutableDictionary</span> *heightAtIndexPath;<span class="comment">//缓存高度所用字典</span></span><br></pre></td></tr></table></figure>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITableViewDelegate</span></span><br><span class="line">-(<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView estimatedHeightForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSNumber</span> *height = [<span class="keyword">self</span>.heightAtIndexPath objectForKey:indexPath];</span><br><span class="line">    <span class="keyword">if</span>(height)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> height.floatValue;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">    &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">100</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)tableView:(<span class="built_in">UITableView</span> *)tableView willDisplayCell:(<span class="built_in">UITableViewCell</span> *)cell forRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSNumber</span> *height = @(cell.frame.size.height);</span><br><span class="line">    [<span class="keyword">self</span>.heightAtIndexPath setObject:height forKey:indexPath];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。</p>
-<p>缓存高度之后，在demo里面多试几次，发现点击状态栏已经可以精确滚动回顶部了：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b09cef057ef8ba9a.gif?imageMogr2/auto-orient/strip" alt="用缓存高度解决了问题"></p>
-<p>这段代码其实可以写在viewController的基类里面，这样写一遍就可以每个地方都能缓存cell的高度了。详见demo。这样就完美了！</p>
-<p>好啦先说到这里吧，有问题记得联系我。</p>
 ]]></content>
       <categories>
         <category>iOS</category>
       </categories>
       <tags>
-        <tag>UITableView</tag>
+        <tag>Xcode</tag>
       </tags>
   </entry>
   <entry>
@@ -618,118 +697,6 @@
       </tags>
   </entry>
   <entry>
-    <title>Xcode好用的快捷键</title>
-    <url>/2021/034535997.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。</p>
-<span id="more"></span>
-
-<h1 id="对应键位"><a href="#对应键位" class="headerlink" title="对应键位"></a>对应键位</h1><blockquote>
-<p>⌘：command</p>
-<p>⌥：option </p>
-<p>⌃：control</p>
-<p>⇧：shift</p>
-</blockquote>
-<h1 id="Xcode常用快捷键"><a href="#Xcode常用快捷键" class="headerlink" title="Xcode常用快捷键"></a>Xcode常用快捷键</h1><table>
-<thead>
-<tr>
-<th>快捷键</th>
-<th>含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>⌘ + [ ]</td>
-<td>左右移动代码</td>
-</tr>
-<tr>
-<td>⌘ + ⌥ + [ ]</td>
-<td>上下移动代码</td>
-</tr>
-<tr>
-<td>⌃ + D</td>
-<td>删除光标右侧字符</td>
-</tr>
-<tr>
-<td>⌃ + K</td>
-<td>删除本行光标后面所有字符</td>
-</tr>
-<tr>
-<td>⌃ + \</td>
-<td>依次回到编辑过的地方</td>
-</tr>
-<tr>
-<td>⌘ + ⌃ + ↑↓</td>
-<td><code>.h</code>与<code>.m</code>之间切换</td>
-</tr>
-<tr>
-<td>⌘ + ⌃ + E</td>
-<td>批量高亮并修改一个变量</td>
-</tr>
-<tr>
-<td>⌘ + ⌃ + J</td>
-<td>跳到类或者变量定义的地方</td>
-</tr>
-<tr>
-<td>⌘ + L</td>
-<td>快速跳转到特定行</td>
-</tr>
-<tr>
-<td>⌘ + ⇧ + j</td>
-<td>快速定位当前文件在项目文件中的位置</td>
-</tr>
-<tr>
-<td>⌘ + ⇧ + O</td>
-<td>快速搜索打开文件和类</td>
-</tr>
-</tbody></table>
-<h1 id="CheatSheet"><a href="#CheatSheet" class="headerlink" title="CheatSheet"></a>CheatSheet</h1><p>大家可以安装CheatSheet这个app，然后长按⌘键就会出现当前使用的app的快捷键。这样如果忘了某个快捷键可以快速查找。</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install cheatsheet</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Xcode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Xcode自定义模板实践</title>
-    <url>/2017/04535c2bd8.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。</p>
-<h1 id="为何要自定义Xcode模板"><a href="#为何要自定义Xcode模板" class="headerlink" title="为何要自定义Xcode模板"></a>为何要自定义Xcode模板</h1><p>有时候公司会要求一定的代码规范，例如控制器中需要用<code>#pragma mark - </code>来分割各个方法们，像这样：</p>
-<span id="more"></span>
-
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - LifeCycle</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)dealloc &#123;&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewWillAppear:(<span class="built_in">BOOL</span>)animated &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITextFieldDelegate</span></span><br><span class="line"></span><br><span class="line">- (<span class="built_in">BOOL</span>)textFieldShouldReturn:(<span class="built_in">UITextField</span> *)textField &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Public</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Private</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Getter</span></span><br><span class="line"></span><br><span class="line">- (<span class="built_in">NSString</span> *)name &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Setter</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)setName:(<span class="built_in">NSString</span> *)name &#123;&#125;</span><br></pre></td></tr></table></figure>
-<p>这样不仅可以分割代码，方便阅读，而且可以方便找到某个方法：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-14c1a33a378b8a5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p>但是每创建一个类就写一遍这些是不是有点繁琐呢，这个时候就要用到Xcode的自定义模板功能了。</p>
-<h1 id="修改系统模板样式"><a href="#修改系统模板样式" class="headerlink" title="修改系统模板样式"></a>修改系统模板样式</h1><p>Xcode系统模板的路径是<code>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/</code>，文件夹里面有文件模板<code>File Templates</code>和工程模板<code>Project Templates</code>，分别对应创建文件时的选项和创建工程时的选项：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-8e1012bf7ebe5fb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建文件界面"></p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-727c2467d531b57f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建工程界面"></p>
-<p>我们用的最多就是<code>File Templates/Source/Cocoa Touch Class.xctemplate</code>里面的模板。里面长的是这样的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6832c56d26b6646b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cocoa Touch Class.xctemplate"><br>例如我们今天需要改<code>UIViewController</code>的模板，就需要改其中的<code>UIViewControllerObjective-C</code>、 <code>UIViewControllerSwift</code>、<code>UIViewControllerXIBObjective-C</code>、<code>UIViewControllerXIBSwift</code>。他们的区别从名字上就能看出来，就是OC与Swift，是否用Xib的区别。</p>
-<p>我们以OC并且不用Xib为例，打开UIViewControllerObjective-C中的<code>___FILEBASENAME___.m</code>文件：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ___FILENAME___</span></span><br><span class="line"><span class="comment">//  ___PROJECTNAME___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by ___FULLUSERNAME___ on ___DATE___.</span></span><br><span class="line"><span class="comment">//___COPYRIGHT___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#import <span class="meta-string">&quot;___FILEBASENAME___.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span> ()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">    <span class="comment">// Do any additional setup after loading the view.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)didReceiveMemoryWarning &#123;</span><br><span class="line">    [<span class="keyword">super</span> didReceiveMemoryWarning];</span><br><span class="line">    <span class="comment">// Dispose of any resources that can be recreated.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">#pragma mark - Navigation</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">// In a storyboard-based application, you will often want to do a little preparation before navigation</span></span><br><span class="line"><span class="comment">- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender &#123;</span></span><br><span class="line"><span class="comment">    // Get the new view controller using [segue destinationViewController].</span></span><br><span class="line"><span class="comment">    // Pass the selected object to the new view controller.</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-
-<p>是不是很熟悉，就是我们创建一个控制器后.m里面的代码。其中的一些宏的意义是：</p>
-<p>宏名 | 意义 |<br>———— | ————- | ————<br><code>___FILENAME___ </code>  | 文件名包括后缀<br><code>___PROJECTNAME___ </code> | 工程名<br><code>___FULLUSERNAME___ </code> | 用户的名字<br><code>___DATE___</code> | 当前日期，年/月/日<br><code>___COPYRIGHT___</code> | 版权<br><code>___FILEBASENAME___</code>|不带后缀的文件名<br><code>___FILEBASENAMEASIDENTIFIER___ </code> | 不带后缀的文件名 </p>
-<p>这个文件默认是不让修改的，我们可以修改他的权限，或者复制一份到别处，修改完替换原文件。总之修改其中的内容为：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ___FILENAME___</span></span><br><span class="line"><span class="comment">//  ___PROJECTNAME___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by ___FULLUSERNAME___ on ___DATE___.</span></span><br><span class="line"><span class="comment">//___COPYRIGHT___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#import <span class="meta-string">&quot;___FILEBASENAME___.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span> ()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - LifeCycle</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITableViewDelegate</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Public</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Private</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Getter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Setter</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
-<p>然后把这个文件去替换原来的文件。替换成功后新建一个控制器，就会是我们自定义的结构了，如果没生效的话，可以重启下Xcode哦：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-00d4d6fa1fe0f36a.gif?imageMogr2/auto-orient/strip" alt="新建一个控制器"></p>
-<p>相信到这里，其他的模板你也一定会改了吧。</p>
-<h1 id="使用自定义模板"><a href="#使用自定义模板" class="headerlink" title="使用自定义模板"></a>使用自定义模板</h1><p>如果更改系统模板会有问题，就是xcode更新后我们所做的更改就没有了。<br>为了解决这个问题，我们可以在<code>~/Library/Developer/Xcode/Templates</code>路径下新建一个<code>Templates</code>文件夹，再在<code>Templates</code>里新建一个<code>Custom</code>的文件夹，把系统的<code>Cocoa Touch Class.xctemplate</code>复制进去，然后进行修改就可以了。</p>
-<p>这样在创建文件的时候，在最下面就会有你自定义的模板选项:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-e5d1f02ca8c1384d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Xcode</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>iOSer都要知道的LLDB介绍与Chisel进阶</title>
     <url>/2019/035053e96d.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -796,6 +763,41 @@
       </tags>
   </entry>
   <entry>
+    <title>Xcode自定义模板实践</title>
+    <url>/2017/04535c2bd8.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。</p>
+<h1 id="为何要自定义Xcode模板"><a href="#为何要自定义Xcode模板" class="headerlink" title="为何要自定义Xcode模板"></a>为何要自定义Xcode模板</h1><p>有时候公司会要求一定的代码规范，例如控制器中需要用<code>#pragma mark - </code>来分割各个方法们，像这样：</p>
+<span id="more"></span>
+
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - LifeCycle</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)dealloc &#123;&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewWillAppear:(<span class="built_in">BOOL</span>)animated &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITextFieldDelegate</span></span><br><span class="line"></span><br><span class="line">- (<span class="built_in">BOOL</span>)textFieldShouldReturn:(<span class="built_in">UITextField</span> *)textField &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Public</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Private</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Getter</span></span><br><span class="line"></span><br><span class="line">- (<span class="built_in">NSString</span> *)name &#123;&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Setter</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)setName:(<span class="built_in">NSString</span> *)name &#123;&#125;</span><br></pre></td></tr></table></figure>
+<p>这样不仅可以分割代码，方便阅读，而且可以方便找到某个方法：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-14c1a33a378b8a5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p>但是每创建一个类就写一遍这些是不是有点繁琐呢，这个时候就要用到Xcode的自定义模板功能了。</p>
+<h1 id="修改系统模板样式"><a href="#修改系统模板样式" class="headerlink" title="修改系统模板样式"></a>修改系统模板样式</h1><p>Xcode系统模板的路径是<code>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/</code>，文件夹里面有文件模板<code>File Templates</code>和工程模板<code>Project Templates</code>，分别对应创建文件时的选项和创建工程时的选项：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-8e1012bf7ebe5fb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建文件界面"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-727c2467d531b57f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="创建工程界面"></p>
+<p>我们用的最多就是<code>File Templates/Source/Cocoa Touch Class.xctemplate</code>里面的模板。里面长的是这样的：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6832c56d26b6646b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Cocoa Touch Class.xctemplate"><br>例如我们今天需要改<code>UIViewController</code>的模板，就需要改其中的<code>UIViewControllerObjective-C</code>、 <code>UIViewControllerSwift</code>、<code>UIViewControllerXIBObjective-C</code>、<code>UIViewControllerXIBSwift</code>。他们的区别从名字上就能看出来，就是OC与Swift，是否用Xib的区别。</p>
+<p>我们以OC并且不用Xib为例，打开UIViewControllerObjective-C中的<code>___FILEBASENAME___.m</code>文件：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ___FILENAME___</span></span><br><span class="line"><span class="comment">//  ___PROJECTNAME___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by ___FULLUSERNAME___ on ___DATE___.</span></span><br><span class="line"><span class="comment">//___COPYRIGHT___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#import <span class="meta-string">&quot;___FILEBASENAME___.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span> ()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span></span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">    <span class="comment">// Do any additional setup after loading the view.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)didReceiveMemoryWarning &#123;</span><br><span class="line">    [<span class="keyword">super</span> didReceiveMemoryWarning];</span><br><span class="line">    <span class="comment">// Dispose of any resources that can be recreated.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment">#pragma mark - Navigation</span></span><br><span class="line"><span class="comment"></span></span><br><span class="line"><span class="comment">// In a storyboard-based application, you will often want to do a little preparation before navigation</span></span><br><span class="line"><span class="comment">- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender &#123;</span></span><br><span class="line"><span class="comment">    // Get the new view controller using [segue destinationViewController].</span></span><br><span class="line"><span class="comment">    // Pass the selected object to the new view controller.</span></span><br><span class="line"><span class="comment">&#125;</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+
+<p>是不是很熟悉，就是我们创建一个控制器后.m里面的代码。其中的一些宏的意义是：</p>
+<p>宏名 | 意义 |<br>———— | ————- | ————<br><code>___FILENAME___ </code>  | 文件名包括后缀<br><code>___PROJECTNAME___ </code> | 工程名<br><code>___FULLUSERNAME___ </code> | 用户的名字<br><code>___DATE___</code> | 当前日期，年/月/日<br><code>___COPYRIGHT___</code> | 版权<br><code>___FILEBASENAME___</code>|不带后缀的文件名<br><code>___FILEBASENAMEASIDENTIFIER___ </code> | 不带后缀的文件名 </p>
+<p>这个文件默认是不让修改的，我们可以修改他的权限，或者复制一份到别处，修改完替换原文件。总之修改其中的内容为：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ___FILENAME___</span></span><br><span class="line"><span class="comment">//  ___PROJECTNAME___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by ___FULLUSERNAME___ on ___DATE___.</span></span><br><span class="line"><span class="comment">//___COPYRIGHT___</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#import <span class="meta-string">&quot;___FILEBASENAME___.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span> ()</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">___FILEBASENAMEASIDENTIFIER___</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - LifeCycle</span></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">void</span>)viewDidLoad</span><br><span class="line">&#123;</span><br><span class="line">    [<span class="keyword">super</span> viewDidLoad];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - UITableViewDelegate</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Public</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Private</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Getter</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">pragma</span> mark - Setter</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+<p>然后把这个文件去替换原来的文件。替换成功后新建一个控制器，就会是我们自定义的结构了，如果没生效的话，可以重启下Xcode哦：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-00d4d6fa1fe0f36a.gif?imageMogr2/auto-orient/strip" alt="新建一个控制器"></p>
+<p>相信到这里，其他的模板你也一定会改了吧。</p>
+<h1 id="使用自定义模板"><a href="#使用自定义模板" class="headerlink" title="使用自定义模板"></a>使用自定义模板</h1><p>如果更改系统模板会有问题，就是xcode更新后我们所做的更改就没有了。<br>为了解决这个问题，我们可以在<code>~/Library/Developer/Xcode/Templates</code>路径下新建一个<code>Templates</code>文件夹，再在<code>Templates</code>里新建一个<code>Custom</code>的文件夹，把系统的<code>Cocoa Touch Class.xctemplate</code>复制进去，然后进行修改就可以了。</p>
+<p>这样在创建文件的时候，在最下面就会有你自定义的模板选项:<br><img src="http://upload-images.jianshu.io/upload_images/1608265-e5d1f02ca8c1384d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择模板"><br>好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Xcode</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>iOS中@功能的完整实现</title>
     <url>/2018/05784ea6a5.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -840,6 +842,74 @@
       <categories>
         <category>iOS</category>
       </categories>
+  </entry>
+  <entry>
+    <title>iOS中使用Fastlane实现自动化打包和发布</title>
+    <url>/2017/05146f90c7.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Fastlane是一套使用Ruby写的自动化工具集，用于iOS和Android的自动化打包、发布等工作，可以节省大量的时间。</p>
+<span id="more"></span>
+
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-f63702702cfa790f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Fastlane"></p>
+<p>Github：<a href="https://github.com/fastlane/fastlane">https://github.com/fastlane/fastlane</a><br>官网：<a href="https://fastlane.tools/">https://fastlane.tools/</a><br>文档：<a href="https://docs.fastlane.tools/">https://docs.fastlane.tools/</a></p>
+<p>在写这篇文章的时候，他在Github上已经有15000+ star。</p>
+<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>1、首先要安装正确的 Ruby 版本。在终端窗口中用下列命令来确认:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ruby -v</span><br></pre></td></tr></table></figure>
+<p>2、然后检查 Xcode 命令行工具是否安装。在终端窗口中输入命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
+<p>如果未安装，终端会开始安装，如果报错误：<code>command line tools are already installed, use &quot;Software Update&quot; to install updates.</code>代表已经安装。</p>
+<p>3、以上依赖配置好之后就可以通过 rubygem 进行安装了：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo gem install fastlane</span></span><br></pre></td></tr></table></figure>
+<p>安心等待一会，fastlane就安装完成了。</p>
+<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><p>打开终端，cd到你的工程目录，然后执行<code>fastlane init</code>：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> to/your/ios/project</span> </span><br><span class="line"><span class="meta">$</span><span class="bash"> fastlane init</span></span><br><span class="line">[14:21:43]: Detected iOS/Mac project in current directory...</span><br><span class="line">[14:21:43]: This setup will help you get up and running in no time.</span><br><span class="line">[14:21:43]: fastlane will check what tools you&#x27;re already using and set up</span><br><span class="line">[14:21:43]: the tool automatically for you. Have fun! </span><br><span class="line">[14:21:43]: Created new folder &#x27;./fastlane&#x27;.</span><br><span class="line">[14:21:43]: $ xcodebuild -showBuildSettings -project ./xxx.xcodeproj</span><br><span class="line">[14:21:48]: Your Apple ID (e.g. fastlane@krausefx.com): xxx@xxx.xom</span><br><span class="line">[14:21:54]: Verifying that app is available on the Apple Developer Portal and iTunes Connect...</span><br><span class="line">[14:21:54]: Starting login with user &#x27;xxx@xxx.com&#x27;</span><br><span class="line"></span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line">|                    Detected Values                    |</span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line">| Apple ID       | xxx@xxx.com                    |</span><br><span class="line">| App Name       | xxx                            |</span><br><span class="line">| App Identifier | com.xxx.xxx                |</span><br><span class="line">| Project        | /Users/lisong/Desktop/xxx/x  |</span><br><span class="line">|                | xx.xcodeproj                     |</span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line"></span><br><span class="line">[14:22:06]: Please confirm the above values (y/n)</span><br><span class="line">y</span><br><span class="line">[14:22:09]: Created new file &#x27;./fastlane/Appfile&#x27;. Edit it to manage your preferred app metadata information.</span><br><span class="line">[14:22:09]: Loading up &#x27;deliver&#x27;, this might take a few seconds</span><br><span class="line">[14:22:09]: Login to iTunes Connect (xxx@xxx.com)</span><br><span class="line">[14:22:13]: Login successful</span><br><span class="line"></span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line">|             deliver 2.30.1 Summary             |</span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line">| screenshots_path      | ./fastlane/screenshots |</span><br><span class="line">| metadata_path         | ./fastlane/metadata    |</span><br><span class="line">| username              | xxx@xxx.com      |</span><br><span class="line">| app_identifier        | com.xxx.xxx  |</span><br><span class="line">| edit_live             | false                  |</span><br><span class="line">| platform              | ios                    |</span><br><span class="line">| skip_binary_upload    | false                  |</span><br><span class="line">| skip_screenshots      | false                  |</span><br><span class="line">| skip_metadata         | false                  |</span><br><span class="line">| force                 | false                  |</span><br><span class="line">| submit_for_review     | false                  |</span><br><span class="line">| automatic_release     | false                  |</span><br><span class="line">| dev_portal_team_id    | WKR87TTKML             |</span><br><span class="line">| overwrite_screenshots | false                  |</span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line"></span><br><span class="line">[14:22:21]: Writing to &#x27;fastlane/metadata/zh-Hans/description.txt&#x27;</span><br><span class="line">...</span><br><span class="line">[14:22:21]: Writing to &#x27;fastlane/metadata/review_information/notes.txt&#x27;</span><br><span class="line">[14:22:21]: Successfully created new configuration files.</span><br><span class="line">[14:22:22]: Successfully downloaded large app icon</span><br><span class="line">[14:22:22]: Downloading all existing screenshots...</span><br><span class="line">[14:22:27]: Downloading existing screenshot &#x27;1_iphone4_1.1.jpg&#x27; for language &#x27;zh-Hans&#x27;</span><br><span class="line">···</span><br><span class="line">[14:22:34]: Downloading existing screenshot &#x27;5_iphone6_5.5.jpg&#x27; for language &#x27;zh-Hans&#x27;</span><br><span class="line">[14:22:34]: Successfully downloaded all existing screenshots</span><br><span class="line">[14:22:34]: Successfully created new Deliverfile at path &#x27;fastlane/Deliverfile&#x27;</span><br><span class="line">[14:22:34]: $ xcodebuild -list -project ./xxx.xcodeproj</span><br><span class="line">[14:22:35]: &#x27;snapshot&#x27; not enabled.</span><br><span class="line">[14:22:35]: &#x27;cocoapods&#x27; enabled.</span><br><span class="line">[14:22:35]: &#x27;carthage&#x27; not enabled.</span><br><span class="line">[14:22:35]: Created new file &#x27;./fastlane/Fastfile&#x27;. Edit it to manage your own deployment lanes.</span><br><span class="line">[14:22:35]: fastlane will collect the number of errors for each action to detect integration issues</span><br><span class="line">[14:22:35]: No sensitive/private information will be uploaded</span><br><span class="line">[14:22:35]: Learn more at https://github.com/fastlane/fastlane#metrics</span><br><span class="line">[14:22:35]: Successfully finished setting up fastlane</span><br></pre></td></tr></table></figure>
+
+<p>在 “Your Apple ID” 这一步输入苹果开发者账号。在“Please confirm the above values”这一步，确认信息，没问题输入 y。然后，fastlane 会进行一系列的初始化操作，包括下载 App Store 上的元数据和截屏文件。</p>
+<p>等待初始化完成之后，工程目录下就多了一个 fastlane目录，其内容如下：</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-812d184b57793510.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="fastlane目录"></p>
+<p>咱们来看两个主要的，Appfile和Fastfile。</p>
+<h2 id="Appfile"><a href="#Appfile" class="headerlink" title="Appfile"></a>Appfile</h2><p>Appfile用来存放app_identifier，apple_id和team_id。 <a href="https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md">了解详情</a>，它的格式是这样的：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">app_identifier <span class="string">&quot;com.xxx.xxx&quot;</span> <span class="comment"># app的bundle identifier</span></span><br><span class="line">apple_id <span class="string">&quot;xxx@xxx.com&quot;</span> <span class="comment"># 你的Apple ID</span></span><br><span class="line"></span><br><span class="line">team_id <span class="string">&quot;XXXXXXXXXX&quot;</span> <span class="comment"># Team ID</span></span><br><span class="line">···</span><br></pre></td></tr></table></figure>
+
+<p>你也可以为每个lane(后面会讲到)提供不同的 app_identifier, apple_id 和 team_id，例如：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">app_identifier <span class="string">&quot;com.aaa.aaa&quot;</span></span><br><span class="line">apple_id <span class="string">&quot;aaa@aaa.com&quot;</span></span><br><span class="line">team_id <span class="string">&quot;AAAAAAAAAA&quot;</span></span><br><span class="line"></span><br><span class="line">for_lane <span class="symbol">:inhouse</span> <span class="keyword">do</span></span><br><span class="line">  app_identifier <span class="string">&quot;com.bbb.bbb&quot;</span></span><br><span class="line">  apple_id <span class="string">&quot;bbb@bbb.com&quot;</span></span><br><span class="line">  team_id <span class="string">&quot;AAAAAAAAAA&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>这里就是为Fastfile中定义的:inhouse设置单独的信息。</p>
+<h2 id="Fastfile"><a href="#Fastfile" class="headerlink" title="Fastfile"></a>Fastfile</h2><p>Fastfile管理你所创建的 lane， <a href="https://github.com/fastlane/fastlane/tree/master/fastlane/docs#fastfile">了解详情</a>。它的格式是这样的：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">···</span><br><span class="line"><span class="comment"># 自动更新fastlane 工具</span></span><br><span class="line"><span class="comment"># update_fastlane</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#需要的fastlane的最小版本，在每次执行之后会检查是否有新版本，如果有会在最后末尾追加新版本提醒</span></span><br><span class="line">fastlane_version <span class="string">&quot;2.30.1&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#默认使用平台是 ios，也就是说文件可以定义多个平台</span></span><br><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line">platform <span class="symbol">:ios</span> <span class="keyword">do</span></span><br><span class="line">  before_all <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># ENV[&quot;SLACK_URL&quot;] = &quot;https://hooks.slack.com/services/...&quot;</span></span><br><span class="line">    cocoapods</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;Runs all the tests&quot;</span></span><br><span class="line">  lane <span class="symbol">:test</span> <span class="keyword">do</span></span><br><span class="line">    scan</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;提交一个新的Beta版本到 Apple TestFlight&quot;</span></span><br><span class="line">  desc <span class="string">&quot;This will also make sure the profile is up to date&quot;</span></span><br><span class="line">  lane <span class="symbol">:beta</span> <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># match(type: &quot;appstore&quot;) # more information: https://codesigning.guide</span></span><br><span class="line">    gym(<span class="symbol">scheme:</span> <span class="string">&quot;Docment&quot;</span>) <span class="comment"># Build your app - more options available</span></span><br><span class="line">    pilot</span><br><span class="line"></span><br><span class="line">    <span class="comment"># sh &quot;your_script.sh&quot;</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;部署一个新版本到App Store&quot;</span></span><br><span class="line">  lane <span class="symbol">:release</span> <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># match(type: &quot;appstore&quot;)</span></span><br><span class="line">    <span class="comment"># snapshot</span></span><br><span class="line">    gym(<span class="symbol">scheme:</span> <span class="string">&quot;Docment&quot;</span>) <span class="comment"># Build your app - more options available</span></span><br><span class="line">    deliver(<span class="symbol">force:</span> <span class="literal">true</span>)</span><br><span class="line">    <span class="comment"># frameit</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 你可以定义自己的lane</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#执行lane成功后的回调</span></span><br><span class="line">  after_all <span class="keyword">do</span> <span class="params">|lane|</span></span><br><span class="line">    <span class="comment"># slack(</span></span><br><span class="line">    <span class="comment">#   message: &quot;Successfully deployed new App Update.&quot;</span></span><br><span class="line">    <span class="comment"># )</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 如果流程发生异常会走这里并终止</span></span><br><span class="line">  error <span class="keyword">do</span> <span class="params">|lane, exception|</span></span><br><span class="line">    <span class="comment"># slack(</span></span><br><span class="line">    <span class="comment">#   message: exception.message,</span></span><br><span class="line">    <span class="comment">#   success: false</span></span><br><span class="line">    <span class="comment"># )</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>我们也可以定义一个自己的lane：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">desc <span class="string">&quot;企业版&quot;</span></span><br><span class="line">lane <span class="symbol">:inHouse</span> <span class="keyword">do</span></span><br><span class="line">gym(<span class="symbol">scheme:</span> <span class="string">&quot;XXX&quot;</span>,</span><br><span class="line">    <span class="symbol">export_method:</span><span class="string">&quot;enterprise&quot;</span>,</span><br><span class="line">    <span class="symbol">output_directory:</span><span class="string">&quot;./build&quot;</span>, <span class="comment"># 打包后的 ipa 文件存放的目录</span></span><br><span class="line">    <span class="symbol">output_name:</span><span class="string">&quot;XXX.ipa&quot;</span>  <span class="comment"># ipa 文件名</span></span><br><span class="line"> )</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+<p>其中一个lane就是一个任务，里面是一个个的action组成的工作流。<br>利用目前支持的工具可以做所有包含自动化和可持续化构建的每个环节，例如：</p>
+<blockquote>
+<p><a href="https://github.com/fastlane/fastlane/tree/master/scan">scan</a> 自动化测试工具，很好的封装了 Unit Test<br><a href="https://github.com/fastlane/fastlane/tree/master/sigh">sigh</a> 针对于 iOS 项目开发证书和 Provision file 的下载工具<br><a href="https://github.com/fastlane/fastlane/tree/master/match">match</a> 同步团队每个人的证书和 Provision file 的超赞工具<br><a href="https://github.com/fastlane/fastlane/tree/master/gym">gym</a> 针对于 iOS 编译打包生成 ipa 文件<br><a href="https://github.com/fastlane/fastlane/tree/master/deliver">deliver</a> 用于上传应用的二进制代码，应用截屏和元数据到 App Store<br><a href="https://github.com/fastlane/fastlane/tree/master/snapshot">snapshot</a> 可以自动化iOS应用在每个设备上的本地化截屏过程</p>
+</blockquote>
+<h1 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h1><p>定义完lane之后怎么执行呢？打开终端，切换到项目的根目录：执行<code>fastlane lane&#39;name</code>就可以了。成功之后会在相应的路径下生成ipa文件，如果报错的话就根据错误信息好好查看<a href="https://docs.fastlane.tools/">文档</a>。</p>
+<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>1、这里是官方提供的一些<a href="https://github.com/fastlane/examples">例子</a>。</p>
+<p>2、想了解fastlane命令的话可以执行<code>$ fastlane --help</code></p>
+<p>3、查看可用任务的列表，可以执行命令<code>$ fastlane lanes</code></p>
+<p>4、fastlane也提供了很多<a href="https://docs.fastlane.tools/actions/#plugins">插件</a>方便我们使用，例如pgyer(发布app到蒲公英)。我们也可以打完包直接传到蒲公英上，具体的可以看蒲公英提供的<a href="https://www.pgyer.com/doc/view/fastlane">文档</a>。</p>
+<p>如果你感觉有些插件不符合自己的情况，你甚至可以<a href="https://docs.fastlane.tools/plugins/create-plugin/">自定义插件</a></p>
+<p>5、多个 lane 的话实际上是可以相互调用的，这个其实特别实用。例如：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line">platform <span class="symbol">:ios</span> <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">  lane <span class="symbol">:prepare</span> <span class="keyword">do</span></span><br><span class="line">    cocoapods</span><br><span class="line">    match</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&#x27;fastlane build&#x27;</span>   <span class="string">&#x27;fastlane build type:adhoc&#x27;</span></span><br><span class="line">  lane <span class="symbol">:build</span> <span class="keyword">do</span> <span class="params">|options|</span></span><br><span class="line">    <span class="comment"># 调用上面的 prepare 任务</span></span><br><span class="line">    prepare</span><br><span class="line"></span><br><span class="line">    <span class="keyword">case</span> options[<span class="symbol">:type</span>]</span><br><span class="line">    <span class="keyword">when</span> <span class="string">&#x27;adhoc&#x27;</span></span><br><span class="line">      adhoc</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      appstore</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  lane : adhoc <span class="keyword">do</span></span><br><span class="line">  ···</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  lane : appstore <span class="keyword">do</span></span><br><span class="line">  ···</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>6、我们可以在 Fastfile 文件中添加一个函数来设置version号和build号。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prepare_version</span><span class="params">(options)</span></span></span><br><span class="line">    increment_version_number(</span><br><span class="line">        <span class="symbol">version_number:</span> options[<span class="symbol">:version</span>]</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    increment_build_number(</span><br><span class="line">        <span class="symbol">build_number:</span> options[<span class="symbol">:build</span>]</span><br><span class="line">    )</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>然后可以在一个lane中使用这个函数：</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">lane <span class="symbol">:appstore</span> <span class="keyword">do</span> <span class="params">|options|</span></span><br><span class="line">   ···</span><br><span class="line">    prepare_version(options)</span><br><span class="line">   ···</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p>然后执行这个lane的时候：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> fastlane appstore version:2.4.0 build:2.0</span></span><br></pre></td></tr></table></figure>
+
+<p>好啦，先说到这里吧，Fastlane能做的事情还有很多，大家可以去好好看看<a href="https://docs.fastlane.tools/">文档</a>，研究一些高级的用法吧！</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Fastlane</tag>
+      </tags>
   </entry>
   <entry>
     <title>iOS小技巧总结，绝对有你想要的</title>
@@ -1015,90 +1085,6 @@
       </categories>
   </entry>
   <entry>
-    <title>iOS中使用Fastlane实现自动化打包和发布</title>
-    <url>/2017/05146f90c7.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<h1 id="简介"><a href="#简介" class="headerlink" title="简介"></a>简介</h1><p>Fastlane是一套使用Ruby写的自动化工具集，用于iOS和Android的自动化打包、发布等工作，可以节省大量的时间。</p>
-<span id="more"></span>
-
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-f63702702cfa790f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Fastlane"></p>
-<p>Github：<a href="https://github.com/fastlane/fastlane">https://github.com/fastlane/fastlane</a><br>官网：<a href="https://fastlane.tools/">https://fastlane.tools/</a><br>文档：<a href="https://docs.fastlane.tools/">https://docs.fastlane.tools/</a></p>
-<p>在写这篇文章的时候，他在Github上已经有15000+ star。</p>
-<h1 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h1><p>1、首先要安装正确的 Ruby 版本。在终端窗口中用下列命令来确认:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">ruby -v</span><br></pre></td></tr></table></figure>
-<p>2、然后检查 Xcode 命令行工具是否安装。在终端窗口中输入命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">xcode-select --install</span><br></pre></td></tr></table></figure>
-<p>如果未安装，终端会开始安装，如果报错误：<code>command line tools are already installed, use &quot;Software Update&quot; to install updates.</code>代表已经安装。</p>
-<p>3、以上依赖配置好之后就可以通过 rubygem 进行安装了：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> sudo gem install fastlane</span></span><br></pre></td></tr></table></figure>
-<p>安心等待一会，fastlane就安装完成了。</p>
-<h1 id="初始化"><a href="#初始化" class="headerlink" title="初始化"></a>初始化</h1><p>打开终端，cd到你的工程目录，然后执行<code>fastlane init</code>：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> <span class="built_in">cd</span> to/your/ios/project</span> </span><br><span class="line"><span class="meta">$</span><span class="bash"> fastlane init</span></span><br><span class="line">[14:21:43]: Detected iOS/Mac project in current directory...</span><br><span class="line">[14:21:43]: This setup will help you get up and running in no time.</span><br><span class="line">[14:21:43]: fastlane will check what tools you&#x27;re already using and set up</span><br><span class="line">[14:21:43]: the tool automatically for you. Have fun! </span><br><span class="line">[14:21:43]: Created new folder &#x27;./fastlane&#x27;.</span><br><span class="line">[14:21:43]: $ xcodebuild -showBuildSettings -project ./xxx.xcodeproj</span><br><span class="line">[14:21:48]: Your Apple ID (e.g. fastlane@krausefx.com): xxx@xxx.xom</span><br><span class="line">[14:21:54]: Verifying that app is available on the Apple Developer Portal and iTunes Connect...</span><br><span class="line">[14:21:54]: Starting login with user &#x27;xxx@xxx.com&#x27;</span><br><span class="line"></span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line">|                    Detected Values                    |</span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line">| Apple ID       | xxx@xxx.com                    |</span><br><span class="line">| App Name       | xxx                            |</span><br><span class="line">| App Identifier | com.xxx.xxx                |</span><br><span class="line">| Project        | /Users/lisong/Desktop/xxx/x  |</span><br><span class="line">|                | xx.xcodeproj                     |</span><br><span class="line">+----------------+--------------------------------------+</span><br><span class="line"></span><br><span class="line">[14:22:06]: Please confirm the above values (y/n)</span><br><span class="line">y</span><br><span class="line">[14:22:09]: Created new file &#x27;./fastlane/Appfile&#x27;. Edit it to manage your preferred app metadata information.</span><br><span class="line">[14:22:09]: Loading up &#x27;deliver&#x27;, this might take a few seconds</span><br><span class="line">[14:22:09]: Login to iTunes Connect (xxx@xxx.com)</span><br><span class="line">[14:22:13]: Login successful</span><br><span class="line"></span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line">|             deliver 2.30.1 Summary             |</span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line">| screenshots_path      | ./fastlane/screenshots |</span><br><span class="line">| metadata_path         | ./fastlane/metadata    |</span><br><span class="line">| username              | xxx@xxx.com      |</span><br><span class="line">| app_identifier        | com.xxx.xxx  |</span><br><span class="line">| edit_live             | false                  |</span><br><span class="line">| platform              | ios                    |</span><br><span class="line">| skip_binary_upload    | false                  |</span><br><span class="line">| skip_screenshots      | false                  |</span><br><span class="line">| skip_metadata         | false                  |</span><br><span class="line">| force                 | false                  |</span><br><span class="line">| submit_for_review     | false                  |</span><br><span class="line">| automatic_release     | false                  |</span><br><span class="line">| dev_portal_team_id    | WKR87TTKML             |</span><br><span class="line">| overwrite_screenshots | false                  |</span><br><span class="line">+-----------------------+------------------------+</span><br><span class="line"></span><br><span class="line">[14:22:21]: Writing to &#x27;fastlane/metadata/zh-Hans/description.txt&#x27;</span><br><span class="line">...</span><br><span class="line">[14:22:21]: Writing to &#x27;fastlane/metadata/review_information/notes.txt&#x27;</span><br><span class="line">[14:22:21]: Successfully created new configuration files.</span><br><span class="line">[14:22:22]: Successfully downloaded large app icon</span><br><span class="line">[14:22:22]: Downloading all existing screenshots...</span><br><span class="line">[14:22:27]: Downloading existing screenshot &#x27;1_iphone4_1.1.jpg&#x27; for language &#x27;zh-Hans&#x27;</span><br><span class="line">···</span><br><span class="line">[14:22:34]: Downloading existing screenshot &#x27;5_iphone6_5.5.jpg&#x27; for language &#x27;zh-Hans&#x27;</span><br><span class="line">[14:22:34]: Successfully downloaded all existing screenshots</span><br><span class="line">[14:22:34]: Successfully created new Deliverfile at path &#x27;fastlane/Deliverfile&#x27;</span><br><span class="line">[14:22:34]: $ xcodebuild -list -project ./xxx.xcodeproj</span><br><span class="line">[14:22:35]: &#x27;snapshot&#x27; not enabled.</span><br><span class="line">[14:22:35]: &#x27;cocoapods&#x27; enabled.</span><br><span class="line">[14:22:35]: &#x27;carthage&#x27; not enabled.</span><br><span class="line">[14:22:35]: Created new file &#x27;./fastlane/Fastfile&#x27;. Edit it to manage your own deployment lanes.</span><br><span class="line">[14:22:35]: fastlane will collect the number of errors for each action to detect integration issues</span><br><span class="line">[14:22:35]: No sensitive/private information will be uploaded</span><br><span class="line">[14:22:35]: Learn more at https://github.com/fastlane/fastlane#metrics</span><br><span class="line">[14:22:35]: Successfully finished setting up fastlane</span><br></pre></td></tr></table></figure>
-
-<p>在 “Your Apple ID” 这一步输入苹果开发者账号。在“Please confirm the above values”这一步，确认信息，没问题输入 y。然后，fastlane 会进行一系列的初始化操作，包括下载 App Store 上的元数据和截屏文件。</p>
-<p>等待初始化完成之后，工程目录下就多了一个 fastlane目录，其内容如下：</p>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-812d184b57793510.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="fastlane目录"></p>
-<p>咱们来看两个主要的，Appfile和Fastfile。</p>
-<h2 id="Appfile"><a href="#Appfile" class="headerlink" title="Appfile"></a>Appfile</h2><p>Appfile用来存放app_identifier，apple_id和team_id。 <a href="https://github.com/fastlane/fastlane/blob/master/fastlane/docs/Appfile.md">了解详情</a>，它的格式是这样的：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">app_identifier <span class="string">&quot;com.xxx.xxx&quot;</span> <span class="comment"># app的bundle identifier</span></span><br><span class="line">apple_id <span class="string">&quot;xxx@xxx.com&quot;</span> <span class="comment"># 你的Apple ID</span></span><br><span class="line"></span><br><span class="line">team_id <span class="string">&quot;XXXXXXXXXX&quot;</span> <span class="comment"># Team ID</span></span><br><span class="line">···</span><br></pre></td></tr></table></figure>
-
-<p>你也可以为每个lane(后面会讲到)提供不同的 app_identifier, apple_id 和 team_id，例如：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">app_identifier <span class="string">&quot;com.aaa.aaa&quot;</span></span><br><span class="line">apple_id <span class="string">&quot;aaa@aaa.com&quot;</span></span><br><span class="line">team_id <span class="string">&quot;AAAAAAAAAA&quot;</span></span><br><span class="line"></span><br><span class="line">for_lane <span class="symbol">:inhouse</span> <span class="keyword">do</span></span><br><span class="line">  app_identifier <span class="string">&quot;com.bbb.bbb&quot;</span></span><br><span class="line">  apple_id <span class="string">&quot;bbb@bbb.com&quot;</span></span><br><span class="line">  team_id <span class="string">&quot;AAAAAAAAAA&quot;</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<p>这里就是为Fastfile中定义的:inhouse设置单独的信息。</p>
-<h2 id="Fastfile"><a href="#Fastfile" class="headerlink" title="Fastfile"></a>Fastfile</h2><p>Fastfile管理你所创建的 lane， <a href="https://github.com/fastlane/fastlane/tree/master/fastlane/docs#fastfile">了解详情</a>。它的格式是这样的：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">···</span><br><span class="line"><span class="comment"># 自动更新fastlane 工具</span></span><br><span class="line"><span class="comment"># update_fastlane</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#需要的fastlane的最小版本，在每次执行之后会检查是否有新版本，如果有会在最后末尾追加新版本提醒</span></span><br><span class="line">fastlane_version <span class="string">&quot;2.30.1&quot;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">#默认使用平台是 ios，也就是说文件可以定义多个平台</span></span><br><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line">platform <span class="symbol">:ios</span> <span class="keyword">do</span></span><br><span class="line">  before_all <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># ENV[&quot;SLACK_URL&quot;] = &quot;https://hooks.slack.com/services/...&quot;</span></span><br><span class="line">    cocoapods</span><br><span class="line">    </span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;Runs all the tests&quot;</span></span><br><span class="line">  lane <span class="symbol">:test</span> <span class="keyword">do</span></span><br><span class="line">    scan</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;提交一个新的Beta版本到 Apple TestFlight&quot;</span></span><br><span class="line">  desc <span class="string">&quot;This will also make sure the profile is up to date&quot;</span></span><br><span class="line">  lane <span class="symbol">:beta</span> <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># match(type: &quot;appstore&quot;) # more information: https://codesigning.guide</span></span><br><span class="line">    gym(<span class="symbol">scheme:</span> <span class="string">&quot;Docment&quot;</span>) <span class="comment"># Build your app - more options available</span></span><br><span class="line">    pilot</span><br><span class="line"></span><br><span class="line">    <span class="comment"># sh &quot;your_script.sh&quot;</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&quot;部署一个新版本到App Store&quot;</span></span><br><span class="line">  lane <span class="symbol">:release</span> <span class="keyword">do</span></span><br><span class="line">    <span class="comment"># match(type: &quot;appstore&quot;)</span></span><br><span class="line">    <span class="comment"># snapshot</span></span><br><span class="line">    gym(<span class="symbol">scheme:</span> <span class="string">&quot;Docment&quot;</span>) <span class="comment"># Build your app - more options available</span></span><br><span class="line">    deliver(<span class="symbol">force:</span> <span class="literal">true</span>)</span><br><span class="line">    <span class="comment"># frameit</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 你可以定义自己的lane</span></span><br><span class="line"></span><br><span class="line">  <span class="comment">#执行lane成功后的回调</span></span><br><span class="line">  after_all <span class="keyword">do</span> <span class="params">|lane|</span></span><br><span class="line">    <span class="comment"># slack(</span></span><br><span class="line">    <span class="comment">#   message: &quot;Successfully deployed new App Update.&quot;</span></span><br><span class="line">    <span class="comment"># )</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># 如果流程发生异常会走这里并终止</span></span><br><span class="line">  error <span class="keyword">do</span> <span class="params">|lane, exception|</span></span><br><span class="line">    <span class="comment"># slack(</span></span><br><span class="line">    <span class="comment">#   message: exception.message,</span></span><br><span class="line">    <span class="comment">#   success: false</span></span><br><span class="line">    <span class="comment"># )</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"><span class="keyword">end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>我们也可以定义一个自己的lane：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">desc <span class="string">&quot;企业版&quot;</span></span><br><span class="line">lane <span class="symbol">:inHouse</span> <span class="keyword">do</span></span><br><span class="line">gym(<span class="symbol">scheme:</span> <span class="string">&quot;XXX&quot;</span>,</span><br><span class="line">    <span class="symbol">export_method:</span><span class="string">&quot;enterprise&quot;</span>,</span><br><span class="line">    <span class="symbol">output_directory:</span><span class="string">&quot;./build&quot;</span>, <span class="comment"># 打包后的 ipa 文件存放的目录</span></span><br><span class="line">    <span class="symbol">output_name:</span><span class="string">&quot;XXX.ipa&quot;</span>  <span class="comment"># ipa 文件名</span></span><br><span class="line"> )</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-<p>其中一个lane就是一个任务，里面是一个个的action组成的工作流。<br>利用目前支持的工具可以做所有包含自动化和可持续化构建的每个环节，例如：</p>
-<blockquote>
-<p><a href="https://github.com/fastlane/fastlane/tree/master/scan">scan</a> 自动化测试工具，很好的封装了 Unit Test<br><a href="https://github.com/fastlane/fastlane/tree/master/sigh">sigh</a> 针对于 iOS 项目开发证书和 Provision file 的下载工具<br><a href="https://github.com/fastlane/fastlane/tree/master/match">match</a> 同步团队每个人的证书和 Provision file 的超赞工具<br><a href="https://github.com/fastlane/fastlane/tree/master/gym">gym</a> 针对于 iOS 编译打包生成 ipa 文件<br><a href="https://github.com/fastlane/fastlane/tree/master/deliver">deliver</a> 用于上传应用的二进制代码，应用截屏和元数据到 App Store<br><a href="https://github.com/fastlane/fastlane/tree/master/snapshot">snapshot</a> 可以自动化iOS应用在每个设备上的本地化截屏过程</p>
-</blockquote>
-<h1 id="执行"><a href="#执行" class="headerlink" title="执行"></a>执行</h1><p>定义完lane之后怎么执行呢？打开终端，切换到项目的根目录：执行<code>fastlane lane&#39;name</code>就可以了。成功之后会在相应的路径下生成ipa文件，如果报错的话就根据错误信息好好查看<a href="https://docs.fastlane.tools/">文档</a>。</p>
-<h1 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h1><p>1、这里是官方提供的一些<a href="https://github.com/fastlane/examples">例子</a>。</p>
-<p>2、想了解fastlane命令的话可以执行<code>$ fastlane --help</code></p>
-<p>3、查看可用任务的列表，可以执行命令<code>$ fastlane lanes</code></p>
-<p>4、fastlane也提供了很多<a href="https://docs.fastlane.tools/actions/#plugins">插件</a>方便我们使用，例如pgyer(发布app到蒲公英)。我们也可以打完包直接传到蒲公英上，具体的可以看蒲公英提供的<a href="https://www.pgyer.com/doc/view/fastlane">文档</a>。</p>
-<p>如果你感觉有些插件不符合自己的情况，你甚至可以<a href="https://docs.fastlane.tools/plugins/create-plugin/">自定义插件</a></p>
-<p>5、多个 lane 的话实际上是可以相互调用的，这个其实特别实用。例如：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line">platform <span class="symbol">:ios</span> <span class="keyword">do</span></span><br><span class="line"></span><br><span class="line">  lane <span class="symbol">:prepare</span> <span class="keyword">do</span></span><br><span class="line">    cocoapods</span><br><span class="line">    match</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  desc <span class="string">&#x27;fastlane build&#x27;</span>   <span class="string">&#x27;fastlane build type:adhoc&#x27;</span></span><br><span class="line">  lane <span class="symbol">:build</span> <span class="keyword">do</span> <span class="params">|options|</span></span><br><span class="line">    <span class="comment"># 调用上面的 prepare 任务</span></span><br><span class="line">    prepare</span><br><span class="line"></span><br><span class="line">    <span class="keyword">case</span> options[<span class="symbol">:type</span>]</span><br><span class="line">    <span class="keyword">when</span> <span class="string">&#x27;adhoc&#x27;</span></span><br><span class="line">      adhoc</span><br><span class="line">    <span class="keyword">else</span></span><br><span class="line">      appstore</span><br><span class="line">    <span class="keyword">end</span></span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">  lane : adhoc <span class="keyword">do</span></span><br><span class="line">  ···</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line">  lane : appstore <span class="keyword">do</span></span><br><span class="line">  ···</span><br><span class="line">  <span class="keyword">end</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<p>6、我们可以在 Fastfile 文件中添加一个函数来设置version号和build号。</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">default_platform <span class="symbol">:ios</span></span><br><span class="line"></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">prepare_version</span><span class="params">(options)</span></span></span><br><span class="line">    increment_version_number(</span><br><span class="line">        <span class="symbol">version_number:</span> options[<span class="symbol">:version</span>]</span><br><span class="line">    )</span><br><span class="line"></span><br><span class="line">    increment_build_number(</span><br><span class="line">        <span class="symbol">build_number:</span> options[<span class="symbol">:build</span>]</span><br><span class="line">    )</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<p>然后可以在一个lane中使用这个函数：</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">lane <span class="symbol">:appstore</span> <span class="keyword">do</span> <span class="params">|options|</span></span><br><span class="line">   ···</span><br><span class="line">    prepare_version(options)</span><br><span class="line">   ···</span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<p>然后执行这个lane的时候：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">$</span><span class="bash"> fastlane appstore version:2.4.0 build:2.0</span></span><br></pre></td></tr></table></figure>
-
-<p>好啦，先说到这里吧，Fastlane能做的事情还有很多，大家可以去好好看看<a href="https://docs.fastlane.tools/">文档</a>，研究一些高级的用法吧！</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Fastlane</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>iOS开发常用宏，持续更新中</title>
-    <url>/2016/08c4f2d814.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>大家都是知道使用宏不仅方便，而且可以提高开发效率。下面总结了iOS开发过程中的一些常用宏，会持续的往里面添加。</p>
-<span id="more"></span>
-
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//字符串是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] &lt; 1 ? YES : NO )</span></span><br><span class="line"><span class="comment">//数组是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)</span></span><br><span class="line"><span class="comment">//字典是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)</span></span><br><span class="line"><span class="comment">//是否是空对象</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kObjectIsEmpty(_object) (_object == nil \</span></span><br><span class="line">|| [_object isKindOfClass:[<span class="built_in">NSNull</span> <span class="keyword">class</span>]] \</span><br><span class="line">|| ([_object respondsToSelector:<span class="keyword">@selector</span>(length)] &amp;&amp; [(<span class="built_in">NSData</span> *)_object length] == <span class="number">0</span>) \</span><br><span class="line">|| ([_object respondsToSelector:<span class="keyword">@selector</span>(count)] &amp;&amp; [(<span class="built_in">NSArray</span> *)_object count] == <span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取屏幕宽度与高度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenWidth \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? [<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.width/[<span class="built_in">UIScreen</span> mainScreen].nativeScale : [<span class="built_in">UIScreen</span> mainScreen].bounds.size.width)</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenHeight \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? [<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.height/[<span class="built_in">UIScreen</span> mainScreen].nativeScale : [<span class="built_in">UIScreen</span> mainScreen].bounds.size.height)</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenSize \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? <span class="built_in">CGSizeMake</span>([<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.width/[<span class="built_in">UIScreen</span> mainScreen].nativeScale,[<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.height/[<span class="built_in">UIScreen</span> mainScreen].nativeScale) : [<span class="built_in">UIScreen</span> mainScreen].bounds.size)</span><br><span class="line"></span><br><span class="line"><span class="comment">//一些缩写</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kApplication        [UIApplication sharedApplication]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kKeyWindow          [UIApplication sharedApplication].keyWindow</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kAppDelegate        [UIApplication sharedApplication].delegate</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kUserDefaults       [NSUserDefaults standardUserDefaults]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kNotificationCenter [NSNotificationCenter defaultCenter]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//APP版本号</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@<span class="meta-string">&quot;CFBundleShortVersionString&quot;</span>]</span></span><br><span class="line"><span class="comment">//系统版本号</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kSystemVersion [[UIDevice currentDevice] systemVersion]</span></span><br><span class="line"><span class="comment">//获取当前语言</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])</span></span><br><span class="line"><span class="comment">//判断是否为iPhone</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kISiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)</span></span><br><span class="line"><span class="comment">//判断是否为iPad</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kISiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取沙盒Document路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]</span></span><br><span class="line"><span class="comment">//获取沙盒temp路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kTempPath NSTemporaryDirectory()</span></span><br><span class="line"><span class="comment">//获取沙盒Cache路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//判断是真机还是模拟器</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> TARGET_OS_IPHONE</span></span><br><span class="line"><span class="comment">//真机</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> TARGET_IPHONE_SIMULATOR</span></span><br><span class="line"><span class="comment">//模拟器</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//开发的时候打印，但是发布的时候不打印的NSLog</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> DEBUG</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NSLog(...) NSLog(@<span class="meta-string">&quot;%s 第%d行 \n %@\n\n&quot;</span>,__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NSLog(...)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//颜色</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRGBColor(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRandomColor           kRGBColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kColorWithHex(rgbValue) \</span></span><br><span class="line">[<span class="built_in">UIColor</span> colorWithRed:((<span class="keyword">float</span>)((rgbValue &amp; <span class="number">0xFF0000</span>) &gt;&gt; <span class="number">16</span>)) / <span class="number">255.0</span> \</span><br><span class="line">green:((<span class="keyword">float</span>)((rgbValue &amp; <span class="number">0xFF00</span>) &gt;&gt; <span class="number">8</span>)) / <span class="number">255.0</span> \</span><br><span class="line">blue:((<span class="keyword">float</span>)(rgbValue &amp; <span class="number">0xFF</span>)) / <span class="number">255.0</span> alpha:<span class="number">1.0</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//弱引用/强引用</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kWeakSelf(type)   __weak typeof(type) weak##type = type;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStrongSelf(type) __strong typeof(type) type = weak##type;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//由角度转换弧度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDegreesToRadian(x)      (M_PI * (x) / 180.0)</span></span><br><span class="line"><span class="comment">//由弧度转换角度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRadianToDegrees(radian) (radian * 180.0) / (M_PI)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取一段时间间隔</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kEndTime   NSLog(@<span class="meta-string">&quot;Time: %f&quot;</span>, CFAbsoluteTimeGetCurrent() - start)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>持续更新中……。</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-  </entry>
-  <entry>
     <title>iOS中的静态库与动态库，区别、制作和使用</title>
     <url>/2016/1137f4228b.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -1153,6 +1139,22 @@
 <p>3、开发调试代码<br><img src="http://upload-images.jianshu.io/upload_images/1608265-f4ac760cb598db22.gif?imageMogr2/auto-orient/strip" alt="开发调试代码"></p>
 <p>我们看到程序可以正常运行，并可以在动态库里面蹲点运行。方便我们调试。</p>
 <p>4、确保代码没问题后，选择对应的target编译生成。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-51d077bb2bd12c60.gif?imageMogr2/auto-orient/strip" alt="编译生成"><br>5、后面的过程就与上面一样了。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+  </entry>
+  <entry>
+    <title>iOS开发常用宏，持续更新中</title>
+    <url>/2016/08c4f2d814.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>大家都是知道使用宏不仅方便，而且可以提高开发效率。下面总结了iOS开发过程中的一些常用宏，会持续的往里面添加。</p>
+<span id="more"></span>
+
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="comment">//字符串是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] &lt; 1 ? YES : NO )</span></span><br><span class="line"><span class="comment">//数组是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kArrayIsEmpty(array) (array == nil || [array isKindOfClass:[NSNull class]] || array.count == 0)</span></span><br><span class="line"><span class="comment">//字典是否为空</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDictIsEmpty(dic) (dic == nil || [dic isKindOfClass:[NSNull class]] || dic.allKeys == 0)</span></span><br><span class="line"><span class="comment">//是否是空对象</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kObjectIsEmpty(_object) (_object == nil \</span></span><br><span class="line">|| [_object isKindOfClass:[<span class="built_in">NSNull</span> <span class="keyword">class</span>]] \</span><br><span class="line">|| ([_object respondsToSelector:<span class="keyword">@selector</span>(length)] &amp;&amp; [(<span class="built_in">NSData</span> *)_object length] == <span class="number">0</span>) \</span><br><span class="line">|| ([_object respondsToSelector:<span class="keyword">@selector</span>(count)] &amp;&amp; [(<span class="built_in">NSArray</span> *)_object count] == <span class="number">0</span>))</span><br><span class="line"></span><br><span class="line"><span class="comment">//获取屏幕宽度与高度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenWidth \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? [<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.width/[<span class="built_in">UIScreen</span> mainScreen].nativeScale : [<span class="built_in">UIScreen</span> mainScreen].bounds.size.width)</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenHeight \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? [<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.height/[<span class="built_in">UIScreen</span> mainScreen].nativeScale : [<span class="built_in">UIScreen</span> mainScreen].bounds.size.height)</span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kScreenSize \</span></span><br><span class="line">([[<span class="built_in">UIScreen</span> mainScreen] respondsToSelector:<span class="keyword">@selector</span>(nativeBounds)] ? <span class="built_in">CGSizeMake</span>([<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.width/[<span class="built_in">UIScreen</span> mainScreen].nativeScale,[<span class="built_in">UIScreen</span> mainScreen].nativeBounds.size.height/[<span class="built_in">UIScreen</span> mainScreen].nativeScale) : [<span class="built_in">UIScreen</span> mainScreen].bounds.size)</span><br><span class="line"></span><br><span class="line"><span class="comment">//一些缩写</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kApplication        [UIApplication sharedApplication]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kKeyWindow          [UIApplication sharedApplication].keyWindow</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kAppDelegate        [UIApplication sharedApplication].delegate</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kUserDefaults       [NSUserDefaults standardUserDefaults]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kNotificationCenter [NSNotificationCenter defaultCenter]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//APP版本号</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kAppVersion [[[NSBundle mainBundle] infoDictionary] objectForKey:@<span class="meta-string">&quot;CFBundleShortVersionString&quot;</span>]</span></span><br><span class="line"><span class="comment">//系统版本号</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kSystemVersion [[UIDevice currentDevice] systemVersion]</span></span><br><span class="line"><span class="comment">//获取当前语言</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kCurrentLanguage ([[NSLocale preferredLanguages] objectAtIndex:0])</span></span><br><span class="line"><span class="comment">//判断是否为iPhone</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kISiPhone (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPhone)</span></span><br><span class="line"><span class="comment">//判断是否为iPad</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kISiPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取沙盒Document路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDocumentPath [NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject]</span></span><br><span class="line"><span class="comment">//获取沙盒temp路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kTempPath NSTemporaryDirectory()</span></span><br><span class="line"><span class="comment">//获取沙盒Cache路径</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//判断是真机还是模拟器</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> TARGET_OS_IPHONE</span></span><br><span class="line"><span class="comment">//真机</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">if</span> TARGET_IPHONE_SIMULATOR</span></span><br><span class="line"><span class="comment">//模拟器</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//开发的时候打印，但是发布的时候不打印的NSLog</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">ifdef</span> DEBUG</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NSLog(...) NSLog(@<span class="meta-string">&quot;%s 第%d行 \n %@\n\n&quot;</span>,__func__,__LINE__,[NSString stringWithFormat:__VA_ARGS__])</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">else</span></span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> NSLog(...)</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">endif</span></span></span><br><span class="line"></span><br><span class="line"><span class="comment">//颜色</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRGBColor(r, g, b)     [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRGBAColor(r, g, b, a) [UIColor colorWithRed:(r)/255.0 green:(r)/255.0 blue:(r)/255.0 alpha:a]</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRandomColor           kRGBColor(arc4random_uniform(256),arc4random_uniform(256),arc4random_uniform(256))</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kColorWithHex(rgbValue) \</span></span><br><span class="line">[<span class="built_in">UIColor</span> colorWithRed:((<span class="keyword">float</span>)((rgbValue &amp; <span class="number">0xFF0000</span>) &gt;&gt; <span class="number">16</span>)) / <span class="number">255.0</span> \</span><br><span class="line">green:((<span class="keyword">float</span>)((rgbValue &amp; <span class="number">0xFF00</span>) &gt;&gt; <span class="number">8</span>)) / <span class="number">255.0</span> \</span><br><span class="line">blue:((<span class="keyword">float</span>)(rgbValue &amp; <span class="number">0xFF</span>)) / <span class="number">255.0</span> alpha:<span class="number">1.0</span>]</span><br><span class="line"></span><br><span class="line"><span class="comment">//弱引用/强引用</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kWeakSelf(type)   __weak typeof(type) weak##type = type;</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStrongSelf(type) __strong typeof(type) type = weak##type;</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//由角度转换弧度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kDegreesToRadian(x)      (M_PI * (x) / 180.0)</span></span><br><span class="line"><span class="comment">//由弧度转换角度</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kRadianToDegrees(radian) (radian * 180.0) / (M_PI)</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//获取一段时间间隔</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kStartTime CFAbsoluteTime start = CFAbsoluteTimeGetCurrent();</span></span><br><span class="line"><span class="meta">#<span class="meta-keyword">define</span> kEndTime   NSLog(@<span class="meta-string">&quot;Time: %f&quot;</span>, CFAbsoluteTimeGetCurrent() - start)</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>持续更新中……。</p>
 ]]></content>
       <categories>
         <category>iOS</category>
@@ -1256,6 +1258,45 @@
       <tags>
         <tag>masscan</tag>
         <tag>nmap</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一些网站们，持续更新</title>
+    <url>/2021/044decb28c.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>本文总结一些有用的网站们。</p>
+<span id="more"></span>
+
+<ul>
+<li><a href="https://www.processon.com/">processon</a> ：免费在线作图、实时协作，支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等</li>
+<li><a href="https://lottiefiles.com/">lottiefiles</a> ：在线看lottie效果</li>
+<li><a href="https://regex101.com/">regex101</a> ：在线正则匹配</li>
+<li><a href="http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html">m3u8 downloader</a> ：m3u8 视频在线提取工具</li>
+<li><a href="https://minhaskamal.github.io/DownGit/#/home">DownGit</a> ：下载github项目上的文部分文件</li>
+<li><a href="https://msdn.itellyou.cn/">msdn.itellyou</a> ：下载Windows系统</li>
+<li><a href="https://www.progit.cn/">Pro Git 中文版</a> ：讲解Git的使用</li>
+<li><a href="https://swift.org/">swift</a> ：Swift官方网站</li>
+<li><a href="https://www.cnswift.org/">cnswift</a> ：Swift 编程语言 – 可能是最用心的翻译了吧</li>
+<li><a href="https://swiftify.com/converter/code/n0qt4d/">swiftify</a> ：OC转Swift</li>
+<li><a href="https://developer.apple.com/system-status/">system-status</a> ：查看苹果服务状态</li>
+<li><a href="https://www.ipip.net/">IPIP.NET</a> ：一些网络工具</li>
+<li><a href="https://dns.ip.cn/">IP.cn</a> ：全国 DNS 服务器 IP 地址汇总</li>
+<li><a href="https://onevcat.com/">onevcat</a> ：喵神的博客</li>
+<li><a href="https://tech.meituan.com/">美团技术团队</a> ：美团的技术博客</li>
+<li><a href="https://fontawesome.com/icons?d=gallery&p=2">Font Awesome</a> ：图标字体</li>
+<li><a href="https://theme-next.iissnan.com/">NexT</a> ：NexT 使用文档</li>
+<li><a href="https://leetcode-cn.com/">leetcode</a> ：练习算法</li>
+<li><a href="https://app.quicktype.io/">quicktype</a> ： json解析为多种语言</li>
+<li><a href="https://opensource.tencent.com/projects">腾讯开源项目</a> </li>
+<li></li>
+</ul>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>网站</tag>
       </tags>
   </entry>
   <entry>
@@ -1536,94 +1577,6 @@
       </tags>
   </entry>
   <entry>
-    <title>看一遍就会的CocoaPods的安装和使用教程</title>
-    <url>/2016/09750b7a66.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<h1 id="什么是CocoaPods？"><a href="#什么是CocoaPods？" class="headerlink" title="什么是CocoaPods？"></a>什么是CocoaPods？</h1><p>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。</p>
-<p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。</p>
-<p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。</p>
-<span id="more"></span>
-
-<h1 id="安装CocoaPods"><a href="#安装CocoaPods" class="headerlink" title="安装CocoaPods"></a>安装CocoaPods</h1><p>1.首先更新gem到最新版本，在终端中输入：<code>$ sudo gem update --system</code>,注意不要把“$”复制上。等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="更新gem"></p>
-<p>2.删除自带的ruby镜像，终端输入：<code>gem sources --remove https://rubygems.org/</code>。<br>3.添加淘宝的镜像，终端输入：<code>gem sources -a https://gems.ruby-china.org/</code>(原来的淘宝镜像 <code>https://ruby.taobao.org/</code>已经不能用了)。<br>4.可以用<code>gem sources -l</code> 来检查使用替换镜像位置成功，结果应该只有 <code>https://gems.ruby-china.org/</code> 才对。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b51ee1565476195f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改镜像"></p>
-<p>5.安装CocoaPods，终端输入：<code>sudo gem install cocoapods</code>。<br>等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-aac3fb999f47a671.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装CocoaPods"></p>
-<p>6.然后配置下CocoaPods，终端输入：<code>pod setup</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-da73a2f6374ff2a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置CocoaPods"></p>
-<p>等待过程可能有点长，成功后会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-444760464dc47119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置成功"></p>
-<p>到这里CocoaPods就安装好了。</p>
-<h1 id="查找第三方库"><a href="#查找第三方库" class="headerlink" title="查找第三方库"></a>查找第三方库</h1><p>比如查找MJExtension，终端输入：<code>pod search MJExtension</code>，第一次搜索他需要建索引，等待一会儿就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-861fe8b1d10fb218.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建索引中"></p>
-<p>完成后他会自动进入一个新的页面显示搜索结果，上下滑动查看更多，要退出的话按<code>wq</code>就可以了。以后再搜索就不需要建索引了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebbb361ab224f8ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查找结果"></p>
-<h1 id="引入第三方库到项目中"><a href="#引入第三方库到项目中" class="headerlink" title="引入第三方库到项目中"></a>引入第三方库到项目中</h1><p>我先在桌面上新建一个Test项目，然后演示把MJExtension导进去。<br>刚开始的文件目录是这样的<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6d6542711c7e5354.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="原始目录.png"></p>
-<p>1,首先打开终端，cd到Test路径下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4e369e27dff1bdaa.gif?imageMogr2/auto-orient/strip" alt="Test"><br>2.然后生成并编辑一个Podfile文件，命令为<code>vim Podfile</code>，要导入的第三方都要在这里面写上。进去后需要先按<code>I</code>键进入编辑状态，写完后按<code>esc</code>，然后按<code>shift+zz</code>(或者先按<code>shift+:</code>,再按<code>wq</code>)就可以保存退出了。下面的动图里面都有。<br>Podfile的格式大概如下，其中’Test’为你的target的名字。</p>
-<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">platform <span class="symbol">:ios</span>,<span class="string">&#x27;8.0&#x27;</span></span><br><span class="line">target <span class="string">&#x27;Test&#x27;</span> <span class="keyword">do</span></span><br><span class="line">  pod <span class="string">&#x27;MJExtension&#x27;</span>, <span class="string">&#x27;~&gt; 3.0.13&#x27;</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
-
-<p><code>3.安装，命令为：</code>pod install`。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-871f9b7d8a8d4ddb.gif?imageMogr2/auto-orient/strip" alt="安装第三方"></p>
-<p>安装成功之后，就可以去项目里面使用了。现在的项目文件变成了这样<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ea4c67a24307d77a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-07 23.23.19.png"></p>
-<p>之前我们一直是双击<code>Test.xcodeproj</code>打开项目，以后我们就要双击<code>Test.xcworkspace</code>打开了，打开后发现项目里面多了红色框的部分，可以看到MJExtension已经被引入了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3ccc26e945f9c96a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="多出来的文件"></p>
-<h1 id="使用第三方"><a href="#使用第三方" class="headerlink" title="使用第三方"></a>使用第三方</h1><p>你会发现当引入MJExtension的头文件时，可以<code>#import &lt;MJExtension.h&gt;</code>或者<code>#import &lt;MJExtension/MJExtension.h&gt;</code>，但是却不能在输入<code>#import &quot;MJExtension.h&quot;</code>的时候出现提示。虽然强制输入也可以编译通过，但是感觉很不爽。<br>解决这个问题的办法是在工程的<code>Build Settings</code>搜索<code>Search</code>，然后在<code>User header search paths</code>中添加<code>$(SRCROOT)</code>并选择<code>recursive</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d99fcc7b0cc5733d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="头文件不提示的解决办法"><br>现在就可以提示#import “MJExtension.h”啦。<br>然后我们就可以在项目里面使用MJExtension的方法啦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4cec4b4d7fcfa4a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="使用MJExtension"></p>
-<h1 id="增加新的第三方"><a href="#增加新的第三方" class="headerlink" title="增加新的第三方"></a>增加新的第三方</h1><p>如果使用过程中我还想添加其他的第三方怎么办，只要在Podfile里面接着添加，然后终端再执行<code>pod instal</code>l就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-de0abe938314e79d.gif?imageMogr2/auto-orient/strip" alt="新增第三方"></p>
-<h1 id="更新CocoaPods中的第三方们。"><a href="#更新CocoaPods中的第三方们。" class="headerlink" title="更新CocoaPods中的第三方们。"></a>更新CocoaPods中的第三方们。</h1><p>第三方库们都有人在维护升级，我们需要隔断时间就要更新下我们工程中第三方库的版本。只需要终端输入命令<code>pod update</code>就可以了。</p>
-<p>如果遇到<code>pod install</code>或者<code>pod update</code>慢的问题，原因在于当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。加参数的命令如下：<br><code>pod install --verbose --no-repo-update</code><br><code>pod update --verbose --no-repo-update</code></p>
-<h1 id="删除CocoaPods中的某些第三方们。"><a href="#删除CocoaPods中的某些第三方们。" class="headerlink" title="删除CocoaPods中的某些第三方们。"></a>删除CocoaPods中的某些第三方们。</h1><p>当我们需要去掉某个第三方库时，只需要在Podfile删除该引入该库的语句，然后执行<code>pod update</code>或者<code>pod install</code>就可以了。</p>
-<h1 id="将CocoaPods从项目中删除"><a href="#将CocoaPods从项目中删除" class="headerlink" title="将CocoaPods从项目中删除"></a>将CocoaPods从项目中删除</h1><p>如果你在以后的使用过程中不想用CocoaPods了怎么办？很简单，把多出来的东西们都删掉就可以了，不过为了项目正常运行，你需要手动导入已经使用的第三方们哦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d1ddb8792b25dbba.gif?imageMogr2/auto-orient/strip" alt="将CocoaPods从项目中删除"></p>
-<h1 id="升级CocoaPods"><a href="#升级CocoaPods" class="headerlink" title="升级CocoaPods"></a>升级CocoaPods</h1><p>升级CocoaPods版本的命令和安装CocoaPods的命令一样，都是<code>sudo gem install cocoapods</code>。<br>如果老版本升级cocoapods的时候提示<code>Operation not permitted - /usr/bin/xcodeproj</code>，改用命令<code>sudo gem install -n /usr/local/bin cocoapods --pre</code>就可以了。</p>
-<h1 id="卸载CocoaPods"><a href="#卸载CocoaPods" class="headerlink" title="卸载CocoaPods"></a>卸载CocoaPods</h1><p>卸载CocoaPods的命令是<code>sudo gem uninstall cocoapods</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-8223f4baa3464e17.gif?imageMogr2/auto-orient/strip" alt="卸载CocoaPods"></p>
-<p>执行完命令后，最下面打印Successfully uninstalled cocoapods字样就代表已经成功卸载了。</p>
-<h1 id="CocoaPods-Mac-App的安装和使用"><a href="#CocoaPods-Mac-App的安装和使用" class="headerlink" title="CocoaPods Mac App的安装和使用"></a>CocoaPods Mac App的安装和使用</h1><p>CocoaPods桌面应用版下载地址：<a href="https://cocoapods.org/app">https://cocoapods.org/app</a><br>打开应用会提示你是否安装命令行工具，选择<code>install</code>就也可以在命令行使用Pod了。省去了上面的步骤们，方便快捷的使用CocoaPods。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-64fdfe34e7ba8fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="是否安装命令行工具"></p>
-<p>现在假如要给一个Test项目加入第三方库<br>1.选择File-New Podfile from Xcode Project，去选择项目的Project文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dfb7cdefde72d963.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择项目"></p>
-<p>2.填写自动生成的Podfile，并且安装。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-05b24b5b6c711a43.gif?imageMogr2/auto-orient/strip" alt="Podfile"></p>
-<p>然后就可以去打开工程了，是不是比命令行简单多了。<br>注意：Cocoapods.app 删掉并执行命令可能会报错：<code>Unable to locate the CocoaPods.app application bundle. Please ensure the application is available and launch it at least once</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-baedf94b4133ad6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="错误信息.png"></p>
-<p>这时候只要执行<code>sudo gem install -n /usr/local/bin cocoapods</code>命令就可以了。</p>
-<h1 id="CocoaPods官方使用指南"><a href="#CocoaPods官方使用指南" class="headerlink" title="CocoaPods官方使用指南"></a>CocoaPods官方使用指南</h1><p>链接：<a href="https://guides.cocoapods.org/">https://guides.cocoapods.org/</a><br>有什么不了解的或者遇到错误可以去这里查看一下。</p>
-<h1 id="XCode的CocoaPods插件"><a href="#XCode的CocoaPods插件" class="headerlink" title="XCode的CocoaPods插件"></a>XCode的CocoaPods插件</h1><p><a href="https://github.com/kattrali/cocoapods-xcode-plugin">CocoaPods-xcode-plugin</a>是一个XCode的插件，可以很方便的在Xcode通过pods安装各种第三方库。前提是终端已经安装好CocoaPods，使用方法大概如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-533856e1cdb3a9c5.gif?imageMogr2/auto-orient/strip" alt="CocoaPods插件使用"></p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>CocoaPods</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一些网站们，持续更新</title>
-    <url>/2021/044decb28c.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>本文总结一些有用的网站们。</p>
-<span id="more"></span>
-
-<ul>
-<li><a href="https://www.processon.com/">processon</a> ：免费在线作图、实时协作，支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等</li>
-<li><a href="https://lottiefiles.com/">lottiefiles</a> ：在线看lottie效果</li>
-<li><a href="https://regex101.com/">regex101</a> ：在线正则匹配</li>
-<li><a href="http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html">m3u8 downloader</a> ：m3u8 视频在线提取工具</li>
-<li><a href="https://minhaskamal.github.io/DownGit/#/home">DownGit</a> ：下载github项目上的文部分文件</li>
-<li><a href="https://msdn.itellyou.cn/">msdn.itellyou</a> ：下载Windows系统</li>
-<li><a href="https://www.progit.cn/">Pro Git 中文版</a> ：讲解Git的使用</li>
-<li><a href="https://swift.org/">swift</a> ：Swift官方网站</li>
-<li><a href="https://www.cnswift.org/">cnswift</a> ：Swift 编程语言 – 可能是最用心的翻译了吧</li>
-<li><a href="https://swiftify.com/converter/code/n0qt4d/">swiftify</a> ：OC转Swift</li>
-<li><a href="https://developer.apple.com/system-status/">system-status</a> ：查看苹果服务状态</li>
-<li><a href="https://www.ipip.net/">IPIP.NET</a> ：一些网络工具</li>
-<li><a href="https://dns.ip.cn/">IP.cn</a> ：全国 DNS 服务器 IP 地址汇总</li>
-<li><a href="https://onevcat.com/">onevcat</a> ：喵神的博客</li>
-<li><a href="https://tech.meituan.com/">美团技术团队</a> ：美团的技术博客</li>
-<li><a href="https://fontawesome.com/icons?d=gallery&p=2">Font Awesome</a> ：图标字体</li>
-<li><a href="https://theme-next.iissnan.com/">NexT</a> ：NexT 使用文档</li>
-<li><a href="https://leetcode-cn.com/">leetcode</a> ：练习算法</li>
-<li><a href="https://app.quicktype.io/">quicktype</a> ： json解析为多种语言</li>
-<li><a href="https://opensource.tencent.com/projects">腾讯开源项目</a> </li>
-<li></li>
-</ul>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>网站</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>系统地学习正则表达式(二)：进阶篇</title>
     <url>/2016/0923aaaabf.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -1709,6 +1662,55 @@
       </categories>
       <tags>
         <tag>regular</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>看一遍就会的CocoaPods的安装和使用教程</title>
+    <url>/2016/09750b7a66.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<h1 id="什么是CocoaPods？"><a href="#什么是CocoaPods？" class="headerlink" title="什么是CocoaPods？"></a>什么是CocoaPods？</h1><p>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。</p>
+<p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。</p>
+<p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。</p>
+<span id="more"></span>
+
+<h1 id="安装CocoaPods"><a href="#安装CocoaPods" class="headerlink" title="安装CocoaPods"></a>安装CocoaPods</h1><p>1.首先更新gem到最新版本，在终端中输入：<code>$ sudo gem update --system</code>,注意不要把“$”复制上。等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="更新gem"></p>
+<p>2.删除自带的ruby镜像，终端输入：<code>gem sources --remove https://rubygems.org/</code>。<br>3.添加淘宝的镜像，终端输入：<code>gem sources -a https://gems.ruby-china.org/</code>(原来的淘宝镜像 <code>https://ruby.taobao.org/</code>已经不能用了)。<br>4.可以用<code>gem sources -l</code> 来检查使用替换镜像位置成功，结果应该只有 <code>https://gems.ruby-china.org/</code> 才对。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-b51ee1565476195f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="修改镜像"></p>
+<p>5.安装CocoaPods，终端输入：<code>sudo gem install cocoapods</code>。<br>等待一会儿会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-aac3fb999f47a671.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="安装CocoaPods"></p>
+<p>6.然后配置下CocoaPods，终端输入：<code>pod setup</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-da73a2f6374ff2a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置CocoaPods"></p>
+<p>等待过程可能有点长，成功后会看到：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-444760464dc47119.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="配置成功"></p>
+<p>到这里CocoaPods就安装好了。</p>
+<h1 id="查找第三方库"><a href="#查找第三方库" class="headerlink" title="查找第三方库"></a>查找第三方库</h1><p>比如查找MJExtension，终端输入：<code>pod search MJExtension</code>，第一次搜索他需要建索引，等待一会儿就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-861fe8b1d10fb218.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="建索引中"></p>
+<p>完成后他会自动进入一个新的页面显示搜索结果，上下滑动查看更多，要退出的话按<code>wq</code>就可以了。以后再搜索就不需要建索引了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebbb361ab224f8ea.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="查找结果"></p>
+<h1 id="引入第三方库到项目中"><a href="#引入第三方库到项目中" class="headerlink" title="引入第三方库到项目中"></a>引入第三方库到项目中</h1><p>我先在桌面上新建一个Test项目，然后演示把MJExtension导进去。<br>刚开始的文件目录是这样的<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6d6542711c7e5354.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="原始目录.png"></p>
+<p>1,首先打开终端，cd到Test路径下。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4e369e27dff1bdaa.gif?imageMogr2/auto-orient/strip" alt="Test"><br>2.然后生成并编辑一个Podfile文件，命令为<code>vim Podfile</code>，要导入的第三方都要在这里面写上。进去后需要先按<code>I</code>键进入编辑状态，写完后按<code>esc</code>，然后按<code>shift+zz</code>(或者先按<code>shift+:</code>,再按<code>wq</code>)就可以保存退出了。下面的动图里面都有。<br>Podfile的格式大概如下，其中’Test’为你的target的名字。</p>
+<figure class="highlight ruby"><table><tr><td class="code"><pre><span class="line">platform <span class="symbol">:ios</span>,<span class="string">&#x27;8.0&#x27;</span></span><br><span class="line">target <span class="string">&#x27;Test&#x27;</span> <span class="keyword">do</span></span><br><span class="line">  pod <span class="string">&#x27;MJExtension&#x27;</span>, <span class="string">&#x27;~&gt; 3.0.13&#x27;</span></span><br><span class="line"><span class="keyword">end</span></span><br></pre></td></tr></table></figure>
+
+<p><code>3.安装，命令为：</code>pod install`。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-871f9b7d8a8d4ddb.gif?imageMogr2/auto-orient/strip" alt="安装第三方"></p>
+<p>安装成功之后，就可以去项目里面使用了。现在的项目文件变成了这样<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ea4c67a24307d77a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-07 23.23.19.png"></p>
+<p>之前我们一直是双击<code>Test.xcodeproj</code>打开项目，以后我们就要双击<code>Test.xcworkspace</code>打开了，打开后发现项目里面多了红色框的部分，可以看到MJExtension已经被引入了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-3ccc26e945f9c96a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="多出来的文件"></p>
+<h1 id="使用第三方"><a href="#使用第三方" class="headerlink" title="使用第三方"></a>使用第三方</h1><p>你会发现当引入MJExtension的头文件时，可以<code>#import &lt;MJExtension.h&gt;</code>或者<code>#import &lt;MJExtension/MJExtension.h&gt;</code>，但是却不能在输入<code>#import &quot;MJExtension.h&quot;</code>的时候出现提示。虽然强制输入也可以编译通过，但是感觉很不爽。<br>解决这个问题的办法是在工程的<code>Build Settings</code>搜索<code>Search</code>，然后在<code>User header search paths</code>中添加<code>$(SRCROOT)</code>并选择<code>recursive</code>。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d99fcc7b0cc5733d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="头文件不提示的解决办法"><br>现在就可以提示#import “MJExtension.h”啦。<br>然后我们就可以在项目里面使用MJExtension的方法啦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4cec4b4d7fcfa4a4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="使用MJExtension"></p>
+<h1 id="增加新的第三方"><a href="#增加新的第三方" class="headerlink" title="增加新的第三方"></a>增加新的第三方</h1><p>如果使用过程中我还想添加其他的第三方怎么办，只要在Podfile里面接着添加，然后终端再执行<code>pod instal</code>l就可以了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-de0abe938314e79d.gif?imageMogr2/auto-orient/strip" alt="新增第三方"></p>
+<h1 id="更新CocoaPods中的第三方们。"><a href="#更新CocoaPods中的第三方们。" class="headerlink" title="更新CocoaPods中的第三方们。"></a>更新CocoaPods中的第三方们。</h1><p>第三方库们都有人在维护升级，我们需要隔断时间就要更新下我们工程中第三方库的版本。只需要终端输入命令<code>pod update</code>就可以了。</p>
+<p>如果遇到<code>pod install</code>或者<code>pod update</code>慢的问题，原因在于当执行以上两个命令的时候会升级CocoaPods的spec仓库，加一个参数可以省略这一步，然后速度就会提升不少。加参数的命令如下：<br><code>pod install --verbose --no-repo-update</code><br><code>pod update --verbose --no-repo-update</code></p>
+<h1 id="删除CocoaPods中的某些第三方们。"><a href="#删除CocoaPods中的某些第三方们。" class="headerlink" title="删除CocoaPods中的某些第三方们。"></a>删除CocoaPods中的某些第三方们。</h1><p>当我们需要去掉某个第三方库时，只需要在Podfile删除该引入该库的语句，然后执行<code>pod update</code>或者<code>pod install</code>就可以了。</p>
+<h1 id="将CocoaPods从项目中删除"><a href="#将CocoaPods从项目中删除" class="headerlink" title="将CocoaPods从项目中删除"></a>将CocoaPods从项目中删除</h1><p>如果你在以后的使用过程中不想用CocoaPods了怎么办？很简单，把多出来的东西们都删掉就可以了，不过为了项目正常运行，你需要手动导入已经使用的第三方们哦。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-d1ddb8792b25dbba.gif?imageMogr2/auto-orient/strip" alt="将CocoaPods从项目中删除"></p>
+<h1 id="升级CocoaPods"><a href="#升级CocoaPods" class="headerlink" title="升级CocoaPods"></a>升级CocoaPods</h1><p>升级CocoaPods版本的命令和安装CocoaPods的命令一样，都是<code>sudo gem install cocoapods</code>。<br>如果老版本升级cocoapods的时候提示<code>Operation not permitted - /usr/bin/xcodeproj</code>，改用命令<code>sudo gem install -n /usr/local/bin cocoapods --pre</code>就可以了。</p>
+<h1 id="卸载CocoaPods"><a href="#卸载CocoaPods" class="headerlink" title="卸载CocoaPods"></a>卸载CocoaPods</h1><p>卸载CocoaPods的命令是<code>sudo gem uninstall cocoapods</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-8223f4baa3464e17.gif?imageMogr2/auto-orient/strip" alt="卸载CocoaPods"></p>
+<p>执行完命令后，最下面打印Successfully uninstalled cocoapods字样就代表已经成功卸载了。</p>
+<h1 id="CocoaPods-Mac-App的安装和使用"><a href="#CocoaPods-Mac-App的安装和使用" class="headerlink" title="CocoaPods Mac App的安装和使用"></a>CocoaPods Mac App的安装和使用</h1><p>CocoaPods桌面应用版下载地址：<a href="https://cocoapods.org/app">https://cocoapods.org/app</a><br>打开应用会提示你是否安装命令行工具，选择<code>install</code>就也可以在命令行使用Pod了。省去了上面的步骤们，方便快捷的使用CocoaPods。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-64fdfe34e7ba8fa6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="是否安装命令行工具"></p>
+<p>现在假如要给一个Test项目加入第三方库<br>1.选择File-New Podfile from Xcode Project，去选择项目的Project文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-dfb7cdefde72d963.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选择项目"></p>
+<p>2.填写自动生成的Podfile，并且安装。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-05b24b5b6c711a43.gif?imageMogr2/auto-orient/strip" alt="Podfile"></p>
+<p>然后就可以去打开工程了，是不是比命令行简单多了。<br>注意：Cocoapods.app 删掉并执行命令可能会报错：<code>Unable to locate the CocoaPods.app application bundle. Please ensure the application is available and launch it at least once</code><br><img src="http://upload-images.jianshu.io/upload_images/1608265-baedf94b4133ad6e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="错误信息.png"></p>
+<p>这时候只要执行<code>sudo gem install -n /usr/local/bin cocoapods</code>命令就可以了。</p>
+<h1 id="CocoaPods官方使用指南"><a href="#CocoaPods官方使用指南" class="headerlink" title="CocoaPods官方使用指南"></a>CocoaPods官方使用指南</h1><p>链接：<a href="https://guides.cocoapods.org/">https://guides.cocoapods.org/</a><br>有什么不了解的或者遇到错误可以去这里查看一下。</p>
+<h1 id="XCode的CocoaPods插件"><a href="#XCode的CocoaPods插件" class="headerlink" title="XCode的CocoaPods插件"></a>XCode的CocoaPods插件</h1><p><a href="https://github.com/kattrali/cocoapods-xcode-plugin">CocoaPods-xcode-plugin</a>是一个XCode的插件，可以很方便的在Xcode通过pods安装各种第三方库。前提是终端已经安装好CocoaPods，使用方法大概如下：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-533856e1cdb3a9c5.gif?imageMogr2/auto-orient/strip" alt="CocoaPods插件使用"></p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>CocoaPods</tag>
       </tags>
   </entry>
   <entry>
