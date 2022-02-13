@@ -2,6 +2,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.lisong.pro/2022/026210d6ad.html</loc>
+    
+    <lastmod>2022-02-13</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>https://blog.lisong.pro/2022/023fc8d0f9.html</loc>
     
     <lastmod>2022-02-13</lastmod>
@@ -418,6 +425,13 @@
   
   <url>
     <loc>https://blog.lisong.pro/tags/QRCode/</loc>
+    <lastmod>2022-02-13</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.lisong.pro/tags/sublime/</loc>
     <lastmod>2022-02-13</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>

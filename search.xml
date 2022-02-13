@@ -1925,4 +1925,30 @@
         <tag>QRCode</tag>
       </tags>
   </entry>
+  <entry>
+    <title>sublime去除重复行</title>
+    <url>/2022/026210d6ad.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<span id="more"></span>
+
+<p>1.排序</p>
+<figure class="highlight livecodeserver"><table><tr><td class="code"><pre><span class="line">edit-&gt; <span class="built_in">sort</span> <span class="keyword">lines</span></span><br></pre></td></tr></table></figure>
+
+<p>2.替换</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line">^(.+)$[<span class="symbol">\r</span><span class="symbol">\n</span>](^<span class="symbol">\1</span>$[<span class="symbol">\r</span><span class="symbol">\n</span>]&#123;0, 1&#125;)+</span><br></pre></td></tr></table></figure>
+
+<p>为</p>
+<figure class="highlight taggerscript"><table><tr><td class="code"><pre><span class="line"><span class="symbol">\1</span><span class="symbol">\n</span></span><br></pre></td></tr></table></figure>
+
+
+
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>sublime</tag>
+      </tags>
+  </entry>
 </search>
