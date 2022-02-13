@@ -1,50 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>Chrome好用的插件，持续更新</title>
-    <url>/2021/045dc07d30.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>本文总结一些Chrome上好用的插件们。</p>
-<span id="more"></span>
-
-<h1 id="扩展管理器（Extension-Manager）"><a href="#扩展管理器（Extension-Manager）" class="headerlink" title="扩展管理器（Extension Manager）"></a><a href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco">扩展管理器（Extension Manager）</a></h1><p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。</p>
-<p><img src="https://lh3.googleusercontent.com/i1quYLmDyiU7N5ES24UQEj74GRSnnMn7eBRwXLBfUK6zwaqWDzmmRAPH6YI7ih0aVKXdH9giVh5W7OjDs4sGdor_=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a><a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></h1><p>AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！</p>
-<h1 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></h1><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。</p>
-<p><img src="https://lh3.googleusercontent.com/MhMg9fwCD5qVhqcSCRfhIYqz5_xUfrziMtZ-Vtwlb2BT2wFkFuy_CWGtc9Gx4GtzO6qP3FTzCXy3jN-PqOgBlPbYqA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Awesome-Screenshot"><a href="#Awesome-Screenshot" class="headerlink" title="Awesome Screenshot"></a><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj">Awesome Screenshot</a></h1><p>截图和录屏2合1的工具，支持截取整个页面，快速分享屏幕。</p>
-<h1 id="JSON-handle"><a href="#JSON-handle" class="headerlink" title="JSON-handle"></a><a href="https://chrome.google.com/webstore/detail/json-handle/iahnhfdhidomcpggpaimmmahffihkfnj">JSON-handle</a></h1><p>对JSON格式的内容进行浏览和编辑，以树形图样式展现JSON文档，并可实时编辑。</p>
-<p><img src="https://lh3.googleusercontent.com/Q7b4wi7gG4SJhFxT3n633dFHVcm1XNn7UUA87bblaUoT32aUQrn6VygY_vzH7W6yE2of4ypEzrJetlO9LDHzFzucoA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="恢复关闭的标签"><a href="#恢复关闭的标签" class="headerlink" title="恢复关闭的标签"></a><a href="https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E7%9A%84%E6%A0%87%E7%AD%BE/nhdghhbkaaohocakiepiogjhlllekfma">恢复关闭的标签</a></h1><p>只要点击弹窗可让您轻而易举的撤销关闭的标签！</p>
-<p><img src="https://lh3.googleusercontent.com/MWOJm5K3Ur5f0ZN1yp_O-wK1SMSwMVYZd4pEbDlz4fy3sy-a-n3GaM4UThgkzIMdDMSJ1j9HJPL5QqNCd0Ixw8lhtLw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="工具喵"><a href="#工具喵" class="headerlink" title="工具喵"></a><a href="https://chrome.google.com/webstore/detail/%E5%B7%A5%E5%85%B7%E5%96%B5/coppgeobilocdhiclhgmadabblhfjgpm">工具喵</a></h1><p>工具喵（开发常用工具）：Unix时间戳、URL编码/解码、IP地址查询、MD5加密、BASE64编码/解码、随机字符串</p>
-<p><img src="https://lh3.googleusercontent.com/HZuYXNH40knDyCi7aYg_r2Uwq2mNfHUpSqFtLuYtvZ9clPmR_XX3f0JPPu6r3VwBD0vBFmutzjLgfGQ9mIF0M96-Rw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Speedtest-by-Ookla"><a href="#Speedtest-by-Ookla" class="headerlink" title="Speedtest by Ookla"></a><a href="https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh">Speedtest by Ookla</a></h1><p>测试网络表现和网站加载速度</p>
-<p><img src="https://lh3.googleusercontent.com/XL7wsubp9oQ6UoHKaoFv_XKTrVWIsQwTXupHytkb8Wv7qtCg6lWJjKXFW6SupavIyD-KqXSzREQM_xGLiPhcYbtDlA=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a><a href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus</a></h1><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频/音频和内容专辑。</p>
-<p><img src="https://lh3.googleusercontent.com/Ggd8q0G7oLNkaBMH5ZpBOUQOSh6xUttQkQPXJlwcAWJH89-NOjj1yRJZT0E-Os3bEGo-MMnoNuDDgwQudFpV0PWwLg=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Image-Downloader"><a href="#Image-Downloader" class="headerlink" title="Image Downloader"></a><a href="https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj">Image Downloader</a></h1><p>显示和下载一个网页上的图片们</p>
-<p><img src="https://lh3.googleusercontent.com/LMhuL15xpcXQsblr8OJIcIh0GGqElLqYq1SPn4Pt3DG6FSJQz0Vh8gD88mzHA8Bhrlcb5Kd7wGvCv7Tuh6AkzYDrD-M=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="GIPHY-for-Chrome"><a href="#GIPHY-for-Chrome" class="headerlink" title="GIPHY for Chrome"></a><a href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi">GIPHY for Chrome</a></h1><p>搜索gif图片</p>
-<p><img src="https://lh3.googleusercontent.com/l_kDiZth-ROWbXLKLTN0Vxe7ID69uOBMVYGTv7RCM8dzX6UTsqAPkjfKmPygZ71legxtUGV_hC6oPxVsU5GcLKP1Sg=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Octotree-GitHub-code-tree"><a href="#Octotree-GitHub-code-tree" class="headerlink" title="Octotree - GitHub code tree"></a><a href="https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc">Octotree - GitHub code tree</a></h1><p>更方便地浏览Github的代码</p>
-<p><img src="https://lh3.googleusercontent.com/1EP4WO0Y8yCHR3k_YohUBvlZuKmVsaV8jhii3YpRxytaFlLKVBIxckIUw9iZcU6H4MhqLmtgFINmJx3xGE1FPlHl6bo=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="Native-HLS-Playback"><a href="#Native-HLS-Playback" class="headerlink" title="Native HLS Playback"></a><a href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof">Native HLS Playback</a></h1><p>播放m3u8视频</p>
-<p><img src="https://lh3.googleusercontent.com/A4jwtVSlIjDNjF0DhASdTXvSJzdIuHzSMnJwE2qZudPuPqzVYiTHg_6t0uXm920cIlQP1OeP8p8m4Rik_1qhH7u4ig=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="购物党自动比价工具"><a href="#购物党自动比价工具" class="headerlink" title="购物党自动比价工具"></a><a href="https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah">购物党自动比价工具</a></h1><p>浏览商品页面时，自动查询180天历史价格、比较同款商品的全网最低价、提示促销和隐藏优惠券、一旦降价还能通过微信提醒你，海淘、二手房和Steam游戏也能比价！</p>
-<p><img src="https://lh3.googleusercontent.com/jAQ34Jca1rZH3XRyI5G0k6xzJDzt75dfNOkrS-edfeyjfpP0lfGG2w6BACobyyjNlYG-lGCt2i-9i830LKiaVIhsFw=w640-h400-e365-rj-sc0x00ffffff"></p>
-<h1 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a><a href="https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></h1><p>在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源。</p>
-<p><img src="https://lh3.googleusercontent.com/eqXFbVdPoGwnBDRsAtUiaQ0Mzijt6_bpBLmHE7yOBRjCjTWheH806Pw7m-fSsPWVvBt-KMP2iQPthhReUUc0910q=w640-h400-e365-rj-sc0x00ffffff"></p>
-]]></content>
-      <categories>
-        <category>Mac</category>
-      </categories>
-      <tags>
-        <tag>Chrome</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>CocoaLumberjack：简单好用的Log库</title>
     <url>/2017/01269a2739.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -92,6 +48,50 @@
       </categories>
       <tags>
         <tag>CocoaLumberjack</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>Chrome好用的插件，持续更新</title>
+    <url>/2021/045dc07d30.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>本文总结一些Chrome上好用的插件们。</p>
+<span id="more"></span>
+
+<h1 id="扩展管理器（Extension-Manager）"><a href="#扩展管理器（Extension-Manager）" class="headerlink" title="扩展管理器（Extension Manager）"></a><a href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco">扩展管理器（Extension Manager）</a></h1><p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。</p>
+<p><img src="https://lh3.googleusercontent.com/i1quYLmDyiU7N5ES24UQEj74GRSnnMn7eBRwXLBfUK6zwaqWDzmmRAPH6YI7ih0aVKXdH9giVh5W7OjDs4sGdor_=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="AdGuard"><a href="#AdGuard" class="headerlink" title="AdGuard"></a><a href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg">AdGuard</a></h1><p>AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！</p>
+<h1 id="Tampermonkey"><a href="#Tampermonkey" class="headerlink" title="Tampermonkey"></a><a href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo">Tampermonkey</a></h1><p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。</p>
+<p><img src="https://lh3.googleusercontent.com/MhMg9fwCD5qVhqcSCRfhIYqz5_xUfrziMtZ-Vtwlb2BT2wFkFuy_CWGtc9Gx4GtzO6qP3FTzCXy3jN-PqOgBlPbYqA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Awesome-Screenshot"><a href="#Awesome-Screenshot" class="headerlink" title="Awesome Screenshot"></a><a href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj">Awesome Screenshot</a></h1><p>截图和录屏2合1的工具，支持截取整个页面，快速分享屏幕。</p>
+<h1 id="JSON-handle"><a href="#JSON-handle" class="headerlink" title="JSON-handle"></a><a href="https://chrome.google.com/webstore/detail/json-handle/iahnhfdhidomcpggpaimmmahffihkfnj">JSON-handle</a></h1><p>对JSON格式的内容进行浏览和编辑，以树形图样式展现JSON文档，并可实时编辑。</p>
+<p><img src="https://lh3.googleusercontent.com/Q7b4wi7gG4SJhFxT3n633dFHVcm1XNn7UUA87bblaUoT32aUQrn6VygY_vzH7W6yE2of4ypEzrJetlO9LDHzFzucoA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="恢复关闭的标签"><a href="#恢复关闭的标签" class="headerlink" title="恢复关闭的标签"></a><a href="https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E7%9A%84%E6%A0%87%E7%AD%BE/nhdghhbkaaohocakiepiogjhlllekfma">恢复关闭的标签</a></h1><p>只要点击弹窗可让您轻而易举的撤销关闭的标签！</p>
+<p><img src="https://lh3.googleusercontent.com/MWOJm5K3Ur5f0ZN1yp_O-wK1SMSwMVYZd4pEbDlz4fy3sy-a-n3GaM4UThgkzIMdDMSJ1j9HJPL5QqNCd0Ixw8lhtLw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="工具喵"><a href="#工具喵" class="headerlink" title="工具喵"></a><a href="https://chrome.google.com/webstore/detail/%E5%B7%A5%E5%85%B7%E5%96%B5/coppgeobilocdhiclhgmadabblhfjgpm">工具喵</a></h1><p>工具喵（开发常用工具）：Unix时间戳、URL编码/解码、IP地址查询、MD5加密、BASE64编码/解码、随机字符串</p>
+<p><img src="https://lh3.googleusercontent.com/HZuYXNH40knDyCi7aYg_r2Uwq2mNfHUpSqFtLuYtvZ9clPmR_XX3f0JPPu6r3VwBD0vBFmutzjLgfGQ9mIF0M96-Rw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Speedtest-by-Ookla"><a href="#Speedtest-by-Ookla" class="headerlink" title="Speedtest by Ookla"></a><a href="https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh">Speedtest by Ookla</a></h1><p>测试网络表现和网站加载速度</p>
+<p><img src="https://lh3.googleusercontent.com/XL7wsubp9oQ6UoHKaoFv_XKTrVWIsQwTXupHytkb8Wv7qtCg6lWJjKXFW6SupavIyD-KqXSzREQM_xGLiPhcYbtDlA=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Imagus"><a href="#Imagus" class="headerlink" title="Imagus"></a><a href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab">Imagus</a></h1><p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频/音频和内容专辑。</p>
+<p><img src="https://lh3.googleusercontent.com/Ggd8q0G7oLNkaBMH5ZpBOUQOSh6xUttQkQPXJlwcAWJH89-NOjj1yRJZT0E-Os3bEGo-MMnoNuDDgwQudFpV0PWwLg=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Image-Downloader"><a href="#Image-Downloader" class="headerlink" title="Image Downloader"></a><a href="https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj">Image Downloader</a></h1><p>显示和下载一个网页上的图片们</p>
+<p><img src="https://lh3.googleusercontent.com/LMhuL15xpcXQsblr8OJIcIh0GGqElLqYq1SPn4Pt3DG6FSJQz0Vh8gD88mzHA8Bhrlcb5Kd7wGvCv7Tuh6AkzYDrD-M=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="GIPHY-for-Chrome"><a href="#GIPHY-for-Chrome" class="headerlink" title="GIPHY for Chrome"></a><a href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi">GIPHY for Chrome</a></h1><p>搜索gif图片</p>
+<p><img src="https://lh3.googleusercontent.com/l_kDiZth-ROWbXLKLTN0Vxe7ID69uOBMVYGTv7RCM8dzX6UTsqAPkjfKmPygZ71legxtUGV_hC6oPxVsU5GcLKP1Sg=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Octotree-GitHub-code-tree"><a href="#Octotree-GitHub-code-tree" class="headerlink" title="Octotree - GitHub code tree"></a><a href="https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc">Octotree - GitHub code tree</a></h1><p>更方便地浏览Github的代码</p>
+<p><img src="https://lh3.googleusercontent.com/1EP4WO0Y8yCHR3k_YohUBvlZuKmVsaV8jhii3YpRxytaFlLKVBIxckIUw9iZcU6H4MhqLmtgFINmJx3xGE1FPlHl6bo=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="Native-HLS-Playback"><a href="#Native-HLS-Playback" class="headerlink" title="Native HLS Playback"></a><a href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof">Native HLS Playback</a></h1><p>播放m3u8视频</p>
+<p><img src="https://lh3.googleusercontent.com/A4jwtVSlIjDNjF0DhASdTXvSJzdIuHzSMnJwE2qZudPuPqzVYiTHg_6t0uXm920cIlQP1OeP8p8m4Rik_1qhH7u4ig=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="购物党自动比价工具"><a href="#购物党自动比价工具" class="headerlink" title="购物党自动比价工具"></a><a href="https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah">购物党自动比价工具</a></h1><p>浏览商品页面时，自动查询180天历史价格、比较同款商品的全网最低价、提示促销和隐藏优惠券、一旦降价还能通过微信提醒你，海淘、二手房和Steam游戏也能比价！</p>
+<p><img src="https://lh3.googleusercontent.com/jAQ34Jca1rZH3XRyI5G0k6xzJDzt75dfNOkrS-edfeyjfpP0lfGG2w6BACobyyjNlYG-lGCt2i-9i830LKiaVIhsFw=w640-h400-e365-rj-sc0x00ffffff"></p>
+<h1 id="掘金"><a href="#掘金" class="headerlink" title="掘金"></a><a href="https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb">掘金</a></h1><p>在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源。</p>
+<p><img src="https://lh3.googleusercontent.com/eqXFbVdPoGwnBDRsAtUiaQ0Mzijt6_bpBLmHE7yOBRjCjTWheH806Pw7m-fSsPWVvBt-KMP2iQPthhReUUc0910q=w640-h400-e365-rj-sc0x00ffffff"></p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>Chrome</tag>
       </tags>
   </entry>
   <entry>
@@ -179,6 +179,57 @@
       </tags>
   </entry>
   <entry>
+    <title>Linux使用相关的一些东西</title>
+    <url>/2021/0391370673.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用<a href="https://www.debian.org/">Debian</a>，所以这些基本上都是在Debian环境下的。</p>
+<span id="more"></span>
+
+<h1 id="启用root帐户登录ssh"><a href="#启用root帐户登录ssh" class="headerlink" title="启用root帐户登录ssh"></a>启用root帐户登录ssh</h1><p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 <code>/etc/ssh/sshd_config</code> ：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">PermitRootLogin prohibit-password</span></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
+
+<p>然后重启ssh服务，就可以root用户登录ssh了：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
+
+<h1 id="设置或者修改时区"><a href="#设置或者修改时区" class="headerlink" title="设置或者修改时区"></a>设置或者修改时区</h1><p>检查当前时区：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure>
+
+<p>修改时区：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone your_time_zone</span><br></pre></td></tr></table></figure>
+
+<p>例如修改为Shanghai:</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone Asia/Shanghai</span><br></pre></td></tr></table></figure>
+
+<p>至于具体有哪些时区可用呢，可以用 <code>timedatectl list-timezones</code> 命令查看或者去 <code>/usr/share/zoneinfo</code> 目录里面看。</p>
+<h1 id="自定义开机启动项"><a href="#自定义开机启动项" class="headerlink" title="自定义开机启动项"></a>自定义开机启动项</h1><p>首先，进入 <code>/etc/init.d</code> 目录中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/init.d/</span><br></pre></td></tr></table></figure>
+
+<p>你会发现里面已经有一些启动项了。然后我们创建一个自己的：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim MyTest</span><br></pre></td></tr></table></figure>
+
+<p>在里面输入以下内容：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## BEGIN INIT INFO</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Provides: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Start: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Stop: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Start: 2 3 4 5</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Stop: 0 1 6</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Short-Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## END INIT INFO</span></span></span><br><span class="line"></span><br><span class="line">echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</span><br><span class="line"></span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
+
+<p>这个是一个大概的模板，其中 <code>echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</code> 部分就是系统启动时要执行的命令，意思在指定文件里写入一句话。你可以在根据自己的需要写一些命令。</p>
+<p>写完保存之后，给文件加上可执行的属性：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod +x MyTest</span><br></pre></td></tr></table></figure>
+
+<p>然后，将脚本加入开机启动项中：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d MyTest defaults</span><br></pre></td></tr></table></figure>
+
+<p>如果需要删除这个开机启动项，则使用命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d -f MyTest remove</span><br></pre></td></tr></table></figure>
+
+]]></content>
+      <categories>
+        <category>Linux</category>
+      </categories>
+      <tags>
+        <tag>Debian</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>Homebrew的使用</title>
     <url>/2021/043dc4d0c2.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -232,57 +283,6 @@
       </categories>
       <tags>
         <tag>HomeBrew</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>Linux使用相关的一些东西</title>
-    <url>/2021/0391370673.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用<a href="https://www.debian.org/">Debian</a>，所以这些基本上都是在Debian环境下的。</p>
-<span id="more"></span>
-
-<h1 id="启用root帐户登录ssh"><a href="#启用root帐户登录ssh" class="headerlink" title="启用root帐户登录ssh"></a>启用root帐户登录ssh</h1><p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 <code>/etc/ssh/sshd_config</code> ：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">PermitRootLogin prohibit-password</span></span><br><span class="line">PermitRootLogin yes</span><br></pre></td></tr></table></figure>
-
-<p>然后重启ssh服务，就可以root用户登录ssh了：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">/etc/init.d/ssh restart</span><br></pre></td></tr></table></figure>
-
-<h1 id="设置或者修改时区"><a href="#设置或者修改时区" class="headerlink" title="设置或者修改时区"></a>设置或者修改时区</h1><p>检查当前时区：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">timedatectl</span><br></pre></td></tr></table></figure>
-
-<p>修改时区：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone your_time_zone</span><br></pre></td></tr></table></figure>
-
-<p>例如修改为Shanghai:</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">sudo timedatectl set-timezone Asia/Shanghai</span><br></pre></td></tr></table></figure>
-
-<p>至于具体有哪些时区可用呢，可以用 <code>timedatectl list-timezones</code> 命令查看或者去 <code>/usr/share/zoneinfo</code> 目录里面看。</p>
-<h1 id="自定义开机启动项"><a href="#自定义开机启动项" class="headerlink" title="自定义开机启动项"></a>自定义开机启动项</h1><p>首先，进入 <code>/etc/init.d</code> 目录中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">cd /etc/init.d/</span><br></pre></td></tr></table></figure>
-
-<p>你会发现里面已经有一些启动项了。然后我们创建一个自己的：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">vim MyTest</span><br></pre></td></tr></table></figure>
-
-<p>在里面输入以下内容：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line"><span class="meta">#</span><span class="bash">!/bin/sh</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## BEGIN INIT INFO</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Provides: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Start: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Required-Stop: <span class="variable">$network</span> <span class="variable">$remote_fs</span> <span class="variable">$local_fs</span></span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Start: 2 3 4 5</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Default-Stop: 0 1 6</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Short-Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"> Description: MyTest</span></span><br><span class="line"><span class="meta">#</span><span class="bash"><span class="comment">## END INIT INFO</span></span></span><br><span class="line"></span><br><span class="line">echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</span><br><span class="line"></span><br><span class="line">exit 0</span><br></pre></td></tr></table></figure>
-
-<p>这个是一个大概的模板，其中 <code>echo &quot;Hello World !&quot; &gt;&gt; ~/mytest.txt</code> 部分就是系统启动时要执行的命令，意思在指定文件里写入一句话。你可以在根据自己的需要写一些命令。</p>
-<p>写完保存之后，给文件加上可执行的属性：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">chmod +x MyTest</span><br></pre></td></tr></table></figure>
-
-<p>然后，将脚本加入开机启动项中：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d MyTest defaults</span><br></pre></td></tr></table></figure>
-
-<p>如果需要删除这个开机启动项，则使用命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">update-rc.d -f MyTest remove</span><br></pre></td></tr></table></figure>
-
-]]></content>
-      <categories>
-        <category>Linux</category>
-      </categories>
-      <tags>
-        <tag>Debian</tag>
       </tags>
   </entry>
   <entry>
@@ -404,76 +404,6 @@
       </tags>
   </entry>
   <entry>
-    <title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title>
-    <url>/2016/095d76ea11.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：</p>
-<img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif" style="zoom: 67%;" />
-
-<span id="more"></span>
-
-<h1 id="颜色相关"><a href="#颜色相关" class="headerlink" title="颜色相关"></a>颜色相关</h1><p><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageWithColor:(UIColor *</span>)color;</span><br></pre></td></tr></table></figure>
-<p>使用方法，比如设置UIImageView的图片为红色纯图片：</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [UIImage imageWithColor:[UIColor redColor]]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>2.取图片上某一像素的颜色</strong><br>有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。<br>需要注意的是这里要传的参数point是相对于图片上的点。</p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIColor *)</span>colorAtPixel:<span class="params">(CGPoint)</span>point;</span><br></pre></td></tr></table></figure>
-<p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：</p>
-<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point = <span class="literal">[<span class="identifier">tap</span> <span class="identifier">locationInView</span>:<span class="identifier">tap</span>.<span class="identifier">view</span>]</span>;</span><br><span class="line">    UIImage *image = self.imageView.image;</span><br><span class="line">    CGPoint pointInImage = <span class="constructor">CGPointMake(<span class="params">point</span>.<span class="params">x</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">width</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">width</span>, <span class="params">point</span>.<span class="params">y</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">height</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">height</span>)</span>;</span><br><span class="line">    self.view.backgroundColor = <span class="literal">[<span class="identifier">image</span> <span class="identifier">colorAtPixel</span>:<span class="identifier">pointInImage</span>]</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>**3.获得灰度图 **<br>获取一张彩色图片的黑白图片</p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p>使用方法：</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image convertToGrayImage]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="旋转相关"><a href="#旋转相关" class="headerlink" title="旋转相关"></a>旋转相关</h1><p><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)fixOrientation<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p>使用:</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image fixOrientation]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>2.按给定的方向旋转图片</strong><br>在做图片处理工具的时候，我们可能需要旋转图片。<br>这个方法的参数是系统枚举UIImageOrientation。</p>
-<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSInteger</span>, <span class="built_in">UIImageOrientation</span>) &#123;</span><br><span class="line">    <span class="built_in">UIImageOrientationUp</span>,            <span class="comment">// default orientation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDown</span>,          <span class="comment">// 180 deg rotation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeft</span>,          <span class="comment">// 90 deg CCW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRight</span>,         <span class="comment">// 90 deg CW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationUpMirrored</span>,    <span class="comment">// as above but image mirrored along other axis. horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDownMirrored</span>,  <span class="comment">// horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeftMirrored</span>,  <span class="comment">// vertical flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRightMirrored</span>, <span class="comment">// vertical flip</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">UIImage</span>*)rotate:(<span class="built_in">UIImageOrientation</span>)orient;</span><br></pre></td></tr></table></figure>
-<p>使用，比如顺时针旋转180度：</p>
-<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image rotate:UIImageOrientationDown]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>3.垂直翻转</strong><br>其实就是上面的方法传UIImageOrientationDownMirrored参数。 </p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)flipVertical<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p><strong>4.水平翻转</strong><br>其实就是传UIImageOrientationUpMirrored参数。</p>
-<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal<span class="comment">;</span></span><br></pre></td></tr></table></figure>
-<p><strong>5.将图片旋转degrees角度</strong><br>传入一个自定义的角度。</p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByDegrees:<span class="params">(CGFloat)</span>degrees;</span><br></pre></td></tr></table></figure>
-<p><strong>6.将图片旋转radians弧度</strong></p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByRadians:<span class="params">(CGFloat)</span>radians;</span><br></pre></td></tr></table></figure>
-
-<h1 id="生成图相关"><a href="#生成图相关" class="headerlink" title="生成图相关"></a>生成图相关</h1><p><strong>1.截取image对象rect区域内的图像</strong></p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>subImageWithRect:<span class="params">(CGRect)</span>rect;</span><br></pre></td></tr></table></figure>
-<p><strong>2.压缩图片至指定尺寸</strong></p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
-<p><strong>3.压缩图片至指定像素</strong></p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToPX:<span class="params">(CGFloat )</span>toPX;</span><br></pre></td></tr></table></figure>
-<p><strong>4.生成一个size大小的平铺图片</strong></p>
-<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>getTiledImageWithSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
-<p><strong>5..UIView转化为UIImage</strong></p>
-<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageFromView:(UIView *</span>)view;</span><br></pre></td></tr></table></figure>
-<p><strong>6.将两个图片生成一张图片</strong><br>firstImage在下面，secondImage在上面</p>
-<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line">+ (<span class="built_in">UIImage</span>*)mergeImage:(<span class="built_in">UIImage</span>*)firstImage withImage:(<span class="built_in">UIImage</span>*)secondImage;</span><br></pre></td></tr></table></figure>
-
-<h1 id="Gif相关"><a href="#Gif相关" class="headerlink" title="Gif相关"></a>Gif相关</h1><p>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
-<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIFData */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFData:(<span class="built_in">NSData</span> *)theData;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIF路径 */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFURL:(<span class="built_in">NSURL</span> *)theURL;</span><br></pre></td></tr></table></figure>
-<p>使用：</p>
-<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSString</span> *path = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:<span class="string">@&quot;gif&quot;</span> ofType:<span class="string">@&quot;gif&quot;</span>];</span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFURL:[<span class="built_in">NSURL</span> fileURLWithPath:path]];</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFData:[<span class="built_in">NSData</span> dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
-<p>希望能帮到大家，持续更新中。</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>-UIImage</tag>
-      </tags>
-  </entry>
-  <entry>
     <title>Runtime的运用和减少应用崩溃</title>
     <url>/2017/06dfe7f658.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -543,6 +473,76 @@
       </categories>
       <tags>
         <tag>runtime</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title>
+    <url>/2016/095d76ea11.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。<br>本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看<a href="https://github.com/lisongrc/UIImage-Categories">demo</a>，效果如下：</p>
+<img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif" style="zoom: 67%;" />
+
+<span id="more"></span>
+
+<h1 id="颜色相关"><a href="#颜色相关" class="headerlink" title="颜色相关"></a>颜色相关</h1><p><strong>1.根据颜色生成纯色图片</strong><br>就是根据制定的颜色生成一张纯色的图片</p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageWithColor:(UIColor *</span>)color;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如设置UIImageView的图片为红色纯图片：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [UIImage imageWithColor:[UIColor redColor]]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2.取图片上某一像素的颜色</strong><br>有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。<br>需要注意的是这里要传的参数point是相对于图片上的点。</p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIColor *)</span>colorAtPixel:<span class="params">(CGPoint)</span>point;</span><br></pre></td></tr></table></figure>
+<p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：</p>
+<figure class="highlight reasonml"><table><tr><td class="code"><pre><span class="line">- (void)handleTap:(UITapGestureRecognizer *)tap</span><br><span class="line">&#123;</span><br><span class="line">    CGPoint point = <span class="literal">[<span class="identifier">tap</span> <span class="identifier">locationInView</span>:<span class="identifier">tap</span>.<span class="identifier">view</span>]</span>;</span><br><span class="line">    UIImage *image = self.imageView.image;</span><br><span class="line">    CGPoint pointInImage = <span class="constructor">CGPointMake(<span class="params">point</span>.<span class="params">x</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">width</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">width</span>, <span class="params">point</span>.<span class="params">y</span> <span class="operator">*</span> <span class="params">image</span>.<span class="params">size</span>.<span class="params">height</span> <span class="operator">/</span> <span class="params">self</span>.<span class="params">imageView</span>.<span class="params">frame</span>.<span class="params">size</span>.<span class="params">height</span>)</span>;</span><br><span class="line">    self.view.backgroundColor = <span class="literal">[<span class="identifier">image</span> <span class="identifier">colorAtPixel</span>:<span class="identifier">pointInImage</span>]</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>**3.获得灰度图 **<br>获取一张彩色图片的黑白图片</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)convertToGrayImage<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>使用方法：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image convertToGrayImage]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<h1 id="旋转相关"><a href="#旋转相关" class="headerlink" title="旋转相关"></a>旋转相关</h1><p><strong>1.纠正图片的方向</strong><br>当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)fixOrientation<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p>使用:</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image fixOrientation]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>2.按给定的方向旋转图片</strong><br>在做图片处理工具的时候，我们可能需要旋转图片。<br>这个方法的参数是系统枚举UIImageOrientation。</p>
+<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="keyword">typedef</span> <span class="built_in">NS_ENUM</span>(<span class="built_in">NSInteger</span>, <span class="built_in">UIImageOrientation</span>) &#123;</span><br><span class="line">    <span class="built_in">UIImageOrientationUp</span>,            <span class="comment">// default orientation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDown</span>,          <span class="comment">// 180 deg rotation</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeft</span>,          <span class="comment">// 90 deg CCW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRight</span>,         <span class="comment">// 90 deg CW</span></span><br><span class="line">    <span class="built_in">UIImageOrientationUpMirrored</span>,    <span class="comment">// as above but image mirrored along other axis. horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationDownMirrored</span>,  <span class="comment">// horizontal flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationLeftMirrored</span>,  <span class="comment">// vertical flip</span></span><br><span class="line">    <span class="built_in">UIImageOrientationRightMirrored</span>, <span class="comment">// vertical flip</span></span><br><span class="line">&#125;;</span><br><span class="line"></span><br><span class="line">- (<span class="built_in">UIImage</span>*)rotate:(<span class="built_in">UIImageOrientation</span>)orient;</span><br></pre></td></tr></table></figure>
+<p>使用，比如顺时针旋转180度：</p>
+<figure class="highlight ini"><table><tr><td class="code"><pre><span class="line"><span class="attr">self.imageView.image</span> = [image rotate:UIImageOrientationDown]<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+
+<p><strong>3.垂直翻转</strong><br>其实就是上面的方法传UIImageOrientationDownMirrored参数。 </p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)flipVertical<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p><strong>4.水平翻转</strong><br>其实就是传UIImageOrientationUpMirrored参数。</p>
+<figure class="highlight abnf"><table><tr><td class="code"><pre><span class="line">- (UIImage *)flipHorizontal<span class="comment">;</span></span><br></pre></td></tr></table></figure>
+<p><strong>5.将图片旋转degrees角度</strong><br>传入一个自定义的角度。</p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByDegrees:<span class="params">(CGFloat)</span>degrees;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将图片旋转radians弧度</strong></p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>imageRotatedByRadians:<span class="params">(CGFloat)</span>radians;</span><br></pre></td></tr></table></figure>
+
+<h1 id="生成图相关"><a href="#生成图相关" class="headerlink" title="生成图相关"></a>生成图相关</h1><p><strong>1.截取image对象rect区域内的图像</strong></p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>subImageWithRect:<span class="params">(CGRect)</span>rect;</span><br></pre></td></tr></table></figure>
+<p><strong>2.压缩图片至指定尺寸</strong></p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
+<p><strong>3.压缩图片至指定像素</strong></p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>rescaleImageToPX:<span class="params">(CGFloat )</span>toPX;</span><br></pre></td></tr></table></figure>
+<p><strong>4.生成一个size大小的平铺图片</strong></p>
+<figure class="highlight erlang"><table><tr><td class="code"><pre><span class="line">- <span class="params">(UIImage *)</span>getTiledImageWithSize:<span class="params">(CGSize)</span>size;</span><br></pre></td></tr></table></figure>
+<p><strong>5..UIView转化为UIImage</strong></p>
+<figure class="highlight markdown"><table><tr><td class="code"><pre><span class="line"><span class="bullet">+</span> (UIImage <span class="emphasis">*)imageFromView:(UIView *</span>)view;</span><br></pre></td></tr></table></figure>
+<p><strong>6.将两个图片生成一张图片</strong><br>firstImage在下面，secondImage在上面</p>
+<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line">+ (<span class="built_in">UIImage</span>*)mergeImage:(<span class="built_in">UIImage</span>*)firstImage withImage:(<span class="built_in">UIImage</span>*)secondImage;</span><br></pre></td></tr></table></figure>
+
+<h1 id="Gif相关"><a href="#Gif相关" class="headerlink" title="Gif相关"></a>Gif相关</h1><p>将一个Gif直接设置为UIImageView的image就可以显示动态图了。</p>
+<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIFData */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFData:(<span class="built_in">NSData</span> *)theData;</span><br><span class="line"></span><br><span class="line"><span class="comment">/** 用一个Gif生成UIImage，传入一个GIF路径 */</span></span><br><span class="line">+ (<span class="built_in">UIImage</span> *)animatedImageWithAnimatedGIFURL:(<span class="built_in">NSURL</span> *)theURL;</span><br></pre></td></tr></table></figure>
+<p>使用：</p>
+<figure class="highlight objectivec"><table><tr><td class="code"><pre><span class="line"><span class="built_in">NSString</span> *path = [[<span class="built_in">NSBundle</span> mainBundle] pathForResource:<span class="string">@&quot;gif&quot;</span> ofType:<span class="string">@&quot;gif&quot;</span>];</span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFURL:[<span class="built_in">NSURL</span> fileURLWithPath:path]];</span><br><span class="line"><span class="comment">//或者</span></span><br><span class="line"><span class="keyword">self</span>.imageView.image = [<span class="built_in">UIImage</span> animatedImageWithAnimatedGIFData:[<span class="built_in">NSData</span> dataWithContentsOfFile:path]];</span><br></pre></td></tr></table></figure>
+<p>希望能帮到大家，持续更新中。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>-UIImage</tag>
       </tags>
   </entry>
   <entry>
@@ -854,52 +854,6 @@
       </tags>
   </entry>
   <entry>
-    <title>iOS中@功能的完整实现</title>
-    <url>/2018/05784ea6a5.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：<br><img src="https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip"></p>
-<span id="more"></span>
-
-<p>这个功能的具体要求如下：</p>
-<blockquote>
-<p>1、一个@是由一个<code>@</code>字符和一个空格<code> </code>字符包起来的。<br>2、支持手写输入，只要符合就高亮显示。<br>3、支持从列表选择，选择后插入光标所在位置并高亮。<br>4、光标不能出现在一个@词中间，点击中间后自动移动到@词后面，长按滑动光标时也要越过@词。但是当用户长按选择文本时可以。<br>5、当光标正好在一个@词后面时，按删除键@词要整体删除。</p>
-</blockquote>
-<p>先附上<a href="https://github.com/lisongrc/ATDemo">本文demo</a>，算下来代码也没有多少，还算简洁，大家一看就懂。其中包括的功能：</p>
-<blockquote>
-<p>1、输入框@编辑和选择功能，也就是上面那些需求。<br>2、输入框随着文字多少改变高度，并根据键盘随动。<br>3、发布后显示在列表上，并将符合的@高亮显示。<br>4、列表上的cell根据文字自动计算高度。<br>5、点击高亮词后可以捕获到事件，自己实现跳转就可以。</p>
-</blockquote>
-<p>好了，下面大概讲解一下，有不明白的地方可以下载demo具体看看。</p>
-<h4 id="用到的第三方"><a href="#用到的第三方" class="headerlink" title="用到的第三方"></a>用到的第三方</h4><p>1、<a href="https://github.com/HansPinckaers/GrowingTextView">HPGrowingTextView</a>，用来实现输入框根据文字改变高度。使用和UITextView类似，代理也和UITextView差不多：<br><img src="https://upload-images.jianshu.io/upload_images/1608265-df453bab14eb0d62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p>2、<a href="https://github.com/molon/MLLabel">MLLabel</a>，用来高亮显示label文本中的某些文字，支持自动识别一些常见的，也可以自定义规则。支持链接色和点击色等等一些配置。点击回调里面自己实现跳转就可以。</p>
-<p><img src="https://upload-images.jianshu.io/upload_images/1608265-2d74a6961c6202f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
-<p>集成这些第三方用的是cocoapods，关于cocoapods的教程可以看我的<a href="https://www.jianshu.com/p/1711e131987d">这篇文章</a>;</p>
-<h4 id="具体实现的一些细节"><a href="#具体实现的一些细节" class="headerlink" title="具体实现的一些细节"></a>具体实现的一些细节</h4><h6 id="1、检验文本中所有的-词"><a href="#1、检验文本中所有的-词" class="headerlink" title="1、检验文本中所有的@词"></a>1、检验文本中所有的@词</h6><p>用的是系统的<code>NSRegularExpression</code>类，不熟悉的大家可以去查一下，这里就不细讲了：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">NSArray</span>&lt;<span class="built_in">NSTextCheckingResult</span> *&gt; *)findAllAt</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 找到文本中所有的@</span></span><br><span class="line">    <span class="built_in">NSString</span> *string = <span class="keyword">self</span>.growingTextView.text;</span><br><span class="line">    <span class="built_in">NSRegularExpression</span> *regex = [<span class="built_in">NSRegularExpression</span> regularExpressionWithPattern:kATRegular options:<span class="built_in">NSRegularExpressionCaseInsensitive</span> error:<span class="literal">nil</span>];</span><br><span class="line">    <span class="built_in">NSArray</span> *matches = [regex matchesInString:string options:<span class="built_in">NSMatchingReportProgress</span> range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, [string length])];</span><br><span class="line">    <span class="keyword">return</span> matches;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="2、输入框根据输入文字多少自动改变高度"><a href="#2、输入框根据输入文字多少自动改变高度" class="headerlink" title="2、输入框根据输入文字多少自动改变高度"></a>2、输入框根据输入文字多少自动改变高度</h6><p>在HPGrowingTextView的代理里面实现：</p>
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextView:(HPGrowingTextView *)growingTextView willChangeHeight:(<span class="keyword">float</span>)height</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">self</span>.commentViewHeight.constant = height + <span class="number">14</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h6 id="3、输入框中的文字要随着文字改变实时将-词高亮"><a href="#3、输入框中的文字要随着文字改变实时将-词高亮" class="headerlink" title="3、输入框中的文字要随着文字改变实时将@词高亮"></a>3、输入框中的文字要随着文字改变实时将@词高亮</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextViewDidChange:(HPGrowingTextView *)growingTextView</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">UITextRange</span> *selectedRange = growingTextView.internalTextView.markedTextRange;</span><br><span class="line">    <span class="built_in">NSString</span> *newText = [growingTextView.internalTextView textInRange:selectedRange];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (newText.length &lt; <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 高亮输入框中的@</span></span><br><span class="line">        <span class="built_in">UITextView</span> *textView = <span class="keyword">self</span>.growingTextView.internalTextView;</span><br><span class="line">        <span class="built_in">NSRange</span> range = textView.selectedRange;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">NSMutableAttributedString</span> *string = [[<span class="built_in">NSMutableAttributedString</span> alloc] initWithString:textView.text];</span><br><span class="line">        [string addAttribute:<span class="built_in">NSForegroundColorAttributeName</span> value:[<span class="built_in">UIColor</span> blackColor] range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, string.string.length)];</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">        &#123;</span><br><span class="line">            [string addAttribute:<span class="built_in">NSForegroundColorAttributeName</span> value:[<span class="built_in">UIColor</span> redColor] range:<span class="built_in">NSMakeRange</span>(match.range.location, match.range.length - <span class="number">1</span>)];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        textView.attributedText = string;</span><br><span class="line">        textView.selectedRange = range;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>首先判断是不是正在输入拼音，不是的话我们才应该处理。然后就是用正则找到所有的@词，用NSMutableAttributedString的方法加上高亮色，然后把最终的attributedString赋值给TextView，并将光标的位置复原为替换文本之前的状态。</p>
-<h6 id="4、删除时-词要整体删除"><a href="#4、删除时-词要整体删除" class="headerlink" title="4、删除时@词要整体删除"></a>4、删除时@词要整体删除</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)growingTextView:(HPGrowingTextView *)growingTextView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ([text isEqualToString:<span class="string">@&quot;&quot;</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSRange</span> selectRange = growingTextView.selectedRange;</span><br><span class="line">        <span class="keyword">if</span> (selectRange.length &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//用户长按选择文本时不处理</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 判断删除的是一个@中间的字符就整体删除</span></span><br><span class="line">        <span class="built_in">NSMutableString</span> *string = [<span class="built_in">NSMutableString</span> stringWithString:growingTextView.text];</span><br><span class="line">        <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">BOOL</span> inAt = <span class="literal">NO</span>;</span><br><span class="line">        <span class="built_in">NSInteger</span> index = range.location;</span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">NSRange</span> newRange = <span class="built_in">NSMakeRange</span>(match.range.location + <span class="number">1</span>, match.range.length - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">NSLocationInRange</span>(range.location, newRange))</span><br><span class="line">            &#123;</span><br><span class="line">                inAt = <span class="literal">YES</span>;</span><br><span class="line">                index = match.range.location;</span><br><span class="line">                [string replaceCharactersInRange:match.range withString:<span class="string">@&quot;&quot;</span>];</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (inAt)</span><br><span class="line">        &#123;</span><br><span class="line">            growingTextView.text = string;</span><br><span class="line">            growingTextView.selectedRange = <span class="built_in">NSMakeRange</span>(index, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//判断是回车键就发送出去</span></span><br><span class="line">    <span class="keyword">if</span> ([text isEqualToString:<span class="string">@&quot;\n&quot;</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="keyword">self</span>.comments addObject:growingTextView.text];</span><br><span class="line">        <span class="keyword">self</span>.growingTextView.text = <span class="string">@&quot;&quot;</span>;</span><br><span class="line">        [<span class="keyword">self</span>.growingTextView resignFirstResponder];</span><br><span class="line">        [<span class="keyword">self</span>.tableView reloadData];</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>首先判断替换词是空字符串就代表是删除操作，然后找出输入框文字中所有的@词，判断要删除的字符是否在任意一个@词中间，如果在就把输入框文字中这个@词整体删除，然后重新赋值给TextView，并纠正光标的位置。但是要判断用户在长按选择文本时不处理。</p>
-<h6 id="5、光标不能点击落在一个-词中间："><a href="#5、光标不能点击落在一个-词中间：" class="headerlink" title="5、光标不能点击落在一个@词中间："></a>5、光标不能点击落在一个@词中间：</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextViewDidChangeSelection:(HPGrowingTextView *)growingTextView</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 光标不能点落在@词中间</span></span><br><span class="line">    <span class="built_in">NSRange</span> range = growingTextView.selectedRange;</span><br><span class="line">    <span class="keyword">if</span> (range.length &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 选择文本时可以</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSRange</span> newRange = <span class="built_in">NSMakeRange</span>(match.range.location + <span class="number">1</span>, match.range.length - <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">NSLocationInRange</span>(range.location, newRange))</span><br><span class="line">        &#123;</span><br><span class="line">            growingTextView.internalTextView.selectedRange = <span class="built_in">NSMakeRange</span>(match.range.location + match.range.length, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其实就是判断光标改变位置后是否在@词中间，如果在就把光标强制移动到@词后面。但是当用户长按选择文本时可以。</p>
-<h6 id="6、从列表中选择人去-他"><a href="#6、从列表中选择人去-他" class="headerlink" title="6、从列表中选择人去@他"></a>6、从列表中选择人去@他</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)prepareForSegue:(<span class="built_in">UIStoryboardSegue</span> *)segue sender:(<span class="keyword">id</span>)sender</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 去选择@的人</span></span><br><span class="line">    [<span class="keyword">self</span>.growingTextView.internalTextView unmarkText];</span><br><span class="line">    <span class="built_in">NSInteger</span> index = <span class="keyword">self</span>.growingTextView.text.length;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>.growingTextView.isFirstResponder)</span><br><span class="line">    &#123;</span><br><span class="line">        index = <span class="keyword">self</span>.growingTextView.selectedRange.location + <span class="keyword">self</span>.growingTextView.selectedRange.length;</span><br><span class="line">        [<span class="keyword">self</span>.growingTextView resignFirstResponder];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    SelectUserController *atVC = segue.destinationViewController;</span><br><span class="line">    atVC.selectBlock = ^(<span class="built_in">NSString</span> *name)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">UITextView</span> *textView = <span class="keyword">self</span>.growingTextView.internalTextView;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">NSString</span> *insertString = [<span class="built_in">NSString</span> stringWithFormat:kATFormat,name];</span><br><span class="line">        <span class="built_in">NSMutableString</span> *string = [<span class="built_in">NSMutableString</span> stringWithString:textView.text];</span><br><span class="line">        [string insertString:insertString atIndex:index];</span><br><span class="line">        <span class="keyword">self</span>.growingTextView.text = string;</span><br><span class="line"></span><br><span class="line">        [<span class="keyword">self</span>.growingTextView becomeFirstResponder];</span><br><span class="line">        textView.selectedRange = <span class="built_in">NSMakeRange</span>(index + insertString.length, <span class="number">0</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>其实就是选择后将@词插入到光标位置，并将光标纠正到@词后面。</p>
-<h6 id="7、评论列表cell上的-高亮并可点击。使用MLLabel实现起来还是比较简单的："><a href="#7、评论列表cell上的-高亮并可点击。使用MLLabel实现起来还是比较简单的：" class="headerlink" title="7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的："></a>7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的：</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setComment:(<span class="built_in">NSString</span> *)comment</span><br><span class="line">&#123;</span><br><span class="line">    _comment = comment;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">self</span>.titleLabel.text = comment;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 高亮@</span></span><br><span class="line">    <span class="built_in">NSRegularExpression</span> *regex = [<span class="built_in">NSRegularExpression</span> regularExpressionWithPattern:kATRegular options:<span class="built_in">NSRegularExpressionCaseInsensitive</span> error:<span class="literal">nil</span>];</span><br><span class="line">    [regex enumerateMatchesInString:comment options:<span class="built_in">NSMatchingReportProgress</span> range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, comment.length) usingBlock:^(<span class="built_in">NSTextCheckingResult</span> * _Nullable result, <span class="built_in">NSMatchingFlags</span> flags, <span class="built_in">BOOL</span> * _Nonnull stop)</span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="keyword">self</span>.titleLabel addLinkWithType:MLLinkTypeUserHandle value:comment range:result.range];</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">self</span>.titleLabel.didClickLinkBlock = ^(MLLink *link, <span class="built_in">NSString</span> *linkText, MLLinkLabel *label)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;点击了%@&quot;</span>,linkText);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-<h6 id="8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。"><a href="#8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。" class="headerlink" title="8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。"></a>8、cell高度自动计算，系统自己支持，不了解的可以看我的<a href="https://www.jianshu.com/p/64f0e1557562">这篇文章</a>。</h6><p>好了，大概就是这么些东西，是不是很简单呢，如果还有不明白的地方就下载<a href="https://github.com/lisongrc/ATDemo">本文demo</a>仔细看看吧。</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-  </entry>
-  <entry>
     <title>iOS中使用Fastlane实现自动化打包和发布</title>
     <url>/2017/05146f90c7.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -966,6 +920,52 @@
       <tags>
         <tag>Fastlane</tag>
       </tags>
+  </entry>
+  <entry>
+    <title>iOS中@功能的完整实现</title>
+    <url>/2018/05784ea6a5.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：<br><img src="https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip"></p>
+<span id="more"></span>
+
+<p>这个功能的具体要求如下：</p>
+<blockquote>
+<p>1、一个@是由一个<code>@</code>字符和一个空格<code> </code>字符包起来的。<br>2、支持手写输入，只要符合就高亮显示。<br>3、支持从列表选择，选择后插入光标所在位置并高亮。<br>4、光标不能出现在一个@词中间，点击中间后自动移动到@词后面，长按滑动光标时也要越过@词。但是当用户长按选择文本时可以。<br>5、当光标正好在一个@词后面时，按删除键@词要整体删除。</p>
+</blockquote>
+<p>先附上<a href="https://github.com/lisongrc/ATDemo">本文demo</a>，算下来代码也没有多少，还算简洁，大家一看就懂。其中包括的功能：</p>
+<blockquote>
+<p>1、输入框@编辑和选择功能，也就是上面那些需求。<br>2、输入框随着文字多少改变高度，并根据键盘随动。<br>3、发布后显示在列表上，并将符合的@高亮显示。<br>4、列表上的cell根据文字自动计算高度。<br>5、点击高亮词后可以捕获到事件，自己实现跳转就可以。</p>
+</blockquote>
+<p>好了，下面大概讲解一下，有不明白的地方可以下载demo具体看看。</p>
+<h4 id="用到的第三方"><a href="#用到的第三方" class="headerlink" title="用到的第三方"></a>用到的第三方</h4><p>1、<a href="https://github.com/HansPinckaers/GrowingTextView">HPGrowingTextView</a>，用来实现输入框根据文字改变高度。使用和UITextView类似，代理也和UITextView差不多：<br><img src="https://upload-images.jianshu.io/upload_images/1608265-df453bab14eb0d62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p>2、<a href="https://github.com/molon/MLLabel">MLLabel</a>，用来高亮显示label文本中的某些文字，支持自动识别一些常见的，也可以自定义规则。支持链接色和点击色等等一些配置。点击回调里面自己实现跳转就可以。</p>
+<p><img src="https://upload-images.jianshu.io/upload_images/1608265-2d74a6961c6202f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"></p>
+<p>集成这些第三方用的是cocoapods，关于cocoapods的教程可以看我的<a href="https://www.jianshu.com/p/1711e131987d">这篇文章</a>;</p>
+<h4 id="具体实现的一些细节"><a href="#具体实现的一些细节" class="headerlink" title="具体实现的一些细节"></a>具体实现的一些细节</h4><h6 id="1、检验文本中所有的-词"><a href="#1、检验文本中所有的-词" class="headerlink" title="1、检验文本中所有的@词"></a>1、检验文本中所有的@词</h6><p>用的是系统的<code>NSRegularExpression</code>类，不熟悉的大家可以去查一下，这里就不细讲了：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">NSArray</span>&lt;<span class="built_in">NSTextCheckingResult</span> *&gt; *)findAllAt</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 找到文本中所有的@</span></span><br><span class="line">    <span class="built_in">NSString</span> *string = <span class="keyword">self</span>.growingTextView.text;</span><br><span class="line">    <span class="built_in">NSRegularExpression</span> *regex = [<span class="built_in">NSRegularExpression</span> regularExpressionWithPattern:kATRegular options:<span class="built_in">NSRegularExpressionCaseInsensitive</span> error:<span class="literal">nil</span>];</span><br><span class="line">    <span class="built_in">NSArray</span> *matches = [regex matchesInString:string options:<span class="built_in">NSMatchingReportProgress</span> range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, [string length])];</span><br><span class="line">    <span class="keyword">return</span> matches;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="2、输入框根据输入文字多少自动改变高度"><a href="#2、输入框根据输入文字多少自动改变高度" class="headerlink" title="2、输入框根据输入文字多少自动改变高度"></a>2、输入框根据输入文字多少自动改变高度</h6><p>在HPGrowingTextView的代理里面实现：</p>
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextView:(HPGrowingTextView *)growingTextView willChangeHeight:(<span class="keyword">float</span>)height</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">self</span>.commentViewHeight.constant = height + <span class="number">14</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h6 id="3、输入框中的文字要随着文字改变实时将-词高亮"><a href="#3、输入框中的文字要随着文字改变实时将-词高亮" class="headerlink" title="3、输入框中的文字要随着文字改变实时将@词高亮"></a>3、输入框中的文字要随着文字改变实时将@词高亮</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextViewDidChange:(HPGrowingTextView *)growingTextView</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">UITextRange</span> *selectedRange = growingTextView.internalTextView.markedTextRange;</span><br><span class="line">    <span class="built_in">NSString</span> *newText = [growingTextView.internalTextView textInRange:selectedRange];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (newText.length &lt; <span class="number">1</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 高亮输入框中的@</span></span><br><span class="line">        <span class="built_in">UITextView</span> *textView = <span class="keyword">self</span>.growingTextView.internalTextView;</span><br><span class="line">        <span class="built_in">NSRange</span> range = textView.selectedRange;</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">NSMutableAttributedString</span> *string = [[<span class="built_in">NSMutableAttributedString</span> alloc] initWithString:textView.text];</span><br><span class="line">        [string addAttribute:<span class="built_in">NSForegroundColorAttributeName</span> value:[<span class="built_in">UIColor</span> blackColor] range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, string.string.length)];</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">        &#123;</span><br><span class="line">            [string addAttribute:<span class="built_in">NSForegroundColorAttributeName</span> value:[<span class="built_in">UIColor</span> redColor] range:<span class="built_in">NSMakeRange</span>(match.range.location, match.range.length - <span class="number">1</span>)];</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        textView.attributedText = string;</span><br><span class="line">        textView.selectedRange = range;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>首先判断是不是正在输入拼音，不是的话我们才应该处理。然后就是用正则找到所有的@词，用NSMutableAttributedString的方法加上高亮色，然后把最终的attributedString赋值给TextView，并将光标的位置复原为替换文本之前的状态。</p>
+<h6 id="4、删除时-词要整体删除"><a href="#4、删除时-词要整体删除" class="headerlink" title="4、删除时@词要整体删除"></a>4、删除时@词要整体删除</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="built_in">BOOL</span>)growingTextView:(HPGrowingTextView *)growingTextView shouldChangeTextInRange:(<span class="built_in">NSRange</span>)range replacementText:(<span class="built_in">NSString</span> *)text</span><br><span class="line">&#123;</span><br><span class="line">    <span class="keyword">if</span> ([text isEqualToString:<span class="string">@&quot;&quot;</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSRange</span> selectRange = growingTextView.selectedRange;</span><br><span class="line">        <span class="keyword">if</span> (selectRange.length &gt; <span class="number">0</span>)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="comment">//用户长按选择文本时不处理</span></span><br><span class="line">            <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// 判断删除的是一个@中间的字符就整体删除</span></span><br><span class="line">        <span class="built_in">NSMutableString</span> *string = [<span class="built_in">NSMutableString</span> stringWithString:growingTextView.text];</span><br><span class="line">        <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">        </span><br><span class="line">        <span class="built_in">BOOL</span> inAt = <span class="literal">NO</span>;</span><br><span class="line">        <span class="built_in">NSInteger</span> index = range.location;</span><br><span class="line">        <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">        &#123;</span><br><span class="line">            <span class="built_in">NSRange</span> newRange = <span class="built_in">NSMakeRange</span>(match.range.location + <span class="number">1</span>, match.range.length - <span class="number">1</span>);</span><br><span class="line">            <span class="keyword">if</span> (<span class="built_in">NSLocationInRange</span>(range.location, newRange))</span><br><span class="line">            &#123;</span><br><span class="line">                inAt = <span class="literal">YES</span>;</span><br><span class="line">                index = match.range.location;</span><br><span class="line">                [string replaceCharactersInRange:match.range withString:<span class="string">@&quot;&quot;</span>];</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (inAt)</span><br><span class="line">        &#123;</span><br><span class="line">            growingTextView.text = string;</span><br><span class="line">            growingTextView.selectedRange = <span class="built_in">NSMakeRange</span>(index, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">//判断是回车键就发送出去</span></span><br><span class="line">    <span class="keyword">if</span> ([text isEqualToString:<span class="string">@&quot;\n&quot;</span>])</span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="keyword">self</span>.comments addObject:growingTextView.text];</span><br><span class="line">        <span class="keyword">self</span>.growingTextView.text = <span class="string">@&quot;&quot;</span>;</span><br><span class="line">        [<span class="keyword">self</span>.growingTextView resignFirstResponder];</span><br><span class="line">        [<span class="keyword">self</span>.tableView reloadData];</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">NO</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="literal">YES</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>首先判断替换词是空字符串就代表是删除操作，然后找出输入框文字中所有的@词，判断要删除的字符是否在任意一个@词中间，如果在就把输入框文字中这个@词整体删除，然后重新赋值给TextView，并纠正光标的位置。但是要判断用户在长按选择文本时不处理。</p>
+<h6 id="5、光标不能点击落在一个-词中间："><a href="#5、光标不能点击落在一个-词中间：" class="headerlink" title="5、光标不能点击落在一个@词中间："></a>5、光标不能点击落在一个@词中间：</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)growingTextViewDidChangeSelection:(HPGrowingTextView *)growingTextView</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 光标不能点落在@词中间</span></span><br><span class="line">    <span class="built_in">NSRange</span> range = growingTextView.selectedRange;</span><br><span class="line">    <span class="keyword">if</span> (range.length &gt; <span class="number">0</span>)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="comment">// 选择文本时可以</span></span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="built_in">NSArray</span> *matches = [<span class="keyword">self</span> findAllAt];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="built_in">NSTextCheckingResult</span> *match <span class="keyword">in</span> matches)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">NSRange</span> newRange = <span class="built_in">NSMakeRange</span>(match.range.location + <span class="number">1</span>, match.range.length - <span class="number">1</span>);</span><br><span class="line">        <span class="keyword">if</span> (<span class="built_in">NSLocationInRange</span>(range.location, newRange))</span><br><span class="line">        &#123;</span><br><span class="line">            growingTextView.internalTextView.selectedRange = <span class="built_in">NSMakeRange</span>(match.range.location + match.range.length, <span class="number">0</span>);</span><br><span class="line">            <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实就是判断光标改变位置后是否在@词中间，如果在就把光标强制移动到@词后面。但是当用户长按选择文本时可以。</p>
+<h6 id="6、从列表中选择人去-他"><a href="#6、从列表中选择人去-他" class="headerlink" title="6、从列表中选择人去@他"></a>6、从列表中选择人去@他</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)prepareForSegue:(<span class="built_in">UIStoryboardSegue</span> *)segue sender:(<span class="keyword">id</span>)sender</span><br><span class="line">&#123;</span><br><span class="line">    <span class="comment">// 去选择@的人</span></span><br><span class="line">    [<span class="keyword">self</span>.growingTextView.internalTextView unmarkText];</span><br><span class="line">    <span class="built_in">NSInteger</span> index = <span class="keyword">self</span>.growingTextView.text.length;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>.growingTextView.isFirstResponder)</span><br><span class="line">    &#123;</span><br><span class="line">        index = <span class="keyword">self</span>.growingTextView.selectedRange.location + <span class="keyword">self</span>.growingTextView.selectedRange.length;</span><br><span class="line">        [<span class="keyword">self</span>.growingTextView resignFirstResponder];</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    SelectUserController *atVC = segue.destinationViewController;</span><br><span class="line">    atVC.selectBlock = ^(<span class="built_in">NSString</span> *name)</span><br><span class="line">    &#123;</span><br><span class="line">        <span class="built_in">UITextView</span> *textView = <span class="keyword">self</span>.growingTextView.internalTextView;</span><br><span class="line"></span><br><span class="line">        <span class="built_in">NSString</span> *insertString = [<span class="built_in">NSString</span> stringWithFormat:kATFormat,name];</span><br><span class="line">        <span class="built_in">NSMutableString</span> *string = [<span class="built_in">NSMutableString</span> stringWithString:textView.text];</span><br><span class="line">        [string insertString:insertString atIndex:index];</span><br><span class="line">        <span class="keyword">self</span>.growingTextView.text = string;</span><br><span class="line"></span><br><span class="line">        [<span class="keyword">self</span>.growingTextView becomeFirstResponder];</span><br><span class="line">        textView.selectedRange = <span class="built_in">NSMakeRange</span>(index + insertString.length, <span class="number">0</span>);</span><br><span class="line">    &#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>其实就是选择后将@词插入到光标位置，并将光标纠正到@词后面。</p>
+<h6 id="7、评论列表cell上的-高亮并可点击。使用MLLabel实现起来还是比较简单的："><a href="#7、评论列表cell上的-高亮并可点击。使用MLLabel实现起来还是比较简单的：" class="headerlink" title="7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的："></a>7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的：</h6><figure class="highlight objc"><table><tr><td class="code"><pre><span class="line">- (<span class="keyword">void</span>)setComment:(<span class="built_in">NSString</span> *)comment</span><br><span class="line">&#123;</span><br><span class="line">    _comment = comment;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">self</span>.titleLabel.text = comment;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 高亮@</span></span><br><span class="line">    <span class="built_in">NSRegularExpression</span> *regex = [<span class="built_in">NSRegularExpression</span> regularExpressionWithPattern:kATRegular options:<span class="built_in">NSRegularExpressionCaseInsensitive</span> error:<span class="literal">nil</span>];</span><br><span class="line">    [regex enumerateMatchesInString:comment options:<span class="built_in">NSMatchingReportProgress</span> range:<span class="built_in">NSMakeRange</span>(<span class="number">0</span>, comment.length) usingBlock:^(<span class="built_in">NSTextCheckingResult</span> * _Nullable result, <span class="built_in">NSMatchingFlags</span> flags, <span class="built_in">BOOL</span> * _Nonnull stop)</span><br><span class="line">    &#123;</span><br><span class="line">        [<span class="keyword">self</span>.titleLabel addLinkWithType:MLLinkTypeUserHandle value:comment range:result.range];</span><br><span class="line">    &#125;];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight objc"><table><tr><td class="code"><pre><span class="line"><span class="keyword">self</span>.titleLabel.didClickLinkBlock = ^(MLLink *link, <span class="built_in">NSString</span> *linkText, MLLinkLabel *label)</span><br><span class="line">&#123;</span><br><span class="line">    <span class="built_in">NSLog</span>(<span class="string">@&quot;点击了%@&quot;</span>,linkText);</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+<h6 id="8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。"><a href="#8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。" class="headerlink" title="8、cell高度自动计算，系统自己支持，不了解的可以看我的这篇文章。"></a>8、cell高度自动计算，系统自己支持，不了解的可以看我的<a href="https://www.jianshu.com/p/64f0e1557562">这篇文章</a>。</h6><p>好了，大概就是这么些东西，是不是很简单呢，如果还有不明白的地方就下载<a href="https://github.com/lisongrc/ATDemo">本文demo</a>仔细看看吧。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
   </entry>
   <entry>
     <title>iOS中的静态库与动态库，区别、制作和使用</title>
@@ -1353,6 +1353,48 @@
       </categories>
       <tags>
         <tag>网站</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>查看Mac SSD寿命与健康度</title>
+    <url>/2022/023fc8d0f9.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<p>如何确认目前Mac 电脑所用的SSD 寿命和健康度还剩多久呢？</p>
+<span id="more"></span>
+
+<h1 id="安装工具smartmontools"><a href="#安装工具smartmontools" class="headerlink" title="安装工具smartmontools"></a>安装工具smartmontools</h1><figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">brew install smartmontools</span><br></pre></td></tr></table></figure>
+
+<h1 id="通过diskutil-list指令来查询SSD硬盘设备标签代码"><a href="#通过diskutil-list指令来查询SSD硬盘设备标签代码" class="headerlink" title="通过diskutil list指令来查询SSD硬盘设备标签代码"></a>通过<code>diskutil list</code>指令来查询SSD硬盘设备标签代码</h1><p><img src="../images/disk_identifier.png"></p>
+<p>或者打开磁盘管理工具查看：</p>
+<p><img src="../images/QQ%E6%88%AA%E5%9B%BE20210225084247.png"></p>
+<h1 id="执行命令"><a href="#执行命令" class="headerlink" title="执行命令"></a>执行命令</h1><p>注意命令里面的<code>disk1s1</code>换成你自己的标识符。</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">smartctl -a disk1s1</span><br></pre></td></tr></table></figure>
+
+<p><img src="../images/QQ%E6%88%AA%E5%9B%BE20210225084324.png"></p>
+<p>至于SMART 工具里面显示的数据可对照底下说明：</p>
+<ul>
+<li>严重警告（Critical Warning）：会显示控制器状态警告讯息，如果都显示0x00 就表示没事</li>
+<li>温度（Temperature）：会显示当前SSD 温度资讯</li>
+<li>可用备用空间（Available Spare）：SSD 剩余空间百分比</li>
+<li>可用备用临界值（Available Spare Threshold）：临界值全由厂商定义</li>
+<li>寿命百分比（Percentage Used）：目前SSD 寿命百分比数值，具体取决于实际设备使用情况和厂商对设备寿命的预测。</li>
+<li>资料读取（Data Units Read）：记录电脑从SSD读取512字节数据单元的总量，每1000个单元记录一次，即这项Raw数据1的值等于500KB。</li>
+<li>资料写入（Data Units Read）：如上，就是写入总量。</li>
+<li>主机读取命令（Host Read Commands）：主控收到的读取命令数量。</li>
+<li>主机写入命令（Host Write Commands）：主控收到的写入命令数量。</li>
+<li>控制器忙碌时间（Controller Busy Time）：主控忙于I/O命令的时间。</li>
+<li>意外关机（Unsafe Shutdowns）：纪录不正常断电次数</li>
+<li>媒体和资料完整性错误（Media and Data Integrity Errors）：主控检测得到的未恢复的数据完整性错误次数。</li>
+<li>错误资料纪录（Number of Error Information Log Entries）：主控总共收到的错误信息日志数量。</li>
+</ul>
+<p>通常我们主要确认「寿命百分比（Percentage Used）」这项数值就好，通常达到90%以上就要额外注意。</p>
+]]></content>
+      <categories>
+        <category>Mac</category>
+      </categories>
+      <tags>
+        <tag>smartmontools</tag>
       </tags>
   </entry>
   <entry>
@@ -1799,6 +1841,45 @@
       </tags>
   </entry>
   <entry>
+    <title>超详细的Xcode代码格式化教程，可自定义样式</title>
+    <url>/2016/099de00e69.html</url>
+    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
+
+<h1 id="为什么要格式化代码"><a href="#为什么要格式化代码" class="headerlink" title="为什么要格式化代码"></a>为什么要格式化代码</h1><p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。<br>在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。</p>
+<p>有了<code>ClangFormat</code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。</p>
+<span id="more"></span>
+
+<h1 id="安装ClangFormat插件"><a href="#安装ClangFormat插件" class="headerlink" title="安装ClangFormat插件"></a>安装ClangFormat插件</h1><p>可以手动安装(下载<a href="https://github.com/travisjeffery/ClangFormat-Xcode">GitHub项目</a>编译)，也可以用<a href="https://github.com/alcatraz/Alcatraz">Alcatraz</a>(插件管理器)安装，都很简单，具体可以看我的文章<a href="http://www.jianshu.com/p/51635869b027">《Xcode方便开发的插件推荐》</a>。</p>
+<p>装好后是下图这样的，我们可以看到它内置了<code>LLVM</code>、<code>Google</code>、<code>Chromium</code>、<code>Mozilla</code>、<code>WebKit</code>五种样式。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件菜单"></p>
+<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>通过菜单可以看到，它可以格式化选中的文字们，或者格式化选择的文件们。下面演示下<code>LLVM</code>样式下的格式化：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebca3898fbfb438a.gif?imageMogr2/auto-orient/strip" alt="LLVM样式下的格式化"></p>
+<h1 id="使用自定义样式"><a href="#使用自定义样式" class="headerlink" title="使用自定义样式"></a>使用自定义样式</h1><p>1、需要先把上面菜单里面的File选中，因为我们需要让它用我们自己写的配置文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-819361a437dcba49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选中File"></p>
+<p>2、在工程目录下创建配置文件<code>.clang-format</code>文件并编辑。<code>.clang-format</code>文件用的是<code>YAML</code>格式:里面要用的字段在后面会详细解释。</p>
+<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">key1:</span> <span class="string">value1</span></span><br><span class="line"><span class="comment"># 一个注释</span></span><br><span class="line"><span class="attr">key2:</span> <span class="string">value2</span></span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip" alt="自定义样式格式化代码"></p>
+<p>当然如果你已经有<code>.clang-format</code>文件的话，直接拖动到项目根目录也可以。<br>文章结尾有我在用的<code>.clang-format</code>文件。</p>
+<p>温馨提示：<code>.clang-format</code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：</p>
+<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//显示 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool true</span><br><span class="line">killall Finder</span><br><span class="line">//隐藏 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool false</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
+
+<h1 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h1><p>上面我们是在项目根目录创建的<code>.clang-format</code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把<code>.clang-format</code>文件放在所有项目都在的一个最大根目录下就可以了。</p>
+<p>###让一段代码不受格式化影响<br>如果想让一段代码不受格式化影响，需要将他们包含在<code>// clang-format off</code> 和 <code>// clang-format on</code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6c78a84cca358db2.gif?imageMogr2/auto-orient/strip" alt="让一段代码不受格式化影响"></p>
+<h1 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h1><p>首先你可以选中菜单中的 <code>Enable Format On Sava</code>，把它点<code>Disable Format On Sava</code>，这样以后每次按<code>⌘+S</code>保存文件时就可以自动格式化了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1084e334da53f3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-10 下午12.43.50.png"></p>
+<p>我们也可以给一些菜单设置快捷键，使用的时候不用每次去选择各级菜单了。比如我们给<code>Format Selected Text</code>设置快捷键：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4c570e4af91ed499.gif?imageMogr2/auto-orient/strip" alt="设置格式化快捷键"></p>
+<p>你也可以为其他菜单设置快捷键，其实呢，我用<code>Format Selected Text</code>的时候很少，每次都是想格式化的时候直接<code>⌘+S</code>就行了哈哈哈。</p>
+<h1 id="配置文件中属性的含义讲解"><a href="#配置文件中属性的含义讲解" class="headerlink" title="配置文件中属性的含义讲解"></a>配置文件中属性的含义讲解</h1><p>下面说一些配置文件的常用的参数介绍，其他的可以看官方文档：<a href="http://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a>，其中小括号内代表他需的是什么类型的值。</p>
+<p><strong>BasedOnStyle</strong> (string)<br>基于哪种样式。除了文件中写出的定制属性外，别的没定制的属性都默认用这种样式的。<br>可选值有五种：</p>
+<figure class="highlight plain"><figcaption><span>coding standards](http://llvm.org/docs/CodingStandards.html)的样式。</span></figcaption><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96;Google&#96;&#96;&#96;：一种遵循[Google’s C++ style guide](http:&#x2F;&#x2F;google-styleguide.googlecode.com&#x2F;svn&#x2F;trunk&#x2F;cppguide.xml)的样式。</span><br><span class="line">&#96;&#96;&#96;Chromium&#96;&#96;&#96;：一种遵循[Chromium’s style guide](http:&#x2F;&#x2F;www.chromium.org&#x2F;developers&#x2F;coding-style)的样式。</span><br><span class="line">&#96;&#96;&#96;Mozilla&#96;&#96;&#96;：一种遵循[Mozilla’s style guide](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Developer_Guide&#x2F;Coding_Style)的样式。</span><br><span class="line">&#96;&#96;&#96;WebKit&#96;&#96;&#96;：一种遵循[WebKit’s style guide](http:&#x2F;&#x2F;www.webkit.org&#x2F;coding&#x2F;coding-style.html)的样式。</span><br><span class="line"></span><br><span class="line">**AccessModifierOffset** (int)</span><br><span class="line">访问修饰词 (比如public) 前面额外需要加的缩进长度。默认为0。</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveAssignments** (bool)</span><br><span class="line">如果是true，把连续的赋值操作按&#x3D;对齐，默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-8f8ce880dfe20834.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveDeclarations** (bool)</span><br><span class="line">如果是true，把连续行的变量名对齐。默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-f6f5813271f55d32.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignTrailingComments** (bool)</span><br><span class="line">如果是true，对齐尾部注释。默认为false。</span><br><span class="line">![AlignTrailingComments-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-9aeb5efd657ce59e.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AllowShortCaseLabelsOnASingleLine** (bool)</span><br><span class="line">如果是true, 允许一个case在一行写完，默认为false。</span><br><span class="line">![AllowShortCaseLabelsOnASingleLine-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-ed5a85374909cd10.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**BreakBeforeBraces** (string)</span><br><span class="line">大括号前面是否换行，具体可选值看文档。一般用Allman，代表所有大括号都换行。</span><br><span class="line">![BreakBeforeBraces-Allman](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-52fa2344d0d9deba.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ColumnLimit** (unsigned)</span><br><span class="line">每行最多多少个字符，0不限制</span><br><span class="line"></span><br><span class="line">**IndentWidth** (unsigned)</span><br><span class="line">缩进宽度，默认为2，但是我们一般设置为4。</span><br><span class="line">![IndentWidth-4](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b23f5f1d0ce8986d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**IndentCaseLabels** (bool)</span><br><span class="line">switch的case缩进宽度，一般用true。默认为false，case会和switch对齐。</span><br><span class="line"></span><br><span class="line">**KeepEmptyLinesAtTheStartOfBlocks** (bool)</span><br><span class="line">是否保留block里面开始的空行们。默认为true。</span><br><span class="line"></span><br><span class="line">![KeepEmptyLinesAtTheStartOfBlocks-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-c113fbb4bb5f9107.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)</span><br><span class="line">**MaxEmptyLinesToKeep** (unsigned)</span><br><span class="line">最多可以有连续几行空行，默认为1。</span><br><span class="line">![MaxEmptyLinesToKeep-1](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-997b9eed8eda63ea.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCBlockIndentWidth**</span><br><span class="line">OC的block里面的缩进宽度，默认为4。</span><br><span class="line"></span><br><span class="line">**ObjCSpaceAfterProperty** (bool)</span><br><span class="line">OC里面，是否在@property后加空格。默认为false。</span><br><span class="line">![ObjCSpaceAfterProperty-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0759d6e90844a00d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCSpaceBeforeProtocolList** (bool)</span><br><span class="line">OC里面，是否在Protocol名字列表前面加空格，默认为true。</span><br><span class="line">![ObjCSpaceBeforeProtocolList-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-a750da85c92c20df.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**PointerAlignment** (string)</span><br><span class="line">指针的位置。默认为Right。</span><br><span class="line">可选值：</span><br><span class="line">Left：&#96;&#96;&#96;NSString* name&#96;&#96;&#96;</span><br><span class="line">Middle：&#96;&#96;&#96;NSString * name&#96;&#96;&#96;</span><br><span class="line">Right：&#96;&#96;&#96;NSString *name&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">**SpaceBeforeAssignmentOperators** (bool)</span><br><span class="line">&#96;&#96;&#96;&#x3D;&#96;&#96;&#96; 前面是否有空格。默认为true。</span><br><span class="line"></span><br><span class="line">**SpaceBeforeParens** (string)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。默认ControlStatements。</span><br><span class="line">可选值：</span><br><span class="line">Never: 从来不在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">ControlStatements:在控制语句(for&#x2F;if&#x2F;while...)的&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">Always:总会在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line"></span><br><span class="line">![SpaceBeforeParens-ControlStatements](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-70ecea9d5279030b.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line">**SpaceInEmptyParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;()&#96;&#96;&#96;里面插入一个空格。默认false。</span><br><span class="line"></span><br><span class="line">**SpacesBeforeTrailingComments** (unsigned)</span><br><span class="line">在尾部&#x2F;&#x2F;注释前面加几个空格。</span><br><span class="line">![SpacesBeforeTrailingComments-3](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0e3aecf7e11187da.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInAngles** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;&lt;&#96;&#96;&#96;后边和&#96;&#96;&#96;&gt;&#96;&#96;&#96;前边插入空格，默认为false。</span><br><span class="line">![SpacesInAngles-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-965992106a532ac1.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInContainerLiterals** (bool)</span><br><span class="line">&#96;&#96;&#96;@[]&#96;&#96;&#96;里面，是否在 &#96;&#96;&#96;[&#96;&#96;&#96; 后和 &#96;&#96;&#96;]&#96;&#96;&#96; 前加空格。默认为true。</span><br><span class="line">![SpacesInContainerLiterals-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-1a38aac48c0c1fe6.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;后面和&#96;&#96;&#96;)&#96;&#96;&#96;前面加空格，默认为false。</span><br><span class="line">![SpacesInParentheses-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b496ff2996fa1804.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">当项目里面有多种语言时，我们可以分别设置样式：</span><br><span class="line">&#96;&#96;&#96;yaml</span><br><span class="line">---</span><br><span class="line"># 我们默认用 LLVM 样式, 缩进宽度为4。</span><br><span class="line">BasedOnStyle: LLVM</span><br><span class="line">IndentWidth: 4</span><br><span class="line">---</span><br><span class="line">Language: Cpp</span><br><span class="line"># C++ 设置星号左对齐。</span><br><span class="line">PointerAlignment: Left</span><br><span class="line">---</span><br><span class="line">Language: JavaScript</span><br><span class="line"># JavaScript 每行字符限制设置为100。</span><br><span class="line">ColumnLimit: 100</span><br><span class="line">---</span><br><span class="line">Language: Proto</span><br><span class="line"># 不格式化Proto文件。</span><br><span class="line">DisableFormat: true</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
+
+<p>这个是我在用的<a href="https://github.com/lisongrc/clang-format">.clang-format</a>文件。大家可以下载下来自己修改一下再用。</p>
+]]></content>
+      <categories>
+        <category>iOS</category>
+      </categories>
+      <tags>
+        <tag>Xcode</tag>
+        <tag>ClangFormat</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>详细易懂的二维码的扫描、识别与生成</title>
     <url>/2016/11963e6639.html</url>
     <content><![CDATA[<meta name="referrer" content="no-referrer"/>
@@ -1842,45 +1923,6 @@
       </categories>
       <tags>
         <tag>QRCode</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>超详细的Xcode代码格式化教程，可自定义样式</title>
-    <url>/2016/099de00e69.html</url>
-    <content><![CDATA[<meta name="referrer" content="no-referrer"/>
-
-<h1 id="为什么要格式化代码"><a href="#为什么要格式化代码" class="headerlink" title="为什么要格式化代码"></a>为什么要格式化代码</h1><p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。<br>在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。</p>
-<p>有了<code>ClangFormat</code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。</p>
-<span id="more"></span>
-
-<h1 id="安装ClangFormat插件"><a href="#安装ClangFormat插件" class="headerlink" title="安装ClangFormat插件"></a>安装ClangFormat插件</h1><p>可以手动安装(下载<a href="https://github.com/travisjeffery/ClangFormat-Xcode">GitHub项目</a>编译)，也可以用<a href="https://github.com/alcatraz/Alcatraz">Alcatraz</a>(插件管理器)安装，都很简单，具体可以看我的文章<a href="http://www.jianshu.com/p/51635869b027">《Xcode方便开发的插件推荐》</a>。</p>
-<p>装好后是下图这样的，我们可以看到它内置了<code>LLVM</code>、<code>Google</code>、<code>Chromium</code>、<code>Mozilla</code>、<code>WebKit</code>五种样式。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-851e929f08aa1ed8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="插件菜单"></p>
-<h1 id="使用方法"><a href="#使用方法" class="headerlink" title="使用方法"></a>使用方法</h1><p>通过菜单可以看到，它可以格式化选中的文字们，或者格式化选择的文件们。下面演示下<code>LLVM</code>样式下的格式化：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-ebca3898fbfb438a.gif?imageMogr2/auto-orient/strip" alt="LLVM样式下的格式化"></p>
-<h1 id="使用自定义样式"><a href="#使用自定义样式" class="headerlink" title="使用自定义样式"></a>使用自定义样式</h1><p>1、需要先把上面菜单里面的File选中，因为我们需要让它用我们自己写的配置文件。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-819361a437dcba49.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="选中File"></p>
-<p>2、在工程目录下创建配置文件<code>.clang-format</code>文件并编辑。<code>.clang-format</code>文件用的是<code>YAML</code>格式:里面要用的字段在后面会详细解释。</p>
-<figure class="highlight yaml"><table><tr><td class="code"><pre><span class="line"><span class="attr">key1:</span> <span class="string">value1</span></span><br><span class="line"><span class="comment"># 一个注释</span></span><br><span class="line"><span class="attr">key2:</span> <span class="string">value2</span></span><br></pre></td></tr></table></figure>
-<p><img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip" alt="自定义样式格式化代码"></p>
-<p>当然如果你已经有<code>.clang-format</code>文件的话，直接拖动到项目根目录也可以。<br>文章结尾有我在用的<code>.clang-format</code>文件。</p>
-<p>温馨提示：<code>.clang-format</code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：</p>
-<figure class="highlight shell"><table><tr><td class="code"><pre><span class="line">//显示 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool true</span><br><span class="line">killall Finder</span><br><span class="line">//隐藏 隐藏文件</span><br><span class="line">defaults write com.apple.finder AppleShowAllFiles -bool false</span><br><span class="line">killall Finder</span><br></pre></td></tr></table></figure>
-
-<h1 id="全局配置"><a href="#全局配置" class="headerlink" title="全局配置"></a>全局配置</h1><p>上面我们是在项目根目录创建的<code>.clang-format</code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把<code>.clang-format</code>文件放在所有项目都在的一个最大根目录下就可以了。</p>
-<p>###让一段代码不受格式化影响<br>如果想让一段代码不受格式化影响，需要将他们包含在<code>// clang-format off</code> 和 <code>// clang-format on</code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-6c78a84cca358db2.gif?imageMogr2/auto-orient/strip" alt="让一段代码不受格式化影响"></p>
-<h1 id="设置快捷键"><a href="#设置快捷键" class="headerlink" title="设置快捷键"></a>设置快捷键</h1><p>首先你可以选中菜单中的 <code>Enable Format On Sava</code>，把它点<code>Disable Format On Sava</code>，这样以后每次按<code>⌘+S</code>保存文件时就可以自动格式化了。<br><img src="http://upload-images.jianshu.io/upload_images/1608265-1084e334da53f3b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="屏幕快照 2016-09-10 下午12.43.50.png"></p>
-<p>我们也可以给一些菜单设置快捷键，使用的时候不用每次去选择各级菜单了。比如我们给<code>Format Selected Text</code>设置快捷键：<br><img src="http://upload-images.jianshu.io/upload_images/1608265-4c570e4af91ed499.gif?imageMogr2/auto-orient/strip" alt="设置格式化快捷键"></p>
-<p>你也可以为其他菜单设置快捷键，其实呢，我用<code>Format Selected Text</code>的时候很少，每次都是想格式化的时候直接<code>⌘+S</code>就行了哈哈哈。</p>
-<h1 id="配置文件中属性的含义讲解"><a href="#配置文件中属性的含义讲解" class="headerlink" title="配置文件中属性的含义讲解"></a>配置文件中属性的含义讲解</h1><p>下面说一些配置文件的常用的参数介绍，其他的可以看官方文档：<a href="http://clang.llvm.org/docs/ClangFormatStyleOptions.html">Clang-Format Style Options</a>，其中小括号内代表他需的是什么类型的值。</p>
-<p><strong>BasedOnStyle</strong> (string)<br>基于哪种样式。除了文件中写出的定制属性外，别的没定制的属性都默认用这种样式的。<br>可选值有五种：</p>
-<figure class="highlight plain"><figcaption><span>coding standards](http://llvm.org/docs/CodingStandards.html)的样式。</span></figcaption><table><tr><td class="code"><pre><span class="line">&#96;&#96;&#96;Google&#96;&#96;&#96;：一种遵循[Google’s C++ style guide](http:&#x2F;&#x2F;google-styleguide.googlecode.com&#x2F;svn&#x2F;trunk&#x2F;cppguide.xml)的样式。</span><br><span class="line">&#96;&#96;&#96;Chromium&#96;&#96;&#96;：一种遵循[Chromium’s style guide](http:&#x2F;&#x2F;www.chromium.org&#x2F;developers&#x2F;coding-style)的样式。</span><br><span class="line">&#96;&#96;&#96;Mozilla&#96;&#96;&#96;：一种遵循[Mozilla’s style guide](https:&#x2F;&#x2F;developer.mozilla.org&#x2F;en-US&#x2F;docs&#x2F;Developer_Guide&#x2F;Coding_Style)的样式。</span><br><span class="line">&#96;&#96;&#96;WebKit&#96;&#96;&#96;：一种遵循[WebKit’s style guide](http:&#x2F;&#x2F;www.webkit.org&#x2F;coding&#x2F;coding-style.html)的样式。</span><br><span class="line"></span><br><span class="line">**AccessModifierOffset** (int)</span><br><span class="line">访问修饰词 (比如public) 前面额外需要加的缩进长度。默认为0。</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveAssignments** (bool)</span><br><span class="line">如果是true，把连续的赋值操作按&#x3D;对齐，默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-8f8ce880dfe20834.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignConsecutiveDeclarations** (bool)</span><br><span class="line">如果是true，把连续行的变量名对齐。默认为false。</span><br><span class="line">![AlignConsecutiveDeclarations-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-f6f5813271f55d32.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AlignTrailingComments** (bool)</span><br><span class="line">如果是true，对齐尾部注释。默认为false。</span><br><span class="line">![AlignTrailingComments-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-9aeb5efd657ce59e.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**AllowShortCaseLabelsOnASingleLine** (bool)</span><br><span class="line">如果是true, 允许一个case在一行写完，默认为false。</span><br><span class="line">![AllowShortCaseLabelsOnASingleLine-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-ed5a85374909cd10.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**BreakBeforeBraces** (string)</span><br><span class="line">大括号前面是否换行，具体可选值看文档。一般用Allman，代表所有大括号都换行。</span><br><span class="line">![BreakBeforeBraces-Allman](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-52fa2344d0d9deba.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ColumnLimit** (unsigned)</span><br><span class="line">每行最多多少个字符，0不限制</span><br><span class="line"></span><br><span class="line">**IndentWidth** (unsigned)</span><br><span class="line">缩进宽度，默认为2，但是我们一般设置为4。</span><br><span class="line">![IndentWidth-4](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b23f5f1d0ce8986d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**IndentCaseLabels** (bool)</span><br><span class="line">switch的case缩进宽度，一般用true。默认为false，case会和switch对齐。</span><br><span class="line"></span><br><span class="line">**KeepEmptyLinesAtTheStartOfBlocks** (bool)</span><br><span class="line">是否保留block里面开始的空行们。默认为true。</span><br><span class="line"></span><br><span class="line">![KeepEmptyLinesAtTheStartOfBlocks-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-c113fbb4bb5f9107.png?imageMogr2&#x2F;auto-orient&#x2F;strip%7CimageView2&#x2F;2&#x2F;w&#x2F;1240)</span><br><span class="line">**MaxEmptyLinesToKeep** (unsigned)</span><br><span class="line">最多可以有连续几行空行，默认为1。</span><br><span class="line">![MaxEmptyLinesToKeep-1](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-997b9eed8eda63ea.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCBlockIndentWidth**</span><br><span class="line">OC的block里面的缩进宽度，默认为4。</span><br><span class="line"></span><br><span class="line">**ObjCSpaceAfterProperty** (bool)</span><br><span class="line">OC里面，是否在@property后加空格。默认为false。</span><br><span class="line">![ObjCSpaceAfterProperty-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0759d6e90844a00d.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**ObjCSpaceBeforeProtocolList** (bool)</span><br><span class="line">OC里面，是否在Protocol名字列表前面加空格，默认为true。</span><br><span class="line">![ObjCSpaceBeforeProtocolList-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-a750da85c92c20df.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**PointerAlignment** (string)</span><br><span class="line">指针的位置。默认为Right。</span><br><span class="line">可选值：</span><br><span class="line">Left：&#96;&#96;&#96;NSString* name&#96;&#96;&#96;</span><br><span class="line">Middle：&#96;&#96;&#96;NSString * name&#96;&#96;&#96;</span><br><span class="line">Right：&#96;&#96;&#96;NSString *name&#96;&#96;&#96;</span><br><span class="line"></span><br><span class="line">**SpaceBeforeAssignmentOperators** (bool)</span><br><span class="line">&#96;&#96;&#96;&#x3D;&#96;&#96;&#96; 前面是否有空格。默认为true。</span><br><span class="line"></span><br><span class="line">**SpaceBeforeParens** (string)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。默认ControlStatements。</span><br><span class="line">可选值：</span><br><span class="line">Never: 从来不在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">ControlStatements:在控制语句(for&#x2F;if&#x2F;while...)的&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line">Always:总会在&#96;&#96;&#96;(&#96;&#96;&#96;前面加空格。</span><br><span class="line"></span><br><span class="line">![SpaceBeforeParens-ControlStatements](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-70ecea9d5279030b.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line">**SpaceInEmptyParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;()&#96;&#96;&#96;里面插入一个空格。默认false。</span><br><span class="line"></span><br><span class="line">**SpacesBeforeTrailingComments** (unsigned)</span><br><span class="line">在尾部&#x2F;&#x2F;注释前面加几个空格。</span><br><span class="line">![SpacesBeforeTrailingComments-3](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-0e3aecf7e11187da.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInAngles** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;&lt;&#96;&#96;&#96;后边和&#96;&#96;&#96;&gt;&#96;&#96;&#96;前边插入空格，默认为false。</span><br><span class="line">![SpacesInAngles-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-965992106a532ac1.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInContainerLiterals** (bool)</span><br><span class="line">&#96;&#96;&#96;@[]&#96;&#96;&#96;里面，是否在 &#96;&#96;&#96;[&#96;&#96;&#96; 后和 &#96;&#96;&#96;]&#96;&#96;&#96; 前加空格。默认为true。</span><br><span class="line">![SpacesInContainerLiterals-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-1a38aac48c0c1fe6.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">**SpacesInParentheses** (bool)</span><br><span class="line">是否在&#96;&#96;&#96;(&#96;&#96;&#96;后面和&#96;&#96;&#96;)&#96;&#96;&#96;前面加空格，默认为false。</span><br><span class="line">![SpacesInParentheses-true](http:&#x2F;&#x2F;upload-images.jianshu.io&#x2F;upload_images&#x2F;1608265-b496ff2996fa1804.gif?imageMogr2&#x2F;auto-orient&#x2F;strip)</span><br><span class="line"></span><br><span class="line">当项目里面有多种语言时，我们可以分别设置样式：</span><br><span class="line">&#96;&#96;&#96;yaml</span><br><span class="line">---</span><br><span class="line"># 我们默认用 LLVM 样式, 缩进宽度为4。</span><br><span class="line">BasedOnStyle: LLVM</span><br><span class="line">IndentWidth: 4</span><br><span class="line">---</span><br><span class="line">Language: Cpp</span><br><span class="line"># C++ 设置星号左对齐。</span><br><span class="line">PointerAlignment: Left</span><br><span class="line">---</span><br><span class="line">Language: JavaScript</span><br><span class="line"># JavaScript 每行字符限制设置为100。</span><br><span class="line">ColumnLimit: 100</span><br><span class="line">---</span><br><span class="line">Language: Proto</span><br><span class="line"># 不格式化Proto文件。</span><br><span class="line">DisableFormat: true</span><br><span class="line">...</span><br></pre></td></tr></table></figure>
-
-<p>这个是我在用的<a href="https://github.com/lisongrc/clang-format">.clang-format</a>文件。大家可以下载下来自己修改一下再用。</p>
-]]></content>
-      <categories>
-        <category>iOS</category>
-      </categories>
-      <tags>
-        <tag>Xcode</tag>
-        <tag>ClangFormat</tag>
       </tags>
   </entry>
 </search>
