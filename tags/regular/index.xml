@@ -1,0 +1,632 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>regular on 小松哥的博客</title><link>https://lisongrc.github.io/tags/regular/</link><description>Recent content in regular on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 26 Sep 2016 23:41:42 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/regular/index.xml" rel="self" type="application/rss+xml"/><item><title>系统地学习正则表达式(二)：进阶篇</title><link>https://lisongrc.github.io/p/20160923aaaabf/</link><pubDate>Mon, 26 Sep 2016 23:41:42 +0000</pubDate><guid>https://lisongrc.github.io/p/20160923aaaabf/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>今天这篇我们将讲解&lt;code>子表达式&lt;/code>和&lt;code>后向引用&lt;/code>的使用。后面会持续更新。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="理解子表达式">理解子表达式&lt;/h1>
+&lt;p>通过&lt;code>(&lt;/code>和&lt;code>)&lt;/code>括起来的就是子表达式。&lt;/p>
+&lt;p>下面是一个例子：用来匹配IP 地址的正则表达式。 IP 地址是由&amp;quot; . &amp;ldquo;分隔的四组数字，如12.159.46.200。因为每个部分的数字都可以为一个、两个或者三个数字字符，这个匹配模式可以表示为&lt;code>\d{1,3}&lt;/code>：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>\d{1,3}\.\d{1,3}\.\d{1,3}\.\d{1,3}&lt;/code>
+待匹配文本：12.159.46.200
+匹配后结果：&lt;code>12.159.46.200 &lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：每个&lt;code>\d{1,3}&lt;/code>的实例都匹配了 IP 地址的一个数字。四个数字则是被&lt;code> \. &lt;/code>表示的&amp;rdquo; . &amp;ldquo;分隔开的。&lt;code>\d{1,3}\.&lt;/code>模式重复了三遍，因此可以使用重复操作来处理。下面是相同例子的另外一个版本：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>(\d{1,3}\.){3}\d{1,3}&lt;/code>
+待匹配文本：12.159.46.200
+匹配后结果：&lt;code>12.159.46.200&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：此模式可以和前面的效果是一样的。表达式&lt;code>\d{1,3}\. &lt;/code>使用&lt;code>(&lt;/code>和&lt;code>)&lt;/code>括起来从而组成子表达式。&lt;code>(\d{1,3}\.){3}&lt;/code>重复了子表达式三次（也就是 IP 地址的前三个数字），最后的&lt;code>\d{1,3}&lt;/code>匹配最后的数字。&lt;/p>
+&lt;p>使用子表达式来分组是很重要的，尽管这个例子中根本不包括重复。来看一个例子：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>19|20\d{2}&lt;/code>
+待匹配文本：1967-08-17
+匹配后结果：&lt;code>19&lt;/code>67-08-17&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>19|20\d{2}&lt;/code>用来定位一个&lt;code>前两个数字只能为 19或者20 &lt;/code>的四位数的年份。但是很显然这个正则并没有实现预想的效果。&lt;code>|&lt;/code>操作符从左到右读取，将&lt;code>19|20\d{2}&lt;/code>分析为要么&lt;code>19&lt;/code> ，要么&lt;code>20\d{2}&lt;/code>，也就是匹配数字 &lt;code>19&lt;/code> 或者&lt;code>20开头的四个数字字符&lt;/code>。&lt;/p>
+&lt;p>解决方法是将&lt;code>19|20&lt;/code>作为一个子表达式，&lt;code>(19|20)\d{2}&lt;/code>就能够匹配所有19 和 20 开头的四个数字了。&lt;/p>
+&lt;h1 id="嵌套子表达式">嵌套子表达式&lt;/h1>
+&lt;p>子表达式可以嵌套。实际上，子表达式可以一层一层嵌套在子表达式内。为了演示嵌套子表达式的用法，我们再来看看查找 IP 地址的例子。&lt;/p>
+&lt;p>其实上面例子中&lt;code>(\d{1,3}\.){3}\d{1,3}&lt;/code>匹配IP 地址是有问题的，因为非法的 IP 地址也将被匹配。IP 地址中的每个数字都是小于 255 的。而上面的模式可以匹配 300甚至是999 ，而这些实际上都是非法的 IP 地址。&lt;/p>
+&lt;p>下面定义了所有合法 IP 地址所需要满足的一种条件：&lt;/p>
+&lt;blockquote>
+&lt;p>所有的一位数和两位数
+三位数的第一位为 1
+如果三位数的第一位为 2 ，且第二位从 0 到 4
+如果三位数的前二位为 25 ，且第三位从 0 到 5&lt;/p>
+&lt;/blockquote>
+&lt;p>当定义了需要匹配的情况后，就比较容易实现可以工作的模式。下面是个例子：
+&lt;code>(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))&lt;/code>&lt;/p>
+&lt;p>分析：这个模式可以工作的原因是一系列的嵌套子表达式。首先从&lt;code>(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.)&lt;/code>子表达式开始。包含了四个嵌套子表达式。&lt;code>(\d{1,2})&lt;/code>可以匹配一位数和两位数(0到99)。&lt;code>(1\d{2})&lt;/code>匹配了任何第一位为 1 的三位数(100到199) 。&lt;code>(2[0-4]\d)&lt;/code>匹配数字从 200 到 249 。&lt;code>(25[0-5])&lt;/code>匹配数字从 250 到 255 。每个子表达式都是通过“ | ”包括在另一个子表达式中。在数字范围之后是&lt;code>\.&lt;/code>表示的&amp;rdquo; . &amp;ldquo;，然后这个系列括起来作为子表达式并重复三遍（使用&lt;code>{3}&lt;/code>）。最后，&lt;code>((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))&lt;/code>被用来匹配最后一个 IP 地址的数字（没有了&lt;code>\.&lt;/code>后缀）。由于将四个数字都是限制在了 0 到 255 之间，所以此模式可以匹配所有的合法 IP 地址。&lt;/p>
+&lt;h1 id="理解后向引用">理解后向引用&lt;/h1>
+&lt;p>HTML 开发者经常使用标题标签（&lt;!-- raw HTML omitted -->到&lt;!-- raw HTML omitted -->，包括相应的结束标签&lt;!-- raw HTML omitted -->到&lt;!-- raw HTML omitted -->）。假设你需要定位所有的标题标签：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>
+待匹配文本：&lt;!-- raw HTML omitted -->title 1&lt;!-- raw HTML omitted --> — &lt;!-- raw HTML omitted -->title 6&lt;!-- raw HTML omitted -->
+匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title 1&amp;lt;/H1&amp;gt;&lt;/code> — &lt;code>&amp;lt;H6&amp;gt;title 6&amp;lt;/H6&amp;gt;&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>&amp;lt;[hH][1-6]&amp;gt;&lt;/code>可以匹配所有的开始标签，而&lt;code>&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>可以匹配所有的结束标签。&lt;/p>
+&lt;p>注意：我们这里使用了&lt;code>.*?&lt;/code>而不是&lt;code>.*&lt;/code>。正如在上一篇文章解释的一样，&lt;code>*&lt;/code>的量词是贪婪的，所以模式&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>将匹配从&lt;!-- raw HTML omitted --> 直到 &lt;!-- raw HTML omitted --> 。所以可以使用非贪婪量词&lt;code>.*?&lt;/code>来解决这个问题。&lt;/p>
+&lt;p>接着看这个例子：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>
+待匹配文本：&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->
+匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title&amp;lt;/H6&amp;gt;&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：采用 &lt;!-- raw HTML omitted --> 开始而采用 &lt;!-- raw HTML omitted --> 的标题标签是非法的，但是现在的模式可以匹配。问题在于匹配的第二个部分（匹配结束的标签）没有办法知道匹配第一部分（匹配开始的标签）是什么。这时候就需要后向引用了。&lt;/p>
+&lt;h1 id="使用后向引用匹配">使用后向引用匹配&lt;/h1>
+&lt;p>&lt;code>后向应用&lt;/code>就是引用前面的子表达式。你可以将后向应用理解成变量。例如&lt;code>\1&lt;/code>匹配模式中第一个子表达式。同理，&lt;code>\2&lt;/code>将匹配第二个子表达式，&lt;code>\3&lt;/code>将匹配第三个。我们结合例子来理解。一个子表达式可以通过后向引用根据需要引用多次。&lt;/p>
+&lt;p>在上个例子中，&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>会匹配非法的标题。我们可以使用后向引用来解决：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>&amp;lt;[hH]([1-6])&amp;gt;.*?&amp;lt;/[hH]\1&amp;gt;&lt;/code>
+待匹配文本：&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->—&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->
+匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title&amp;lt;/H1&amp;gt;&lt;/code>—&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：就像以前一样，&lt;code>&amp;lt;[hH]([1-6])&amp;gt;&lt;/code>将匹配任何的标题标签。但是和以前不一样的是，这里的&lt;code>[1-6] &lt;/code>使用了小括号括起来成为了子表达式。这样，匹配结束标签的模式可以通过&lt;code>&amp;lt;/[hH]\1&amp;gt;&lt;/code>中的&lt;code>\1&lt;/code>来引用此子表达式。&lt;code>(1-6)&lt;/code>是一个可以匹配数字 1 到 6 的子表达式，&lt;code>\1&lt;/code>因此可以匹配相同的数字。在这种情况下，&amp;quot;&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->&amp;ldquo;将不能匹配。&lt;/p>
+&lt;p>注意：后向引用只能够引用子表达式（需要使用小括号括起来），后向引用语法在不同的正则表达式实现中可能是不一样的。引用的匹配一般是从 1 开始。在大多数的正则表达式实现中，0 可以用来引用整个表达式。&lt;/p>
+&lt;h1 id="执行替换操作">执行替换操作&lt;/h1>
+&lt;p>到现在为止我们所看到的正则表达式都是进行搜索，在一段文本中定位单词。正则表达式还可以用来执行替换操作。举个例子，将CA 替换成California和将MI替换成Michigan 并不是正则表达式需要完成的工作。尽管使用正则表达式也是合法的，但是没有必要这么做。事实上，在这里如果使用简单的字符串操作函数的话过程将会变得更加容易。&lt;/p>
+&lt;p>让我们来看一个例子，将&lt;code>313-555-1234&lt;/code>格式的电话号码重新格式化为&lt;code>(313) 555-1234&lt;/code>格式：&lt;/p>
+&lt;blockquote>
+&lt;p>查找表达式：&lt;code>(\d{3})(-)(\d{3})(-)(\d{4})&lt;/code>
+替换表达式：&lt;code>($1) $3-$5&lt;/code>&lt;/p>
+&lt;p>文本
+313-555-1234
+248-555-9999&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>结果
+(313) 555-1234
+(248) 555-9999&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>(\d{3})(-)(\d{3})(-)(\d{4})&lt;/code>匹配了一个电话号码，并分成了五个子表达式。&lt;code>(\d{3})&lt;/code>匹配刚开始的三个数字并作为第一个子表达式，&lt;code>(-)&lt;/code>匹配&amp;rdquo; - &amp;ldquo;并作为第二个子表达式，依此类推。这五个部分可以根据需要单独引用，&lt;code>($1) $3-$5&lt;/code>只是使用了其中的三个子表达式。因此“313-555-1234”改变为了“(313) 555-1234”。&lt;/p>
+&lt;h1 id="在xcode中查找和替换文本">在Xcode中查找和替换文本：&lt;/h1>
+&lt;p>&lt;strong>查找&lt;/strong>
+&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-131169344bb76da1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="查找"
+>&lt;/p>
+&lt;p>&lt;strong>替换&lt;/strong>
+&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-1e294c9c99b5977b.gif?imageMogr2/auto-orient/strip"
+loading="lazy"
+alt="替换"
+>&lt;/p>
+&lt;p>其实正则表达式还是很简单的，大家可以多找些例子熟悉一下。用的多了就熟了。&lt;/p>
+&lt;h1 id="正则表达式在ios中的使用">正则表达式在iOS中的使用。&lt;/h1>
+&lt;h2 id="nspredicate">NSPredicate&lt;/h2>
+&lt;p>NSPredicate通常用来验证一个字符串是不是符合某种格式，例如验证一个字符串是不是由数字和字母组成的：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;song123&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;^[a-z0－9A-Z]*$&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//创建predicate
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSPredicate&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">predicate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSPredicate&lt;/span> &lt;span class="nl">predicateWithFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s">@&amp;#34;SELF MATCHES %@&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">regex&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//用predicate匹配string。result为匹配结果，YES or NO。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">BOOL&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">predicate&lt;/span> &lt;span class="nl">evaluateWithObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">string&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>关于NSPredicate还有一些其他的可以使用方法们，具体可以查看官方API。&lt;/p>
+&lt;h2 id="nsstring">NSString&lt;/h2>
+&lt;p>NSString可以用正则来查找自己当中符合要求的子字符串，例如查找字符串中的数字：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;song123&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//使用正则\d+去string中进行匹配，得到的时匹配到的range，在这里为{4，3}。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSRange&lt;/span> &lt;span class="n">range&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">rangeOfString&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSRegularExpressionSearch&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//如果匹配到就打印匹配到的子字符串，在这里为123。
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">location&lt;/span> &lt;span class="o">!=&lt;/span> &lt;span class="n">NSNotFound&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：&lt;code>\d+&lt;/code>用来查找数字，&lt;code>rangeOfString:options:&lt;/code>会返回一个NSRange，用来接收匹配的范围。&lt;code>options&lt;/code>必须要用&lt;code>NSRegularExpressionSearch&lt;/code>，代表用正则去匹配。&lt;code>range.location==NSNotFound&lt;/code>的话代表匹配不到结果。当写正则字符串时，&lt;code>\\ &lt;/code>需要写成&lt;code>\\\\ &lt;/code> ，所以，&lt;code>\d+&lt;/code>需要写成&lt;code>\\\\d+&lt;/code>。&lt;/p>
+&lt;h2 id="nsregularexpression">NSRegularExpression&lt;/h2>
+&lt;p>对于匹配字符串中的数字，我们也可以用到NSRegularExpression这个类实现。它可以用户来查找字符串中符合要求的&lt;code>第一个匹配结果&lt;/code>或者&lt;code>所有匹配结果&lt;/code>。&lt;/p>
+&lt;p>&lt;strong>查找字符串中第一个匹配结果&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;123abc45fgt7tyu&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">pattern&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//创建NSRegularExpression对象并指定正则表达式
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSRegularExpression&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSRegularExpression&lt;/span> &lt;span class="nl">regularExpressionWithPattern&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">pattern&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSRegularExpressionCaseInsensitive&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">error&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">nil&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//查找第一个匹配结果，如果查找不到的话match会是nil
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSTextCheckingResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">match&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="nl">firstMatchInString&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSMatchingReportCompletion&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">range&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSMakeRange&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">length&lt;/span>&lt;span class="p">])];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">match&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">//如果查找到就打印出来，结果为123
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">match&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：&lt;code>firstMatchInString:options:range&lt;/code>会查找字符串中第一个匹配，所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>。&lt;/p>
+&lt;p>&lt;strong>查找字符串中所有匹配结果&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;123abc45fgt7tyu&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">pattern&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//创建NSRegularExpression对象并指定正则表达式
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSRegularExpression&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSRegularExpression&lt;/span> &lt;span class="nl">regularExpressionWithPattern&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">pattern&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSRegularExpressionCaseInsensitive&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">error&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">nil&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//查找所有匹配结果
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSArray&lt;/span>&lt;span class="o">*&lt;/span> &lt;span class="n">matches&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="nl">matchesInString&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">string&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSMatchingReportProgress&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">range&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSMakeRange&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="n">length&lt;/span>&lt;span class="p">])];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//如果有匹配就打印出来，结果为123 45 7
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">matches&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">count&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSTextCheckingResult&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">match&lt;/span> &lt;span class="k">in&lt;/span> &lt;span class="n">matches&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">match&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>分析：&lt;code>matchesInString:options:range:&lt;/code>会查找字符串中的所有匹配，结果是一个包含&lt;code>NSTextCheckingResult&lt;/code>的数组。所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>、&lt;code>45&lt;/code>和&lt;code>7&lt;/code>。&lt;/p>
+&lt;p>创建&lt;code>NSRegularExpression&lt;/code>对象时的&lt;code>options&lt;/code>参数为&lt;code>NSRegularExpressionOptions&lt;/code>类型，可选值以及代表的意义如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;span class="lnt">6
+&lt;/span>&lt;span class="lnt">7
+&lt;/span>&lt;span class="lnt">8
+&lt;/span>&lt;span class="lnt">9
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">NSRegularExpressionOptions&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionCaseInsensitive&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//不区分大小写
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionAllowCommentsAndWhitespace&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//忽略空白和注释
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionIgnoreMetacharacters&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//将所有的patter当作普通字符串
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionDotMatchesLineSeparators&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">// 允许.匹配所有字符
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionAnchorsMatchLines&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">// 允许^,$匹配每一行的开头和结尾
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionUseUnixLineSeparators&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">// 只把\n识别为换行符
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionUseUnicodeWordBoundaries&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">6&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// 使用 Unicode TR#29 规定的边界，否则，使用传统的正则表达式的词边界
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">};&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>关于NSRegularExpression还有一些其他的可以使用方法们，具体可以查看&lt;a class="link" href="https://developer.apple.com/reference/foundation/nsregularexpression?language=objc" target="_blank" rel="noopener"
+>这里&lt;/a>。&lt;/p>
+&lt;h1 id="一些常用的正则">一些常用的正则：&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">邮箱：^[a-zA-Z0-9]{4,}@[a-z0-9A-Z]{2,}\\.[a-zA-Z]{2,}$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">手机号码：^((13[0-9])|(15[^4\\D])|(18[0,2,5-9]))\\d{8}$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">大陆固定电话号码：^\\d{4}-|\\d{3}-)?(\\d{8}|\\d{7}$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">身份证号：\\d{14}[[0-9],0-9xX]
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">Email地址：^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\.\\w+([-.]\\w+)*$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">纯数字：^[0-9]*$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">由数字和英文字母组成：^[A-Za-z0-9]+$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">QQ号：^[1-9][0-9]\{4,\}$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">中国邮政编码：^[1-9]\\d{5}(?!\\d)$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">URL：^http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&amp;amp;=]*)?$
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">纯汉字：^[\u4e00-\u9fa5]{0,}$
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>系统地学习正则表达式(一)：基础篇</title><link>https://lisongrc.github.io/p/201609835121d0/</link><pubDate>Tue, 13 Sep 2016 19:13:44 +0000</pubDate><guid>https://lisongrc.github.io/p/201609835121d0/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;h1 id="什么是正则表达式">什么是正则表达式&lt;/h1>
+&lt;p>正则表达式就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，用来表达对字符串的一种过滤逻辑。&lt;/p>
+&lt;p>通过正则表达式可以达到如下的目的：&lt;/p>
+&lt;blockquote>
+&lt;ol>
+&lt;li>给定的字符串是否符合正则表达式的过滤逻辑（称作“匹配”）；&lt;/li>
+&lt;li>可以通过正则表达式，从字符串中获取我们想要的特定部分。&lt;/li>
+&lt;/ol>
+&lt;/blockquote>
+&lt;p>为了让大家更方便地学习，先推荐一个验证正则表达式的软件&lt;code>Regextor&lt;/code>，具体可以看我的&lt;a class="link" href="http://www.jianshu.com/p/b304515d225b" target="_blank" rel="noopener"
+>这篇文章&lt;/a>，里面还推荐了很多Mac上的好软件。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-2387f6323fd09a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+alt="Regextor"
+>&lt;/p>
+&lt;p>下面开始讲解正则表达式各种规则：&lt;/p>
+&lt;h1 id="匹配普通文本字符">匹配普通文本字符&lt;/h1>
+&lt;p>正则表达式可以只包含普通的文本，代表去精确匹配这个文本。例如:&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>song&lt;/code>
+待匹配文本：xiaosongge，xiaoSongge
+匹配后结果：xiao&lt;code>song&lt;/code>ge，xiaoSongge&lt;/p>
+&lt;/blockquote>
+&lt;p>正则表达式默认是区分大小写的，所以&lt;code>song&lt;/code>不会匹配 &amp;ldquo;Song&amp;rdquo; 。但是大部分的正则表达式实现都提供了一个选项表示不区分大小写。&lt;/p>
+&lt;h1 id="匹配任意字符">匹配任意字符&lt;/h1>
+&lt;p>&lt;code>.&lt;/code>用来匹配一个任意字符，例如：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c.t&lt;/code>
+待匹配文本：cat cet caaat dog
+匹配后结果：&lt;code>cat&lt;/code> &lt;code>cet&lt;/code> caaat dog&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>c.t&lt;/code>会匹配以&amp;quot; c &amp;ldquo;开头，以&amp;rdquo; t &amp;ldquo;结尾，中间为任意字符的字符串。&lt;/p>
+&lt;p>同理，多个连续的&lt;code>.&lt;/code>可以匹配多个连续的任意字符：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c..t&lt;/code>
+待匹配文本：cat cet caat dog
+匹配后结果：cat cet &lt;code>caat&lt;/code> dog&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="匹配特殊字符">匹配特殊字符&lt;/h1>
+&lt;p>&lt;code>.&lt;/code>在正则表达式中含有特殊的意义，是一个特殊的字符。&lt;code>\ &lt;/code>也是特殊字符，可以对特殊字符起到转义作用。如果你想匹配的是一个真正的&amp;rdquo; . &amp;ldquo;字符，需要在&lt;code>.&lt;/code>前面加上&lt;code>\ &lt;/code>对字符进行转义。所以，&lt;code>\.&lt;/code>表示真正的&amp;rdquo; . &amp;ldquo;字符。&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c\.t&lt;/code>
+待匹配文本：cat c.t dog
+匹配后结果：cat &lt;code>c.t&lt;/code> dog&lt;/p>
+&lt;/blockquote>
+&lt;p>注意：因为&lt;code>\ &lt;/code>也是特殊字符，所以想要匹配一个真正的&amp;rdquo; \ &amp;ldquo;字符，需要使用两个反斜线&lt;code>\\\\ &lt;/code>：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c\\\t&lt;/code>
+待匹配文本：cat c\t dog
+匹配后结果：cat &lt;code>c\t&lt;/code> dog&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="使用字符集合">使用字符集合&lt;/h1>
+&lt;p>上面说到&lt;code>.&lt;/code>能匹配一个任意字符，但是如果我想匹配几个特定字符怎么办？匹配一组特定的字符可以使用&lt;code>[&lt;/code>和&lt;code>]&lt;/code>元字符。&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c[ab]t&lt;/code>
+待匹配文本：cat cbt cet
+匹配后结果：&lt;code>cat&lt;/code> &lt;code>cbt&lt;/code> cet&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>[ab]&lt;/code>会匹配&amp;rdquo; a &amp;ldquo;或者&amp;rdquo; b &amp;ldquo;。所以&lt;code>c[ab]t&lt;/code>会匹配&amp;rdquo; cat &amp;ldquo;和&amp;rdquo; cbt &amp;ldquo;而不会匹配&amp;rdquo; cet &amp;ldquo;。&lt;/p>
+&lt;h1 id="使用字符组区间">使用字符组区间&lt;/h1>
+&lt;p>在上面的例子中，假如我想匹配&lt;code>cet&lt;/code>怎么办，在&lt;code>[]&lt;/code>里面多加一个吗？那如果我想匹配任意小写字母呢，往里面写几十个吗？虽然是可以的，但是太长了。这里我们可以用到&lt;code>[a-z]&lt;/code>：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c[a-z]t&lt;/code>
+待匹配文本：cat cbt czt c2t
+匹配后结果：&lt;code>cat&lt;/code> &lt;code>cbt&lt;/code> &lt;code>czt&lt;/code> c2t&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>c[a-z]t&lt;/code>表示以&amp;rdquo; c &amp;ldquo;开头，&amp;rdquo; t &amp;ldquo;结尾，中间为字母 &amp;quot; a &amp;quot; - &amp;quot; z &amp;quot; 的任意一个字母。&lt;/p>
+&lt;p>类似的区间还有：&lt;/p>
+&lt;blockquote>
+&lt;ul>
+&lt;li>[0-9] 和[0123456789]的功能一样。匹配所有的数字。&lt;/li>
+&lt;li>[A-F] 匹配A到F的大写字符。&lt;/li>
+&lt;li>[A-Z] 匹配所有的 A 到 Z 的大写字符。&lt;/li>
+&lt;li>[a-z] 匹配所有的 a 到 z 的小写字符。&lt;/li>
+&lt;li>[A-z] 匹配从 ASCII A 到 ASCII z 的所有字符（不仅仅匹配所有字母，还匹配在 ASCII 表中 A 到 z 中的字符，如 [ 和 ^ 等）。&lt;/li>
+&lt;li>[A-Za-z0-9] 匹配所有的大小写字母和数字。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;h1 id="非字符集的匹配">非字符集的匹配&lt;/h1>
+&lt;p>字符集合一般用于指定一组需要匹配的字符。但是有些时候，你想要排除一组你不想匹配的字符。可以通过对于字符集合的否定来实现。例如：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c[^a-z]t&lt;/code>
+待匹配文本：cat cbt czt c2t cAt
+匹配后结果：cat cbt czt &lt;code>c2t&lt;/code> &lt;code>cAt&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：这个和前面一个例子完全相反。&lt;code>[a-z]&lt;/code> 匹配所有的小写字母，而 &lt;code>[^a-z]&lt;/code> 匹配所有的不是小写字母的字符。&lt;/p>
+&lt;p>注意，&lt;code>^&lt;/code>字符是将字符集合中的所有字符都取消匹配。&lt;/p>
+&lt;h1 id="元字符">元字符&lt;/h1>
+&lt;p>元字符在正则表达式中有特殊的意义，上面我们已经说了几个元字符，比如&lt;code>.&lt;/code>、&lt;code>[&lt;/code>和&lt;code>]&lt;/code>。这些字符不能直接表示自己的含义，例如，不能直接使用&lt;code>[&lt;/code>来匹配&amp;rdquo; [ &amp;ldquo;，使用&lt;code>.&lt;/code>来匹配&amp;rdquo; . &amp;ldquo;。&lt;/p>
+&lt;p>所有的元字符都可以在前面加上反斜线转义，当转义后，字符将匹配自身而不是其特殊含义。例如，&lt;code>\[&lt;/code>将匹配&amp;rdquo; [ &amp;ldquo;:&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>a\[b&lt;/code>
+待匹配文本：a[b ab a[[b
+匹配后结果：&lt;code>a[b&lt;/code> ab a[[b&lt;/p>
+&lt;/blockquote>
+&lt;p>注意：&lt;code>\ &lt;/code>用来转义元字符，这也意味着&lt;code>\ &lt;/code>也是一个元字符。所以如果需要匹配真正的&amp;rdquo; \ &amp;ldquo;，可以使用&lt;code>\\\ &lt;/code>：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>a\\\b&lt;/code>
+待匹配文本：a\b a\b a[[b
+匹配后结果：a\b &lt;code>a\b&lt;/code> a[[b&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>空白字符&lt;/strong>
+有时候你可能需要匹配文本中不能打印的空白字符。例如，你希望能够找到所有的 Tab 字符，或者是所有的换行符。你可以使用下表中的特殊元字符：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>元字符&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>[\b]&lt;/td>
+&lt;td>退格符&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\f&lt;/td>
+&lt;td>换页符&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\n&lt;/td>
+&lt;td>换行&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\r&lt;/td>
+&lt;td>回车&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\t&lt;/td>
+&lt;td>制表符&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\v&lt;/td>
+&lt;td>垂直制表符&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>例如&lt;code>\r\n&lt;/code>将匹配一个回车换行组合，在 Windows 中表示一个文件换行。在 Linux 和 Unix 系统中，只需要使用&lt;code>\n&lt;/code>即可。&lt;/p>
+&lt;h1 id="匹配特定的字符类型">匹配特定的字符类型&lt;/h1>
+&lt;p>有一些特殊的元字符可以用来匹配常用的字符集合。这些元字符被称为匹配字符类。你会发现使用它们是很方便的。&lt;/p>
+&lt;p>&lt;strong>匹配数字或者非数字&lt;/strong>
+上面说到，[0-9] 可以匹配所有的数字。如果不想匹配任何数字，则可以使用[^0-9]。下表中列出了数字和非数字的类元字符：&lt;/p>
+&lt;p>元字符 | 描述&lt;/p>
+&lt;ul>
+&lt;li>| -
+\d | 任何数字 (同 [0-9])
+\D | 任何非数字 (同 [^0-9])&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c\dt&lt;/code>
+待匹配文本：cat c2t czt c9t
+匹配后结果：cat &lt;code>c2t&lt;/code> czt &lt;code>c9t&lt;/code>&lt;/p>
+&lt;p>正则表达式：&lt;code>c\Dt&lt;/code>
+待匹配文本：cat c2t czt c9t
+匹配后结果：&lt;code>cat&lt;/code> c2t &lt;code>czt&lt;/code> c9t&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>匹配字母字符和非字母字符&lt;/strong>
+另外一个常用的类元字符是\w和\W：&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>元字符&lt;/th>
+&lt;th>描述&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>\w&lt;/td>
+&lt;td>所有的文字数字式字符：大小写字母、数字和下划线 (同 [a-zA-Z0-9_])&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>\W&lt;/td>
+&lt;td>(同 [^a-zA-Z0-9_])&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c\wt&lt;/code>
+待匹配文本：cat c2t czt c-t c\t
+匹配后结果：&lt;code>cat&lt;/code> &lt;code>c2t&lt;/code> c-t c\t&lt;/p>
+&lt;p>正则表达式：&lt;code>c\Wt&lt;/code>
+待匹配文本：cat c2t c-t c\t
+匹配后结果：cat c2t &lt;code>c-t&lt;/code> &lt;code>c\t&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>匹配空白和非空白&lt;/strong>
+最后一个将要遇到的匹配类是空白类：&lt;/p>
+&lt;p> 元字符 | 描述&lt;/p>
+&lt;ul>
+&lt;li>| -
+\s | 所有的空白字符 (同 [\f\n\r\t\v])
+\S | 所有的非空白字符 (同 [^\f\n\r\t\v])&lt;/li>
+&lt;/ul>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c\st &lt;/code>
+待匹配文本：cat c t c2t c\t
+匹配后结果：cat &lt;code>c t&lt;/code> c2t c\t&lt;/p>
+&lt;p>正则表达式：&lt;code>c\St &lt;/code>
+待匹配文本：cat c t c2t c\t
+匹配后结果：&lt;code>cat&lt;/code> c t &lt;code>c2t&lt;/code> &lt;code>c\t&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;h1 id="匹配一个或者更多字符">匹配一个或者更多字符&lt;/h1>
+&lt;p>&lt;code>+&lt;/code>元字符表示匹配一个或者多个字符。例如，&lt;code>a&lt;/code>将匹配&amp;quot;a&amp;rdquo;，而&lt;code>a+&lt;/code>则匹配一个或者多个&amp;quot;a&amp;quot;。&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>cat&lt;/code>
+待匹配文本：ct cat caat caaat
+匹配后结果：ct &lt;code>cat&lt;/code> caat caaat&lt;/p>
+&lt;p>正则表达式：&lt;code>ca+t&lt;/code>
+待匹配文本：ct cat caat caaat
+匹配后结果：ct &lt;code>cat&lt;/code> &lt;code>caat&lt;/code> &lt;code>caaat&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>当在字符集合上使用&lt;code>+&lt;/code>的时候，需要将&lt;code>+&lt;/code>符号放在集合外面：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>c[0-9]+t&lt;/code>
+待匹配文本：ct c0t cat c123t
+匹配后结果：ct &lt;code>c0t&lt;/code> cat &lt;code>c123t&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>c[0-9]+t&lt;/code>表示以&amp;quot; c &amp;ldquo;开头，以&amp;rdquo; t &amp;ldquo;结尾，中间为一个或多个数字的字符串。&lt;/p>
+&lt;p>当然，&lt;code>[0-9+]&lt;/code>也是一个合法的正则表达式，但它表示一个包含 &amp;quot; 0 &amp;quot; - &amp;quot; 9 &amp;quot; 和 &amp;quot; + &amp;quot; 符号的字符集合。&lt;/p>
+&lt;p>一般的，元字符如&lt;code>.&lt;/code>和&lt;code>+&lt;/code>等用于字符集合的时候是作为字面含义使用的，因此没有必要转义。但是对其进行转义也没错，所以，&lt;code>[0-9+]&lt;/code>和&lt;code>[0-9\+]&lt;/code>的功能是一样的。&lt;/p>
+&lt;p>注意：&lt;code>+&lt;/code>是一个元字符，匹配&amp;rdquo;+&amp;ldquo;需要使用转义&lt;code>\+&lt;/code>。&lt;/p>
+&lt;h1 id="匹配零个或者更多字符">匹配零个或者更多字符&lt;/h1>
+&lt;p>如果希望匹配零个或更多字符的时候，可以使用&lt;code>*&lt;/code>元字符。&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>ca*t&lt;/code>
+待匹配文本：ct cat caat cbt
+匹配后结果：&lt;code>ct&lt;/code> &lt;code>cat&lt;/code> &lt;code>caat&lt;/code> cbt&lt;/p>
+&lt;/blockquote>
+&lt;p>注意：&lt;code>*&lt;/code>符号是元字符。为了能够匹配&amp;rdquo; * &amp;ldquo;，需要进行转义&lt;code>\*&lt;/code>。&lt;/p>
+&lt;h1 id="匹配零个或者一个字符">匹配零个或者一个字符&lt;/h1>
+&lt;p>&lt;code>?&lt;/code>匹配零个或者一个字符。所以，&lt;code>?&lt;/code>非常适合于在文本中匹配一个可选的字符。&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>ca?t&lt;/code>
+待匹配文本：ct cat caat cbt
+匹配后结果：&lt;code>ct&lt;/code> &lt;code>cat&lt;/code> caat cbt&lt;/p>
+&lt;/blockquote>
+&lt;p>注意：&lt;code>?&lt;/code>符号是元字符。为了能够匹配&amp;rdquo; ? &amp;ldquo;，需要进行转义&lt;code>\?&lt;/code>。&lt;/p>
+&lt;h1 id="使用匹配次数">使用匹配次数&lt;/h1>
+&lt;p>正则表达式允许指定匹配的次数。次数可以在“ { ”和“ } ”之间指定。
+注意：&lt;code>{&lt;/code>和&lt;code>}&lt;/code>也是元字符，在使用字面含义的时候需要转义。&lt;/p>
+&lt;p>&lt;strong>精确次数匹配&lt;/strong>
+为了指定匹配的次数，你可以在&lt;code>{&lt;/code>和&lt;code>}&lt;/code>之间输入数字。例如，&lt;code>{3}&lt;/code>将匹配 3 次前面出现的字符或集合：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>ca{3}t&lt;/code>
+待匹配文本：ct cat caaat cbt
+匹配后结果：ct cat &lt;code>caaat&lt;/code> cbt&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>至少次数匹配&lt;/strong>
+我们也可以只指定匹配的最小值。例如，&lt;code> {2,}&lt;/code>意味着匹配 2次或者更多次：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>ca{1,}t&lt;/code>
+待匹配文本：ct cat caaat cbt
+匹配后结果：ct &lt;code>cat&lt;/code> &lt;code>caaat&lt;/code> cbt&lt;/p>
+&lt;/blockquote>
+&lt;p>&lt;strong>次数区间匹配&lt;/strong>
+我们还可以使用最小值和最大值来确定匹配的数量。例如，&lt;code>{2,3}&lt;/code>意味着最少匹配 2次，最多匹配3次。 &lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>ca{2,3}t&lt;/code>
+待匹配文本：ct cat caaat cbt
+匹配后结果：ct cat &lt;code>caaat&lt;/code> cbt&lt;/p>
+&lt;/blockquote>
+&lt;p>所以&lt;code>?&lt;/code>和&lt;code>{0,1}&lt;/code>的功能是一样的，&lt;code>+&lt;/code>和 &lt;code>{1,}&lt;/code>的作用是一样的。&lt;/p>
+&lt;h1 id="非贪婪匹配">非贪婪匹配&lt;/h1>
+&lt;p>先看看下面的例子：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>s.*g&lt;/code>
+待匹配文本：xiao song xiao song
+匹配后结果：xiao &lt;code>song xiao song&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>s.*g&lt;/code>并没像预想中的匹配两个&amp;rdquo; song &amp;ldquo;，而是匹配了第一个&amp;rdquo; s &amp;ldquo;和最后一个 &amp;quot; g &amp;ldquo;之间的所有文本。&lt;/p>
+&lt;p>这是因为&lt;code>*&lt;/code>和&lt;code>+&lt;/code>都是贪婪匹配。也就是说，正则表达式总是寻找最大的匹配，而不是最小的，这是故意设计的。&lt;/p>
+&lt;p>但是如果你不希望贪婪匹配的时候就要使用这些量词的非贪婪匹配（匹配尽可能少的字符）。非贪婪量词是在量词后面加上&lt;code>?&lt;/code>：&lt;/p>
+&lt;p>贪婪量词 | 非贪婪量词&lt;/p>
+&lt;ul>
+&lt;li>| -&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>| *?&lt;/li>
+&lt;/ul>
+&lt;ul>
+&lt;li>|+?
+{n,} | {n,}?&lt;/li>
+&lt;/ul>
+&lt;p>&lt;code>*?&lt;/code>是&lt;code>*&lt;/code>的非贪婪版本，所以可以使用&lt;code>*?&lt;/code>来修改上面的例子：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>s.*?g&lt;/code>
+待匹配文本：xiao song xiao song
+匹配后结果：xiao &lt;code>song&lt;/code> xiao &lt;code>song&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：可以看到&lt;code>s.*?g&lt;/code>匹配到了两个&amp;rdquo; song &amp;ldquo;。&lt;/p>
+&lt;h1 id="定义字符串边界">定义字符串边界&lt;/h1>
+&lt;p>字符串边界匹配的元字符是&lt;code>^&lt;/code>和&lt;code>$&lt;/code>，分别用于字符串的开始和结束。&lt;/p>
+&lt;p>&lt;code>^&lt;/code>用法如下：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>^xiao&lt;/code>&lt;/p>
+&lt;p>待匹配文本：xiaosong
+匹配后结果：&lt;code>xiao&lt;/code>song&lt;/p>
+&lt;p>待匹配文本：axiaosong
+匹配后结果：axiaosong&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>^xiao&lt;/code>匹配以&amp;rdquo; xiao &amp;ldquo;开头的字符串。&lt;/p>
+&lt;p>&lt;code>$&lt;/code>用法如下：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>song$&lt;/code>&lt;/p>
+&lt;p>待匹配文本：xiaosong
+匹配后结果：xiao&lt;code>song&lt;/code>&lt;/p>
+&lt;p>待匹配文本：xiaosonga
+匹配后结果：xiaosonga&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>song$&lt;/code>匹配以&amp;quot;song &amp;ldquo;结尾的字符串。&lt;/p>
+&lt;p>共同使用：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>^[0-9a-zA-Z]{4,}$&lt;/code>&lt;/p>
+&lt;p>待匹配文本：a1b234ABC
+匹配后结果：&lt;code>a1b234ABC&lt;/code>&lt;/p>
+&lt;p>待匹配文本：+a1b23=4ABC
+匹配后结果：+a1b23=4ABC&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>^[0-9a-zA-Z]{4,}$&lt;/code>匹配用数字或者字母组成的，并且位数大于等于四位的字符串。&lt;/p>
+&lt;p>注意：&lt;code>^&lt;/code>如果位于集合开始处的话，则表示否定；如果在集合外面，则将匹配字符串的开始位置。大家可以试试&lt;code>[^0-9]&lt;/code>和&lt;code>^[0-9]&lt;/code>的区别。&lt;/p>
+&lt;h1 id="使用多行模式">使用多行模式&lt;/h1>
+&lt;p>但是&lt;code>(?m)&lt;/code>可以启用多行模式。在多行模式下，正则表达式引擎将换行符作为字符串的分隔符，&lt;code>^&lt;/code>将匹配文本的开始或者一行的开始，而&lt;code>$&lt;/code>则可以匹配文本的结束或者是一行的结尾处。&lt;/p>
+&lt;p>修改下上个例子：&lt;/p>
+&lt;blockquote>
+&lt;p>正则表达式：&lt;code>(?m)^[0-9a-zA-Z]{4,}$&lt;/code>&lt;/p>
+&lt;p>待匹配文本：a1b234ABC
++a1b23=4ABC
+ABC123456&lt;/p>
+&lt;p>匹配后结果：&lt;code>a1b234ABC&lt;/code>
++a1b23=4ABC
+&lt;code>ABC123456&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;p>分析：&lt;code>(?m)^[0-9a-zA-Z]{4,}$&lt;/code>会去匹配每行&lt;code>用数字或者字母组成的，并且位数大于等于四位&lt;/code>的字符串。&lt;/p>
+&lt;p>注意：如果使用多行模式的话，&lt;code>(?m)&lt;/code>必须放置在正则表达式的开始。
+&lt;code>(?m)&lt;/code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用&lt;code>\A&lt;/code>匹配字符串的开始，&lt;code>\Z&lt;/code>匹配字符串的结束。如果支持的话，则这些元字符的功能和&lt;code>^&lt;/code>、&lt;code>$&lt;/code>是一样的。但是这些元字符不能使用&lt;code>(?m)&lt;/code>修饰，所以也不能用于多行模式。&lt;/p></description></item></channel></rss>

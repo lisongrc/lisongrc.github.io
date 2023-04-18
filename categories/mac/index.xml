@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Mac on 小松哥的博客</title><link>https://lisongrc.github.io/categories/mac/</link><description>Recent content in Mac on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Feb 2022 18:31:00 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/mac/index.xml" rel="self" type="application/rss+xml"/><item><title>查看Mac SSD寿命与健康度</title><link>https://lisongrc.github.io/p/2022023fc8d0f9/</link><pubDate>Sun, 13 Feb 2022 18:31:00 +0000</pubDate><guid>https://lisongrc.github.io/p/2022023fc8d0f9/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>如何确认目前Mac 电脑所用的SSD 寿命和健康度还剩多久呢？&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="安装工具smartmontools">安装工具smartmontools&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install smartmontools
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="通过diskutil-list指令来查询ssd硬盘设备标签代码">通过&lt;code>diskutil list&lt;/code>指令来查询SSD硬盘设备标签代码&lt;/h1>
+&lt;p>&lt;img src="https://lisongrc.github.io/../images/disk_identifier.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>或者打开磁盘管理工具查看：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/../images/QQ%e6%88%aa%e5%9b%be20210225084247.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="执行命令">执行命令&lt;/h1>
+&lt;p>注意命令里面的&lt;code>disk1s1&lt;/code>换成你自己的标识符。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">smartctl -a disk1s1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://lisongrc.github.io/../images/QQ%e6%88%aa%e5%9b%be20210225084324.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>至于SMART 工具里面显示的数据可对照底下说明：&lt;/p>
+&lt;ul>
+&lt;li>严重警告（Critical Warning）：会显示控制器状态警告讯息，如果都显示0x00 就表示没事&lt;/li>
+&lt;li>温度（Temperature）：会显示当前SSD 温度资讯&lt;/li>
+&lt;li>可用备用空间（Available Spare）：SSD 剩余空间百分比&lt;/li>
+&lt;li>可用备用临界值（Available Spare Threshold）：临界值全由厂商定义&lt;/li>
+&lt;li>寿命百分比（Percentage Used）：目前SSD 寿命百分比数值，具体取决于实际设备使用情况和厂商对设备寿命的预测。&lt;/li>
+&lt;li>资料读取（Data Units Read）：记录电脑从SSD读取512字节数据单元的总量，每1000个单元记录一次，即这项Raw数据1的值等于500KB。&lt;/li>
+&lt;li>资料写入（Data Units Read）：如上，就是写入总量。&lt;/li>
+&lt;li>主机读取命令（Host Read Commands）：主控收到的读取命令数量。&lt;/li>
+&lt;li>主机写入命令（Host Write Commands）：主控收到的写入命令数量。&lt;/li>
+&lt;li>控制器忙碌时间（Controller Busy Time）：主控忙于I/O命令的时间。&lt;/li>
+&lt;li>意外关机（Unsafe Shutdowns）：纪录不正常断电次数&lt;/li>
+&lt;li>媒体和资料完整性错误（Media and Data Integrity Errors）：主控检测得到的未恢复的数据完整性错误次数。&lt;/li>
+&lt;li>错误资料纪录（Number of Error Information Log Entries）：主控总共收到的错误信息日志数量。&lt;/li>
+&lt;/ul>
+&lt;p>通常我们主要确认「寿命百分比（Percentage Used）」这项数值就好，通常达到90%以上就要额外注意。&lt;/p></description></item><item><title>Homebrew的使用</title><link>https://lisongrc.github.io/p/2021043dc4d0c2/</link><pubDate>Sun, 25 Apr 2021 23:18:12 +0000</pubDate><guid>https://lisongrc.github.io/p/2021043dc4d0c2/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>&lt;a class="link" href="https://brew.sh/" target="_blank" rel="noopener"
+>Homebrew&lt;/a>可以方便地安装你需要的包或者app。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="一安装">一、安装&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">/bin/bash -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="二使用">二、使用&lt;/h1>
+&lt;h2 id="搜索包">搜索包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew search wget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="安装包">安装包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew install wget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="卸载包">卸载包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew uninstall wget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="显示包信息">显示包信息&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew info wget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="查看已安装的包">查看已安装的包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew list
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">brew list --cask
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="更新homebew">更新Homebew&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew update
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="列出可以升级的包">列出可以升级的包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew outdated
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="升级所有已安装的包">升级所有已安装的包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew upgrade --force --greedy
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="升级某些包">升级某些包&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew upgrade wget
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="清理缓存">清理缓存&lt;/h2>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew cleanup
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="三卸载">三、卸载&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">/bin/bash -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/uninstall.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="四homebrew-bundle">四、homebrew-bundle&lt;/h1>
+&lt;p>homebrew-bundle可以帮助我们备份已安装的包和app们，这样我们在重装系统或者换电脑后可以一键恢复安装，节省时间。&lt;/p>
+&lt;h2 id="备份">备份&lt;/h2>
+&lt;p>下面这条命令意思是备份我的安装列表，&amp;ndash;describe代表会加上包的描述，&amp;ndash;force代表覆盖已有的文件，&amp;ndash;file指定输出文件，这里我指定iCloud云盘里的Brewfile文件，因为这样系统就会自动同步这个文件了哈哈。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew bundle dump --describe --force --all --file&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;~/Library/Mobile Documents/com~apple~CloudDocs/Brewfile&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>生成的文件大概是这样：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">tap&lt;/span> &lt;span class="s2">&amp;#34;homebrew/bundle&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">tap&lt;/span> &lt;span class="s2">&amp;#34;homebrew/cask&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">tap&lt;/span> &lt;span class="s2">&amp;#34;homebrew/core&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Mac App Store command-line interface&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">brew&lt;/span> &lt;span class="s2">&amp;#34;mas&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Open source relational database management system&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">brew&lt;/span> &lt;span class="s2">&amp;#34;mysql&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Tool to list all active shortcuts of the current application&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cask&lt;/span> &lt;span class="s2">&amp;#34;cheatsheet&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Free and open-source media player&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">cask&lt;/span> &lt;span class="s2">&amp;#34;iina&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mas&lt;/span> &lt;span class="s2">&amp;#34;Developer&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">640199958&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mas&lt;/span> &lt;span class="s2">&amp;#34;Hidden Bar&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">1452453066&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mas&lt;/span> &lt;span class="s2">&amp;#34;The Unarchiver&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">425424353&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">mas&lt;/span> &lt;span class="s2">&amp;#34;Xcode&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nb">id&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="mi">497799835&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h2 id="恢复安装">恢复安装&lt;/h2>
+&lt;p>因为iCloud备份了Brewfile文件，我们可以一键恢复安装：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew install mas
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">brew bundle install --file&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;~/Library/Mobile Documents/com~apple~CloudDocs/Brewfile&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Chrome好用的插件，持续更新</title><link>https://lisongrc.github.io/p/2021045dc07d30/</link><pubDate>Sat, 24 Apr 2021 10:15:05 +0000</pubDate><guid>https://lisongrc.github.io/p/2021045dc07d30/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>本文总结一些Chrome上好用的插件们。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="扩展管理器extension-managerhttpschromegooglecomwebstoredetailextension-managergjldcdngmdknpinoemndlidpcabkggco">&lt;a class="link" href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco" target="_blank" rel="noopener"
+>扩展管理器（Extension Manager）&lt;/a>&lt;/h1>
+&lt;p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/i1quYLmDyiU7N5ES24UQEj74GRSnnMn7eBRwXLBfUK6zwaqWDzmmRAPH6YI7ih0aVKXdH9giVh5W7OjDs4sGdor_=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="adguardhttpschromegooglecomwebstoredetailadguard-adblockerbgnkhhnnamicmpeenaelnjfhikgbkllg">&lt;a class="link" href="https://chrome.google.com/webstore/detail/adguard-adblocker/bgnkhhnnamicmpeenaelnjfhikgbkllg" target="_blank" rel="noopener"
+>AdGuard&lt;/a>&lt;/h1>
+&lt;p>AdGuard 广告拦截器可有效的拦截所有网页上的所有类型的广告，甚至是在 Facebook、Youtube 以及其他万千网站上的广告！&lt;/p>
+&lt;h1 id="tampermonkeyhttpschromegooglecomwebstoredetailtampermonkeydhdgffkkebhmkfjojejmpbldmpobfkfo">&lt;a class="link" href="https://chrome.google.com/webstore/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo" target="_blank" rel="noopener"
+>Tampermonkey&lt;/a>&lt;/h1>
+&lt;p>Tampermonkey用于在网站上运行所谓的用户脚本（有时也称为Greasemonkey脚本）。&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/MhMg9fwCD5qVhqcSCRfhIYqz5_xUfrziMtZ-Vtwlb2BT2wFkFuy_CWGtc9Gx4GtzO6qP3FTzCXy3jN-PqOgBlPbYqA=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="awesome-screenshothttpschromegooglecomwebstoredetailawesome-screenshot-screennlipoenfbbikpbjkfpfillcgkoblgpmj">&lt;a class="link" href="https://chrome.google.com/webstore/detail/awesome-screenshot-screen/nlipoenfbbikpbjkfpfillcgkoblgpmj" target="_blank" rel="noopener"
+>Awesome Screenshot&lt;/a>&lt;/h1>
+&lt;p>截图和录屏2合1的工具，支持截取整个页面，快速分享屏幕。&lt;/p>
+&lt;h1 id="json-handlehttpschromegooglecomwebstoredetailjson-handleiahnhfdhidomcpggpaimmmahffihkfnj">&lt;a class="link" href="https://chrome.google.com/webstore/detail/json-handle/iahnhfdhidomcpggpaimmmahffihkfnj" target="_blank" rel="noopener"
+>JSON-handle&lt;/a>&lt;/h1>
+&lt;p>对JSON格式的内容进行浏览和编辑，以树形图样式展现JSON文档，并可实时编辑。&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/Q7b4wi7gG4SJhFxT3n633dFHVcm1XNn7UUA87bblaUoT32aUQrn6VygY_vzH7W6yE2of4ypEzrJetlO9LDHzFzucoA=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="恢复关闭的标签httpschromegooglecomwebstoredetaile681a2e5a48de585b3e997ade79a84e6a087e7adbenhdghhbkaaohocakiepiogjhlllekfma">&lt;a class="link" href="https://chrome.google.com/webstore/detail/%E6%81%A2%E5%A4%8D%E5%85%B3%E9%97%AD%E7%9A%84%E6%A0%87%E7%AD%BE/nhdghhbkaaohocakiepiogjhlllekfma" target="_blank" rel="noopener"
+>恢复关闭的标签&lt;/a>&lt;/h1>
+&lt;p>只要点击弹窗可让您轻而易举的撤销关闭的标签！&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/MWOJm5K3Ur5f0ZN1yp_O-wK1SMSwMVYZd4pEbDlz4fy3sy-a-n3GaM4UThgkzIMdDMSJ1j9HJPL5QqNCd0Ixw8lhtLw=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="工具喵httpschromegooglecomwebstoredetaile5b7a5e585b7e596b5coppgeobilocdhiclhgmadabblhfjgpm">&lt;a class="link" href="https://chrome.google.com/webstore/detail/%E5%B7%A5%E5%85%B7%E5%96%B5/coppgeobilocdhiclhgmadabblhfjgpm" target="_blank" rel="noopener"
+>工具喵&lt;/a>&lt;/h1>
+&lt;p>工具喵（开发常用工具）：Unix时间戳、URL编码/解码、IP地址查询、MD5加密、BASE64编码/解码、随机字符串&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/HZuYXNH40knDyCi7aYg_r2Uwq2mNfHUpSqFtLuYtvZ9clPmR_XX3f0JPPu6r3VwBD0vBFmutzjLgfGQ9mIF0M96-Rw=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="speedtest-by-ooklahttpschromegooglecomwebstoredetailspeedtest-by-ooklapgjjikdiikihdfpoppgaidccahalehjh">&lt;a class="link" href="https://chrome.google.com/webstore/detail/speedtest-by-ookla/pgjjikdiikihdfpoppgaidccahalehjh" target="_blank" rel="noopener"
+>Speedtest by Ookla&lt;/a>&lt;/h1>
+&lt;p>测试网络表现和网站加载速度&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/XL7wsubp9oQ6UoHKaoFv_XKTrVWIsQwTXupHytkb8Wv7qtCg6lWJjKXFW6SupavIyD-KqXSzREQM_xGLiPhcYbtDlA=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="imagushttpschromegooglecomwebstoredetailimagusimmpkjjlgappgfkkfieppnmlhakdmaab">&lt;a class="link" href="https://chrome.google.com/webstore/detail/imagus/immpkjjlgappgfkkfieppnmlhakdmaab" target="_blank" rel="noopener"
+>Imagus&lt;/a>&lt;/h1>
+&lt;p>鼠标指针悬停在链接或缩略图上时直接在当前页面的弹出视图上显示这些图片、HTML5 视频/音频和内容专辑。&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/Ggd8q0G7oLNkaBMH5ZpBOUQOSh6xUttQkQPXJlwcAWJH89-NOjj1yRJZT0E-Os3bEGo-MMnoNuDDgwQudFpV0PWwLg=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="image-downloaderhttpschromegooglecomwebstoredetailimage-downloadercnpniohnfphhjihaiiggeabnkjhpaldj">&lt;a class="link" href="https://chrome.google.com/webstore/detail/image-downloader/cnpniohnfphhjihaiiggeabnkjhpaldj" target="_blank" rel="noopener"
+>Image Downloader&lt;/a>&lt;/h1>
+&lt;p>显示和下载一个网页上的图片们&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/LMhuL15xpcXQsblr8OJIcIh0GGqElLqYq1SPn4Pt3DG6FSJQz0Vh8gD88mzHA8Bhrlcb5Kd7wGvCv7Tuh6AkzYDrD-M=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="giphy-for-chromehttpschromegooglecomwebstoredetailgiphy-for-chromejlleokkdhkflpmghiioglgmnminbekdi">&lt;a class="link" href="https://chrome.google.com/webstore/detail/giphy-for-chrome/jlleokkdhkflpmghiioglgmnminbekdi" target="_blank" rel="noopener"
+>GIPHY for Chrome&lt;/a>&lt;/h1>
+&lt;p>搜索gif图片&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/l_kDiZth-ROWbXLKLTN0Vxe7ID69uOBMVYGTv7RCM8dzX6UTsqAPkjfKmPygZ71legxtUGV_hC6oPxVsU5GcLKP1Sg=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="octotree---github-code-treehttpschromegooglecomwebstoredetailoctotree-github-code-treebkhaagjahfmjljalopjnoealnfndnagc">&lt;a class="link" href="https://chrome.google.com/webstore/detail/octotree-github-code-tree/bkhaagjahfmjljalopjnoealnfndnagc" target="_blank" rel="noopener"
+>Octotree - GitHub code tree&lt;/a>&lt;/h1>
+&lt;p>更方便地浏览Github的代码&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/1EP4WO0Y8yCHR3k_YohUBvlZuKmVsaV8jhii3YpRxytaFlLKVBIxckIUw9iZcU6H4MhqLmtgFINmJx3xGE1FPlHl6bo=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="native-hls-playbackhttpschromegooglecomwebstoredetailnative-hls-playbackemnphkkblegpebimobpbekeedfgemhof">&lt;a class="link" href="https://chrome.google.com/webstore/detail/native-hls-playback/emnphkkblegpebimobpbekeedfgemhof" target="_blank" rel="noopener"
+>Native HLS Playback&lt;/a>&lt;/h1>
+&lt;p>播放m3u8视频&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/A4jwtVSlIjDNjF0DhASdTXvSJzdIuHzSMnJwE2qZudPuPqzVYiTHg_6t0uXm920cIlQP1OeP8p8m4Rik_1qhH7u4ig=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="购物党自动比价工具httpschromegooglecomwebstoredetaile8b4ade789a9e5859ae887aae58aa8e6af94e4bbb7e5b7a5e585b7jgphnjokjhjlcnnajmfjlacjnjkhleah">&lt;a class="link" href="https://chrome.google.com/webstore/detail/%E8%B4%AD%E7%89%A9%E5%85%9A%E8%87%AA%E5%8A%A8%E6%AF%94%E4%BB%B7%E5%B7%A5%E5%85%B7/jgphnjokjhjlcnnajmfjlacjnjkhleah" target="_blank" rel="noopener"
+>购物党自动比价工具&lt;/a>&lt;/h1>
+&lt;p>浏览商品页面时，自动查询180天历史价格、比较同款商品的全网最低价、提示促销和隐藏优惠券、一旦降价还能通过微信提醒你，海淘、二手房和Steam游戏也能比价！&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/jAQ34Jca1rZH3XRyI5G0k6xzJDzt75dfNOkrS-edfeyjfpP0lfGG2w6BACobyyjNlYG-lGCt2i-9i830LKiaVIhsFw=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="掘金httpschromegooglecomwebstoredetaile68e98e98791lecdifefmmfjnjjinhaennhdlmcaeeeb">&lt;a class="link" href="https://chrome.google.com/webstore/detail/%E6%8E%98%E9%87%91/lecdifefmmfjnjjinhaennhdlmcaeeeb" target="_blank" rel="noopener"
+>掘金&lt;/a>&lt;/h1>
+&lt;p>在新标签页展示聚合内容，包含前端、Android、iOS、后端、产品、设计六大频道，每个频道内都有一到多个内容源。&lt;/p>
+&lt;p>&lt;img src="https://lh3.googleusercontent.com/eqXFbVdPoGwnBDRsAtUiaQ0Mzijt6_bpBLmHE7yOBRjCjTWheH806Pw7m-fSsPWVvBt-KMP2iQPthhReUUc0910q=w640-h400-e365-rj-sc0x00ffffff"
+loading="lazy"
+>&lt;/p></description></item><item><title>一些网站们，持续更新</title><link>https://lisongrc.github.io/p/2021044decb28c/</link><pubDate>Sat, 17 Apr 2021 20:46:53 +0000</pubDate><guid>https://lisongrc.github.io/p/2021044decb28c/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>本文总结一些有用的网站们。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;ul>
+&lt;li>&lt;a class="link" href="https://www.processon.com/" target="_blank" rel="noopener"
+>processon&lt;/a> ：免费在线作图、实时协作，支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等&lt;/li>
+&lt;li>&lt;a class="link" href="https://lottiefiles.com/" target="_blank" rel="noopener"
+>lottiefiles&lt;/a> ：在线看lottie效果&lt;/li>
+&lt;li>&lt;a class="link" href="https://regex101.com/" target="_blank" rel="noopener"
+>regex101&lt;/a> ：在线正则匹配&lt;/li>
+&lt;li>&lt;a class="link" href="http://blog.luckly-mjw.cn/tool-show/m3u8-downloader/index.html" target="_blank" rel="noopener"
+>m3u8 downloader&lt;/a> ：m3u8 视频在线提取工具&lt;/li>
+&lt;li>&lt;a class="link" href="https://minhaskamal.github.io/DownGit/#/home" target="_blank" rel="noopener"
+>DownGit&lt;/a> ：下载github项目上的文部分文件&lt;/li>
+&lt;li>&lt;a class="link" href="https://msdn.itellyou.cn/" target="_blank" rel="noopener"
+>msdn.itellyou&lt;/a> ：下载Windows系统&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.progit.cn/" target="_blank" rel="noopener"
+>Pro Git 中文版&lt;/a> ：讲解Git的使用&lt;/li>
+&lt;li>&lt;a class="link" href="https://swift.org/" target="_blank" rel="noopener"
+>swift&lt;/a> ：Swift官方网站&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.cnswift.org/" target="_blank" rel="noopener"
+>cnswift&lt;/a> ：Swift 编程语言 – 可能是最用心的翻译了吧&lt;/li>
+&lt;li>&lt;a class="link" href="https://swiftify.com/converter/code/n0qt4d/" target="_blank" rel="noopener"
+>swiftify&lt;/a> ：OC转Swift&lt;/li>
+&lt;li>&lt;a class="link" href="https://developer.apple.com/system-status/" target="_blank" rel="noopener"
+>system-status&lt;/a> ：查看苹果服务状态&lt;/li>
+&lt;li>&lt;a class="link" href="https://www.ipip.net/" target="_blank" rel="noopener"
+>IPIP.NET&lt;/a> ：一些网络工具&lt;/li>
+&lt;li>&lt;a class="link" href="https://dns.ip.cn/" target="_blank" rel="noopener"
+>IP.cn&lt;/a> ：全国 DNS 服务器 IP 地址汇总&lt;/li>
+&lt;li>&lt;a class="link" href="https://onevcat.com/" target="_blank" rel="noopener"
+>onevcat&lt;/a> ：喵神的博客&lt;/li>
+&lt;li>&lt;a class="link" href="https://tech.meituan.com/" target="_blank" rel="noopener"
+>美团技术团队&lt;/a> ：美团的技术博客&lt;/li>
+&lt;li>&lt;a class="link" href="https://fontawesome.com/icons?d=gallery&amp;amp;p=2" target="_blank" rel="noopener"
+>Font Awesome&lt;/a> ：图标字体&lt;/li>
+&lt;li>&lt;a class="link" href="https://theme-next.iissnan.com/" target="_blank" rel="noopener"
+>NexT&lt;/a> ：NexT 使用文档&lt;/li>
+&lt;li>&lt;a class="link" href="https://leetcode-cn.com/" target="_blank" rel="noopener"
+>leetcode&lt;/a> ：练习算法&lt;/li>
+&lt;li>&lt;a class="link" href="https://app.quicktype.io/" target="_blank" rel="noopener"
+>quicktype&lt;/a> ： json解析为多种语言&lt;/li>
+&lt;li>&lt;a class="link" href="https://opensource.tencent.com/projects" target="_blank" rel="noopener"
+>腾讯开源项目&lt;/a>&lt;/li>
+&lt;li>&lt;/li>
+&lt;/ul></description></item></channel></rss>

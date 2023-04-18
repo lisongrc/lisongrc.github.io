@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>smartmontools on 小松哥的博客</title><link>https://lisongrc.github.io/tags/smartmontools/</link><description>Recent content in smartmontools on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Feb 2022 18:31:00 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/smartmontools/index.xml" rel="self" type="application/rss+xml"/><item><title>查看Mac SSD寿命与健康度</title><link>https://lisongrc.github.io/p/2022023fc8d0f9/</link><pubDate>Sun, 13 Feb 2022 18:31:00 +0000</pubDate><guid>https://lisongrc.github.io/p/2022023fc8d0f9/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>如何确认目前Mac 电脑所用的SSD 寿命和健康度还剩多久呢？&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="安装工具smartmontools">安装工具smartmontools&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install smartmontools
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="通过diskutil-list指令来查询ssd硬盘设备标签代码">通过&lt;code>diskutil list&lt;/code>指令来查询SSD硬盘设备标签代码&lt;/h1>
+&lt;p>&lt;img src="https://lisongrc.github.io/../images/disk_identifier.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>或者打开磁盘管理工具查看：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/../images/QQ%e6%88%aa%e5%9b%be20210225084247.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="执行命令">执行命令&lt;/h1>
+&lt;p>注意命令里面的&lt;code>disk1s1&lt;/code>换成你自己的标识符。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">smartctl -a disk1s1
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://lisongrc.github.io/../images/QQ%e6%88%aa%e5%9b%be20210225084324.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>至于SMART 工具里面显示的数据可对照底下说明：&lt;/p>
+&lt;ul>
+&lt;li>严重警告（Critical Warning）：会显示控制器状态警告讯息，如果都显示0x00 就表示没事&lt;/li>
+&lt;li>温度（Temperature）：会显示当前SSD 温度资讯&lt;/li>
+&lt;li>可用备用空间（Available Spare）：SSD 剩余空间百分比&lt;/li>
+&lt;li>可用备用临界值（Available Spare Threshold）：临界值全由厂商定义&lt;/li>
+&lt;li>寿命百分比（Percentage Used）：目前SSD 寿命百分比数值，具体取决于实际设备使用情况和厂商对设备寿命的预测。&lt;/li>
+&lt;li>资料读取（Data Units Read）：记录电脑从SSD读取512字节数据单元的总量，每1000个单元记录一次，即这项Raw数据1的值等于500KB。&lt;/li>
+&lt;li>资料写入（Data Units Read）：如上，就是写入总量。&lt;/li>
+&lt;li>主机读取命令（Host Read Commands）：主控收到的读取命令数量。&lt;/li>
+&lt;li>主机写入命令（Host Write Commands）：主控收到的写入命令数量。&lt;/li>
+&lt;li>控制器忙碌时间（Controller Busy Time）：主控忙于I/O命令的时间。&lt;/li>
+&lt;li>意外关机（Unsafe Shutdowns）：纪录不正常断电次数&lt;/li>
+&lt;li>媒体和资料完整性错误（Media and Data Integrity Errors）：主控检测得到的未恢复的数据完整性错误次数。&lt;/li>
+&lt;li>错误资料纪录（Number of Error Information Log Entries）：主控总共收到的错误信息日志数量。&lt;/li>
+&lt;/ul>
+&lt;p>通常我们主要确认「寿命百分比（Percentage Used）」这项数值就好，通常达到90%以上就要额外注意。&lt;/p></description></item></channel></rss>

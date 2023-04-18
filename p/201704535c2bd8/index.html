@@ -1,0 +1,207 @@
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。 为何要自定义Xcode模板 有时候公司会要求一"><title>Xcode自定义模板实践</title><link rel=canonical href=https://lisongrc.github.io/p/201704535c2bd8/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="Xcode自定义模板实践"><meta property="og:description" content="好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。 为何要自定义Xcode模板 有时候公司会要求一"><meta property="og:url" content="https://lisongrc.github.io/p/201704535c2bd8/"><meta property="og:site_name" content="小松哥的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Xcode"><meta property="article:published_time" content="2017-04-13T00:11:43+00:00"><meta property="article:modified_time" content="2017-04-13T00:11:43+00:00"><meta name=twitter:title content="Xcode自定义模板实践"><meta name=twitter:description content="好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。 为何要自定义Xcode模板 有时候公司会要求一"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu66761f67689d09650ff2d1e3069c4103_356268_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
+<span class=emoji>😎</span></figure><div class=site-meta><h1 class=site-name><a href=/>小松哥的博客</a></h1><h2 class=site-description>是缘是情是童真还是意外</h2></div></header><ol class=social-menu><li><a href=https://github.com/lisongrc target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/201704535c2bd8/>Xcode自定义模板实践</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>Apr 13, 2017</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 3 分钟</time></div></footer></div></header><section class=article-content><p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。</p><h1 id=为何要自定义xcode模板>为何要自定义Xcode模板</h1><p>有时候公司会要求一定的代码规范，例如控制器中需要用<code>#pragma mark - </code>来分割各个方法们，像这样：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=cp>#pragma mark - LifeCycle
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>dealloc</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>viewDidLoad</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>viewWillAppear:</span><span class=p>(</span><span class=kt>BOOL</span><span class=p>)</span><span class=nv>animated</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - UITextFieldDelegate
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>BOOL</span><span class=p>)</span><span class=nf>textFieldShouldReturn:</span><span class=p>(</span><span class=n>UITextField</span> <span class=o>*</span><span class=p>)</span><span class=nv>textField</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Public
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Private
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Getter
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nf>name</span> <span class=p>{}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Setter
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>setName:</span><span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nv>name</span> <span class=p>{}</span>
+</span></span></code></pre></td></tr></table></div></div><p>这样不仅可以分割代码，方便阅读，而且可以方便找到某个方法：
+<img src=http://upload-images.jianshu.io/upload_images/1608265-14c1a33a378b8a5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy></p><p>但是每创建一个类就写一遍这些是不是有点繁琐呢，这个时候就要用到Xcode的自定义模板功能了。</p><h1 id=修改系统模板样式>修改系统模板样式</h1><p>Xcode系统模板的路径是<code>/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Templates/</code>，文件夹里面有文件模板<code>File Templates</code>和工程模板<code>Project Templates</code>，分别对应创建文件时的选项和创建工程时的选项：</p><p><img src=http://upload-images.jianshu.io/upload_images/1608265-8e1012bf7ebe5fb4.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy alt=创建文件界面></p><p><img src=http://upload-images.jianshu.io/upload_images/1608265-727c2467d531b57f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy alt=创建工程界面></p><p>我们用的最多就是<code>File Templates/Source/Cocoa Touch Class.xctemplate</code>里面的模板。里面长的是这样的：
+<img src=http://upload-images.jianshu.io/upload_images/1608265-6832c56d26b6646b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy alt="Cocoa Touch Class.xctemplate">
+例如我们今天需要改<code>UIViewController</code>的模板，就需要改其中的<code>UIViewControllerObjective-C</code>、 <code>UIViewControllerSwift</code>、<code>UIViewControllerXIBObjective-C</code>、<code>UIViewControllerXIBSwift</code>。他们的区别从名字上就能看出来，就是OC与Swift，是否用Xib的区别。</p><p>我们以OC并且不用Xib为例，打开UIViewControllerObjective-C中的<code>___FILEBASENAME___.m</code>文件：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span><span class=lnt>36
+</span><span class=lnt>37
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1>//  ___FILENAME___
+</span></span></span><span class=line><span class=cl><span class=c1>//  ___PROJECTNAME___
+</span></span></span><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1>//  Created by ___FULLUSERNAME___ on ___DATE___.
+</span></span></span><span class=line><span class=cl><span class=c1>//___COPYRIGHT___
+</span></span></span><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#import &#34;___FILEBASENAME___.h&#34;
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>@interface</span> <span class=nc>___FILEBASENAMEASIDENTIFIER___</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>@end</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>@implementation</span> <span class=nc>___FILEBASENAMEASIDENTIFIER___</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>viewDidLoad</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=nb>super</span> <span class=n>viewDidLoad</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Do any additional setup after loading the view.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>didReceiveMemoryWarning</span> <span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=nb>super</span> <span class=n>didReceiveMemoryWarning</span><span class=p>];</span>
+</span></span><span class=line><span class=cl>    <span class=c1>// Dispose of any resources that can be recreated.
+</span></span></span><span class=line><span class=cl><span class=c1></span><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cm>/*
+</span></span></span><span class=line><span class=cl><span class=cm>#pragma mark - Navigation
+</span></span></span><span class=line><span class=cl><span class=cm>
+</span></span></span><span class=line><span class=cl><span class=cm>// In a storyboard-based application, you will often want to do a little preparation before navigation
+</span></span></span><span class=line><span class=cl><span class=cm>- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+</span></span></span><span class=line><span class=cl><span class=cm>    // Get the new view controller using [segue destinationViewController].
+</span></span></span><span class=line><span class=cl><span class=cm>    // Pass the selected object to the new view controller.
+</span></span></span><span class=line><span class=cl><span class=cm>}
+</span></span></span><span class=line><span class=cl><span class=cm>*/</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>@end</span>
+</span></span></code></pre></td></tr></table></div></div><p>是不是很熟悉，就是我们创建一个控制器后.m里面的代码。其中的一些宏的意义是：</p><div class=table-wrapper><table><thead><tr><th>宏名</th><th>意义</th><th></th></tr></thead><tbody><tr><td><code>___FILENAME___</code></td><td>文件名包括后缀</td><td></td></tr><tr><td><code>___PROJECTNAME___</code></td><td>工程名</td><td></td></tr><tr><td><code>___FULLUSERNAME___</code></td><td>用户的名字</td><td></td></tr><tr><td><code>___DATE___</code></td><td>当前日期，年/月/日</td><td></td></tr><tr><td><code>___COPYRIGHT___</code></td><td>版权</td><td></td></tr><tr><td><code>___FILEBASENAME___</code></td><td>不带后缀的文件名</td><td></td></tr><tr><td><code>___FILEBASENAMEASIDENTIFIER___</code></td><td>不带后缀的文件名</td><td></td></tr></tbody></table></div><p>这个文件默认是不让修改的，我们可以修改他的权限，或者复制一份到别处，修改完替换原文件。总之修改其中的内容为：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
+</span><span class=lnt> 2
+</span><span class=lnt> 3
+</span><span class=lnt> 4
+</span><span class=lnt> 5
+</span><span class=lnt> 6
+</span><span class=lnt> 7
+</span><span class=lnt> 8
+</span><span class=lnt> 9
+</span><span class=lnt>10
+</span><span class=lnt>11
+</span><span class=lnt>12
+</span><span class=lnt>13
+</span><span class=lnt>14
+</span><span class=lnt>15
+</span><span class=lnt>16
+</span><span class=lnt>17
+</span><span class=lnt>18
+</span><span class=lnt>19
+</span><span class=lnt>20
+</span><span class=lnt>21
+</span><span class=lnt>22
+</span><span class=lnt>23
+</span><span class=lnt>24
+</span><span class=lnt>25
+</span><span class=lnt>26
+</span><span class=lnt>27
+</span><span class=lnt>28
+</span><span class=lnt>29
+</span><span class=lnt>30
+</span><span class=lnt>31
+</span><span class=lnt>32
+</span><span class=lnt>33
+</span><span class=lnt>34
+</span><span class=lnt>35
+</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1>//  ___FILENAME___
+</span></span></span><span class=line><span class=cl><span class=c1>//  ___PROJECTNAME___
+</span></span></span><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1>//  Created by ___FULLUSERNAME___ on ___DATE___.
+</span></span></span><span class=line><span class=cl><span class=c1>//___COPYRIGHT___
+</span></span></span><span class=line><span class=cl><span class=c1>//
+</span></span></span><span class=line><span class=cl><span class=c1></span>
+</span></span><span class=line><span class=cl><span class=cp>#import &#34;___FILEBASENAME___.h&#34;
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>@interface</span> <span class=nc>___FILEBASENAMEASIDENTIFIER___</span> <span class=p>()</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>@end</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=k>@implementation</span> <span class=nc>___FILEBASENAMEASIDENTIFIER___</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - LifeCycle
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>viewDidLoad</span>
+</span></span><span class=line><span class=cl><span class=p>{</span>
+</span></span><span class=line><span class=cl>    <span class=p>[</span><span class=nb>super</span> <span class=n>viewDidLoad</span><span class=p>];</span>
+</span></span><span class=line><span class=cl><span class=p>}</span>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - UITableViewDelegate
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Public
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Private
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Getter
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=cp>#pragma mark - Setter
+</span></span></span><span class=line><span class=cl><span class=cp></span>
+</span></span><span class=line><span class=cl><span class=k>@end</span>
+</span></span></code></pre></td></tr></table></div></div><p>然后把这个文件去替换原来的文件。替换成功后新建一个控制器，就会是我们自定义的结构了，如果没生效的话，可以重启下Xcode哦：
+<img src=http://upload-images.jianshu.io/upload_images/1608265-00d4d6fa1fe0f36a.gif?imageMogr2/auto-orient/strip loading=lazy alt=新建一个控制器></p><p>相信到这里，其他的模板你也一定会改了吧。</p><h1 id=使用自定义模板>使用自定义模板</h1><p>如果更改系统模板会有问题，就是xcode更新后我们所做的更改就没有了。
+为了解决这个问题，我们可以在<code>~/Library/Developer/Xcode/Templates</code>路径下新建一个<code>Templates</code>文件夹，再在<code>Templates</code>里新建一个<code>Custom</code>的文件夹，把系统的<code>Cocoa Touch Class.xctemplate</code>复制进去，然后进行修改就可以了。</p><p>这样在创建文件的时候，在最下面就会有你自定义的模板选项:
+<img src=http://upload-images.jianshu.io/upload_images/1608265-e5d1f02ca8c1384d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy alt=选择模板>
+好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！</p></section><footer class=article-footer><section class=article-tags><a href=/tags/xcode/>Xcode</a></section></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/><div class=article-details><h2 class=article-title>iOSer都要知道的LLDB介绍与Chisel进阶</h2></div></a></article><article><a href=/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/><div class=article-details><h2 class=article-title>Objective-C自动生成文档工具:appledoc</h2></div></a></article><article><a href=/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/><div class=article-details><h2 class=article-title>sublime去除重复行</h2></div></a></article><article><a href=/p/202104mac%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/><div class=article-details><h2 class=article-title>Mac上好用的软件推荐，持续更新</h2></div></a></article><article><a href=/p/202103linux%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/><div class=article-details><h2 class=article-title>Linux使用相关的一些东西</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+2016 -
+2023 小松哥的博客</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button><div class=pswp__preloader><div class=pswp__preloader__icn><div class=pswp__preloader__cut><div class=pswp__preloader__donut></div></div></div></div></div><div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class=pswp__share-tooltip></div></div><button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)"></button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)"></button><div class=pswp__caption><div class=pswp__caption__center></div></div></div></div></div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css crossorigin=anonymous></main></div><script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z+KMkF24hUW8WePSA9HM=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const e=document.createElement("link");e.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",e.type="text/css",e.rel="stylesheet",document.head.appendChild(e)})()</script></body></html>

@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on 小松哥的博客</title><link>https://lisongrc.github.io/tags/blog/</link><description>Recent content in blog on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Tue, 02 Mar 2021 12:44:06 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hexo切换NexT主题</title><link>https://lisongrc.github.io/p/202103259164c9/</link><pubDate>Tue, 02 Mar 2021 12:44:06 +0000</pubDate><guid>https://lisongrc.github.io/p/202103259164c9/</guid><description>&lt;p>Hexo默认的主题是 &lt;code>landscape&lt;/code>，由于它的功能和样式我都不太喜欢，所以决定换个样式玩玩。&lt;/p>
+&lt;p>找Hexo主题的话可以去Github搜索 &lt;code>hexo-theme&lt;/code>，然后都点进去看看，挑一个自己喜欢的样式；一般主题下都有使用教程。&lt;/p>
+&lt;p>这里以 &lt;a class="link" href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener"
+>hexo-theme-next&lt;/a> 为例。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="安装-next">安装 NexT&lt;/h1>
+&lt;p>执行以下命令会把 &lt;code>NexT &lt;/code> 主题clone到博客的 &lt;code>themes/next&lt;/code> 目录下。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd hexo
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git clone https://github.com/theme-next/hexo-theme-next themes/next
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后将Hexo根目录下的 &lt;code>_config.yml&lt;/code> 里面的 &lt;code>theme&lt;/code> 设置成 &lt;code>next&lt;/code>：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">theme: next
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后 &lt;code>hexo s&lt;/code> 启动服务器，刷新自己的博客发现样式已经变了。下一步我们将要更改一些主题的设定，包括个性化以及集成第三方服务&lt;/p>
+&lt;h1 id="选择-scheme">选择 Scheme&lt;/h1>
+&lt;p>NexT可以通过Scheme提供多种不同的外观，Scheme 的切换通过更改 &lt;code>themes/next&lt;/code> 目录下的 &lt;code>_config.yml&lt;/code> 文件，搜索 &lt;code>scheme&lt;/code> 关键字，可以看到有四种，你可以都试一试，选择自己喜欢的。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;span class="lnt">5
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># Schemes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">scheme: Muse
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#scheme: Mist
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#scheme: Pisces
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#scheme: Gemini
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="详细设置">详细设置&lt;/h1>
+&lt;p>这个主题的一些详细设置，比如添加菜单、添加分类什么的，可以看 &lt;a class="link" href="https://theme-next.iissnan.com/" target="_blank" rel="noopener"
+>官方文档&lt;/a> ，讲的很详细。&lt;/p></description></item><item><title>给博客绑定域名并启用HTTPS</title><link>https://lisongrc.github.io/p/2021039700ba13/</link><pubDate>Tue, 02 Mar 2021 01:12:48 +0000</pubDate><guid>https://lisongrc.github.io/p/2021039700ba13/</guid><description>&lt;p>你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="gitlab-pages">GitLab Pages&lt;/h1>
+&lt;p>在仓库的 &lt;code>Settings -&amp;gt; Pages&lt;/code> 里面，点击 &lt;code>New Domain&lt;/code> 出现这个界面：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/images/NewPagesDomain.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>输入自己的域名然后点击 &lt;code>Create&lt;/code> 出现这个界面：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/images/PagesDomain.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>可以看到，它让我们加一个 &lt;code>CNAME&lt;/code> 记录将域名解析到gitlab.io上，然后需要设置一个 &lt;code>TXT&lt;/code> 记录为那一长串字符。比如在 &lt;code>DNSPod&lt;/code> 里是这样设置的：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/images/DnsPod%e9%85%8d%e7%bd%aeGitLab.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>GitLab还会用 &lt;code> Let's Encrypt&lt;/code> 为我们自动生成证书，这样就可以启用HTTPS了。&lt;/p>
+&lt;p>配置完成后稍等一会，就可以用自己的域名访问GitLab博客了。&lt;/p>
+&lt;h1 id="github-pages">GitHub Pages&lt;/h1>
+&lt;p>在仓库的 &lt;code>GitHub Pages -&amp;gt; Custom domain&lt;/code> 里输入自己的域名，点击 &lt;code>Save&lt;/code> ；然后勾选上 &lt;code>Enforce HTTPS&lt;/code> 启用HTTPS（可能需要等一会才可以勾选）。&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/images/github_domain.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>然后需要加一个 &lt;code>CNAME&lt;/code> 记录将域名解析到github.io上，比如在 &lt;code>DNSPod&lt;/code> 里是这样设置的：&lt;/p>
+&lt;p>&lt;img src="https://lisongrc.github.io/images/DnsPod%e9%85%8d%e7%bd%aeGitHub.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>配置完成后稍等一会，就可以用自己的域名访问GitHub博客了。&lt;/p>
+&lt;p>为了防止以后每次 &lt;code>hexo d&lt;/code> 会清空 &lt;code>CNAME&lt;/code> 文件导致GitHub Pages域名解绑，需要在本地博客的 &lt;code>source&lt;/code>目录下创建一个 &lt;code>CNAME&lt;/code> 文件，文件内容为你的域名，例如：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">blog.lisong.com
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div></description></item><item><title>Hexo搭建个人博客并部署到Gitlab和GitHub</title><link>https://lisongrc.github.io/p/202102d52b09e8/</link><pubDate>Sun, 28 Feb 2021 22:37:01 +0000</pubDate><guid>https://lisongrc.github.io/p/202102d52b09e8/</guid><description>&lt;h1 id="前言">前言&lt;/h1>
+&lt;p>之前在一些平台写过一段时间博客，后来由于各种原因就慢慢荒废了；最近心血来潮想要把一些东西记录下来，所以决定搭建一个博客玩玩。&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;h1 id="hexo介绍">Hexo介绍&lt;/h1>
+&lt;p>&lt;a class="link" href="https://hexo.io/zh-cn/" target="_blank" rel="noopener"
+>Hexo&lt;/a> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p>
+&lt;h1 id="hexo安装">Hexo安装&lt;/h1>
+&lt;p>我用的Mac系统，所以直接homebrew安装:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install hexo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h1 id="hexo建站">Hexo建站&lt;/h1>
+&lt;p>安装 Hexo 完成后，请执行下列命令，Hexo 将会在指定文件夹中新建所需要的文件。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo init &amp;lt;folder&amp;gt;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>新建完成后，文件夹的目录大致如下:&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">.
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── _config.landscape.yml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── _config.yml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── package.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── scaffolds
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── draft.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   ├── page.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── post.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── source
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── _posts
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">│   └── hello-world.md
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">├── themes
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">└── yarn.lock
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;code>_config.yml&lt;/code> 是一些配置信息，你可以在此配置大部分的参数。
+&lt;code>package.json&lt;/code> 是依赖的一些包。
+&lt;code>scaffolds&lt;/code> 是模版文件夹。
+&lt;code>source&lt;/code> 是存放用户资源的地方，那个 &lt;code>hello-world.md&lt;/code> 就是默认生成的一篇文章。
+&lt;code>themes&lt;/code> 是主题文件夹，你可以在里面配置自己喜欢的主题。&lt;/p>
+&lt;h1 id="hexo指令">Hexo指令&lt;/h1>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo g
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>生成静态文件，在 &lt;code>public&lt;/code> 目录下。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo s
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>启动本地服务器。打开 http://localhost:4000/ 就可以看到我们的博客啦。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo new &amp;#34;article title&amp;#34;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>新建一篇文章。在 &lt;code>source\_posts&lt;/code> 目录下就多了一个.md文件。&lt;/p>
+&lt;h1 id="将博客部署到gitlab-pages">将博客部署到GitLab Pages&lt;/h1>
+&lt;p>在&lt;a class="link" href="https://gitlab.com/" target="_blank" rel="noopener"
+>Gitlab&lt;/a>创建一个repository，名字为&lt;code>username.gitlab.io&lt;/code>，username就是你的Gitlab用户名。&lt;/p>
+&lt;p>在博客目录下生成git，并配置远端仓库，然后提交代码。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git init
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">git remote add origin git@gitlab.com:username/username.gitlab.io.git
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在你的博客目录下新建一个 &lt;code>.gitlab-ci.yml&lt;/code> 文件内容如下：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
+&lt;/span>&lt;span class="lnt"> 2
+&lt;/span>&lt;span class="lnt"> 3
+&lt;/span>&lt;span class="lnt"> 4
+&lt;/span>&lt;span class="lnt"> 5
+&lt;/span>&lt;span class="lnt"> 6
+&lt;/span>&lt;span class="lnt"> 7
+&lt;/span>&lt;span class="lnt"> 8
+&lt;/span>&lt;span class="lnt"> 9
+&lt;/span>&lt;span class="lnt">10
+&lt;/span>&lt;span class="lnt">11
+&lt;/span>&lt;span class="lnt">12
+&lt;/span>&lt;span class="lnt">13
+&lt;/span>&lt;span class="lnt">14
+&lt;/span>&lt;span class="lnt">15
+&lt;/span>&lt;span class="lnt">16
+&lt;/span>&lt;span class="lnt">17
+&lt;/span>&lt;span class="lnt">18
+&lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">image: node:10-alpine # use nodejs v10 LTS
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">cache:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> paths:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - node_modules/
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">before_script:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - ln -sf /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - npm install hexo-cli -g
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - npm install
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">pages:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> script:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - hexo generate
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> artifacts:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> paths:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - public
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> only:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> - master
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>GitLab CI 会自动开始运行，构建成功以后稍等几分钟，打开 &lt;a class="link" href="https://username.gitlab.io" target="_blank" rel="noopener"
+>https://username.gitlab.io&lt;/a> 应该就能看到自己的博客了。&lt;/p>
+&lt;p>如果想隐藏博客源码，又不想影响博客的正常访问，可以在仓库的 &lt;code>Settings -&amp;gt; General -&amp;gt; Visibility, project features, permissions&lt;/code> 里面将仓库权限设置为 &lt;code>private&lt;/code>，然后把下面的 &lt;code>Pages&lt;/code> 选项改为 &lt;code>Everyone&lt;/code>。&lt;/p>
+&lt;h1 id="将博客部署到github-pages">将博客部署到GitHub Pages&lt;/h1>
+&lt;p>在这里我将继续用Gitlab的仓库存储博客源码，将生成的静态博客部署到Github。&lt;/p>
+&lt;p>在&lt;a class="link" href="https://github.com/" target="_blank" rel="noopener"
+>GitHub&lt;/a>创建一个repository，名字为&lt;code>username.github.io&lt;/code>，username就是你的GitHub用户名。如果是免费账户的话，repository要是public的，不然不能启用GitHub Pages。&lt;/p>
+&lt;p>安装 &lt;a class="link" href="https://github.com/hexojs/hexo-deployer-git" target="_blank" rel="noopener"
+>hexo-deployer-git&lt;/a> :&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">npm install hexo-deployer-git --save
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>修改 &lt;code>_config.yml&lt;/code> 里面的 &lt;code>deploy&lt;/code> 配置改为&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;span class="lnt">4
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">deploy:
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> type: git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> repo: git@github.com:username/username.github.io.git
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> branch: main
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>然后运行以下命令，就会把生成的 &lt;code>public&lt;/code> 文件夹里的东西都push上去。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo clean &amp;amp;&amp;amp; hexo d
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>在Github上，打开项目的 &lt;code>Settings&lt;/code> ，找到 &lt;code>GitHub Pages&lt;/code> 设置，如果没有开启的话先开启，然后 &lt;code>Branch&lt;/code>选择 &lt;code>main&lt;/code>，&lt;code>folder&lt;/code> 选择 &lt;code>/(root)&lt;/code>。勾选上 &lt;code>Enforce HTTPS&lt;/code> 启用HTTPS。&lt;/p>
+&lt;p>都弄好之后，稍等片刻，打开 &lt;code>https://username.github.io&lt;/code> 就能看到自己的博客了。&lt;/p></description></item></channel></rss>

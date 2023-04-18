@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLDB on 小松哥的博客</title><link>https://lisongrc.github.io/tags/lldb/</link><description>Recent content in LLDB on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 10 Mar 2019 20:05:31 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/lldb/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;h1 id="一lldb">一、LLDB&lt;/h1>
+&lt;h2 id="什么是lldb">什么是LLDB&lt;/h2>
+&lt;p>&lt;a class="link" href="http://lldb.llvm.org/" target="_blank" rel="noopener"
+>LLDB&lt;/a> 是一个有着 REPL 的特性和 C++ ,Python 插件的开源调试器。Xcode中绑定了LLDB，调试器允许你在程序运行时暂停它，可以查看变量的值，执行自定的指令。&lt;/p>
+&lt;p>在程序里你需要的地方设置断点。当断点断住的时候你就能看到我们进入LLDB调试器了，下面这个界面对于iOS开发者来说应该不陌生了：&lt;/p>
+&lt;!-- raw HTML omitted -->
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b21e475e796f9734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="几个常用命令">几个常用命令&lt;/h2>
+&lt;h3 id="help">help&lt;/h3>
+&lt;p>help命令可以查看LLDB的所有命令：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7daddb7fbe67b3f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;p>它也可以查看某一条命令的使用帮助，比如：help print会打印print命令的使用帮助：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-30600ec8195bd1c6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="print">print&lt;/h3>
+&lt;p>print命令的简化方式有p，po等等。p输出的是基本类型，po输出的Objective-C对象，调试器会输出这个 object 的 description。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-0f40e1f06b86ca57.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="expression命令">expression命令&lt;/h3>
+&lt;p>expression的简写就是e。可以用来执行一条语句。例如：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d80aa54982531ccc.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;p>LLDB还有很多命令可以使用，具体用法大家可以看&lt;a class="link" href="http://lldb.llvm.org/lldb-gdb.html" target="_blank" rel="noopener"
+>文档&lt;/a>&lt;/p>
+&lt;h1 id="二chisel">二、Chisel&lt;/h1>
+&lt;h2 id="什么是chisel">什么是Chisel&lt;/h2>
+&lt;p>&lt;a class="link" href="https://github.com/facebook/chisel" target="_blank" rel="noopener"
+>Chisel&lt;/a>是facebook开源的一个LLDB命令的集合，它里面简化和扩展了LLDB的命令。使用它会更方便的调试我们的程序。在它的&lt;a class="link" href="https://github.com/facebook/chisel" target="_blank" rel="noopener"
+>GitHub&lt;/a>上有详细的安装方式，这里就不赘述了。&lt;/p>
+&lt;h2 id="常用命令">常用命令：&lt;/h2>
+&lt;p>他的所有命令在它的&lt;a class="link" href="https://github.com/facebook/chisel/wiki" target="_blank" rel="noopener"
+>wiki&lt;/a>上都列出来了，这里我挑几个示范一下。&lt;/p>
+&lt;h3 id="pviews">pviews&lt;/h3>
+&lt;p>这个命令可以按层级递归打印指定view的所有subView，相当于 UIView 的私有辅助方法 [view recursiveDescription]。如果不指定view的话就是默认window：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-aa29872aa258ce26.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-a1267c2b03d8400d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="pvc">pvc&lt;/h3>
+&lt;p>这个命令递归打印出viewController的层级，相当于 UIViewController 的一个私有辅助方法 [UIViewController _printHierarchy] ：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-45ed40f6223b3e5c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="visualize">visualize&lt;/h3>
+&lt;p>它可以使用Mac的预览打开一个 UIImage, CGImageRef, UIView, 或 CALayer。 我们其实可以用这个功能来截图或者查看一个view的具体内容：&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) visualize 0x7feb5cf18210
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) visualize self.view
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="maskunmask">mask/unmask&lt;/h3>
+&lt;p>mask用来在view或者layer上覆盖一个半透明的矩形， unmask解除。当我们想找一个view的时候可以使用。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) mask self.imageView
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unmask 0x7f8732e037b0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7d874313aee8c544.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="borderunborder">border/unborder&lt;/h3>
+&lt;p>border可以给view或者layer添加边框，unborder解除。当我们想找一个view的时候可以使用。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) border self.imageView
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unborder 0x7f8732e037b0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d20ce0e42c41a40f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="showhide">show/hide&lt;/h3>
+&lt;p>显示隐藏一个view或者layer。&lt;/p>
+&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) hide self.imageView
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) show self.imageView
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;h3 id="caflush">caflush&lt;/h3>
+&lt;p>这个命令用来刷新UI，当我们改变了UI的时候，不用重新启动，使用caflush刷新UI就行。&lt;/p>
+&lt;h3 id="presponder">presponder&lt;/h3>
+&lt;p>打印响应者链：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-26be30d883b78ba6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="pclass">pclass&lt;/h3>
+&lt;p>打印指定对象的class的继承关系：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-94672c144549b699.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="pjson">pjson&lt;/h3>
+&lt;p>打印一个字典或者数组的json样式。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-2ea4767defffe64f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="slowanimunslowanim">slowanim/unslowanim&lt;/h3>
+&lt;p>减慢动画的效果，检查一个动画哪里有问题时可以使用。&lt;/p>
+&lt;h3 id="pdocspath">pdocspath&lt;/h3>
+&lt;p>打印App的Documents路径：&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-f05202f2aeb475cf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="fv--fvc">fv &amp;amp; fvc&lt;/h3>
+&lt;p>这两个命令是用来搜索当前内存中存在的view和viewController实例的命令，支持正则搜索。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b29c00197c407177.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="taplog">taplog&lt;/h3>
+&lt;p>点击某个view时，程序会暂停，会打印被点击的view。&lt;/p>
+&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-a50a583cc8abd76f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+loading="lazy"
+>&lt;/p>
+&lt;h3 id="pcurl">pcurl&lt;/h3>
+&lt;p>把一个NSURLRequest (HTTP)打印成curl命令。&lt;/p>
+&lt;p>更多的命令大家可以去&lt;a class="link" href="https://github.com/facebook/chisel/wiki" target="_blank" rel="noopener"
+>官方文档&lt;/a>看。&lt;/p></description></item></channel></rss>
