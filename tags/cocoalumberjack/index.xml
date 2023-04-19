@@ -1,36 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CocoaLumberjack on 小松哥的博客</title><link>https://lisongrc.github.io/tags/cocoalumberjack/</link><description>Recent content in CocoaLumberjack on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Jan 2017 22:54:17 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/cocoalumberjack/index.xml" rel="self" type="application/rss+xml"/><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CocoaLumberjack on 小松哥的博客</title><link>https://lisongrc.github.io/tags/cocoalumberjack/</link><description>Recent content in CocoaLumberjack on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Mon, 02 Jan 2017 22:54:17 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/cocoalumberjack/index.xml" rel="self" type="application/rss+xml"/><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>有的时候我们想要将程序运行过程中产生的Log保存起来或者发送到自己服务器，为了以后方便分析。这时候就可以用&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener"
 >CocoaLumberjack&lt;/a>啦。&lt;/p>
 &lt;p>CocoaLumberjack是一个可以在iOS和Mac开发中使用的日志库，强大又不失灵活。集成进项目后，配置下，然后用DDLog语句简单地取代NSLog语句（ DDLog的使用方法和NSLog一样）就可以啦，是不是很方便。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装">安装&lt;/h1>
 &lt;p>第一种方法：使用cocoapods，不会使用cocoapods的可以看&lt;a class="link" href="http://www.jianshu.com/p/1711e131987d" target="_blank" rel="noopener"
 >这篇教程&lt;/a>，Podfile看起来是这样的：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="ss">platform&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ios&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;7.0&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="ss">platform&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ios&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;7.0&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">target&lt;/span> &lt;span class="s1">&amp;#39;CocoaLumberjackDemo&amp;#39;&lt;/span> &lt;span class="k">do&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pod&lt;/span> &lt;span class="s1">&amp;#39;CocoaLumberjack&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>第二种方法：使用&lt;a class="link" href="https://github.com/Carthage/Carthage" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第二种方法：使用&lt;a class="link" href="https://github.com/Carthage/Carthage" target="_blank" rel="noopener"
 >Carthage&lt;/a>，Cartfile：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">github&lt;/span> &lt;span class="s2">&amp;#34;CocoaLumberjack/CocoaLumberjack&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>第三种方法：手工导入，具体可以看&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/GettingStarted.md#manual-installation" target="_blank" rel="noopener"
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">github&lt;/span> &lt;span class="s2">&amp;#34;CocoaLumberjack/CocoaLumberjack&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第三种方法：手工导入，具体可以看&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/GettingStarted.md#manual-installation" target="_blank" rel="noopener"
 >他的文档&lt;/a>&lt;/p>
 &lt;h1 id="使用">使用&lt;/h1>
 &lt;p>CocoaLumberjack自带了几种Log方式：&lt;/p>
@@ -48,34 +31,7 @@ loading="lazy"
 alt="PrefixHeader.pch"
 >&lt;/p>
 &lt;p>然后加入代码：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">didFinishLaunchingWithOptions:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">launchOptions&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">didFinishLaunchingWithOptions:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">launchOptions&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// 添加DDASLLogger，你的日志语句将被发送到Xcode控制台
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDTTYLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]];&lt;/span>
@@ -98,9 +54,7 @@ alt="PrefixHeader.pch"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nb">YES&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>DDLog和NSLog的语法是一样的。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>DDLog和NSLog的语法是一样的。&lt;/p>
 &lt;p>运行程序，可以在Xocde控制台看到：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b750b65396b1febe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -113,41 +67,15 @@ alt="Log文件"
 >&lt;/p>
 &lt;h1 id="log级别">Log级别&lt;/h1>
 &lt;p>接下来，你就要考虑用哪种级别了，CocoaLumberjack有5种：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogFlag&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogFlag&lt;/span>&lt;span class="p">){&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagError&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagWarning&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagInfo&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagDebug&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagVerbose&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Log Level 用来过滤每条Log：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_ENUM&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogLevel&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Log Level 用来过滤每条Log：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_ENUM&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogLevel&lt;/span>&lt;span class="p">){&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelOff&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelError&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogFlagError&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelWarning&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogLevelError&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="n">DDLogFlagWarning&lt;/span>&lt;span class="p">),&lt;/span>
@@ -156,41 +84,20 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelVerbose&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogLevelDebug&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="n">DDLogFlagVerbose&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelAll&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">NSUIntegerMax&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>例如，如果您将日志级别设置为 LOG_LEVEL_INFO，那么你会看到error、Warn和Info语句。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如，如果您将日志级别设置为 LOG_LEVEL_INFO，那么你会看到error、Warn和Info语句。&lt;/p>
 &lt;p>你也可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomLogLevels.md" target="_blank" rel="noopener"
 >自定义Log级别或者每个级别的名字&lt;/a>或者&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/FineGrainedLogging.md" target="_blank" rel="noopener"
 >在单纯的级别上增加一些高级用法&lt;/a>&lt;/p>
 &lt;p>我们也可以为Debug和Release模式设置不同的Log级别：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#ifdef DEBUG
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#ifdef DEBUG
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">static&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">DDLogLevel&lt;/span> &lt;span class="n">ddLogLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DDLogLevelVerbose&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#else
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">static&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">DDLogLevel&lt;/span> &lt;span class="n">ddLogLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DDLogLevelWarning&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>我们还可以为每种loger设置不同的级别：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDASLLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelInfo&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们还可以为每种loger设置不同的级别：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDASLLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelInfo&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDTTYLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelDebug&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>我们还可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomFormatters.md" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们还可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomFormatters.md" target="_blank" rel="noopener"
 >自定义日志的formatter格式&lt;/a>：
 首先自定义一个 LogFormatter, 遵从 DDLogFormatter 协议，我们需要重写 &lt;code>- (NSString *)formatLogMessage:(DDLogMessage *)logMessage&lt;/code> 这个方法，这个方法的输入参数是由 logger 发的一个 DDLogMessage 对象，包含了一些必要的信息，返回值就是最终 log 的消息体字符串。&lt;/p>
 &lt;p>我们还可以自定义Logger，实现我们自己想要的处理，具体可以看他的文档。&lt;/p>

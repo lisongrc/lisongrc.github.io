@@ -1,6 +1,6 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xcode on 小松哥的博客</title><link>https://lisongrc.github.io/tags/xcode/</link><description>Recent content in Xcode on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 06 Mar 2021 21:58:55 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xcode on 小松哥的博客</title><link>https://lisongrc.github.io/tags/xcode/</link><description>Recent content in Xcode on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 06 Mar 2021 21:58:55 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="对应键位">对应键位&lt;/h1>
 &lt;blockquote>
 &lt;p>⌘：command&lt;/p>
@@ -65,21 +65,13 @@
 &lt;/table>
 &lt;h1 id="cheatsheet">CheatSheet&lt;/h1>
 &lt;p>大家可以安装CheatSheet这个app，然后长按⌘键就会出现当前使用的app的快捷键。这样如果忘了某个快捷键可以快速查找。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install cheatsheet
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;h1 id="一lldb">一、LLDB&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install cheatsheet
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
 &lt;h2 id="什么是lldb">什么是LLDB&lt;/h2>
 &lt;p>&lt;a class="link" href="http://lldb.llvm.org/" target="_blank" rel="noopener"
 >LLDB&lt;/a> 是一个有着 REPL 的特性和 C++ ,Python 插件的开源调试器。Xcode中绑定了LLDB，调试器允许你在程序运行时暂停它，可以查看变量的值，执行自定的指令。&lt;/p>
 &lt;p>在程序里你需要的地方设置断点。当断点断住的时候你就能看到我们进入LLDB调试器了，下面这个界面对于iOS开发者来说应该不陌生了：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b21e475e796f9734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
@@ -128,59 +120,27 @@ loading="lazy"
 >&lt;/p>
 &lt;h3 id="visualize">visualize&lt;/h3>
 &lt;p>它可以使用Mac的预览打开一个 UIImage, CGImageRef, UIView, 或 CALayer。 我们其实可以用这个功能来截图或者查看一个view的具体内容：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) visualize 0x7feb5cf18210
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) visualize 0x7feb5cf18210
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) visualize self.view
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="maskunmask">mask/unmask&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="maskunmask">mask/unmask&lt;/h3>
 &lt;p>mask用来在view或者layer上覆盖一个半透明的矩形， unmask解除。当我们想找一个view的时候可以使用。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) mask self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) mask self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unmask 0x7f8732e037b0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7d874313aee8c544.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7d874313aee8c544.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="borderunborder">border/unborder&lt;/h3>
 &lt;p>border可以给view或者layer添加边框，unborder解除。当我们想找一个view的时候可以使用。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) border self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) border self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unborder 0x7f8732e037b0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d20ce0e42c41a40f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d20ce0e42c41a40f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="showhide">show/hide&lt;/h3>
 &lt;p>显示隐藏一个view或者layer。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) hide self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) hide self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) show self.imageView
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="caflush">caflush&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="caflush">caflush&lt;/h3>
 &lt;p>这个命令用来刷新UI，当我们改变了UI的时候，不用重新启动，使用caflush刷新UI就行。&lt;/p>
 &lt;h3 id="presponder">presponder&lt;/h3>
 &lt;p>打印响应者链：&lt;/p>
@@ -217,39 +177,12 @@ loading="lazy"
 &lt;h3 id="pcurl">pcurl&lt;/h3>
 &lt;p>把一个NSURLRequest (HTTP)打印成curl命令。&lt;/p>
 &lt;p>更多的命令大家可以去&lt;a class="link" href="https://github.com/facebook/chisel/wiki" target="_blank" rel="noopener"
->官方文档&lt;/a>看。&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;!-- raw HTML omitted -->
+>官方文档&lt;/a>看。&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。&lt;/p>
 &lt;h1 id="为何要自定义xcode模板">为何要自定义Xcode模板&lt;/h1>
 &lt;p>有时候公司会要求一定的代码规范，例如控制器中需要用&lt;code>#pragma mark - &lt;/code>来分割各个方法们，像这样：&lt;/p>
-&lt;!-- raw HTML omitted -->
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - LifeCycle
+&lt;!-- more -->
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - LifeCycle
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">dealloc&lt;/span> &lt;span class="p">{}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
@@ -272,9 +205,7 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - Setter
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">setName:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">name&lt;/span> &lt;span class="p">{}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这样不仅可以分割代码，方便阅读，而且可以方便找到某个方法：
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这样不仅可以分割代码，方便阅读，而且可以方便找到某个方法：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-14c1a33a378b8a5e.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
@@ -296,48 +227,7 @@ alt="Cocoa Touch Class.xctemplate"
 >
 例如我们今天需要改&lt;code>UIViewController&lt;/code>的模板，就需要改其中的&lt;code>UIViewControllerObjective-C&lt;/code>、 &lt;code>UIViewControllerSwift&lt;/code>、&lt;code>UIViewControllerXIBObjective-C&lt;/code>、&lt;code>UIViewControllerXIBSwift&lt;/code>。他们的区别从名字上就能看出来，就是OC与Swift，是否用Xib的区别。&lt;/p>
 &lt;p>我们以OC并且不用Xib为例，打开UIViewControllerObjective-C中的&lt;code>___FILEBASENAME___.m&lt;/code>文件：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;span class="lnt">36
-&lt;/span>&lt;span class="lnt">37
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// ___FILENAME___
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// ___PROJECTNAME___
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
@@ -374,9 +264,7 @@ alt="Cocoa Touch Class.xctemplate"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm">*/&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">@end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>是不是很熟悉，就是我们创建一个控制器后.m里面的代码。其中的一些宏的意义是：&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>是不是很熟悉，就是我们创建一个控制器后.m里面的代码。其中的一些宏的意义是：&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -424,46 +312,7 @@ alt="Cocoa Touch Class.xctemplate"
 &lt;/tbody>
 &lt;/table>
 &lt;p>这个文件默认是不让修改的，我们可以修改他的权限，或者复制一份到别处，修改完替换原文件。总之修改其中的内容为：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;span class="lnt">30
-&lt;/span>&lt;span class="lnt">31
-&lt;/span>&lt;span class="lnt">32
-&lt;/span>&lt;span class="lnt">33
-&lt;/span>&lt;span class="lnt">34
-&lt;/span>&lt;span class="lnt">35
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// ___FILENAME___
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">// ___PROJECTNAME___
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//
@@ -498,9 +347,7 @@ alt="Cocoa Touch Class.xctemplate"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - Setter
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">@end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后把这个文件去替换原来的文件。替换成功后新建一个控制器，就会是我们自定义的结构了，如果没生效的话，可以重启下Xcode哦：
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后把这个文件去替换原来的文件。替换成功后新建一个控制器，就会是我们自定义的结构了，如果没生效的话，可以重启下Xcode哦：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-00d4d6fa1fe0f36a.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="新建一个控制器"
@@ -514,11 +361,11 @@ alt="新建一个控制器"
 loading="lazy"
 alt="选择模板"
 >
-好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</guid><description>&lt;!-- raw HTML omitted -->
+好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。&lt;/p>
 &lt;p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。&lt;/p>
 &lt;p>经过查找，比较大众的有三个：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://www.stack.nl/~dimitri/doxygen/index.html" target="_blank" rel="noopener"
 >doxygen&lt;/a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。&lt;/p>
@@ -531,28 +378,12 @@ alt="选择模板"
 &lt;p>我感觉appledoc是最好的，所以在这里，我只介绍一下appledoc的使用，有兴趣的童鞋也可以研究下其他两种。&lt;/p>
 &lt;h1 id="appledoc的安装">appledoc的安装&lt;/h1>
 &lt;p>第一种：打开终端，输入以下命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git clone git://github.com/tomaz/appledoc.git
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">git clone git://github.com/tomaz/appledoc.git
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> appledoc
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">sudo sh install-appledoc.sh
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>第二种：如果你装了homebrew，打开终端，输入以下命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew install appledoc
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="appledoc的使用">appledoc的使用&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第二种：如果你装了homebrew，打开终端，输入以下命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">brew install appledoc
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="appledoc的使用">appledoc的使用&lt;/h1>
 &lt;p>为了演示appledoc的使用，我在桌面新建了一个工程Test，然后在ViewController类里面加了一些注释：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-54c02d5dfefe5185.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -565,24 +396,10 @@ alt="ViewController.m"
 &lt;p>然后演示appledoc的使用：&lt;/p>
 &lt;h2 id="1在终端中使用">1.在终端中使用&lt;/h2>
 &lt;p>使用 appledoc 时，打开终端，进入项目所在目录，使用如下命令即可：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --output 输出路径 --project-name 工程名 --project-company 公司名 --company-id 公司ID .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>例如我在这里使用的命令是：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --output ./doc --project-name Test --project-company lisong --company-id lisong .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>具体过程如下：
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --output 输出路径 --project-name 工程名 --project-company 公司名 --company-id 公司ID .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如我在这里使用的命令是：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --output ./doc --project-name Test --project-company lisong --company-id lisong .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>具体过程如下：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-38d08feeb2bd337c.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="生成Docset"
@@ -600,15 +417,8 @@ loading="lazy"
 alt="在Xcode中查看"
 >&lt;/p>
 &lt;p>如果不想生成Docset，而是想生成html，就需要加一个&lt;code>--no-create-docset&lt;/code>，这里我使用命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>则会在doc目录下生成一个html文件夹，也是双击里面的index.html就可以在浏览器中查看文档了。
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>则会在doc目录下生成一个html文件夹，也是双击里面的index.html就可以在浏览器中查看文档了。
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-4f6f78eb9d0d3911.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="html文档"
@@ -622,15 +432,8 @@ loading="lazy"
 alt="创建Target"
 >&lt;/p>
 &lt;p>2.选择Build Phases，点击左边的小加号，选择New Run Script Phase，建好了以后打开刚刚建立的Run Script，在框里输入命令，命令与终端一样，这里我们输入：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-bdce67e2e0fae042.gif?imageMogr2/auto-orient/strip"
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">appledoc --no-create-docset --output ./doc --project-name Test --project-company lisong --company-id lisong .
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-bdce67e2e0fae042.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="添加script"
 >&lt;/p>
@@ -641,29 +444,7 @@ alt="编译生成文档"
 >&lt;/p>
 &lt;h1 id="注释样式">注释样式&lt;/h1>
 &lt;p>因为appledoc是通过注释生成文档的，下面说说注释的样式，几种常见的有：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">/// Single line comment.
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">/// Single line comment.
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">/// Single line comment spreading
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">/// over multiple lines.
@@ -681,15 +462,13 @@ alt="编译生成文档"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> Single line comment spreading
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> over multiple lines. No star
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>在Xcode里面，我们可以用&lt;code>command + option + /&lt;/code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。&lt;a class="link" href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown" target="_blank" rel="noopener"
->更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在Xcode里面，我们可以用&lt;code>command + option + /&lt;/code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。&lt;a class="link" href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown" target="_blank" rel="noopener"
+>更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
 &lt;p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。
 在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。&lt;/p>
 &lt;p>有了&lt;code>ClangFormat&lt;/code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装clangformat插件">安装ClangFormat插件&lt;/h1>
 &lt;p>可以手动安装(下载&lt;a class="link" href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="noopener"
 >GitHub项目&lt;/a>编译)，也可以用&lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
@@ -713,44 +492,23 @@ loading="lazy"
 alt="选中File"
 >&lt;/p>
 &lt;p>2、在工程目录下创建配置文件&lt;code>.clang-format&lt;/code>文件并编辑。&lt;code>.clang-format&lt;/code>文件用的是&lt;code>YAML&lt;/code>格式:里面要用的字段在后面会详细解释。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 一个注释&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">key2&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value2&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="自定义样式格式化代码"
 >&lt;/p>
 &lt;p>当然如果你已经有&lt;code>.clang-format&lt;/code>文件的话，直接拖动到项目根目录也可以。
 文章结尾有我在用的&lt;code>.clang-format&lt;/code>文件。&lt;/p>
 &lt;p>温馨提示：&lt;code>.clang-format&lt;/code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//隐藏 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">false&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
 &lt;p>上面我们是在项目根目录创建的&lt;code>.clang-format&lt;/code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把&lt;code>.clang-format&lt;/code>文件放在所有项目都在的一个最大根目录下就可以了。&lt;/p>
 &lt;p>###让一段代码不受格式化影响
 如果想让一段代码不受格式化影响，需要将他们包含在&lt;code>// clang-format off&lt;/code> 和 &lt;code>// clang-format on&lt;/code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。
@@ -899,28 +657,7 @@ loading="lazy"
 alt="SpacesInParentheses-true"
 >&lt;/p>
 &lt;p>当项目里面有多种语言时，我们可以分别设置样式：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 我们默认用 LLVM 样式, 缩进宽度为4。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">BasedOnStyle&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">LLVM&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">IndentWidth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
@@ -937,12 +674,10 @@ alt="SpacesInParentheses-true"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 不格式化Proto文件。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">DisableFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
->.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
+>.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;p>&lt;strong>Alcatraz&lt;/strong>
 &lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
 >https://github.com/alcatraz/Alcatraz&lt;/a>

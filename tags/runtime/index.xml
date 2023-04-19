@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>runtime on 小松哥的博客</title><link>https://lisongrc.github.io/tags/runtime/</link><description>Recent content in runtime on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 03 Jun 2017 14:18:38 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/runtime/index.xml" rel="self" type="application/rss+xml"/><item><title>Runtime的运用和减少应用崩溃</title><link>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</link><pubDate>Sat, 03 Jun 2017 14:18:38 +0000</pubDate><guid>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>runtime on 小松哥的博客</title><link>https://lisongrc.github.io/tags/runtime/</link><description>Recent content in runtime on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 03 Jun 2017 14:18:38 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/runtime/index.xml" rel="self" type="application/rss+xml"/><item><title>Runtime的运用和减少应用崩溃</title><link>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</link><pubDate>Sat, 03 Jun 2017 14:18:38 +0000</pubDate><guid>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>Objective-C 是一个动态语言，它需要一个运行时系统来动态的创建类和对象、进行消息传递和转发。关于Runtime的知识大家可以参看&lt;a class="link" href="https://opensource.apple.com/tarballs/objc4/" target="_blank" rel="noopener"
 >Apple开源的Runtime代码&lt;/a> 和&lt;a class="link" href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1" target="_blank" rel="noopener"
 >Rumtime编程指南&lt;/a> 。&lt;/p>
 &lt;p>本文总结一些其常用的方法。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="一新建测试demo">一、新建测试Demo&lt;/h1>
 &lt;p>我们先创建一个测试Demo如下图，其中TestClass是一个测试类，TestClass+Category是它的一个分类，NSObject+Runtime封装了一些Runtime的方法。大家可以在这里下载&lt;a class="link" href="https://github.com/lisongrc/RuntimeDemo" target="_blank" rel="noopener"
 >Demo&lt;/a>。&lt;/p>
@@ -37,30 +37,7 @@ alt="Paste_Image.png"
 &lt;p>别着急，我们一个一个看。&lt;/p>
 &lt;h2 id="1获取成员变量">1、获取成员变量&lt;/h2>
 &lt;p>下面这个方法就是获取类的成员变量列表，其中包括属性生成的成员变量。我们可以用ivar_getTypeEncoding()来获取成员变量的类型，用ivar_getName()来获取成员变量的名称：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchIvarList
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchIvarList
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Ivar *ivarList = class_copyIvarList(self, &amp;amp;count);
@@ -79,34 +56,14 @@ alt="Paste_Image.png"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(ivarList);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用&lt;code>[TestClass fetchIvarList]&lt;/code>方法获取TestClass类的成员变量结果：&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchIvarList]&lt;/code>方法获取TestClass类的成员变量结果：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-68b9595bcfbeea46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="TestClass的成员变量列表"
 >&lt;/p>
 &lt;h2 id="2获取属性列表">2、获取属性列表&lt;/h2>
 &lt;p>下面这个方法获取的是属性列表，包括私有和公有属性，也包括分类中的属性：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchPropertyList
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchPropertyList
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> objc_property_t *propertyList = class_copyPropertyList(self, &amp;amp;count);
@@ -120,35 +77,14 @@ alt="TestClass的成员变量列表"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(propertyList);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用&lt;code>[TestClass fetchPropertyList]&lt;/code>获取TestClass的属性列表结果:&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchPropertyList]&lt;/code>获取TestClass的属性列表结果:&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cd35b30a7aac027b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="TestClass的属性列表"
 >&lt;/p>
 &lt;h2 id="3获取实例方法">3、获取实例方法&lt;/h2>
 &lt;p>下面这个方法就是获取类的实例方法列表，包括getter, setter, 分类中的方法等：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchInstanceMethodList
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchInstanceMethodList
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method *methodList = class_copyMethodList(self, &amp;amp;count);
@@ -163,35 +99,14 @@ alt="TestClass的属性列表"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(methodList);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用&lt;code>[TestClass fetchInstanceMethodList]&lt;/code>获取TestClass的实例方法列表的结果：&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchInstanceMethodList]&lt;/code>获取TestClass的实例方法列表的结果：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-a5d56f29800661d7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="TestClass实例方法列表"
 >&lt;/p>
 &lt;h2 id="4获取类方法列表">4、获取类方法列表&lt;/h2>
 &lt;p>下方这个方法就是获取类的类方法列表：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchClassMethodList
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchClassMethodList
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method *methodList = class_copyMethodList(object_getClass(self), &amp;amp;count);
@@ -206,35 +121,14 @@ alt="TestClass实例方法列表"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(methodList);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用&lt;code>[TestClass fetchClassMethodList]&lt;/code>获取TestClass的类方法列表的结果：&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchClassMethodList]&lt;/code>获取TestClass的类方法列表的结果：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-0c1cd5c21aa2c156.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="TestClass类方法列表"
 >&lt;/p>
 &lt;h2 id="5获取协议列表">5、获取协议列表&lt;/h2>
 &lt;p>下面是获取类所遵循协议列表的方法：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchProtocolList
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchProtocolList
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> __unsafe_unretained Protocol **protocolList = class_copyProtocolList(self, &amp;amp;count);
@@ -249,76 +143,37 @@ alt="TestClass类方法列表"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用&lt;code>[TestClass fetchProtocolList]&lt;/code>获取TestClass类所遵循的协议列表的结果：　&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchProtocolList]&lt;/code>获取TestClass类所遵循的协议列表的结果：　&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-fb48a73483a7a5b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="TestClass的协议列表"
 >&lt;/p>
 &lt;h2 id="6给类添加一个方法">6、给类添加一个方法&lt;/h2>
 &lt;p>下面的方法就是给类添加方法。第一个参数是方法的SEL，第二个参数则是提供方法实现的SEL。这个可以用在找不到某个方法时就添加一个，不然有可能会崩溃。详见Demo。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)addMethod:(SEL)methodSel methodImp:(SEL)methodImp;
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)addMethod:(SEL)methodSel methodImp:(SEL)methodImp;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method method = class_getInstanceMethod(self, methodImp);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> IMP methodIMP = method_getImplementation(method);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *types = method_getTypeEncoding(method);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> class_addMethod(self, methodSel, methodIMP, types);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="7交换实例方法">7、交换实例方法&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7交换实例方法">7、交换实例方法&lt;/h2>
 &lt;p>下面的方法就是将类的两个实例方法进行交换。如果将originMethod与currentMethod的方法实现进行交换的话，调用originMethod时就会执行currentMethod的内容。详见Demo。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)swapMethod:(SEL)originMethod currentMethod:(SEL)currentMethod;
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)swapMethod:(SEL)originMethod currentMethod:(SEL)currentMethod;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method firstMethod = class_getInstanceMethod(self, originMethod);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method secondMethod = class_getInstanceMethod(self, currentMethod);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> method_exchangeImplementations(firstMethod, secondMethod);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h2 id="8交换类方法">8、交换类方法&lt;/h2>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="8交换类方法">8、交换类方法&lt;/h2>
 &lt;p>下面的方法就是将类的两个类方法进行交换，与交换实例方法类似，详见Demo。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">swapClassMethod:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">originMethod&lt;/span> &lt;span class="nf">currentMethod:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">currentMethod&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">swapClassMethod:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">originMethod&lt;/span> &lt;span class="nf">currentMethod:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">currentMethod&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Method&lt;/span> &lt;span class="n">firstMethod&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_getClassMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">originMethod&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Method&lt;/span> &lt;span class="n">secondMethod&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_getClassMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">currentMethod&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">method_exchangeImplementations&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">firstMethod&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">secondMethod&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="三利用runtime减少应用崩溃">三、利用Runtime减少应用崩溃&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="三利用runtime减少应用崩溃">三、利用Runtime减少应用崩溃&lt;/h1>
 &lt;p>利用交换方法可以减少程序中的崩溃，例如数组越界等等。demo里面的Safe文件夹就是一些防止崩溃的分类，直接放进工程就可以了。&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-eaedc8b99447b10a.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -327,21 +182,7 @@ alt="Safe"
 &lt;p>&lt;strong>补充：如果有键盘推到后台崩溃的话，需要到build phase里给NSArray+Safe.m文件加上-fno-objc-arc标识&lt;/strong>。&lt;/p>
 &lt;p>我们看一个例子，其他的大家可以去demo里面看。&lt;/p>
 &lt;p>我们首先把&lt;code>__NSArrayI&lt;/code>的&lt;code>objectAtIndex&lt;/code>方法换成我们的&lt;code>ls_objectAtIndex&lt;/code>，然后方法里面判断但是否越界，是的话直接返回nil：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[NSClassFromString(@&amp;#34;__NSArrayI&amp;#34;) swapMethod:@selector(objectAtIndex:) currentMethod:@selector(ls_objectAtIndex:)];
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">[NSClassFromString(@&amp;#34;__NSArrayI&amp;#34;) swapMethod:@selector(objectAtIndex:) currentMethod:@selector(ls_objectAtIndex:)];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- (id)ls_objectAtIndex:(NSUInteger)index
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
@@ -351,18 +192,8 @@ alt="Safe"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [self ls_objectAtIndex:index];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后当我们想下面这样写的时候就不会崩溃了：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">array&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="l">@[&lt;/span>&lt;span class="s">@&amp;#34;aa&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">@&amp;#34;ddd&amp;#34;&lt;/span>&lt;span class="l">]&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后当我们想下面这样写的时候就不会崩溃了：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">array&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="l">@[&lt;/span>&lt;span class="s">@&amp;#34;aa&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">@&amp;#34;ddd&amp;#34;&lt;/span>&lt;span class="l">]&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">array&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>好了，先说到这里吧。大家可以下载我的&lt;a class="link" href="https://github.com/lisongrc/RuntimeDemo" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>好了，先说到这里吧。大家可以下载我的&lt;a class="link" href="https://github.com/lisongrc/RuntimeDemo" target="_blank" rel="noopener"
 >demo&lt;/a>详细看一下。&lt;/p></description></item></channel></rss>

@@ -1,6 +1,6 @@
-<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"><title>iOS中@功能的完整实现</title><link rel=canonical href=https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="iOS中@功能的完整实现"><meta property="og:description" content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"><meta property="og:url" content="https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/"><meta property="og:site_name" content="小松哥的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:published_time" content="2018-05-26T23:31:55+00:00"><meta property="article:modified_time" content="2018-05-26T23:31:55+00:00"><meta name=twitter:title content="iOS中@功能的完整实现"><meta name=twitter:description content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
+<!doctype html><html lang=zh-cn dir=ltr><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"><title>iOS中@功能的完整实现</title><link rel=canonical href=https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/><link rel=stylesheet href=/scss/style.min.8191399262444ab68b72a18c97392f5349be20a1615d77445be51e974c144cff.css><meta property="og:title" content="iOS中@功能的完整实现"><meta property="og:description" content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"><meta property="og:url" content="https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/"><meta property="og:site_name" content="小松哥的博客"><meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:published_time" content="2018-05-26T23:31:55+00:00"><meta property="article:modified_time" content="2018-05-26T23:31:55+00:00"><meta name=twitter:title content="iOS中@功能的完整实现"><meta name=twitter:description content="哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果： 这个功能的具体要求如下"><meta name=referrer content="no-referrer"></head><body class=article-page><script>(function(){const e="StackColorScheme";localStorage.getItem(e)||localStorage.setItem(e,"auto")})()</script><script>(function(){const t="StackColorScheme",e=localStorage.getItem(t),n=window.matchMedia("(prefers-color-scheme: dark)").matches===!0;e=="dark"||e==="auto"&&n?document.documentElement.dataset.scheme="dark":document.documentElement.dataset.scheme="light"})()</script><div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky"><button class="hamburger hamburger--spin" type=button id=toggle-menu aria-label=切换菜单>
 <span class=hamburger-box><span class=hamburger-inner></span></span></button><header><figure class=site-avatar><a href=/><img src=/img/avatar_hu66761f67689d09650ff2d1e3069c4103_356268_300x0_resize_box_3.png width=300 height=300 class=site-logo loading=lazy alt=Avatar></a>
-<span class=emoji>😎</span></figure><div class=site-meta><h1 class=site-name><a href=/>小松哥的博客</a></h1><h2 class=site-description>是缘是情是童真还是意外</h2></div></header><ol class=social-menu><li><a href=https://github.com/lisongrc target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><ol><li><a href=#用到的第三方>用到的第三方</a></li><li><a href=#具体实现的一些细节>具体实现的一些细节</a></li></ol></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/>iOS中@功能的完整实现</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>May 26, 2018</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 4 分钟</time></div></footer></div></header><section class=article-content><p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：
+<span class=emoji>😎</span></figure><div class=site-meta><h1 class=site-name><a href=/>小松哥的博客</a></h1><h2 class=site-description>是缘是情是童真还是意外</h2></div></header><ol class=social-menu><li><a href=https://github.com/lisongrc target=_blank title=GitHub rel=me><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-github" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M9 19c-4.3 1.4-4.3-2.5-6-3m12 5v-3.5c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6.0 00-1.3-3.2 4.2 4.2.0 00-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3.0 00-6.2.0C6.5 2.8 5.4 3.1 5.4 3.1a4.2 4.2.0 00-.1 3.2A4.6 4.6.0 004 9.5c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg></a></li></ol><ol class=menu id=main-menu><li><a href=/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="5 12 3 12 12 3 21 12 19 12"/><path d="M5 12v7a2 2 0 002 2h10a2 2 0 002-2v-7"/><path d="M9 21v-6a2 2 0 012-2h2a2 2 0 012 2v6"/></svg><span>主页</span></a></li><li><a href=/%E5%85%B3%E4%BA%8E/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="7" r="4"/><path d="M6 21v-2a4 4 0 014-4h4a4 4 0 014 4v2"/></svg><span>关于</span></a></li><li><a href=/archives/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><rect x="3" y="4" width="18" height="4" rx="2"/><path d="M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8"/><line x1="10" y1="12" x2="14" y2="12"/></svg><span>Archives</span></a></li><li><a href=/search/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="10" cy="10" r="7"/><line x1="21" y1="21" x2="15" y2="15"/></svg><span>Search</span></a></li><li><a href=/links/><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-link" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M10 14a3.5 3.5.0 005 0l4-4a3.5 3.5.0 00-5-5l-.5.5"/><path d="M14 10a3.5 3.5.0 00-5 0l-4 4a3.5 3.5.0 005 5l.5-.5"/></svg><span>Links</span></a></li><div class=menu-bottom-section><li id=dark-mode-toggle><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="8" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="16" cy="12" r="2"/><rect x="2" y="6" width="20" height="12" rx="6"/></svg><span>暗色模式</span></li></div></ol></aside><aside class="sidebar right-sidebar sticky"><section class="widget archives"><div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg></div><h2 class="widget-title section-title">目录</h2><div class=widget--toc><nav id=TableOfContents><ol><li><ol><li><ol><li><a href=#用到的第三方>用到的第三方</a></li><li><a href=#具体实现的一些细节>具体实现的一些细节</a></li></ol></li></ol></li></ol></nav></div></section></aside><main class="main full-width"><article class=main-article><header class=article-header><div class=article-details><header class=article-category></header><div class=article-title-wrapper><h2 class=article-title><a href=/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/>iOS中@功能的完整实现</a></h2></div><footer class=article-time><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg><time class=article-time--published>May 26, 2018</time></div><div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg><time class=article-time--reading>阅读时长: 4 分钟</time></div></footer></div></header><section class=article-content><meta name=referrer content="no-referrer"><p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：
 <img src=https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip loading=lazy></p><p>这个功能的具体要求如下：</p><blockquote><p>1、一个@是由一个<code>@</code>字符和一个空格<code> </code>字符包起来的。
 2、支持手写输入，只要符合就高亮显示。
 3、支持从列表选择，选择后插入光标所在位置并高亮。
@@ -10,15 +10,7 @@
 3、发布后显示在列表上，并将符合的@高亮显示。
 4、列表上的cell根据文字自动计算高度。
 5、点击高亮词后可以捕获到事件，自己实现跳转就可以。</p></blockquote><p>好了，下面大概讲解一下，有不明白的地方可以下载demo具体看看。</p><h4 id=用到的第三方>用到的第三方</h4><p>1、<a class=link href=https://github.com/HansPinckaers/GrowingTextView target=_blank rel=noopener>HPGrowingTextView</a>，用来实现输入框根据文字改变高度。使用和UITextView类似，代理也和UITextView差不多：
-<img src=https://upload-images.jianshu.io/upload_images/1608265-df453bab14eb0d62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy></p><p>2、<a class=link href=https://github.com/molon/MLLabel target=_blank rel=noopener>MLLabel</a>，用来高亮显示label文本中的某些文字，支持自动识别一些常见的，也可以自定义规则。支持链接色和点击色等等一些配置。点击回调里面自己实现跳转就可以。</p><p><img src=https://upload-images.jianshu.io/upload_images/1608265-2d74a6961c6202f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy></p><p>集成这些第三方用的是cocoapods，关于cocoapods的教程可以看我的<a class=link href=https://www.jianshu.com/p/1711e131987d target=_blank rel=noopener>这篇文章</a>;</p><h4 id=具体实现的一些细节>具体实现的一些细节</h4><h6 id=1检验文本中所有的词>1、检验文本中所有的@词</h6><p>用的是系统的<code>NSRegularExpression</code>类，不熟悉的大家可以去查一下，这里就不细讲了：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span><span class=lnt>5
-</span><span class=lnt>6
-</span><span class=lnt>7
-</span><span class=lnt>8
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=n>NSArray</span><span class=o>&lt;</span><span class=n>NSTextCheckingResult</span> <span class=o>*&gt;</span> <span class=o>*</span><span class=p>)</span><span class=nf>findAllAt</span>
+<img src=https://upload-images.jianshu.io/upload_images/1608265-df453bab14eb0d62.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy></p><p>2、<a class=link href=https://github.com/molon/MLLabel target=_blank rel=noopener>MLLabel</a>，用来高亮显示label文本中的某些文字，支持自动识别一些常见的，也可以自定义规则。支持链接色和点击色等等一些配置。点击回调里面自己实现跳转就可以。</p><p><img src=https://upload-images.jianshu.io/upload_images/1608265-2d74a6961c6202f6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240 loading=lazy></p><p>集成这些第三方用的是cocoapods，关于cocoapods的教程可以看我的<a class=link href=https://www.jianshu.com/p/1711e131987d target=_blank rel=noopener>这篇文章</a>;</p><h4 id=具体实现的一些细节>具体实现的一些细节</h4><h6 id=1检验文本中所有的词>1、检验文本中所有的@词</h6><p>用的是系统的<code>NSRegularExpression</code>类，不熟悉的大家可以去查一下，这里就不细讲了：</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=n>NSArray</span><span class=o>&lt;</span><span class=n>NSTextCheckingResult</span> <span class=o>*&gt;</span> <span class=o>*</span><span class=p>)</span><span class=nf>findAllAt</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=c1>// 找到文本中所有的@
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>NSString</span> <span class=o>*</span><span class=n>string</span> <span class=o>=</span> <span class=nb>self</span><span class=p>.</span><span class=n>growingTextView</span><span class=p>.</span><span class=n>text</span><span class=p>;</span>
@@ -26,40 +18,11 @@
 </span></span><span class=line><span class=cl>    <span class=n>NSArray</span> <span class=o>*</span><span class=n>matches</span> <span class=o>=</span> <span class=p>[</span><span class=n>regex</span> <span class=nl>matchesInString</span><span class=p>:</span><span class=n>string</span> <span class=nl>options</span><span class=p>:</span><span class=n>NSMatchingReportProgress</span> <span class=nl>range</span><span class=p>:</span><span class=n>NSMakeRange</span><span class=p>(</span><span class=mi>0</span><span class=p>,</span> <span class=p>[</span><span class=n>string</span> <span class=n>length</span><span class=p>])];</span>
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=n>matches</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><h6 id=2输入框根据输入文字多少自动改变高度>2、输入框根据输入文字多少自动改变高度</h6><p>在HPGrowingTextView的代理里面实现：</p><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextView:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span> <span class=nf>willChangeHeight:</span><span class=p>(</span><span class=kt>float</span><span class=p>)</span><span class=nv>height</span>
+</span></span></code></pre></div><h6 id=2输入框根据输入文字多少自动改变高度>2、输入框根据输入文字多少自动改变高度</h6><p>在HPGrowingTextView的代理里面实现：</p><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextView:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span> <span class=nf>willChangeHeight:</span><span class=p>(</span><span class=kt>float</span><span class=p>)</span><span class=nv>height</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=nb>self</span><span class=p>.</span><span class=n>commentViewHeight</span><span class=p>.</span><span class=n>constant</span> <span class=o>=</span> <span class=n>height</span> <span class=o>+</span> <span class=mi>14</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><h6 id=3输入框中的文字要随着文字改变实时将词高亮>3、输入框中的文字要随着文字改变实时将@词高亮</h6><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextViewDidChange:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span>
+</span></span></code></pre></div><h6 id=3输入框中的文字要随着文字改变实时将词高亮>3、输入框中的文字要随着文字改变实时将@词高亮</h6><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextViewDidChange:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>UITextRange</span> <span class=o>*</span><span class=n>selectedRange</span> <span class=o>=</span> <span class=n>growingTextView</span><span class=p>.</span><span class=n>internalTextView</span><span class=p>.</span><span class=n>markedTextRange</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=n>NSString</span> <span class=o>*</span><span class=n>newText</span> <span class=o>=</span> <span class=p>[</span><span class=n>growingTextView</span><span class=p>.</span><span class=n>internalTextView</span> <span class=nl>textInRange</span><span class=p>:</span><span class=n>selectedRange</span><span class=p>];</span>
@@ -84,56 +47,7 @@
 </span></span><span class=line><span class=cl>        <span class=n>textView</span><span class=p>.</span><span class=n>selectedRange</span> <span class=o>=</span> <span class=n>range</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><p>首先判断是不是正在输入拼音，不是的话我们才应该处理。然后就是用正则找到所有的@词，用NSMutableAttributedString的方法加上高亮色，然后把最终的attributedString赋值给TextView，并将光标的位置复原为替换文本之前的状态。</p><h6 id=4删除时词要整体删除>4、删除时@词要整体删除</h6><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span><span class=lnt>27
-</span><span class=lnt>28
-</span><span class=lnt>29
-</span><span class=lnt>30
-</span><span class=lnt>31
-</span><span class=lnt>32
-</span><span class=lnt>33
-</span><span class=lnt>34
-</span><span class=lnt>35
-</span><span class=lnt>36
-</span><span class=lnt>37
-</span><span class=lnt>38
-</span><span class=lnt>39
-</span><span class=lnt>40
-</span><span class=lnt>41
-</span><span class=lnt>42
-</span><span class=lnt>43
-</span><span class=lnt>44
-</span><span class=lnt>45
-</span><span class=lnt>46
-</span><span class=lnt>47
-</span><span class=lnt>48
-</span><span class=lnt>49
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>BOOL</span><span class=p>)</span><span class=nf>growingTextView:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span> <span class=nf>shouldChangeTextInRange:</span><span class=p>(</span><span class=n>NSRange</span><span class=p>)</span><span class=nv>range</span> <span class=nf>replacementText:</span><span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nv>text</span>
+</span></span></code></pre></div><p>首先判断是不是正在输入拼音，不是的话我们才应该处理。然后就是用正则找到所有的@词，用NSMutableAttributedString的方法加上高亮色，然后把最终的attributedString赋值给TextView，并将光标的位置复原为替换文本之前的状态。</p><h6 id=4删除时词要整体删除>4、删除时@词要整体删除</h6><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>BOOL</span><span class=p>)</span><span class=nf>growingTextView:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span> <span class=nf>shouldChangeTextInRange:</span><span class=p>(</span><span class=n>NSRange</span><span class=p>)</span><span class=nv>range</span> <span class=nf>replacementText:</span><span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nv>text</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=k>if</span> <span class=p>([</span><span class=n>text</span> <span class=nl>isEqualToString</span><span class=p>:</span><span class=s>@&#34;&#34;</span><span class=p>])</span>
 </span></span><span class=line><span class=cl>    <span class=p>{</span>
@@ -182,29 +96,7 @@
 </span></span><span class=line><span class=cl>    
 </span></span><span class=line><span class=cl>    <span class=k>return</span> <span class=nb>YES</span><span class=p>;</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><p>首先判断替换词是空字符串就代表是删除操作，然后找出输入框文字中所有的@词，判断要删除的字符是否在任意一个@词中间，如果在就把输入框文字中这个@词整体删除，然后重新赋值给TextView，并纠正光标的位置。但是要判断用户在长按选择文本时不处理。</p><h6 id=5光标不能点击落在一个词中间>5、光标不能点击落在一个@词中间：</h6><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextViewDidChangeSelection:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span>
+</span></span></code></pre></div><p>首先判断替换词是空字符串就代表是删除操作，然后找出输入框文字中所有的@词，判断要删除的字符是否在任意一个@词中间，如果在就把输入框文字中这个@词整体删除，然后重新赋值给TextView，并纠正光标的位置。但是要判断用户在长按选择文本时不处理。</p><h6 id=5光标不能点击落在一个词中间>5、光标不能点击落在一个@词中间：</h6><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>growingTextViewDidChangeSelection:</span><span class=p>(</span><span class=n>HPGrowingTextView</span> <span class=o>*</span><span class=p>)</span><span class=nv>growingTextView</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=c1>// 光标不能点落在@词中间
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=n>NSRange</span> <span class=n>range</span> <span class=o>=</span> <span class=n>growingTextView</span><span class=p>.</span><span class=n>selectedRange</span><span class=p>;</span>
@@ -226,33 +118,7 @@
 </span></span><span class=line><span class=cl>        <span class=p>}</span>
 </span></span><span class=line><span class=cl>    <span class=p>}</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><p>其实就是判断光标改变位置后是否在@词中间，如果在就把光标强制移动到@词后面。但是当用户长按选择文本时可以。</p><h6 id=6从列表中选择人去他>6、从列表中选择人去@他</h6><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span><span class=lnt>14
-</span><span class=lnt>15
-</span><span class=lnt>16
-</span><span class=lnt>17
-</span><span class=lnt>18
-</span><span class=lnt>19
-</span><span class=lnt>20
-</span><span class=lnt>21
-</span><span class=lnt>22
-</span><span class=lnt>23
-</span><span class=lnt>24
-</span><span class=lnt>25
-</span><span class=lnt>26
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>prepareForSegue:</span><span class=p>(</span><span class=n>UIStoryboardSegue</span> <span class=o>*</span><span class=p>)</span><span class=nv>segue</span> <span class=nf>sender:</span><span class=p>(</span><span class=kt>id</span><span class=p>)</span><span class=nv>sender</span>
+</span></span></code></pre></div><p>其实就是判断光标改变位置后是否在@词中间，如果在就把光标强制移动到@词后面。但是当用户长按选择文本时可以。</p><h6 id=6从列表中选择人去他>6、从列表中选择人去@他</h6><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>prepareForSegue:</span><span class=p>(</span><span class=n>UIStoryboardSegue</span> <span class=o>*</span><span class=p>)</span><span class=nv>segue</span> <span class=nf>sender:</span><span class=p>(</span><span class=kt>id</span><span class=p>)</span><span class=nv>sender</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=c1>// 去选择@的人
 </span></span></span><span class=line><span class=cl><span class=c1></span>    <span class=p>[</span><span class=nb>self</span><span class=p>.</span><span class=n>growingTextView</span><span class=p>.</span><span class=n>internalTextView</span> <span class=n>unmarkText</span><span class=p>];</span>
@@ -278,20 +144,7 @@
 </span></span><span class=line><span class=cl>        <span class=n>textView</span><span class=p>.</span><span class=n>selectedRange</span> <span class=o>=</span> <span class=n>NSMakeRange</span><span class=p>(</span><span class=n>index</span> <span class=o>+</span> <span class=n>insertString</span><span class=p>.</span><span class=n>length</span><span class=p>,</span> <span class=mi>0</span><span class=p>);</span>
 </span></span><span class=line><span class=cl>    <span class=p>};</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><p>其实就是选择后将@词插入到光标位置，并将光标纠正到@词后面。</p><h6 id=7评论列表cell上的高亮并可点击使用mllabel实现起来还是比较简单的>7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的：</h6><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt> 1
-</span><span class=lnt> 2
-</span><span class=lnt> 3
-</span><span class=lnt> 4
-</span><span class=lnt> 5
-</span><span class=lnt> 6
-</span><span class=lnt> 7
-</span><span class=lnt> 8
-</span><span class=lnt> 9
-</span><span class=lnt>10
-</span><span class=lnt>11
-</span><span class=lnt>12
-</span><span class=lnt>13
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>setComment:</span><span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nv>comment</span>
+</span></span></code></pre></div><p>其实就是选择后将@词插入到光标位置，并将光标纠正到@词后面。</p><h6 id=7评论列表cell上的高亮并可点击使用mllabel实现起来还是比较简单的>7、评论列表cell上的@高亮并可点击。使用MLLabel实现起来还是比较简单的：</h6><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=p>-</span> <span class=p>(</span><span class=kt>void</span><span class=p>)</span><span class=nf>setComment:</span><span class=p>(</span><span class=n>NSString</span> <span class=o>*</span><span class=p>)</span><span class=nv>comment</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>_comment</span> <span class=o>=</span> <span class=n>comment</span><span class=p>;</span>
 </span></span><span class=line><span class=cl>    
@@ -304,15 +157,11 @@
 </span></span><span class=line><span class=cl>        <span class=p>[</span><span class=nb>self</span><span class=p>.</span><span class=n>titleLabel</span> <span class=nl>addLinkWithType</span><span class=p>:</span><span class=n>MLLinkTypeUserHandle</span> <span class=nl>value</span><span class=p>:</span><span class=n>comment</span> <span class=nl>range</span><span class=p>:</span><span class=n>result</span><span class=p>.</span><span class=n>range</span><span class=p>];</span>
 </span></span><span class=line><span class=cl>    <span class=p>}];</span>
 </span></span><span class=line><span class=cl><span class=p>}</span>
-</span></span></code></pre></td></tr></table></div></div><div class=highlight><div class=chroma><table class=lntable><tr><td class=lntd><pre tabindex=0 class=chroma><code><span class=lnt>1
-</span><span class=lnt>2
-</span><span class=lnt>3
-</span><span class=lnt>4
-</span></code></pre></td><td class=lntd><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=nb>self</span><span class=p>.</span><span class=n>titleLabel</span><span class=p>.</span><span class=n>didClickLinkBlock</span> <span class=o>=</span> <span class=o>^</span><span class=p>(</span><span class=n>MLLink</span> <span class=o>*</span><span class=n>link</span><span class=p>,</span> <span class=n>NSString</span> <span class=o>*</span><span class=n>linkText</span><span class=p>,</span> <span class=n>MLLinkLabel</span> <span class=o>*</span><span class=n>label</span><span class=p>)</span>
+</span></span></code></pre></div><div class=highlight><pre tabindex=0 class=chroma><code class=language-objc data-lang=objc><span class=line><span class=cl><span class=nb>self</span><span class=p>.</span><span class=n>titleLabel</span><span class=p>.</span><span class=n>didClickLinkBlock</span> <span class=o>=</span> <span class=o>^</span><span class=p>(</span><span class=n>MLLink</span> <span class=o>*</span><span class=n>link</span><span class=p>,</span> <span class=n>NSString</span> <span class=o>*</span><span class=n>linkText</span><span class=p>,</span> <span class=n>MLLinkLabel</span> <span class=o>*</span><span class=n>label</span><span class=p>)</span>
 </span></span><span class=line><span class=cl><span class=p>{</span>
 </span></span><span class=line><span class=cl>    <span class=n>NSLog</span><span class=p>(</span><span class=s>@&#34;点击了%@&#34;</span><span class=p>,</span><span class=n>linkText</span><span class=p>);</span>
 </span></span><span class=line><span class=cl><span class=p>};</span>
-</span></span></code></pre></td></tr></table></div></div><h6 id=8cell高度自动计算系统自己支持不了解的可以看我的这篇文章httpswwwjianshucomp64f0e1557562>8、cell高度自动计算，系统自己支持，不了解的可以看我的<a class=link href=https://www.jianshu.com/p/64f0e1557562 target=_blank rel=noopener>这篇文章</a>。</h6><p>好了，大概就是这么些东西，是不是很简单呢，如果还有不明白的地方就下载<a class=link href=https://github.com/lisongrc/ATDemo target=_blank rel=noopener>本文demo</a>仔细看看吧。</p></section><footer class=article-footer></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/><div class=article-details><h2 class=article-title>sublime去除重复行</h2></div></a></article><article><a href=/p/202104mac%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/><div class=article-details><h2 class=article-title>Mac上好用的软件推荐，持续更新</h2></div></a></article><article><a href=/p/202103linux%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/><div class=article-details><h2 class=article-title>Linux使用相关的一些东西</h2></div></a></article><article><a href=/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/><div class=article-details><h2 class=article-title>iOSer都要知道的LLDB介绍与Chisel进阶</h2></div></a></article><article><a href=/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/><div class=article-details><h2 class=article-title>Runtime的运用和减少应用崩溃</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
+</span></span></code></pre></div><h6 id=8cell高度自动计算系统自己支持不了解的可以看我的这篇文章httpswwwjianshucomp64f0e1557562>8、cell高度自动计算，系统自己支持，不了解的可以看我的<a class=link href=https://www.jianshu.com/p/64f0e1557562 target=_blank rel=noopener>这篇文章</a>。</h6><p>好了，大概就是这么些东西，是不是很简单呢，如果还有不明白的地方就下载<a class=link href=https://github.com/lisongrc/ATDemo target=_blank rel=noopener>本文demo</a>仔细看看吧。</p></section><footer class=article-footer></footer></article><aside class=related-content--wrapper><h2 class=section-title>相关文章</h2><div class=related-content><div class="flex article-list--tile"><article><a href=/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/><div class=article-details><h2 class=article-title>sublime去除重复行</h2></div></a></article><article><a href=/p/202104mac%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/><div class=article-details><h2 class=article-title>Mac上好用的软件推荐，持续更新</h2></div></a></article><article><a href=/p/202103linux%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/><div class=article-details><h2 class=article-title>Linux使用相关的一些东西</h2></div></a></article><article><a href=/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/><div class=article-details><h2 class=article-title>iOSer都要知道的LLDB介绍与Chisel进阶</h2></div></a></article><article><a href=/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/><div class=article-details><h2 class=article-title>Runtime的运用和减少应用崩溃</h2></div></a></article></div></div></aside><footer class=site-footer><section class=copyright>&copy;
 2016 -
 2023 小松哥的博客</section><section class=powerby>Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a><br>主题 <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.16.0>Stack</a></b> 由 <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a> 设计</section></footer><div class=pswp tabindex=-1 role=dialog aria-hidden=true><div class=pswp__bg></div><div class=pswp__scroll-wrap><div class=pswp__container><div class=pswp__item></div><div class=pswp__item></div><div class=pswp__item></div></div><div class="pswp__ui pswp__ui--hidden"><div class=pswp__top-bar><div class=pswp__counter></div><button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
 <button class="pswp__button pswp__button--share" title=Share></button>

@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CocoaPods on 小松哥的博客</title><link>https://lisongrc.github.io/tags/cocoapods/</link><description>Recent content in CocoaPods on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 08 Sep 2016 00:47:54 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/cocoapods/index.xml" rel="self" type="application/rss+xml"/><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>CocoaPods on 小松哥的博客</title><link>https://lisongrc.github.io/tags/cocoapods/</link><description>Recent content in CocoaPods on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Thu, 08 Sep 2016 00:47:54 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/cocoapods/index.xml" rel="self" type="application/rss+xml"/><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="什么是cocoapods">什么是CocoaPods？&lt;/h1>
 &lt;p>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。&lt;/p>
 &lt;p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。&lt;/p>
 &lt;p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装cocoapods">安装CocoaPods&lt;/h1>
 &lt;p>1.首先更新gem到最新版本，在终端中输入：&lt;code>$ sudo gem update --system&lt;/code>,注意不要把“$”复制上。等待一会儿会看到：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
@@ -59,21 +59,11 @@ alt="Test"
 >
 2.然后生成并编辑一个Podfile文件，命令为&lt;code>vim Podfile&lt;/code>，要导入的第三方都要在这里面写上。进去后需要先按&lt;code>I&lt;/code>键进入编辑状态，写完后按&lt;code>esc&lt;/code>，然后按&lt;code>shift+zz&lt;/code>(或者先按&lt;code>shift+:&lt;/code>,再按&lt;code>wq&lt;/code>)就可以保存退出了。下面的动图里面都有。
 Podfile的格式大概如下，其中&amp;rsquo;Test&amp;rsquo;为你的target的名字。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">platform&lt;/span> &lt;span class="ss">:ios&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;8.0&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">platform&lt;/span> &lt;span class="ss">:ios&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;8.0&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">target&lt;/span> &lt;span class="s1">&amp;#39;Test&amp;#39;&lt;/span> &lt;span class="k">do&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pod&lt;/span> &lt;span class="s1">&amp;#39;MJExtension&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;~&amp;gt; 3.0.13&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;code>3.安装，命令为：&lt;/code>pod install`。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>3.安装，命令为：&lt;/code>pod install`。
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-871f9b7d8a8d4ddb.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="安装第三方"

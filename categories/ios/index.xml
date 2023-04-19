@@ -1,7 +1,7 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iOS on 小松哥的博客</title><link>https://lisongrc.github.io/categories/ios/</link><description>Recent content in iOS on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 17 Apr 2021 18:29:22 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS开发常用的效率工具，持续更新</title><link>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link><pubDate>Sat, 17 Apr 2021 18:29:22 +0000</pubDate><guid>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>iOS on 小松哥的博客</title><link>https://lisongrc.github.io/categories/ios/</link><description>Recent content in iOS on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 17 Apr 2021 18:29:22 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/ios/index.xml" rel="self" type="application/rss+xml"/><item><title>iOS开发常用的效率工具，持续更新</title><link>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link><pubDate>Sat, 17 Apr 2021 18:29:22 +0000</pubDate><guid>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>之前总结了 &lt;a class="link" href="https://blog.lisong.pro/2021/04e9bf20fb.html" target="_blank" rel="noopener"
 >Mac上好用的软件推荐&lt;/a>，本文总结一下iOS开发常用的效率工具，所谓工欲善其事，必先利其器，好的工具会使我们的生活更美好。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="imageoptimhttpsimageoptimcommac">&lt;a class="link" href="https://imageoptim.com/mac" target="_blank" rel="noopener"
 >imageoptim&lt;/a>&lt;/h1>
 &lt;p>压缩图片，减少包体积。&lt;/p>
@@ -70,9 +70,9 @@ alt="swiftify"
 &lt;p>&lt;img src="https://lisongrc.github.io/images/appsight.png"
 loading="lazy"
 alt="appsight"
->&lt;/p></description></item><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;!-- raw HTML omitted -->
+>&lt;/p></description></item><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="对应键位">对应键位&lt;/h1>
 &lt;blockquote>
 &lt;p>⌘：command&lt;/p>
@@ -137,21 +137,14 @@ alt="appsight"
 &lt;/table>
 &lt;h1 id="cheatsheet">CheatSheet&lt;/h1>
 &lt;p>大家可以安装CheatSheet这个app，然后长按⌘键就会出现当前使用的app的快捷键。这样如果忘了某个快捷键可以快速查找。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install cheatsheet
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>iOS 9 通用链接（Universal Links）</title><link>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</link><pubDate>Fri, 03 Feb 2017 16:09:40 +0000</pubDate><guid>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install cheatsheet
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>iOS 9 通用链接（Universal Links）</title><link>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</link><pubDate>Fri, 03 Feb 2017 16:09:40 +0000</pubDate><guid>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="什么是universal-links">什么是Universal Links?&lt;/h1>
 &lt;p>在iOS9之前，对于从各种从浏览器、Safari中唤醒APP的需求，我们通常只能使用scheme。但是这种方式需要提前判断系统中是否安装了能够响应此scheme的app，并且这种方式在微信中是被禁用了的。&lt;/p>
 &lt;p>Universal Links是iOS9推出的一项功能，使你的应用可以通过传统的HTTP链接来启动APP(如果iOS设备上已经安装了你的app，不管在微信里还是在哪里)， 或者打开网页(iOS设备上没有安装你的app)。&lt;/p>
 &lt;p>下面简单说下怎么使用Universal Links，具体的可以看&lt;a class="link" href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank" rel="noopener"
 >官方的说明文档&lt;/a>&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="怎么使用universal-links">怎么使用Universal Links&lt;/h1>
 &lt;p>1.先决条件：你必须有一个域名,且这个域名需要支持https。&lt;/p>
 &lt;p>2.需要在开发者中心做配置：找到对应的App ID，在Application Services列表里有Associated Domains一条，把它变为Enabled就可以了。
@@ -165,26 +158,7 @@ loading="lazy"
 alt="配置项目中的Associated Domains"
 >&lt;/p>
 &lt;p>4.创建一个内容为json格式的文件，苹果将会在合适的时候，从我们在项目中填入的域名请求这个文件。这个文件名必须为&lt;strong>apple-app-site-association&lt;/strong>，没有后缀名，文件内容大概是这样子：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-json" data-lang="json">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">    &lt;/span>&lt;span class="nt">&amp;#34;applinks&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">        &lt;/span>&lt;span class="nt">&amp;#34;apps&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[],&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">        &lt;/span>&lt;span class="nt">&amp;#34;details&amp;#34;&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="p">[&lt;/span>
@@ -199,9 +173,7 @@ alt="配置项目中的Associated Domains"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">        &lt;/span>&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">    &lt;/span>&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>说明：&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>说明：&lt;/p>
 &lt;blockquote>
 &lt;p>appID：组成方式是 teamId.yourapp’s bundle identifier。如上面的 9JA89QQLNQ就是teamId。登陆开发者中心，在Account - Membership里面可以找到Team ID。&lt;/p>
 &lt;p>paths：设定你的app支持的路径列表，只有这些指定的路径的链接，才能被app所处理。星号的写法代表了可识别域名下所有链接。&lt;/p>
@@ -230,28 +202,7 @@ alt="验证链接"
 &lt;h1 id="进入app后的处理">进入app后的处理&lt;/h1>
 &lt;p>现在用户点击某个链接，直接可以进我们的app了，但是我们的目的是要能够获取到用户进来的链接，根据链接来展示给用户相应的内容。
 我们需要在工程里的 AppDelegate 里实现方法&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">continueUserActivity:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUserActivity&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">userActivity&lt;/span> &lt;span class="nf">restorationHandler:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">^&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">_Nullable&lt;/span>&lt;span class="p">))&lt;/span>&lt;span class="nv">restorationHandler&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">continueUserActivity:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUserActivity&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">userActivity&lt;/span> &lt;span class="nf">restorationHandler:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="o">^&lt;/span>&lt;span class="p">)(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span> &lt;span class="n">_Nullable&lt;/span>&lt;span class="p">))&lt;/span>&lt;span class="nv">restorationHandler&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">([&lt;/span>&lt;span class="n">userActivity&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">activityType&lt;/span> &lt;span class="nl">isEqualToString&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSUserActivityTypeBrowsingWeb&lt;/span>&lt;span class="p">])&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">{&lt;/span>
@@ -268,45 +219,26 @@ alt="验证链接"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nb">YES&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="注意">注意&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="注意">注意&lt;/h1>
 &lt;p>前端开发经常面临跨域问题，必须要求跨域，如果不跨域，就不行。
 只有当前webview的url域名，与跳转目标url域名不一致时，Universal Link 才生效。&lt;/p>
 &lt;p>好了先说到这里，如果遇到什么问题可以详细看&lt;a class="link" href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank" rel="noopener"
->官方的说明文档&lt;/a>。&lt;/p></description></item><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;!-- raw HTML omitted -->
+>官方的说明文档&lt;/a>。&lt;/p></description></item><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>有的时候我们想要将程序运行过程中产生的Log保存起来或者发送到自己服务器，为了以后方便分析。这时候就可以用&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener"
 >CocoaLumberjack&lt;/a>啦。&lt;/p>
 &lt;p>CocoaLumberjack是一个可以在iOS和Mac开发中使用的日志库，强大又不失灵活。集成进项目后，配置下，然后用DDLog语句简单地取代NSLog语句（ DDLog的使用方法和NSLog一样）就可以啦，是不是很方便。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装">安装&lt;/h1>
 &lt;p>第一种方法：使用cocoapods，不会使用cocoapods的可以看&lt;a class="link" href="http://www.jianshu.com/p/1711e131987d" target="_blank" rel="noopener"
 >这篇教程&lt;/a>，Podfile看起来是这样的：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="ss">platform&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ios&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;7.0&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="ss">platform&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">ios&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;7.0&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">target&lt;/span> &lt;span class="s1">&amp;#39;CocoaLumberjackDemo&amp;#39;&lt;/span> &lt;span class="k">do&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">pod&lt;/span> &lt;span class="s1">&amp;#39;CocoaLumberjack&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>第二种方法：使用&lt;a class="link" href="https://github.com/Carthage/Carthage" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第二种方法：使用&lt;a class="link" href="https://github.com/Carthage/Carthage" target="_blank" rel="noopener"
 >Carthage&lt;/a>，Cartfile：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">github&lt;/span> &lt;span class="s2">&amp;#34;CocoaLumberjack/CocoaLumberjack&amp;#34;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>第三种方法：手工导入，具体可以看&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/GettingStarted.md#manual-installation" target="_blank" rel="noopener"
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">github&lt;/span> &lt;span class="s2">&amp;#34;CocoaLumberjack/CocoaLumberjack&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>第三种方法：手工导入，具体可以看&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/GettingStarted.md#manual-installation" target="_blank" rel="noopener"
 >他的文档&lt;/a>&lt;/p>
 &lt;h1 id="使用">使用&lt;/h1>
 &lt;p>CocoaLumberjack自带了几种Log方式：&lt;/p>
@@ -324,34 +256,7 @@ loading="lazy"
 alt="PrefixHeader.pch"
 >&lt;/p>
 &lt;p>然后加入代码：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">didFinishLaunchingWithOptions:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">launchOptions&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">BOOL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">application:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIApplication&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">application&lt;/span> &lt;span class="nf">didFinishLaunchingWithOptions:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">launchOptions&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// 添加DDASLLogger，你的日志语句将被发送到Xcode控制台
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDTTYLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]];&lt;/span>
@@ -374,9 +279,7 @@ alt="PrefixHeader.pch"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="nb">YES&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>DDLog和NSLog的语法是一样的。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>DDLog和NSLog的语法是一样的。&lt;/p>
 &lt;p>运行程序，可以在Xocde控制台看到：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b750b65396b1febe.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -389,41 +292,15 @@ alt="Log文件"
 >&lt;/p>
 &lt;h1 id="log级别">Log级别&lt;/h1>
 &lt;p>接下来，你就要考虑用哪种级别了，CocoaLumberjack有5种：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogFlag&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogFlag&lt;/span>&lt;span class="p">){&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagError&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagWarning&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagInfo&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagDebug&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogFlagVerbose&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>Log Level 用来过滤每条Log：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_ENUM&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogLevel&lt;/span>&lt;span class="p">){&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Log Level 用来过滤每条Log：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_ENUM&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">DDLogLevel&lt;/span>&lt;span class="p">){&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelOff&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelError&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogFlagError&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelWarning&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogLevelError&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="n">DDLogFlagWarning&lt;/span>&lt;span class="p">),&lt;/span>
@@ -432,86 +309,32 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelVerbose&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">DDLogLevelDebug&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">|&lt;/span> &lt;span class="n">DDLogFlagVerbose&lt;/span>&lt;span class="p">),&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">DDLogLevelAll&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">NSUIntegerMax&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>例如，如果您将日志级别设置为 LOG_LEVEL_INFO，那么你会看到error、Warn和Info语句。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如，如果您将日志级别设置为 LOG_LEVEL_INFO，那么你会看到error、Warn和Info语句。&lt;/p>
 &lt;p>你也可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomLogLevels.md" target="_blank" rel="noopener"
 >自定义Log级别或者每个级别的名字&lt;/a>或者&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/FineGrainedLogging.md" target="_blank" rel="noopener"
 >在单纯的级别上增加一些高级用法&lt;/a>&lt;/p>
 &lt;p>我们也可以为Debug和Release模式设置不同的Log级别：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#ifdef DEBUG
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#ifdef DEBUG
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">static&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">DDLogLevel&lt;/span> &lt;span class="n">ddLogLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DDLogLevelVerbose&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#else
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="k">static&lt;/span> &lt;span class="k">const&lt;/span> &lt;span class="n">DDLogLevel&lt;/span> &lt;span class="n">ddLogLevel&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">DDLogLevelWarning&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#endif
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>我们还可以为每种loger设置不同的级别：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDASLLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelInfo&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们还可以为每种loger设置不同的级别：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDASLLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelInfo&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="n">DDLog&lt;/span> &lt;span class="nl">addLogger&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">DDTTYLogger&lt;/span> &lt;span class="n">sharedInstance&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">withLevel&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">DDLogLevelDebug&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>我们还可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomFormatters.md" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>我们还可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/blob/master/Documentation/CustomFormatters.md" target="_blank" rel="noopener"
 >自定义日志的formatter格式&lt;/a>：
 首先自定义一个 LogFormatter, 遵从 DDLogFormatter 协议，我们需要重写 &lt;code>- (NSString *)formatLogMessage:(DDLogMessage *)logMessage&lt;/code> 这个方法，这个方法的输入参数是由 logger 发的一个 DDLogMessage 对象，包含了一些必要的信息，返回值就是最终 log 的消息体字符串。&lt;/p>
 &lt;p>我们还可以自定义Logger，实现我们自己想要的处理，具体可以看他的文档。&lt;/p>
 &lt;p>更多详细文档可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/master/Documentation" target="_blank" rel="noopener"
->点这里&lt;/a>&lt;/p></description></item><item><title>详细易懂的二维码的扫描、识别与生成</title><link>https://lisongrc.github.io/p/201611963e6639/</link><pubDate>Wed, 02 Nov 2016 15:54:18 +0000</pubDate><guid>https://lisongrc.github.io/p/201611963e6639/</guid><description>&lt;!-- raw HTML omitted -->
+>点这里&lt;/a>&lt;/p></description></item><item><title>详细易懂的二维码的扫描、识别与生成</title><link>https://lisongrc.github.io/p/201611963e6639/</link><pubDate>Wed, 02 Nov 2016 15:54:18 +0000</pubDate><guid>https://lisongrc.github.io/p/201611963e6639/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>ios7之前我们实现二维码扫描是借助第三方(&lt;code>ZBar&lt;/code>，&lt;code>ZXing&lt;/code>等)来实现的，在ios7之后系统自己提供二维码扫描的方法，性能也要比第三方更好。&lt;/p>
 &lt;p>今天就来介绍一下原生二维码的使用，包括&lt;code>扫描二维码&lt;/code>，&lt;code>从图片扫描二维码&lt;/code>和&lt;code>生成二维码&lt;/code>。讲解中只展示部分代码，具体请看&lt;a class="link" href="https://github.com/lisongrc/QRCodeDemo" target="_blank" rel="noopener"
 >Github Demo&lt;/a>，里面的代码不多，也很容易看懂。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="扫描二维码">扫描二维码&lt;/h1>
 &lt;p>二维码扫描需要用到&lt;code>AVFoundation.framework&lt;/code>，需要用先创建一个AVCaptureSession，然后设置输入输出流，以及扫描区域和支持的格式：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;span class="lnt">27
-&lt;/span>&lt;span class="lnt">28
-&lt;/span>&lt;span class="lnt">29
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//获取摄像设备
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//获取摄像设备
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">AVCaptureDevice&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">device&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">AVCaptureDevice&lt;/span> &lt;span class="nl">defaultDeviceWithMediaType&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">AVMediaTypeVideo&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//创建输入流
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">AVCaptureDeviceInput&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">input&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">AVCaptureDeviceInput&lt;/span> &lt;span class="nl">deviceInputWithDevice&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">device&lt;/span> &lt;span class="nl">error&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">nil&lt;/span>&lt;span class="p">];&lt;/span>
@@ -540,37 +363,13 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">AVMetadataObjectTypeEAN13Code&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">AVMetadataObjectTypeEAN8Code&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">AVMetadataObjectTypeCode128Code&lt;/span>&lt;span class="l">]&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后用这个&lt;code>session&lt;/code>生成一个&lt;code>AVCaptureVideoPreviewLayer&lt;/code>加到某个view的layer上，就可以实时显示摄像头捕捉的内容了：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="n">AVCaptureVideoPreviewLayer&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">layer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">AVCaptureVideoPreviewLayer&lt;/span> &lt;span class="nl">layerWithSession&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">session&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后用这个&lt;code>session&lt;/code>生成一个&lt;code>AVCaptureVideoPreviewLayer&lt;/code>加到某个view的layer上，就可以实时显示摄像头捕捉的内容了：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="n">AVCaptureVideoPreviewLayer&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">layer&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">AVCaptureVideoPreviewLayer&lt;/span> &lt;span class="nl">layerWithSession&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">session&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">layer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">videoGravity&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">AVLayerVideoGravityResizeAspectFill&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">layer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">frame&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">view&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">layer&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">bounds&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">[&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">view&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">layer&lt;/span> &lt;span class="nl">insertSublayer&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">layer&lt;/span> &lt;span class="nl">atIndex&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>然后调用&lt;code> [self.session startRunning];&lt;/code>开始捕获，当扫描出结果后会调用下面的代理方法，其中&lt;code>metadataObject.stringValue&lt;/code>就是扫描后的结果。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - AVCaptureMetadataOutputObjectsDelegate
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后调用&lt;code> [self.session startRunning];&lt;/code>开始捕获，当扫描出结果后会调用下面的代理方法，其中&lt;code>metadataObject.stringValue&lt;/code>就是扫描后的结果。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - AVCaptureMetadataOutputObjectsDelegate
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="p">-(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">captureOutput:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">AVCaptureOutput&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">captureOutput&lt;/span> &lt;span class="nf">didOutputMetadataObjects:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">metadataObjects&lt;/span> &lt;span class="nf">fromConnection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">AVCaptureConnection&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">connection&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">if&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">metadataObjects&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">count&lt;/span> &lt;span class="o">&amp;gt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">)&lt;/span>
@@ -578,39 +377,8 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">AVMetadataMachineReadableCodeObject&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">metadataObject&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">metadataObjects&lt;/span> &lt;span class="n">firstObject&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>为了在黑夜也可以很好的扫描，可以设置一个闪光灯的开关：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - 开关闪光灯
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>为了在黑夜也可以很好的扫描，可以设置一个闪光灯的开关：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - 开关闪光灯
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">rightBarButtonDidClick:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIBarButtonItem&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">item&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">flashOpen&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">flashOpen&lt;/span>&lt;span class="p">;&lt;/span>
@@ -635,28 +403,10 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">device&lt;/span> &lt;span class="n">unlockForConfiguration&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-268a61962145720c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="扫描二维码" style="zoom: 50%;" />
 &lt;h1 id="从图片扫描">从图片扫描&lt;/h1>
 &lt;p>有时候我们需要从图片中扫描二维码，或者从相册选择一张图片，代码如下，具体可以看demo。其中&lt;code>feature.messageString&lt;/code>就是扫描后的结果。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">findQRCodeFromImage:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">image&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">findQRCodeFromImage:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">image&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">CIDetector&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">detector&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">CIDetector&lt;/span> &lt;span class="nl">detectorOfType&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">CIDetectorTypeQRCode&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="nl">context&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="nb">nil&lt;/span>
@@ -668,45 +418,13 @@ alt="Log文件"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">CIQRCodeFeature&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">feature&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">features&lt;/span> &lt;span class="n">firstObject&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-2b1fa03e6a50237b.gif?imageMogr2/auto-orient/strip"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-2b1fa03e6a50237b.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="从图片扫描"
 >&lt;/p>
 &lt;h1 id="生成二维码">生成二维码&lt;/h1>
 &lt;p>生成二维码的代码很简单，代码如下。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;span class="lnt">22
-&lt;/span>&lt;span class="lnt">23
-&lt;/span>&lt;span class="lnt">24
-&lt;/span>&lt;span class="lnt">25
-&lt;/span>&lt;span class="lnt">26
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 生成指定大小的黑白二维码 */&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 生成指定大小的黑白二维码 */&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">createQRImageWithString:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">string&lt;/span> &lt;span class="nf">size:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">CGSize&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">size&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSData&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">stringData&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">dataUsingEncoding&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSUTF8StringEncoding&lt;/span>&lt;span class="p">];&lt;/span>
@@ -732,30 +450,12 @@ alt="从图片扫描"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">codeImage&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-dc0ad3554614009f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-dc0ad3554614009f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="黑白二维码"
 >&lt;/p>
 &lt;p>上面默认生成的时黑白二维码，不过我们也可以改颜色：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 为二维码改变颜色 */&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 为二维码改变颜色 */&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">changeColorForQRImage:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">image&lt;/span> &lt;span class="nf">backColor:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIColor&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">backColor&lt;/span> &lt;span class="nf">frontColor:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIColor&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">frontColor&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">CIFilter&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">colorFilter&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">CIFilter&lt;/span> &lt;span class="nl">filterWithName&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s">@&amp;#34;CIFalseColor&amp;#34;&lt;/span>
@@ -767,32 +467,12 @@ alt="黑白二维码"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err">  &lt;/span> &lt;span class="err"> &lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="nl">imageWithCIImage&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">colorFilter&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">outputImage&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-7211754266ea9998.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-7211754266ea9998.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="为二维码改变颜色"
 >&lt;/p>
 &lt;p>有的二维码也会在中心加一个小图片，例如用户头像，代码如下：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 在二维码中心加一个小图 */&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cm">/** 在二维码中心加一个小图 */&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">addSmallImageForQRImage:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UIImage&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">qrImage&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">UIGraphicsBeginImageContext&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">qrImage&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">);&lt;/span>
@@ -806,28 +486,19 @@ alt="为二维码改变颜色"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">UIGraphicsEndImageContext&lt;/span>&lt;span class="p">();&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="n">result&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b904ed48d3a825fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b904ed48d3a825fd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="中心加小图的二维码"
 >&lt;/p>
-&lt;p>其实也可以扫描条形码，大家可以对着条形码试一试，代码都是通用的。&lt;/p></description></item><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>其实也可以扫描条形码，大家可以对着条形码试一试，代码都是通用的。&lt;/p></description></item><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。&lt;/p>
 &lt;p>先奉上这篇文章的demo的Github地址：&lt;a class="link" href="https://github.com/lisongrc/UITableViewCellHeightDemo" target="_blank" rel="noopener"
 >UITableViewCellHeightDemo&lt;/a>。大家可以下载下来和文章配合看。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="cell高度计算的历史">cell高度计算的历史&lt;/h1>
 &lt;p>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">heightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">heightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。&lt;/p>
 &lt;p>后来也有一些人写了一些第三方去解决这个问题，例如&lt;a class="link" href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell" target="_blank" rel="noopener"
 >UITableView-FDTemplateLayoutCell&lt;/a>。只要给cell自上而下加好约束，它就可以帮我们去算cell的高度并且可以缓存，省去了我们自己写计算代码的成本。具体可以进链接里面看看它的demo。&lt;/p>
 &lt;p>但是在iOS10的系统下， &lt;code>FDTemplateLayoutCell&lt;/code>会卡界面，而且tableview的行数越多表现的越卡。&lt;/p>
@@ -844,32 +515,14 @@ loading="lazy"
 alt="cell约束"
 >&lt;/p>
 &lt;p>加好约束后，然后告诉tableView自己去适应高度就可以了。有两种写法：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">rowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">UITableViewAutomaticDimension&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">rowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">UITableViewAutomaticDimension&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">estimatedRowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>或者直接写这个代理方法就可以了&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者直接写这个代理方法就可以了&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。&lt;/p>
 &lt;p>来看下demo效果：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-118a76ca9e5bb550.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
@@ -878,17 +531,9 @@ alt="demo"
 &lt;p>我们看到，cell已经自己适应内容算出了高度，是不是很方便呢哼哼。
 具体的代码大家可以去demo看哦。&lt;/p>
 &lt;p>其实section的header和footer也是可以自动适应的，对应的方法有：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForHeaderInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForHeaderInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForFooterInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。&lt;/p>
 &lt;h1 id="可能遇到的问题和解决办法">可能遇到的问题和解决办法&lt;/h1>
 &lt;p>&lt;strong>1.高度不对&lt;/strong>
 有时候有可能运行出来后看到cell的高度显示的不对，就像这样：
@@ -909,38 +554,8 @@ loading="lazy"
 alt="Untitled.gif"
 >&lt;/p>
 &lt;p>解决这个问题的办法是去缓存cell的高度，代码如下：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">@property&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">nonatomic&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">strong&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">//缓存高度所用字典
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - UITableViewDelegate
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">@property&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">nonatomic&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">strong&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">//缓存高度所用字典
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - UITableViewDelegate
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="p">-(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSNumber&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span> &lt;span class="nl">objectForKey&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">indexPath&lt;/span>&lt;span class="p">];&lt;/span>
@@ -959,18 +574,16 @@ alt="Untitled.gif"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSNumber&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="l">@(&lt;/span>&lt;span class="n">cell&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">frame&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>&lt;span class="l">)&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span> &lt;span class="nl">setObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="nl">forKey&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">indexPath&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。&lt;/p>
 &lt;p>缓存高度之后，在demo里面多试几次，发现点击状态栏已经可以精确滚动回顶部了：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b09cef057ef8ba9a.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="用缓存高度解决了问题"
 >&lt;/p>
 &lt;p>这段代码其实可以写在viewController的基类里面，这样写一遍就可以每个地方都能缓存cell的高度了。详见demo。这样就完美了！&lt;/p>
-&lt;p>好啦先说到这里吧，有问题记得联系我。&lt;/p></description></item><item><title>系统地学习正则表达式(二)：进阶篇</title><link>https://lisongrc.github.io/p/20160923aaaabf/</link><pubDate>Mon, 26 Sep 2016 23:41:42 +0000</pubDate><guid>https://lisongrc.github.io/p/20160923aaaabf/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;p>好啦先说到这里吧，有问题记得联系我。&lt;/p></description></item><item><title>系统地学习正则表达式(二)：进阶篇</title><link>https://lisongrc.github.io/p/20160923aaaabf/</link><pubDate>Mon, 26 Sep 2016 23:41:42 +0000</pubDate><guid>https://lisongrc.github.io/p/20160923aaaabf/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>今天这篇我们将讲解&lt;code>子表达式&lt;/code>和&lt;code>后向引用&lt;/code>的使用。后面会持续更新。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="理解子表达式">理解子表达式&lt;/h1>
 &lt;p>通过&lt;code>(&lt;/code>和&lt;code>)&lt;/code>括起来的就是子表达式。&lt;/p>
 &lt;p>下面是一个例子：用来匹配IP 地址的正则表达式。 IP 地址是由&amp;quot; . &amp;ldquo;分隔的四组数字，如12.159.46.200。因为每个部分的数字都可以为一个、两个或者三个数字字符，这个匹配模式可以表示为&lt;code>\d{1,3}&lt;/code>：&lt;/p>
@@ -1008,30 +621,30 @@ alt="用缓存高度解决了问题"
 &lt;code>(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.){3}((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))&lt;/code>&lt;/p>
 &lt;p>分析：这个模式可以工作的原因是一系列的嵌套子表达式。首先从&lt;code>(((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))\.)&lt;/code>子表达式开始。包含了四个嵌套子表达式。&lt;code>(\d{1,2})&lt;/code>可以匹配一位数和两位数(0到99)。&lt;code>(1\d{2})&lt;/code>匹配了任何第一位为 1 的三位数(100到199) 。&lt;code>(2[0-4]\d)&lt;/code>匹配数字从 200 到 249 。&lt;code>(25[0-5])&lt;/code>匹配数字从 250 到 255 。每个子表达式都是通过“ | ”包括在另一个子表达式中。在数字范围之后是&lt;code>\.&lt;/code>表示的&amp;rdquo; . &amp;ldquo;，然后这个系列括起来作为子表达式并重复三遍（使用&lt;code>{3}&lt;/code>）。最后，&lt;code>((\d{1,2})|(1\d{2})|(2[0-4]\d)|(25[0-5]))&lt;/code>被用来匹配最后一个 IP 地址的数字（没有了&lt;code>\.&lt;/code>后缀）。由于将四个数字都是限制在了 0 到 255 之间，所以此模式可以匹配所有的合法 IP 地址。&lt;/p>
 &lt;h1 id="理解后向引用">理解后向引用&lt;/h1>
-&lt;p>HTML 开发者经常使用标题标签（&lt;!-- raw HTML omitted -->到&lt;!-- raw HTML omitted -->，包括相应的结束标签&lt;!-- raw HTML omitted -->到&lt;!-- raw HTML omitted -->）。假设你需要定位所有的标题标签：&lt;/p>
+&lt;p>HTML 开发者经常使用标题标签（&lt;H1>到&lt;H6>，包括相应的结束标签&lt;/H1>到&lt;/H6>）。假设你需要定位所有的标题标签：&lt;/p>
 &lt;blockquote>
 &lt;p>正则表达式：&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>
-待匹配文本：&lt;!-- raw HTML omitted -->title 1&lt;!-- raw HTML omitted --> — &lt;!-- raw HTML omitted -->title 6&lt;!-- raw HTML omitted -->
+待匹配文本：&lt;H1>title 1&lt;/H1> — &lt;H6>title 6&lt;/H6>
 匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title 1&amp;lt;/H1&amp;gt;&lt;/code> — &lt;code>&amp;lt;H6&amp;gt;title 6&amp;lt;/H6&amp;gt;&lt;/code>&lt;/p>
 &lt;/blockquote>
 &lt;p>分析：&lt;code>&amp;lt;[hH][1-6]&amp;gt;&lt;/code>可以匹配所有的开始标签，而&lt;code>&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>可以匹配所有的结束标签。&lt;/p>
-&lt;p>注意：我们这里使用了&lt;code>.*?&lt;/code>而不是&lt;code>.*&lt;/code>。正如在上一篇文章解释的一样，&lt;code>*&lt;/code>的量词是贪婪的，所以模式&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>将匹配从&lt;!-- raw HTML omitted --> 直到 &lt;!-- raw HTML omitted --> 。所以可以使用非贪婪量词&lt;code>.*?&lt;/code>来解决这个问题。&lt;/p>
+&lt;p>注意：我们这里使用了&lt;code>.*?&lt;/code>而不是&lt;code>.*&lt;/code>。正如在上一篇文章解释的一样，&lt;code>*&lt;/code>的量词是贪婪的，所以模式&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>将匹配从&lt;H1> 直到 &lt;/H6> 。所以可以使用非贪婪量词&lt;code>.*?&lt;/code>来解决这个问题。&lt;/p>
 &lt;p>接着看这个例子：&lt;/p>
 &lt;blockquote>
 &lt;p>正则表达式：&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>
-待匹配文本：&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->
+待匹配文本：&lt;H1>title&lt;/H6>
 匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title&amp;lt;/H6&amp;gt;&lt;/code>&lt;/p>
 &lt;/blockquote>
-&lt;p>分析：采用 &lt;!-- raw HTML omitted --> 开始而采用 &lt;!-- raw HTML omitted --> 的标题标签是非法的，但是现在的模式可以匹配。问题在于匹配的第二个部分（匹配结束的标签）没有办法知道匹配第一部分（匹配开始的标签）是什么。这时候就需要后向引用了。&lt;/p>
+&lt;p>分析：采用 &lt;H1> 开始而采用 &lt;/H6> 的标题标签是非法的，但是现在的模式可以匹配。问题在于匹配的第二个部分（匹配结束的标签）没有办法知道匹配第一部分（匹配开始的标签）是什么。这时候就需要后向引用了。&lt;/p>
 &lt;h1 id="使用后向引用匹配">使用后向引用匹配&lt;/h1>
 &lt;p>&lt;code>后向应用&lt;/code>就是引用前面的子表达式。你可以将后向应用理解成变量。例如&lt;code>\1&lt;/code>匹配模式中第一个子表达式。同理，&lt;code>\2&lt;/code>将匹配第二个子表达式，&lt;code>\3&lt;/code>将匹配第三个。我们结合例子来理解。一个子表达式可以通过后向引用根据需要引用多次。&lt;/p>
 &lt;p>在上个例子中，&lt;code>&amp;lt;[hH][1-6]&amp;gt;.*?&amp;lt;/[hH][1-6]&amp;gt;&lt;/code>会匹配非法的标题。我们可以使用后向引用来解决：&lt;/p>
 &lt;blockquote>
 &lt;p>正则表达式：&lt;code>&amp;lt;[hH]([1-6])&amp;gt;.*?&amp;lt;/[hH]\1&amp;gt;&lt;/code>
-待匹配文本：&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->—&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->
-匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title&amp;lt;/H1&amp;gt;&lt;/code>—&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->&lt;/p>
+待匹配文本：&lt;H1>title&lt;/H1>—&lt;H1>title&lt;/H6>
+匹配后结果：&lt;code>&amp;lt;H1&amp;gt;title&amp;lt;/H1&amp;gt;&lt;/code>—&lt;H1>title&lt;/H6>&lt;/p>
 &lt;/blockquote>
-&lt;p>分析：就像以前一样，&lt;code>&amp;lt;[hH]([1-6])&amp;gt;&lt;/code>将匹配任何的标题标签。但是和以前不一样的是，这里的&lt;code>[1-6] &lt;/code>使用了小括号括起来成为了子表达式。这样，匹配结束标签的模式可以通过&lt;code>&amp;lt;/[hH]\1&amp;gt;&lt;/code>中的&lt;code>\1&lt;/code>来引用此子表达式。&lt;code>(1-6)&lt;/code>是一个可以匹配数字 1 到 6 的子表达式，&lt;code>\1&lt;/code>因此可以匹配相同的数字。在这种情况下，&amp;quot;&lt;!-- raw HTML omitted -->title&lt;!-- raw HTML omitted -->&amp;ldquo;将不能匹配。&lt;/p>
+&lt;p>分析：就像以前一样，&lt;code>&amp;lt;[hH]([1-6])&amp;gt;&lt;/code>将匹配任何的标题标签。但是和以前不一样的是，这里的&lt;code>[1-6] &lt;/code>使用了小括号括起来成为了子表达式。这样，匹配结束标签的模式可以通过&lt;code>&amp;lt;/[hH]\1&amp;gt;&lt;/code>中的&lt;code>\1&lt;/code>来引用此子表达式。&lt;code>(1-6)&lt;/code>是一个可以匹配数字 1 到 6 的子表达式，&lt;code>\1&lt;/code>因此可以匹配相同的数字。在这种情况下，&amp;quot;&lt;H1>title&lt;/H6>&amp;ldquo;将不能匹配。&lt;/p>
 &lt;p>注意：后向引用只能够引用子表达式（需要使用小括号括起来），后向引用语法在不同的正则表达式实现中可能是不一样的。引用的匹配一般是从 1 开始。在大多数的正则表达式实现中，0 可以用来引用整个表达式。&lt;/p>
 &lt;h1 id="执行替换操作">执行替换操作&lt;/h1>
 &lt;p>到现在为止我们所看到的正则表达式都是进行搜索，在一段文本中定位单词。正则表达式还可以用来执行替换操作。举个例子，将CA 替换成California和将MI替换成Michigan 并不是正则表达式需要完成的工作。尽管使用正则表达式也是合法的，但是没有必要这么做。事实上，在这里如果使用简单的字符串操作函数的话过程将会变得更加容易。&lt;/p>
@@ -1064,19 +677,7 @@ alt="替换"
 &lt;h1 id="正则表达式在ios中的使用">正则表达式在iOS中的使用。&lt;/h1>
 &lt;h2 id="nspredicate">NSPredicate&lt;/h2>
 &lt;p>NSPredicate通常用来验证一个字符串是不是符合某种格式，例如验证一个字符串是不是由数字和字母组成的：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;song123&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">regex&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;^[a-z0－9A-Z]*$&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
@@ -1084,25 +685,10 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSPredicate&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">predicate&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSPredicate&lt;/span> &lt;span class="nl">predicateWithFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s">@&amp;#34;SELF MATCHES %@&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">regex&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//用predicate匹配string。result为匹配结果，YES or NO。
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="kt">BOOL&lt;/span> &lt;span class="n">result&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">predicate&lt;/span> &lt;span class="nl">evaluateWithObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">string&lt;/span>&lt;span class="p">];&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>关于NSPredicate还有一些其他的可以使用方法们，具体可以查看官方API。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>关于NSPredicate还有一些其他的可以使用方法们，具体可以查看官方API。&lt;/p>
 &lt;h2 id="nsstring">NSString&lt;/h2>
 &lt;p>NSString可以用正则来查找自己当中符合要求的子字符串，例如查找字符串中的数字：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;song123&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//使用正则\d+去string中进行匹配，得到的时匹配到的range，在这里为{4，3}。
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSRange&lt;/span> &lt;span class="n">range&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">rangeOfString&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span> &lt;span class="nl">options&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">NSRegularExpressionSearch&lt;/span>&lt;span class="p">];&lt;/span>
@@ -1111,34 +697,11 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>分析：&lt;code>\d+&lt;/code>用来查找数字，&lt;code>rangeOfString:options:&lt;/code>会返回一个NSRange，用来接收匹配的范围。&lt;code>options&lt;/code>必须要用&lt;code>NSRegularExpressionSearch&lt;/code>，代表用正则去匹配。&lt;code>range.location==NSNotFound&lt;/code>的话代表匹配不到结果。当写正则字符串时，&lt;code>\\ &lt;/code>需要写成&lt;code>\\\\ &lt;/code> ，所以，&lt;code>\d+&lt;/code>需要写成&lt;code>\\\\d+&lt;/code>。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>分析：&lt;code>\d+&lt;/code>用来查找数字，&lt;code>rangeOfString:options:&lt;/code>会返回一个NSRange，用来接收匹配的范围。&lt;code>options&lt;/code>必须要用&lt;code>NSRegularExpressionSearch&lt;/code>，代表用正则去匹配。&lt;code>range.location==NSNotFound&lt;/code>的话代表匹配不到结果。当写正则字符串时，&lt;code>\\ &lt;/code>需要写成&lt;code>\\\\ &lt;/code> ，所以，&lt;code>\d+&lt;/code>需要写成&lt;code>\\\\d+&lt;/code>。&lt;/p>
 &lt;h2 id="nsregularexpression">NSRegularExpression&lt;/h2>
 &lt;p>对于匹配字符串中的数字，我们也可以用到NSRegularExpression这个类实现。它可以用户来查找字符串中符合要求的&lt;code>第一个匹配结果&lt;/code>或者&lt;code>所有匹配结果&lt;/code>。&lt;/p>
 &lt;p>&lt;strong>查找字符串中第一个匹配结果&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;123abc45fgt7tyu&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">pattern&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
@@ -1155,36 +718,9 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">//如果查找到就打印出来，结果为123
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">match&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>分析：&lt;code>firstMatchInString:options:range&lt;/code>会查找字符串中第一个匹配，所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>分析：&lt;code>firstMatchInString:options:range&lt;/code>会查找字符串中第一个匹配，所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>。&lt;/p>
 &lt;p>&lt;strong>查找字符串中所有匹配结果&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;span class="lnt">20
-&lt;/span>&lt;span class="lnt">21
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//待匹配字符串
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;123abc45fgt7tyu&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//正则表达式
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">pattern&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="s">@&amp;#34;&lt;/span>&lt;span class="se">\\&lt;/span>&lt;span class="s">d+&amp;#34;&lt;/span>&lt;span class="p">;&lt;/span>
@@ -1205,24 +741,9 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSLog&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">@&amp;#34;%@&amp;#34;&lt;/span>&lt;span class="p">,[&lt;/span>&lt;span class="n">string&lt;/span> &lt;span class="nl">substringWithRange&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">match&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">range&lt;/span>&lt;span class="p">]);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>分析：&lt;code>matchesInString:options:range:&lt;/code>会查找字符串中的所有匹配，结果是一个包含&lt;code>NSTextCheckingResult&lt;/code>的数组。所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>、&lt;code>45&lt;/code>和&lt;code>7&lt;/code>。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>分析：&lt;code>matchesInString:options:range:&lt;/code>会查找字符串中的所有匹配，结果是一个包含&lt;code>NSTextCheckingResult&lt;/code>的数组。所以&lt;code>123abc45fgt7tyu&lt;/code>的匹配结果为&lt;code>123&lt;/code>、&lt;code>45&lt;/code>和&lt;code>7&lt;/code>。&lt;/p>
 &lt;p>创建&lt;code>NSRegularExpression&lt;/code>对象时的&lt;code>options&lt;/code>参数为&lt;code>NSRegularExpressionOptions&lt;/code>类型，可选值以及代表的意义如下：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;span class="lnt">8
-&lt;/span>&lt;span class="lnt">9
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">NSRegularExpressionOptions&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">typedef&lt;/span> &lt;span class="nf">NS_OPTIONS&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSUInteger&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">NSRegularExpressionOptions&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionCaseInsensitive&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//不区分大小写
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionAllowCommentsAndWhitespace&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//忽略空白和注释
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionIgnoreMetacharacters&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">2&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">//将所有的patter当作普通字符串
@@ -1231,27 +752,10 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionUseUnixLineSeparators&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">5&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="c1">// 只把\n识别为换行符
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSRegularExpressionUseUnicodeWordBoundaries&lt;/span>&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">&amp;lt;&amp;lt;&lt;/span> &lt;span class="mi">6&lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="c1">// 使用 Unicode TR#29 规定的边界，否则，使用传统的正则表达式的词边界
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="p">};&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>关于NSRegularExpression还有一些其他的可以使用方法们，具体可以查看&lt;a class="link" href="https://developer.apple.com/reference/foundation/nsregularexpression?language=objc" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>关于NSRegularExpression还有一些其他的可以使用方法们，具体可以查看&lt;a class="link" href="https://developer.apple.com/reference/foundation/nsregularexpression?language=objc" target="_blank" rel="noopener"
 >这里&lt;/a>。&lt;/p>
 &lt;h1 id="一些常用的正则">一些常用的正则：&lt;/h1>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">邮箱：^[a-zA-Z0-9]{4,}@[a-z0-9A-Z]{2,}\\.[a-zA-Z]{2,}$
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">邮箱：^[a-zA-Z0-9]{4,}@[a-z0-9A-Z]{2,}\\.[a-zA-Z]{2,}$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">手机号码：^((13[0-9])|(15[^4\\D])|(18[0,2,5-9]))\\d{8}$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">大陆固定电话号码：^\\d{4}-|\\d{3}-)?(\\d{8}|\\d{7}$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">身份证号：\\d{14}[[0-9],0-9xX]
@@ -1262,9 +766,7 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">中国邮政编码：^[1-9]\\d{5}(?!\\d)$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">URL：^http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&amp;amp;=]*)?$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">纯汉字：^[\u4e00-\u9fa5]{0,}$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div></description></item><item><title>系统地学习正则表达式(一)：基础篇</title><link>https://lisongrc.github.io/p/201609835121d0/</link><pubDate>Tue, 13 Sep 2016 19:13:44 +0000</pubDate><guid>https://lisongrc.github.io/p/201609835121d0/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>系统地学习正则表达式(一)：基础篇</title><link>https://lisongrc.github.io/p/201609835121d0/</link><pubDate>Tue, 13 Sep 2016 19:13:44 +0000</pubDate><guid>https://lisongrc.github.io/p/201609835121d0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="什么是正则表达式">什么是正则表达式&lt;/h1>
 &lt;p>正则表达式就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，用来表达对字符串的一种过滤逻辑。&lt;/p>
 &lt;p>通过正则表达式可以达到如下的目的：&lt;/p>
@@ -1276,7 +778,7 @@ alt="替换"
 &lt;/blockquote>
 &lt;p>为了让大家更方便地学习，先推荐一个验证正则表达式的软件&lt;code>Regextor&lt;/code>，具体可以看我的&lt;a class="link" href="http://www.jianshu.com/p/b304515d225b" target="_blank" rel="noopener"
 >这篇文章&lt;/a>，里面还推荐了很多Mac上的好软件。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-2387f6323fd09a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="Regextor"
@@ -1599,12 +1101,12 @@ ABC123456&lt;/p>
 &lt;/blockquote>
 &lt;p>分析：&lt;code>(?m)^[0-9a-zA-Z]{4,}$&lt;/code>会去匹配每行&lt;code>用数字或者字母组成的，并且位数大于等于四位&lt;/code>的字符串。&lt;/p>
 &lt;p>注意：如果使用多行模式的话，&lt;code>(?m)&lt;/code>必须放置在正则表达式的开始。
-&lt;code>(?m)&lt;/code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用&lt;code>\A&lt;/code>匹配字符串的开始，&lt;code>\Z&lt;/code>匹配字符串的结束。如果支持的话，则这些元字符的功能和&lt;code>^&lt;/code>、&lt;code>$&lt;/code>是一样的。但是这些元字符不能使用&lt;code>(?m)&lt;/code>修饰，所以也不能用于多行模式。&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;code>(?m)&lt;/code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用&lt;code>\A&lt;/code>匹配字符串的开始，&lt;code>\Z&lt;/code>匹配字符串的结束。如果支持的话，则这些元字符的功能和&lt;code>^&lt;/code>、&lt;code>$&lt;/code>是一样的。但是这些元字符不能使用&lt;code>(?m)&lt;/code>修饰，所以也不能用于多行模式。&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
 &lt;p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。
 在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。&lt;/p>
 &lt;p>有了&lt;code>ClangFormat&lt;/code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装clangformat插件">安装ClangFormat插件&lt;/h1>
 &lt;p>可以手动安装(下载&lt;a class="link" href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="noopener"
 >GitHub项目&lt;/a>编译)，也可以用&lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
@@ -1628,44 +1130,23 @@ loading="lazy"
 alt="选中File"
 >&lt;/p>
 &lt;p>2、在工程目录下创建配置文件&lt;code>.clang-format&lt;/code>文件并编辑。&lt;code>.clang-format&lt;/code>文件用的是&lt;code>YAML&lt;/code>格式:里面要用的字段在后面会详细解释。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 一个注释&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">key2&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value2&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="自定义样式格式化代码"
 >&lt;/p>
 &lt;p>当然如果你已经有&lt;code>.clang-format&lt;/code>文件的话，直接拖动到项目根目录也可以。
 文章结尾有我在用的&lt;code>.clang-format&lt;/code>文件。&lt;/p>
 &lt;p>温馨提示：&lt;code>.clang-format&lt;/code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//隐藏 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">false&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
 &lt;p>上面我们是在项目根目录创建的&lt;code>.clang-format&lt;/code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把&lt;code>.clang-format&lt;/code>文件放在所有项目都在的一个最大根目录下就可以了。&lt;/p>
 &lt;p>###让一段代码不受格式化影响
 如果想让一段代码不受格式化影响，需要将他们包含在&lt;code>// clang-format off&lt;/code> 和 &lt;code>// clang-format on&lt;/code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。
@@ -1814,28 +1295,7 @@ loading="lazy"
 alt="SpacesInParentheses-true"
 >&lt;/p>
 &lt;p>当项目里面有多种语言时，我们可以分别设置样式：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 我们默认用 LLVM 样式, 缩进宽度为4。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">BasedOnStyle&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">LLVM&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">IndentWidth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
@@ -1852,15 +1312,13 @@ alt="SpacesInParentheses-true"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 不格式化Proto文件。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">DisableFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
->.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
+>.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="什么是cocoapods">什么是CocoaPods？&lt;/h1>
 &lt;p>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。&lt;/p>
 &lt;p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。&lt;/p>
 &lt;p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装cocoapods">安装CocoaPods&lt;/h1>
 &lt;p>1.首先更新gem到最新版本，在终端中输入：&lt;code>$ sudo gem update --system&lt;/code>,注意不要把“$”复制上。等待一会儿会看到：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
@@ -1916,21 +1374,11 @@ alt="Test"
 >
 2.然后生成并编辑一个Podfile文件，命令为&lt;code>vim Podfile&lt;/code>，要导入的第三方都要在这里面写上。进去后需要先按&lt;code>I&lt;/code>键进入编辑状态，写完后按&lt;code>esc&lt;/code>，然后按&lt;code>shift+zz&lt;/code>(或者先按&lt;code>shift+:&lt;/code>,再按&lt;code>wq&lt;/code>)就可以保存退出了。下面的动图里面都有。
 Podfile的格式大概如下，其中&amp;rsquo;Test&amp;rsquo;为你的target的名字。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">platform&lt;/span> &lt;span class="ss">:ios&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;8.0&amp;#39;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-ruby" data-lang="ruby">&lt;span class="line">&lt;span class="cl">&lt;span class="n">platform&lt;/span> &lt;span class="ss">:ios&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s1">&amp;#39;8.0&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">target&lt;/span> &lt;span class="s1">&amp;#39;Test&amp;#39;&lt;/span> &lt;span class="k">do&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">pod&lt;/span> &lt;span class="s1">&amp;#39;MJExtension&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="s1">&amp;#39;~&amp;gt; 3.0.13&amp;#39;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="k">end&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;code>3.安装，命令为：&lt;/code>pod install`。
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;code>3.安装，命令为：&lt;/code>pod install`。
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-871f9b7d8a8d4ddb.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="安装第三方"
@@ -2021,123 +1469,45 @@ alt="错误信息.png"
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-533856e1cdb3a9c5.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="CocoaPods插件使用"
->&lt;/p></description></item><item><title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title><link>https://lisongrc.github.io/p/2016095d76ea11/</link><pubDate>Sun, 04 Sep 2016 20:37:30 +0000</pubDate><guid>https://lisongrc.github.io/p/2016095d76ea11/</guid><description>&lt;!-- raw HTML omitted -->
+>&lt;/p></description></item><item><title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title><link>https://lisongrc.github.io/p/2016095d76ea11/</link><pubDate>Sun, 04 Sep 2016 20:37:30 +0000</pubDate><guid>https://lisongrc.github.io/p/2016095d76ea11/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。
 本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看&lt;a class="link" href="https://github.com/lisongrc/UIImage-Categories" target="_blank" rel="noopener"
 >demo&lt;/a>，效果如下：&lt;/p>
-&lt;!-- raw HTML omitted -->
-&lt;!-- raw HTML omitted -->
+&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif" style="zoom: 67%;" />
+&lt;!-- more -->
 &lt;h1 id="颜色相关">颜色相关&lt;/h1>
 &lt;p>&lt;strong>1.根据颜色生成纯色图片&lt;/strong>
 就是根据制定的颜色生成一张纯色的图片&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage *)imageWithColor:(UIColor *)color;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用方法，比如设置UIImageView的图片为红色纯图片：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage imageWithColor:[UIColor redColor]];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>2.取图片上某一像素的颜色&lt;/strong>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage *)imageWithColor:(UIColor *)color;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用方法，比如设置UIImageView的图片为红色纯图片：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage imageWithColor:[UIColor redColor]];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>2.取图片上某一像素的颜色&lt;/strong>
 有时候我们需要获取图片上的某一点的颜色，比如画板应用选择画笔颜色的时候，其实是在一张有所有颜色的图片上点击选择实现的。
 需要注意的是这里要传的参数point是相对于图片上的点。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIColor *)colorAtPixel:(CGPoint)point;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;span class="lnt">7
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (void)handleTap:(UITapGestureRecognizer *)tap
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIColor *)colorAtPixel:(CGPoint)point;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用方法，比如我们在图片上加个tap手势，然后在响应方法里面这样写就可以了：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (void)handleTap:(UITapGestureRecognizer *)tap
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    CGPoint point = [tap locationInView:tap.view];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    UIImage *image = self.imageView.image;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    CGPoint pointInImage = CGPointMake(point.x * image.size.width / self.imageView.frame.size.width, point.y * image.size.height / self.imageView.frame.size.height);
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    self.view.backgroundColor = [image colorAtPixel:pointInImage];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>**3.获得灰度图 **
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>**3.获得灰度图 **
 获取一张彩色图片的黑白图片&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)convertToGrayImage;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用方法：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image convertToGrayImage];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="旋转相关">旋转相关&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)convertToGrayImage;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用方法：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image convertToGrayImage];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="旋转相关">旋转相关&lt;/h1>
 &lt;p>&lt;strong>1.纠正图片的方向&lt;/strong>
 当我们需要读取相册的图片，发现相册里面的方向和展示出来的图片的方向不一样，这时候就要矫正方向了。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)fixOrientation;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用:&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image fixOrientation];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>2.按给定的方向旋转图片&lt;/strong>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)fixOrientation;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image fixOrientation];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>2.按给定的方向旋转图片&lt;/strong>
 在做图片处理工具的时候，我们可能需要旋转图片。
 这个方法的参数是系统枚举UIImageOrientation。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">typedef NS_ENUM(NSInteger, UIImageOrientation) {
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">typedef NS_ENUM(NSInteger, UIImageOrientation) {
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    UIImageOrientationUp,            // default orientation
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    UIImageOrientationDown,          // 180 deg rotation
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">    UIImageOrientationLeft,          // 90 deg CCW
@@ -2149,148 +1519,48 @@ alt="CocoaPods插件使用"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">};
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">- (UIImage*)rotate:(UIImageOrientation)orient;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用，比如顺时针旋转180度：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image rotate:UIImageOrientationDown];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>3.垂直翻转&lt;/strong>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用，比如顺时针旋转180度：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">self.imageView.image = [image rotate:UIImageOrientationDown];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3.垂直翻转&lt;/strong>
 其实就是上面的方法传UIImageOrientationDownMirrored参数。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)flipVertical;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>4.水平翻转&lt;/strong>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)flipVertical;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>4.水平翻转&lt;/strong>
 其实就是传UIImageOrientationUpMirrored参数。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)flipHorizontal;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>5.将图片旋转degrees角度&lt;/strong>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)flipHorizontal;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>5.将图片旋转degrees角度&lt;/strong>
 传入一个自定义的角度。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>6.将图片旋转radians弧度&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)imageRotatedByRadians:(CGFloat)radians;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="生成图相关">生成图相关&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)imageRotatedByDegrees:(CGFloat)degrees;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>6.将图片旋转radians弧度&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)imageRotatedByRadians:(CGFloat)radians;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="生成图相关">生成图相关&lt;/h1>
 &lt;p>&lt;strong>1.截取image对象rect区域内的图像&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)subImageWithRect:(CGRect)rect;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>2.压缩图片至指定尺寸&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)rescaleImageToSize:(CGSize)size;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>3.压缩图片至指定像素&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)rescaleImageToPX:(CGFloat )toPX;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>4.生成一个size大小的平铺图片&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)getTiledImageWithSize:(CGSize)size;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>5..UIView转化为UIImage&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage *)imageFromView:(UIView *)view;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;strong>6.将两个图片生成一张图片&lt;/strong>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)subImageWithRect:(CGRect)rect;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>2.压缩图片至指定尺寸&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)rescaleImageToSize:(CGSize)size;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>3.压缩图片至指定像素&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)rescaleImageToPX:(CGFloat )toPX;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>4.生成一个size大小的平铺图片&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">- (UIImage *)getTiledImageWithSize:(CGSize)size;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>5..UIView转化为UIImage&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage *)imageFromView:(UIView *)view;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>6.将两个图片生成一张图片&lt;/strong>
 firstImage在下面，secondImage在上面&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage*)mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="gif相关">Gif相关&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (UIImage*)mergeImage:(UIImage*)firstImage withImage:(UIImage*)secondImage;
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="gif相关">Gif相关&lt;/h1>
 &lt;p>将一个Gif直接设置为UIImageView的image就可以显示动态图了。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/** 用一个Gif生成UIImage，传入一个GIFData */
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">/** 用一个Gif生成UIImage，传入一个GIFData */
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+ (UIImage *)animatedImageWithAnimatedGIFData:(NSData *)theData;
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">/** 用一个Gif生成UIImage，传入一个GIF路径 */
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">+ (UIImage *)animatedImageWithAnimatedGIFURL:(NSURL *)theURL;
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>使用：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">NSString *path = [[NSBundle mainBundle] pathForResource:@&amp;#34;gif&amp;#34; ofType:@&amp;#34;gif&amp;#34;];
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">NSString *path = [[NSBundle mainBundle] pathForResource:@&amp;#34;gif&amp;#34; ofType:@&amp;#34;gif&amp;#34;];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:path]];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//或者
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfFile:path]];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>希望能帮到大家，持续更新中。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;!-- raw HTML omitted -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>希望能帮到大家，持续更新中。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;p>&lt;strong>Alcatraz&lt;/strong>
 &lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
 >https://github.com/alcatraz/Alcatraz&lt;/a>

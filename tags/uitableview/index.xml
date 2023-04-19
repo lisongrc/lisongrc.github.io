@@ -1,19 +1,12 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UITableView on 小松哥的博客</title><link>https://lisongrc.github.io/tags/uitableview/</link><description>Recent content in UITableView on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Oct 2016 11:29:40 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/uitableview/index.xml" rel="self" type="application/rss+xml"/><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>UITableView on 小松哥的博客</title><link>https://lisongrc.github.io/tags/uitableview/</link><description>Recent content in UITableView on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 09 Oct 2016 11:29:40 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/uitableview/index.xml" rel="self" type="application/rss+xml"/><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。&lt;/p>
 &lt;p>先奉上这篇文章的demo的Github地址：&lt;a class="link" href="https://github.com/lisongrc/UITableViewCellHeightDemo" target="_blank" rel="noopener"
 >UITableViewCellHeightDemo&lt;/a>。大家可以下载下来和文章配合看。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="cell高度计算的历史">cell高度计算的历史&lt;/h1>
 &lt;p>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">heightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">heightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果cell的控件很多，样式很复杂的话，在这里面我们就可能需要写很多代码去做一些复杂的计算，甚至可能导致滑动不流畅。&lt;/p>
 &lt;p>后来也有一些人写了一些第三方去解决这个问题，例如&lt;a class="link" href="https://github.com/forkingdog/UITableView-FDTemplateLayoutCell" target="_blank" rel="noopener"
 >UITableView-FDTemplateLayoutCell&lt;/a>。只要给cell自上而下加好约束，它就可以帮我们去算cell的高度并且可以缓存，省去了我们自己写计算代码的成本。具体可以进链接里面看看它的demo。&lt;/p>
 &lt;p>但是在iOS10的系统下， &lt;code>FDTemplateLayoutCell&lt;/code>会卡界面，而且tableview的行数越多表现的越卡。&lt;/p>
@@ -30,32 +23,14 @@ loading="lazy"
 alt="cell约束"
 >&lt;/p>
 &lt;p>加好约束后，然后告诉tableView自己去适应高度就可以了。有两种写法：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">rowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">UITableViewAutomaticDimension&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">rowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">UITableViewAutomaticDimension&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">tableView&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">estimatedRowHeight&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>或者直接写这个代理方法就可以了&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>或者直接写这个代理方法就可以了&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="k">return&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个的意思就是告诉tableView，你需要自己适应高度，我不给你算啦哈哈哈。但是我们需要告诉它一个大概高度，例如上面的100，理论上这个是可以随便写的，并不影响显示结果，但是越接近真实高度越好。&lt;/p>
 &lt;p>来看下demo效果：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-118a76ca9e5bb550.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
@@ -64,17 +39,9 @@ alt="demo"
 &lt;p>我们看到，cell已经自己适应内容算出了高度，是不是很方便呢哼哼。
 具体的代码大家可以去demo看哦。&lt;/p>
 &lt;p>其实section的header和footer也是可以自动适应的，对应的方法有：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForHeaderInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForHeaderInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForFooterInSection:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSInteger&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">section&lt;/span>&lt;span class="p">;&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是我们在实际开发中，一般都是根本没有header和footer，有的话一般也是给一个固定高度。所以在这里就不讲解了，原理都一样。&lt;/p>
 &lt;h1 id="可能遇到的问题和解决办法">可能遇到的问题和解决办法&lt;/h1>
 &lt;p>&lt;strong>1.高度不对&lt;/strong>
 有时候有可能运行出来后看到cell的高度显示的不对，就像这样：
@@ -95,38 +62,8 @@ loading="lazy"
 alt="Untitled.gif"
 >&lt;/p>
 &lt;p>解决这个问题的办法是去缓存cell的高度，代码如下：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">@property&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">nonatomic&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">strong&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">//缓存高度所用字典
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;span class="lnt">18
-&lt;/span>&lt;span class="lnt">19
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - UITableViewDelegate
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="k">@property&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="k">nonatomic&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="k">strong&lt;/span>&lt;span class="p">)&lt;/span> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="c1">//缓存高度所用字典
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - UITableViewDelegate
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="p">-(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">estimatedHeightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSNumber&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span> &lt;span class="nl">objectForKey&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">indexPath&lt;/span>&lt;span class="p">];&lt;/span>
@@ -145,9 +82,7 @@ alt="Untitled.gif"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="n">NSNumber&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="l">@(&lt;/span>&lt;span class="n">cell&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">frame&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">size&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">height&lt;/span>&lt;span class="l">)&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="err"> &lt;/span> &lt;span class="err"> &lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="nb">self&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="n">heightAtIndexPath&lt;/span> &lt;span class="nl">setObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">height&lt;/span> &lt;span class="nl">forKey&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">indexPath&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。&lt;/p>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>解释一下，就是用一个字典做容器，在cell将要显示的时候在字典中保存这行cell的高度。然后在调用estimatedHeightForRowAtIndexPath方法时，先去字典查看有没有缓存高度，有就返回，没有就返回一个大概高度。&lt;/p>
 &lt;p>缓存高度之后，在demo里面多试几次，发现点击状态栏已经可以精确滚动回顶部了：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-b09cef057ef8ba9a.gif?imageMogr2/auto-orient/strip"
 loading="lazy"

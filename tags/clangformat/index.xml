@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ClangFormat on 小松哥的博客</title><link>https://lisongrc.github.io/tags/clangformat/</link><description>Recent content in ClangFormat on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 10 Sep 2016 21:44:04 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/clangformat/index.xml" rel="self" type="application/rss+xml"/><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;!-- raw HTML omitted -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ClangFormat on 小松哥的博客</title><link>https://lisongrc.github.io/tags/clangformat/</link><description>Recent content in ClangFormat on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 10 Sep 2016 21:44:04 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/clangformat/index.xml" rel="self" type="application/rss+xml"/><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
 &lt;p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。
 在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。&lt;/p>
 &lt;p>有了&lt;code>ClangFormat&lt;/code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;h1 id="安装clangformat插件">安装ClangFormat插件&lt;/h1>
 &lt;p>可以手动安装(下载&lt;a class="link" href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="noopener"
 >GitHub项目&lt;/a>编译)，也可以用&lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
@@ -27,44 +27,23 @@ loading="lazy"
 alt="选中File"
 >&lt;/p>
 &lt;p>2、在工程目录下创建配置文件&lt;code>.clang-format&lt;/code>文件并编辑。&lt;code>.clang-format&lt;/code>文件用的是&lt;code>YAML&lt;/code>格式:里面要用的字段在后面会详细解释。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nt">key1&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value1&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 一个注释&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">key2&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">value2&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-da9562ec5051cc32.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="自定义样式格式化代码"
 >&lt;/p>
 &lt;p>当然如果你已经有&lt;code>.clang-format&lt;/code>文件的话，直接拖动到项目根目录也可以。
 文章结尾有我在用的&lt;code>.clang-format&lt;/code>文件。&lt;/p>
 &lt;p>温馨提示：&lt;code>.clang-format&lt;/code>文件是隐藏文件，默认是看不见的。需要在终端输入以下命令：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;span class="lnt">3
-&lt;/span>&lt;span class="lnt">4
-&lt;/span>&lt;span class="lnt">5
-&lt;/span>&lt;span class="lnt">6
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">//显示 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">true&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//隐藏 隐藏文件
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">defaults write com.apple.finder AppleShowAllFiles -bool &lt;span class="nb">false&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">killall Finder
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="全局配置">全局配置&lt;/h1>
 &lt;p>上面我们是在项目根目录创建的&lt;code>.clang-format&lt;/code>文件，每次建新项目都要有。如果你想让所有的项目公用一个文件，把&lt;code>.clang-format&lt;/code>文件放在所有项目都在的一个最大根目录下就可以了。&lt;/p>
 &lt;p>###让一段代码不受格式化影响
 如果想让一段代码不受格式化影响，需要将他们包含在&lt;code>// clang-format off&lt;/code> 和 &lt;code>// clang-format on&lt;/code>这两句注释之间，这样这段代码就不会被格式化，但是这两句注释本身是会被格式化的。
@@ -213,28 +192,7 @@ loading="lazy"
 alt="SpacesInParentheses-true"
 >&lt;/p>
 &lt;p>当项目里面有多种语言时，我们可以分别设置样式：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt"> 1
-&lt;/span>&lt;span class="lnt"> 2
-&lt;/span>&lt;span class="lnt"> 3
-&lt;/span>&lt;span class="lnt"> 4
-&lt;/span>&lt;span class="lnt"> 5
-&lt;/span>&lt;span class="lnt"> 6
-&lt;/span>&lt;span class="lnt"> 7
-&lt;/span>&lt;span class="lnt"> 8
-&lt;/span>&lt;span class="lnt"> 9
-&lt;/span>&lt;span class="lnt">10
-&lt;/span>&lt;span class="lnt">11
-&lt;/span>&lt;span class="lnt">12
-&lt;/span>&lt;span class="lnt">13
-&lt;/span>&lt;span class="lnt">14
-&lt;/span>&lt;span class="lnt">15
-&lt;/span>&lt;span class="lnt">16
-&lt;/span>&lt;span class="lnt">17
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-yaml" data-lang="yaml">&lt;span class="line">&lt;span class="cl">&lt;span class="nn">---&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 我们默认用 LLVM 样式, 缩进宽度为4。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">BasedOnStyle&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="l">LLVM&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">IndentWidth&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="m">4&lt;/span>&lt;span class="w">
@@ -251,7 +209,5 @@ alt="SpacesInParentheses-true"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="c"># 不格式化Proto文件。&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">DisableFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
 >.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item></channel></rss>

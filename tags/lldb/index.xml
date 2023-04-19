@@ -1,10 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLDB on 小松哥的博客</title><link>https://lisongrc.github.io/tags/lldb/</link><description>Recent content in LLDB on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 10 Mar 2019 20:05:31 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/lldb/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;!-- raw HTML omitted -->
-&lt;h1 id="一lldb">一、LLDB&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>LLDB on 小松哥的博客</title><link>https://lisongrc.github.io/tags/lldb/</link><description>Recent content in LLDB on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 10 Mar 2019 20:05:31 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/lldb/index.xml" rel="self" type="application/rss+xml"/><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
 &lt;h2 id="什么是lldb">什么是LLDB&lt;/h2>
 &lt;p>&lt;a class="link" href="http://lldb.llvm.org/" target="_blank" rel="noopener"
 >LLDB&lt;/a> 是一个有着 REPL 的特性和 C++ ,Python 插件的开源调试器。Xcode中绑定了LLDB，调试器允许你在程序运行时暂停它，可以查看变量的值，执行自定的指令。&lt;/p>
 &lt;p>在程序里你需要的地方设置断点。当断点断住的时候你就能看到我们进入LLDB调试器了，下面这个界面对于iOS开发者来说应该不陌生了：&lt;/p>
-&lt;!-- raw HTML omitted -->
+&lt;!-- more -->
 &lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b21e475e796f9734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
@@ -53,59 +52,27 @@ loading="lazy"
 >&lt;/p>
 &lt;h3 id="visualize">visualize&lt;/h3>
 &lt;p>它可以使用Mac的预览打开一个 UIImage, CGImageRef, UIView, 或 CALayer。 我们其实可以用这个功能来截图或者查看一个view的具体内容：&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) visualize 0x7feb5cf18210
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) visualize 0x7feb5cf18210
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) visualize self.view
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="maskunmask">mask/unmask&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="maskunmask">mask/unmask&lt;/h3>
 &lt;p>mask用来在view或者layer上覆盖一个半透明的矩形， unmask解除。当我们想找一个view的时候可以使用。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) mask self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) mask self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unmask 0x7f8732e037b0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7d874313aee8c544.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-7d874313aee8c544.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="borderunborder">border/unborder&lt;/h3>
 &lt;p>border可以给view或者layer添加边框，unborder解除。当我们想找一个view的时候可以使用。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) border self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) border self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) unborder 0x7f8732e037b0
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d20ce0e42c41a40f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-d20ce0e42c41a40f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
 &lt;h3 id="showhide">show/hide&lt;/h3>
 &lt;p>显示隐藏一个view或者layer。&lt;/p>
-&lt;div class="highlight">&lt;div class="chroma">
-&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
-&lt;/span>&lt;span class="lnt">2
-&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
-&lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) hide self.imageView
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">(lldb) hide self.imageView
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">(lldb) show self.imageView
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
-&lt;/div>
-&lt;/div>&lt;h3 id="caflush">caflush&lt;/h3>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="caflush">caflush&lt;/h3>
 &lt;p>这个命令用来刷新UI，当我们改变了UI的时候，不用重新启动，使用caflush刷新UI就行。&lt;/p>
 &lt;h3 id="presponder">presponder&lt;/h3>
 &lt;p>打印响应者链：&lt;/p>
