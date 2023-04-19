@@ -2,7 +2,6 @@
 &lt;p>找Hexo主题的话可以去Github搜索 &lt;code>hexo-theme&lt;/code>，然后都点进去看看，挑一个自己喜欢的样式；一般主题下都有使用教程。&lt;/p>
 &lt;p>这里以 &lt;a class="link" href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener"
 >hexo-theme-next&lt;/a> 为例。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装-next">安装 NexT&lt;/h1>
 &lt;p>执行以下命令会把 &lt;code>NexT &lt;/code> 主题clone到博客的 &lt;code>themes/next&lt;/code> 目录下。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd hexo

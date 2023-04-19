@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>sublime on 小松哥的博客</title><link>https://lisongrc.github.io/tags/sublime/</link><description>Recent content in sublime on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Feb 2022 18:47:48 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/sublime/index.xml" rel="self" type="application/rss+xml"/><item><title>sublime去除重复行</title><link>https://lisongrc.github.io/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/</link><pubDate>Sun, 13 Feb 2022 18:47:48 +0000</pubDate><guid>https://lisongrc.github.io/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;!-- more -->
-&lt;p>1.排序&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">edit-&amp;gt; sort lines
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.替换&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">^(.+)$[\r\n](^\1$[\r\n]{0, 1})+
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>为&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">\1\n
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item></channel></rss>

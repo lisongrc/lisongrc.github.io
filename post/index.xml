@@ -1,14 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 小松哥的博客</title><link>https://lisongrc.github.io/post/</link><description>Recent content in Posts on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Feb 2022 18:47:48 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>sublime去除重复行</title><link>https://lisongrc.github.io/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/</link><pubDate>Sun, 13 Feb 2022 18:47:48 +0000</pubDate><guid>https://lisongrc.github.io/p/202202sublime%E5%8E%BB%E9%99%A4%E9%87%8D%E5%A4%8D%E8%A1%8C/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;!-- more -->
-&lt;p>1.排序&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">edit-&amp;gt; sort lines
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>2.替换&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">^(.+)$[\r\n](^\1$[\r\n]{0, 1})+
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>为&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">\1\n
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>查看Mac SSD寿命与健康度</title><link>https://lisongrc.github.io/p/2022023fc8d0f9/</link><pubDate>Sun, 13 Feb 2022 18:31:00 +0000</pubDate><guid>https://lisongrc.github.io/p/2022023fc8d0f9/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>如何确认目前Mac 电脑所用的SSD 寿命和健康度还剩多久呢？&lt;/p>
-&lt;!-- more -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 小松哥的博客</title><link>https://lisongrc.github.io/post/</link><description>Recent content in Posts on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sun, 13 Feb 2022 18:31:00 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>查看Mac SSD寿命与健康度</title><link>https://lisongrc.github.io/p/2022023fc8d0f9/</link><pubDate>Sun, 13 Feb 2022 18:31:00 +0000</pubDate><guid>https://lisongrc.github.io/p/2022023fc8d0f9/</guid><description>&lt;p>如何确认目前Mac 电脑所用的SSD 寿命和健康度还剩多久呢？&lt;/p>
 &lt;h1 id="安装工具smartmontools">安装工具smartmontools&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install smartmontools
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="通过diskutil-list指令来查询ssd硬盘设备标签代码">通过&lt;code>diskutil list&lt;/code>指令来查询SSD硬盘设备标签代码&lt;/h1>
@@ -44,7 +34,6 @@ loading="lazy"
 &lt;p>通常我们主要确认「寿命百分比（Percentage Used）」这项数值就好，通常达到90%以上就要额外注意。&lt;/p></description></item><item><title>Homebrew的使用</title><link>https://lisongrc.github.io/p/2021043dc4d0c2/</link><pubDate>Sun, 25 Apr 2021 23:18:12 +0000</pubDate><guid>https://lisongrc.github.io/p/2021043dc4d0c2/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>&lt;a class="link" href="https://brew.sh/" target="_blank" rel="noopener"
 >Homebrew&lt;/a>可以方便地安装你需要的包或者app。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="一安装">一、安装&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">/bin/bash -c &lt;span class="s2">&amp;#34;&lt;/span>&lt;span class="k">$(&lt;/span>curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh&lt;span class="k">)&lt;/span>&lt;span class="s2">&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="二使用">二、使用&lt;/h1>
@@ -98,7 +87,6 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">brew bundle install --file&lt;span class="o">=&lt;/span>&lt;span class="s2">&amp;#34;~/Library/Mobile Documents/com~apple~CloudDocs/Brewfile&amp;#34;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Chrome好用的插件，持续更新</title><link>https://lisongrc.github.io/p/2021045dc07d30/</link><pubDate>Sat, 24 Apr 2021 10:15:05 +0000</pubDate><guid>https://lisongrc.github.io/p/2021045dc07d30/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>本文总结一些Chrome上好用的插件们。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="扩展管理器extension-managerhttpschromegooglecomwebstoredetailextension-managergjldcdngmdknpinoemndlidpcabkggco">&lt;a class="link" href="https://chrome.google.com/webstore/detail/extension-manager/gjldcdngmdknpinoemndlidpcabkggco" target="_blank" rel="noopener"
 >扩展管理器（Extension Manager）&lt;/a>&lt;/h1>
 &lt;p>一键管理所有扩展，快速开启/禁用、批量闪电管理，智能排序，右键卸载、锁定、选项配置，角标提醒，大小布局随心配。快捷、简单、安全。&lt;/p>
@@ -184,7 +172,6 @@ loading="lazy"
 loading="lazy"
 >&lt;/p></description></item><item><title>一些网站们，持续更新</title><link>https://lisongrc.github.io/p/2021044decb28c/</link><pubDate>Sat, 17 Apr 2021 20:46:53 +0000</pubDate><guid>https://lisongrc.github.io/p/2021044decb28c/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>本文总结一些有用的网站们。&lt;/p>
-&lt;!-- more -->
 &lt;ul>
 &lt;li>&lt;a class="link" href="https://www.processon.com/" target="_blank" rel="noopener"
 >processon&lt;/a> ：免费在线作图、实时协作，支持流程图、思维导图、原型图、UML、网络拓扑图、组织结构图等&lt;/li>
@@ -227,10 +214,9 @@ loading="lazy"
 &lt;li>&lt;a class="link" href="https://opensource.tencent.com/projects" target="_blank" rel="noopener"
 >腾讯开源项目&lt;/a>&lt;/li>
 &lt;li>&lt;/li>
-&lt;/ul></description></item><item><title>iOS开发常用的效率工具，持续更新</title><link>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link><pubDate>Sat, 17 Apr 2021 18:29:22 +0000</pubDate><guid>https://lisongrc.github.io/p/202104ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E7%9A%84%E6%95%88%E7%8E%87%E5%B7%A5%E5%85%B7%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
+&lt;/ul></description></item><item><title>iOS开发常用的效率工具，持续更新</title><link>https://lisongrc.github.io/p/202104d0a1724/</link><pubDate>Sat, 17 Apr 2021 18:29:22 +0000</pubDate><guid>https://lisongrc.github.io/p/202104d0a1724/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>之前总结了 &lt;a class="link" href="https://blog.lisong.pro/2021/04e9bf20fb.html" target="_blank" rel="noopener"
 >Mac上好用的软件推荐&lt;/a>，本文总结一下iOS开发常用的效率工具，所谓工欲善其事，必先利其器，好的工具会使我们的生活更美好。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="imageoptimhttpsimageoptimcommac">&lt;a class="link" href="https://imageoptim.com/mac" target="_blank" rel="noopener"
 >imageoptim&lt;/a>&lt;/h1>
 &lt;p>压缩图片，减少包体积。&lt;/p>
@@ -299,9 +285,8 @@ alt="swiftify"
 &lt;p>&lt;img src="https://lisongrc.github.io/images/appsight.png"
 loading="lazy"
 alt="appsight"
->&lt;/p></description></item><item><title>Mac上好用的软件推荐，持续更新</title><link>https://lisongrc.github.io/p/202104mac%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</link><pubDate>Fri, 16 Apr 2021 14:08:24 +0000</pubDate><guid>https://lisongrc.github.io/p/202104mac%E4%B8%8A%E5%A5%BD%E7%94%A8%E7%9A%84%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
+>&lt;/p></description></item><item><title>Mac上好用的软件推荐，持续更新</title><link>https://lisongrc.github.io/p/202104e9bf20fb/</link><pubDate>Fri, 16 Apr 2021 14:08:24 +0000</pubDate><guid>https://lisongrc.github.io/p/202104e9bf20fb/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>本文总结一下Mac上的软件们，不仅限于开发相关的软件。所谓工欲善其事，必先利其器，好的软件会使我们的生活更美好。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装包打不开的问题">安装包打不开的问题&lt;/h1>
 &lt;p>有时候我们下载下来的安装包双击后打不开，提示&lt;code>来自身份不明的开发者&lt;/code>或者提示&lt;code>已损坏&lt;/code>，解决办法如下：&lt;/p>
 &lt;p>在终端输入&lt;code>sudo spctl --master-disable&lt;/code>回车，输入密码回车，然后进入&lt;code>系统偏好设置-安全性与隐私-通用&lt;/code>，然后点击左下角的锁，输入密码开锁，然后选择&lt;code>任何来源&lt;/code>就可以了。系统会记录这个选择，如果30天没有安装过其它来源的软件，系统会还原到默认设置。&lt;/p>
@@ -533,10 +518,9 @@ alt="Typora"
 &lt;p>&lt;img src="https://raw.githubusercontent.com/marktext/marktext/develop/docs/marktext.png"
 loading="lazy"
 alt="marktext"
->&lt;/p></description></item><item><title>Linux使用相关的一些东西</title><link>https://lisongrc.github.io/p/202103linux%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</link><pubDate>Sat, 27 Mar 2021 23:05:38 +0000</pubDate><guid>https://lisongrc.github.io/p/202103linux%E4%BD%BF%E7%94%A8%E7%9B%B8%E5%85%B3%E7%9A%84%E4%B8%80%E4%BA%9B%E4%B8%9C%E8%A5%BF/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
+>&lt;/p></description></item><item><title>Linux使用相关的一些东西</title><link>https://lisongrc.github.io/p/20210391370673/</link><pubDate>Sat, 27 Mar 2021 23:05:38 +0000</pubDate><guid>https://lisongrc.github.io/p/20210391370673/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
 &lt;p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用&lt;a class="link" href="https://www.debian.org/" target="_blank" rel="noopener"
 >Debian&lt;/a>，所以这些基本上都是在Debian环境下的。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="启用root帐户登录ssh">启用root帐户登录ssh&lt;/h1>
 &lt;p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 &lt;code>/etc/ssh/sshd_config&lt;/code> ：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PermitRootLogin prohibit-password&lt;/span>
@@ -579,10 +563,9 @@ alt="marktext"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">update-rc.d MyTest defaults
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果需要删除这个开机启动项，则使用命令：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">update-rc.d -f MyTest remove
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>nmap和masscan的使用</title><link>https://lisongrc.github.io/p/202103nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/</link><pubDate>Thu, 25 Mar 2021 22:53:10 +0000</pubDate><guid>https://lisongrc.github.io/p/202103nmap%E5%92%8Cmasscan%E7%9A%84%E4%BD%BF%E7%94%A8/</guid><description>&lt;p>&lt;a class="link" href="https://nmap.org/man/zh/" target="_blank" rel="noopener"
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>nmap和masscan的使用</title><link>https://lisongrc.github.io/p/202103f85f9aaa/</link><pubDate>Thu, 25 Mar 2021 22:53:10 +0000</pubDate><guid>https://lisongrc.github.io/p/202103f85f9aaa/</guid><description>&lt;p>&lt;a class="link" href="https://nmap.org/man/zh/" target="_blank" rel="noopener"
 >nmap&lt;/a> 和 &lt;a class="link" href="https://github.com/robertdavidgraham/masscan" target="_blank" rel="noopener"
 >masscan&lt;/a> 都是出名的端口扫描工具，本文讲解一下大概怎么使用。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="nmap">nmap&lt;/h1>
 &lt;p>nmap是一个老牌的互联网端口扫描器。&lt;/p>
 &lt;h2 id="安装">安装&lt;/h2>
@@ -631,9 +614,7 @@ alt="marktext"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">range = 0.0.0.0-255.255.255.255
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">excludefile = exclude.txt
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan -c myscan.conf
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>更过高级和详细的用法可以去看官方文档。&lt;/p></description></item><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
-&lt;!-- more -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>更过高级和详细的用法可以去看官方文档。&lt;/p></description></item><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
 &lt;h1 id="对应键位">对应键位&lt;/h1>
 &lt;blockquote>
 &lt;p>⌘：command&lt;/p>
@@ -703,7 +684,6 @@ alt="marktext"
 &lt;p>找Hexo主题的话可以去Github搜索 &lt;code>hexo-theme&lt;/code>，然后都点进去看看，挑一个自己喜欢的样式；一般主题下都有使用教程。&lt;/p>
 &lt;p>这里以 &lt;a class="link" href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener"
 >hexo-theme-next&lt;/a> 为例。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装-next">安装 NexT&lt;/h1>
 &lt;p>执行以下命令会把 &lt;code>NexT &lt;/code> 主题clone到博客的 &lt;code>themes/next&lt;/code> 目录下。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">cd hexo
@@ -721,7 +701,6 @@ alt="marktext"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="详细设置">详细设置&lt;/h1>
 &lt;p>这个主题的一些详细设置，比如添加菜单、添加分类什么的，可以看 &lt;a class="link" href="https://theme-next.iissnan.com/" target="_blank" rel="noopener"
 >官方文档&lt;/a> ，讲的很详细。&lt;/p></description></item><item><title>给博客绑定域名并启用HTTPS</title><link>https://lisongrc.github.io/p/2021039700ba13/</link><pubDate>Tue, 02 Mar 2021 01:12:48 +0000</pubDate><guid>https://lisongrc.github.io/p/2021039700ba13/</guid><description>&lt;p>你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="gitlab-pages">GitLab Pages&lt;/h1>
 &lt;p>在仓库的 &lt;code>Settings -&amp;gt; Pages&lt;/code> 里面，点击 &lt;code>New Domain&lt;/code> 出现这个界面：&lt;/p>
 &lt;p>&lt;img src="https://lisongrc.github.io/images/NewPagesDomain.png"
@@ -751,7 +730,6 @@ loading="lazy"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">blog.lisong.com
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hexo搭建个人博客并部署到Gitlab和GitHub</title><link>https://lisongrc.github.io/p/202102d52b09e8/</link><pubDate>Sun, 28 Feb 2021 22:37:01 +0000</pubDate><guid>https://lisongrc.github.io/p/202102d52b09e8/</guid><description>&lt;h1 id="前言">前言&lt;/h1>
 &lt;p>之前在一些平台写过一段时间博客，后来由于各种原因就慢慢荒废了；最近心血来潮想要把一些东西记录下来，所以决定搭建一个博客玩玩。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="hexo介绍">Hexo介绍&lt;/h1>
 &lt;p>&lt;a class="link" href="https://hexo.io/zh-cn/" target="_blank" rel="noopener"
 >Hexo&lt;/a> 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。&lt;/p>
@@ -831,12 +809,11 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后运行以下命令，就会把生成的 &lt;code>public&lt;/code> 文件夹里的东西都push上去。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">hexo clean &amp;amp;&amp;amp; hexo d
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在Github上，打开项目的 &lt;code>Settings&lt;/code> ，找到 &lt;code>GitHub Pages&lt;/code> 设置，如果没有开启的话先开启，然后 &lt;code>Branch&lt;/code>选择 &lt;code>main&lt;/code>，&lt;code>folder&lt;/code> 选择 &lt;code>/(root)&lt;/code>。勾选上 &lt;code>Enforce HTTPS&lt;/code> 启用HTTPS。&lt;/p>
-&lt;p>都弄好之后，稍等片刻，打开 &lt;code>https://username.github.io&lt;/code> 就能看到自己的博客了。&lt;/p></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
+&lt;p>都弄好之后，稍等片刻，打开 &lt;code>https://username.github.io&lt;/code> 就能看到自己的博客了。&lt;/p></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/2019035053e96d/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/2019035053e96d/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
 &lt;h2 id="什么是lldb">什么是LLDB&lt;/h2>
 &lt;p>&lt;a class="link" href="http://lldb.llvm.org/" target="_blank" rel="noopener"
 >LLDB&lt;/a> 是一个有着 REPL 的特性和 C++ ,Python 插件的开源调试器。Xcode中绑定了LLDB，调试器允许你在程序运行时暂停它，可以查看变量的值，执行自定的指令。&lt;/p>
 &lt;p>在程序里你需要的地方设置断点。当断点断住的时候你就能看到我们进入LLDB调试器了，下面这个界面对于iOS开发者来说应该不陌生了：&lt;/p>
-&lt;!-- more -->
 &lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b21e475e796f9734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
@@ -942,12 +919,10 @@ loading="lazy"
 &lt;h3 id="pcurl">pcurl&lt;/h3>
 &lt;p>把一个NSURLRequest (HTTP)打印成curl命令。&lt;/p>
 &lt;p>更多的命令大家可以去&lt;a class="link" href="https://github.com/facebook/chisel/wiki" target="_blank" rel="noopener"
->官方文档&lt;/a>看。&lt;/p></description></item><item><title>iOS中@功能的完整实现</title><link>https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/</link><pubDate>Sat, 26 May 2018 23:31:55 +0000</pubDate><guid>https://lisongrc.github.io/p/201805ios%E4%B8%AD@%E5%8A%9F%E8%83%BD%E7%9A%84%E5%AE%8C%E6%95%B4%E5%AE%9E%E7%8E%B0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：
+>官方文档&lt;/a>看。&lt;/p></description></item><item><title>iOS中@功能的完整实现</title><link>https://lisongrc.github.io/p/201805784ea6a5/</link><pubDate>Sat, 26 May 2018 23:31:55 +0000</pubDate><guid>https://lisongrc.github.io/p/201805784ea6a5/</guid><description>&lt;p>哼哼想不到吧，我又回来啦！好久没写文章了，以后尽量多写写吧。最近看到有人问@功能的需求，就大概写了写，先看看实现效果：
 &lt;img src="https://upload-images.jianshu.io/upload_images/1608265-293158e5eb301f17.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 >&lt;/p>
-&lt;!-- more -->
 &lt;p>这个功能的具体要求如下：&lt;/p>
 &lt;blockquote>
 &lt;p>1、一个@是由一个&lt;code>@&lt;/code>字符和一个空格&lt;code> &lt;/code>字符包起来的。
@@ -1147,12 +1122,10 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h6 id="8cell高度自动计算系统自己支持不了解的可以看我的这篇文章httpswwwjianshucomp64f0e1557562">8、cell高度自动计算，系统自己支持，不了解的可以看我的&lt;a class="link" href="https://www.jianshu.com/p/64f0e1557562" target="_blank" rel="noopener"
 >这篇文章&lt;/a>。&lt;/h6>
 &lt;p>好了，大概就是这么些东西，是不是很简单呢，如果还有不明白的地方就下载&lt;a class="link" href="https://github.com/lisongrc/ATDemo" target="_blank" rel="noopener"
->本文demo&lt;/a>仔细看看吧。&lt;/p></description></item><item><title>Runtime的运用和减少应用崩溃</title><link>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</link><pubDate>Sat, 03 Jun 2017 14:18:38 +0000</pubDate><guid>https://lisongrc.github.io/p/201706runtime%E7%9A%84%E8%BF%90%E7%94%A8%E5%92%8C%E5%87%8F%E5%B0%91%E5%BA%94%E7%94%A8%E5%B4%A9%E6%BA%83/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>Objective-C 是一个动态语言，它需要一个运行时系统来动态的创建类和对象、进行消息传递和转发。关于Runtime的知识大家可以参看&lt;a class="link" href="https://opensource.apple.com/tarballs/objc4/" target="_blank" rel="noopener"
+>本文demo&lt;/a>仔细看看吧。&lt;/p></description></item><item><title>Runtime的运用和减少应用崩溃</title><link>https://lisongrc.github.io/p/201706dfe7f658/</link><pubDate>Sat, 03 Jun 2017 14:18:38 +0000</pubDate><guid>https://lisongrc.github.io/p/201706dfe7f658/</guid><description>&lt;p>Objective-C 是一个动态语言，它需要一个运行时系统来动态的创建类和对象、进行消息传递和转发。关于Runtime的知识大家可以参看&lt;a class="link" href="https://opensource.apple.com/tarballs/objc4/" target="_blank" rel="noopener"
 >Apple开源的Runtime代码&lt;/a> 和&lt;a class="link" href="https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/ObjCRuntimeGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40008048-CH1-SW1" target="_blank" rel="noopener"
 >Rumtime编程指南&lt;/a> 。&lt;/p>
 &lt;p>本文总结一些其常用的方法。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="一新建测试demo">一、新建测试Demo&lt;/h1>
 &lt;p>我们先创建一个测试Demo如下图，其中TestClass是一个测试类，TestClass+Category是它的一个分类，NSObject+Runtime封装了一些Runtime的方法。大家可以在这里下载&lt;a class="link" href="https://github.com/lisongrc/RuntimeDemo" target="_blank" rel="noopener"
 >Demo&lt;/a>。&lt;/p>
@@ -1345,10 +1318,8 @@ alt="Safe"
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">array&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="l">@[&lt;/span>&lt;span class="s">@&amp;#34;aa&amp;#34;&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="s">@&amp;#34;ddd&amp;#34;&lt;/span>&lt;span class="l">]&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">array&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>好了，先说到这里吧。大家可以下载我的&lt;a class="link" href="https://github.com/lisongrc/RuntimeDemo" target="_blank" rel="noopener"
->demo&lt;/a>详细看一下。&lt;/p></description></item><item><title>iOS中使用Fastlane实现自动化打包和发布</title><link>https://lisongrc.github.io/p/201705ios%E4%B8%AD%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E5%92%8C%E5%8F%91%E5%B8%83/</link><pubDate>Sun, 14 May 2017 00:12:27 +0000</pubDate><guid>https://lisongrc.github.io/p/201705ios%E4%B8%AD%E4%BD%BF%E7%94%A8fastlane%E5%AE%9E%E7%8E%B0%E8%87%AA%E5%8A%A8%E5%8C%96%E6%89%93%E5%8C%85%E5%92%8C%E5%8F%91%E5%B8%83/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="简介">简介&lt;/h1>
+>demo&lt;/a>详细看一下。&lt;/p></description></item><item><title>iOS中使用Fastlane实现自动化打包和发布</title><link>https://lisongrc.github.io/p/201705146f90c7/</link><pubDate>Sun, 14 May 2017 00:12:27 +0000</pubDate><guid>https://lisongrc.github.io/p/201705146f90c7/</guid><description>&lt;h1 id="简介">简介&lt;/h1>
 &lt;p>Fastlane是一套使用Ruby写的自动化工具集，用于iOS和Android的自动化打包、发布等工作，可以节省大量的时间。&lt;/p>
-&lt;!-- more -->
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-f63702702cfa790f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="Fastlane"
@@ -1616,11 +1587,9 @@ alt="fastlane目录"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后执行这个lane的时候：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">$ fastlane appstore version:2.4.0 build:2.0
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>好啦，先说到这里吧，Fastlane能做的事情还有很多，大家可以去好好看看&lt;a class="link" href="https://docs.fastlane.tools/" target="_blank" rel="noopener"
->文档&lt;/a>，研究一些高级的用法吧！&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。&lt;/p>
+>文档&lt;/a>，研究一些高级的用法吧！&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。&lt;/p>
 &lt;h1 id="为何要自定义xcode模板">为何要自定义Xcode模板&lt;/h1>
 &lt;p>有时候公司会要求一定的代码规范，例如控制器中需要用&lt;code>#pragma mark - &lt;/code>来分割各个方法们，像这样：&lt;/p>
-&lt;!-- more -->
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - LifeCycle
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">dealloc&lt;/span> &lt;span class="p">{}&lt;/span>
@@ -1800,13 +1769,11 @@ alt="新建一个控制器"
 loading="lazy"
 alt="选择模板"
 >
-好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>iOS 9 通用链接（Universal Links）</title><link>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</link><pubDate>Fri, 03 Feb 2017 16:09:40 +0000</pubDate><guid>https://lisongrc.github.io/p/201702ios-9-%E9%80%9A%E7%94%A8%E9%93%BE%E6%8E%A5universal-links/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="什么是universal-links">什么是Universal Links?&lt;/h1>
+好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>iOS 9 通用链接（Universal Links）</title><link>https://lisongrc.github.io/p/20170242f0d4d/</link><pubDate>Fri, 03 Feb 2017 16:09:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20170242f0d4d/</guid><description>&lt;h1 id="什么是universal-links">什么是Universal Links?&lt;/h1>
 &lt;p>在iOS9之前，对于从各种从浏览器、Safari中唤醒APP的需求，我们通常只能使用scheme。但是这种方式需要提前判断系统中是否安装了能够响应此scheme的app，并且这种方式在微信中是被禁用了的。&lt;/p>
 &lt;p>Universal Links是iOS9推出的一项功能，使你的应用可以通过传统的HTTP链接来启动APP(如果iOS设备上已经安装了你的app，不管在微信里还是在哪里)， 或者打开网页(iOS设备上没有安装你的app)。&lt;/p>
 &lt;p>下面简单说下怎么使用Universal Links，具体的可以看&lt;a class="link" href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank" rel="noopener"
 >官方的说明文档&lt;/a>&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="怎么使用universal-links">怎么使用Universal Links&lt;/h1>
 &lt;p>1.先决条件：你必须有一个域名,且这个域名需要支持https。&lt;/p>
 &lt;p>2.需要在开发者中心做配置：找到对应的App ID，在Application Services列表里有Associated Domains一条，把它变为Enabled就可以了。
@@ -1885,11 +1852,9 @@ alt="验证链接"
 &lt;p>前端开发经常面临跨域问题，必须要求跨域，如果不跨域，就不行。
 只有当前webview的url域名，与跳转目标url域名不一致时，Universal Link 才生效。&lt;/p>
 &lt;p>好了先说到这里，如果遇到什么问题可以详细看&lt;a class="link" href="https://developer.apple.com/library/ios/documentation/General/Conceptual/AppSearch/UniversalLinks.html" target="_blank" rel="noopener"
->官方的说明文档&lt;/a>。&lt;/p></description></item><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>有的时候我们想要将程序运行过程中产生的Log保存起来或者发送到自己服务器，为了以后方便分析。这时候就可以用&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener"
+>官方的说明文档&lt;/a>。&lt;/p></description></item><item><title>CocoaLumberjack：简单好用的Log库</title><link>https://lisongrc.github.io/p/201701269a2739/</link><pubDate>Mon, 02 Jan 2017 22:54:17 +0000</pubDate><guid>https://lisongrc.github.io/p/201701269a2739/</guid><description>&lt;p>有的时候我们想要将程序运行过程中产生的Log保存起来或者发送到自己服务器，为了以后方便分析。这时候就可以用&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack" target="_blank" rel="noopener"
 >CocoaLumberjack&lt;/a>啦。&lt;/p>
 &lt;p>CocoaLumberjack是一个可以在iOS和Mac开发中使用的日志库，强大又不失灵活。集成进项目后，配置下，然后用DDLog语句简单地取代NSLog语句（ DDLog的使用方法和NSLog一样）就可以啦，是不是很方便。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装">安装&lt;/h1>
 &lt;p>第一种方法：使用cocoapods，不会使用cocoapods的可以看&lt;a class="link" href="http://www.jianshu.com/p/1711e131987d" target="_blank" rel="noopener"
 >这篇教程&lt;/a>，Podfile看起来是这样的：&lt;/p>
@@ -1989,11 +1954,9 @@ alt="Log文件"
 首先自定义一个 LogFormatter, 遵从 DDLogFormatter 协议，我们需要重写 &lt;code>- (NSString *)formatLogMessage:(DDLogMessage *)logMessage&lt;/code> 这个方法，这个方法的输入参数是由 logger 发的一个 DDLogMessage 对象，包含了一些必要的信息，返回值就是最终 log 的消息体字符串。&lt;/p>
 &lt;p>我们还可以自定义Logger，实现我们自己想要的处理，具体可以看他的文档。&lt;/p>
 &lt;p>更多详细文档可以&lt;a class="link" href="https://github.com/CocoaLumberjack/CocoaLumberjack/tree/master/Documentation" target="_blank" rel="noopener"
->点这里&lt;/a>&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。&lt;/p>
+>点这里&lt;/a>&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612db31073b/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612db31073b/</guid><description>&lt;p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。&lt;/p>
 &lt;p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。&lt;/p>
 &lt;p>经过查找，比较大众的有三个：&lt;/p>
-&lt;!-- more -->
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://www.stack.nl/~dimitri/doxygen/index.html" target="_blank" rel="noopener"
 >doxygen&lt;/a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。&lt;/p>
@@ -2091,13 +2054,11 @@ alt="编译生成文档"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> over multiple lines. No star
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在Xcode里面，我们可以用&lt;code>command + option + /&lt;/code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。&lt;a class="link" href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown" target="_blank" rel="noopener"
->更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>iOS中的静态库与动态库，区别、制作和使用</title><link>https://lisongrc.github.io/p/201611ios%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%E5%8C%BA%E5%88%AB%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/</link><pubDate>Mon, 07 Nov 2016 15:33:05 +0000</pubDate><guid>https://lisongrc.github.io/p/201611ios%E4%B8%AD%E7%9A%84%E9%9D%99%E6%80%81%E5%BA%93%E4%B8%8E%E5%8A%A8%E6%80%81%E5%BA%93%E5%8C%BA%E5%88%AB%E5%88%B6%E4%BD%9C%E5%92%8C%E4%BD%BF%E7%94%A8/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：&lt;/p>
+>更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>iOS中的静态库与动态库，区别、制作和使用</title><link>https://lisongrc.github.io/p/20161137f4228b/</link><pubDate>Mon, 07 Nov 2016 15:33:05 +0000</pubDate><guid>https://lisongrc.github.io/p/20161137f4228b/</guid><description>&lt;p>如果我们有些功能要给别人用，但是又不想公开代码实现，比如高德地图、第三方登录分享等等，这时候我们就要打包成库了。库分静态库和动态库两种：&lt;/p>
 &lt;blockquote>
 &lt;p>静态库：以&lt;code>.a&lt;/code> 和 &lt;code>.framework&lt;/code>为文件后缀名。
 动态库：以&lt;code>.tbd&lt;/code>(之前叫&lt;code>.dylib&lt;/code>) 和 &lt;code>.framework&lt;/code> 为文件后缀名。&lt;/p>
 &lt;/blockquote>
-&lt;!-- more -->
 &lt;h1 id="静态库与动态库的区别">静态库与动态库的区别&lt;/h1>
 &lt;blockquote>
 &lt;p>静态库：链接时会被完整的复制到可执行文件中，被多次使用就有多份拷贝。
@@ -2272,11 +2233,9 @@ alt="开发调试代码"
 loading="lazy"
 alt="编译生成"
 >
-5、后面的过程就与上面一样了。&lt;/p></description></item><item><title>详细易懂的二维码的扫描、识别与生成</title><link>https://lisongrc.github.io/p/201611963e6639/</link><pubDate>Wed, 02 Nov 2016 15:54:18 +0000</pubDate><guid>https://lisongrc.github.io/p/201611963e6639/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>ios7之前我们实现二维码扫描是借助第三方(&lt;code>ZBar&lt;/code>，&lt;code>ZXing&lt;/code>等)来实现的，在ios7之后系统自己提供二维码扫描的方法，性能也要比第三方更好。&lt;/p>
+5、后面的过程就与上面一样了。&lt;/p></description></item><item><title>详细易懂的二维码的扫描、识别与生成</title><link>https://lisongrc.github.io/p/201611963e6639/</link><pubDate>Wed, 02 Nov 2016 15:54:18 +0000</pubDate><guid>https://lisongrc.github.io/p/201611963e6639/</guid><description>&lt;p>ios7之前我们实现二维码扫描是借助第三方(&lt;code>ZBar&lt;/code>，&lt;code>ZXing&lt;/code>等)来实现的，在ios7之后系统自己提供二维码扫描的方法，性能也要比第三方更好。&lt;/p>
 &lt;p>今天就来介绍一下原生二维码的使用，包括&lt;code>扫描二维码&lt;/code>，&lt;code>从图片扫描二维码&lt;/code>和&lt;code>生成二维码&lt;/code>。讲解中只展示部分代码，具体请看&lt;a class="link" href="https://github.com/lisongrc/QRCodeDemo" target="_blank" rel="noopener"
 >Github Demo&lt;/a>，里面的代码不多，也很容易看懂。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="扫描二维码">扫描二维码&lt;/h1>
 &lt;p>二维码扫描需要用到&lt;code>AVFoundation.framework&lt;/code>，需要用先创建一个AVCaptureSession，然后设置输入输出流，以及扫描区域和支持的格式：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//获取摄像设备
@@ -2435,11 +2394,9 @@ alt="为二维码改变颜色"
 loading="lazy"
 alt="中心加小图的二维码"
 >&lt;/p>
-&lt;p>其实也可以扫描条形码，大家可以对着条形码试一试，代码都是通用的。&lt;/p></description></item><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。&lt;/p>
+&lt;p>其实也可以扫描条形码，大家可以对着条形码试一试，代码都是通用的。&lt;/p></description></item><item><title>UITableView自动计算cell高度并缓存，再也不用管高度啦</title><link>https://lisongrc.github.io/p/20161055050fbf/</link><pubDate>Sun, 09 Oct 2016 11:29:40 +0000</pubDate><guid>https://lisongrc.github.io/p/20161055050fbf/</guid><description>&lt;p>这篇文章我们来讲一下UITableView的cell自适应高度，以及遇到的问题的解决办法。在看文章之前希望你已经会UITableView的基本使用了。&lt;/p>
 &lt;p>先奉上这篇文章的demo的Github地址：&lt;a class="link" href="https://github.com/lisongrc/UITableViewCellHeightDemo" target="_blank" rel="noopener"
 >UITableViewCellHeightDemo&lt;/a>。大家可以下载下来和文章配合看。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="cell高度计算的历史">cell高度计算的历史&lt;/h1>
 &lt;p>在iOS8之前，如果UITableViewCell的高度是动态的，如果想要显示正确的话，我们需要在下面这个UITableView的代理方法中，返回每一行的精确高度：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">CGFloat&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">tableView:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">UITableView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">tableView&lt;/span> &lt;span class="nf">heightForRowAtIndexPath:&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">NSIndexPath&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nv">indexPath&lt;/span>&lt;span class="p">;&lt;/span>
@@ -2526,9 +2483,7 @@ loading="lazy"
 alt="用缓存高度解决了问题"
 >&lt;/p>
 &lt;p>这段代码其实可以写在viewController的基类里面，这样写一遍就可以每个地方都能缓存cell的高度了。详见demo。这样就完美了！&lt;/p>
-&lt;p>好啦先说到这里吧，有问题记得联系我。&lt;/p></description></item><item><title>系统地学习正则表达式(二)：进阶篇</title><link>https://lisongrc.github.io/p/20160923aaaabf/</link><pubDate>Mon, 26 Sep 2016 23:41:42 +0000</pubDate><guid>https://lisongrc.github.io/p/20160923aaaabf/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>今天这篇我们将讲解&lt;code>子表达式&lt;/code>和&lt;code>后向引用&lt;/code>的使用。后面会持续更新。&lt;/p>
-&lt;!-- more -->
+&lt;p>好啦先说到这里吧，有问题记得联系我。&lt;/p></description></item><item><title>系统地学习正则表达式(二)：进阶篇</title><link>https://lisongrc.github.io/p/20160923aaaabf/</link><pubDate>Mon, 26 Sep 2016 23:41:42 +0000</pubDate><guid>https://lisongrc.github.io/p/20160923aaaabf/</guid><description>&lt;p>今天这篇我们将讲解&lt;code>子表达式&lt;/code>和&lt;code>后向引用&lt;/code>的使用。后面会持续更新。&lt;/p>
 &lt;h1 id="理解子表达式">理解子表达式&lt;/h1>
 &lt;p>通过&lt;code>(&lt;/code>和&lt;code>)&lt;/code>括起来的就是子表达式。&lt;/p>
 &lt;p>下面是一个例子：用来匹配IP 地址的正则表达式。 IP 地址是由&amp;quot; . &amp;ldquo;分隔的四组数字，如12.159.46.200。因为每个部分的数字都可以为一个、两个或者三个数字字符，这个匹配模式可以表示为&lt;code>\d{1,3}&lt;/code>：&lt;/p>
@@ -2711,8 +2666,7 @@ alt="替换"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">中国邮政编码：^[1-9]\\d{5}(?!\\d)$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">URL：^http(s)?://([\\w-]+\\.)+[\\w-]+(/[\\w- ./?%&amp;amp;=]*)?$
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">纯汉字：^[\u4e00-\u9fa5]{0,}$
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>系统地学习正则表达式(一)：基础篇</title><link>https://lisongrc.github.io/p/201609835121d0/</link><pubDate>Tue, 13 Sep 2016 19:13:44 +0000</pubDate><guid>https://lisongrc.github.io/p/201609835121d0/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="什么是正则表达式">什么是正则表达式&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>系统地学习正则表达式(一)：基础篇</title><link>https://lisongrc.github.io/p/201609835121d0/</link><pubDate>Tue, 13 Sep 2016 19:13:44 +0000</pubDate><guid>https://lisongrc.github.io/p/201609835121d0/</guid><description>&lt;h1 id="什么是正则表达式">什么是正则表达式&lt;/h1>
 &lt;p>正则表达式就是用事先定义好的一些特定字符、及这些特定字符的组合，组成一个“规则字符串”，用来表达对字符串的一种过滤逻辑。&lt;/p>
 &lt;p>通过正则表达式可以达到如下的目的：&lt;/p>
 &lt;blockquote>
@@ -2723,7 +2677,6 @@ alt="替换"
 &lt;/blockquote>
 &lt;p>为了让大家更方便地学习，先推荐一个验证正则表达式的软件&lt;code>Regextor&lt;/code>，具体可以看我的&lt;a class="link" href="http://www.jianshu.com/p/b304515d225b" target="_blank" rel="noopener"
 >这篇文章&lt;/a>，里面还推荐了很多Mac上的好软件。&lt;/p>
-&lt;!-- more -->
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-2387f6323fd09a53.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 alt="Regextor"
@@ -3046,12 +2999,10 @@ ABC123456&lt;/p>
 &lt;/blockquote>
 &lt;p>分析：&lt;code>(?m)^[0-9a-zA-Z]{4,}$&lt;/code>会去匹配每行&lt;code>用数字或者字母组成的，并且位数大于等于四位&lt;/code>的字符串。&lt;/p>
 &lt;p>注意：如果使用多行模式的话，&lt;code>(?m)&lt;/code>必须放置在正则表达式的开始。
-&lt;code>(?m)&lt;/code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用&lt;code>\A&lt;/code>匹配字符串的开始，&lt;code>\Z&lt;/code>匹配字符串的结束。如果支持的话，则这些元字符的功能和&lt;code>^&lt;/code>、&lt;code>$&lt;/code>是一样的。但是这些元字符不能使用&lt;code>(?m)&lt;/code>修饰，所以也不能用于多行模式。&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
+&lt;code>(?m)&lt;/code>在大部分的正则表达式实现中并不支持。有些正则表达式实现还支持使用&lt;code>\A&lt;/code>匹配字符串的开始，&lt;code>\Z&lt;/code>匹配字符串的结束。如果支持的话，则这些元字符的功能和&lt;code>^&lt;/code>、&lt;code>$&lt;/code>是一样的。但是这些元字符不能使用&lt;code>(?m)&lt;/code>修饰，所以也不能用于多行模式。&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
 &lt;p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。
 在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。&lt;/p>
 &lt;p>有了&lt;code>ClangFormat&lt;/code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装clangformat插件">安装ClangFormat插件&lt;/h1>
 &lt;p>可以手动安装(下载&lt;a class="link" href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="noopener"
 >GitHub项目&lt;/a>编译)，也可以用&lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
@@ -3258,12 +3209,10 @@ alt="SpacesInParentheses-true"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">DisableFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
->.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="什么是cocoapods">什么是CocoaPods？&lt;/h1>
+>.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>看一遍就会的CocoaPods的安装和使用教程</title><link>https://lisongrc.github.io/p/201609750b7a66/</link><pubDate>Thu, 08 Sep 2016 00:47:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201609750b7a66/</guid><description>&lt;h1 id="什么是cocoapods">什么是CocoaPods？&lt;/h1>
 &lt;p>CocoaPods是专门为iOS工程提供对第三方库的依赖的管理工具，通过CocoaPods，我们可以更方便地管理每个第三方库的版本，而且不需要我们做太多的配置。直观、集中和自动化地管理我们项目的第三方库。&lt;/p>
 &lt;p>我们都有这样的经历，当我们添加第三方库的时候，需要导入一堆相关依赖库，更新的时候也要删掉重新导入然后再配置。当我们需要更新某个第三方库的时候，我们又要手动移除该库，导入新的库，然后再配置。这些是很麻烦且没有意义的工作。&lt;/p>
 &lt;p>当我们开始使用CocoaPods管理第三方库后，我们只需要相当少的配置，其它的一切都交由CocoaPods来管理即可，我们使用起来就更省心了。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装cocoapods">安装CocoaPods&lt;/h1>
 &lt;p>1.首先更新gem到最新版本，在终端中输入：&lt;code>$ sudo gem update --system&lt;/code>,注意不要把“$”复制上。等待一会儿会看到：
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cb315df2818bedef.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
@@ -3414,12 +3363,10 @@ alt="错误信息.png"
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-533856e1cdb3a9c5.gif?imageMogr2/auto-orient/strip"
 loading="lazy"
 alt="CocoaPods插件使用"
->&lt;/p></description></item><item><title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title><link>https://lisongrc.github.io/p/2016095d76ea11/</link><pubDate>Sun, 04 Sep 2016 20:37:30 +0000</pubDate><guid>https://lisongrc.github.io/p/2016095d76ea11/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。
+>&lt;/p></description></item><item><title>UIImage图片处理，旋转、截取、平铺、缩放等操作，持续更新中</title><link>https://lisongrc.github.io/p/2016095d76ea11/</link><pubDate>Sun, 04 Sep 2016 20:37:30 +0000</pubDate><guid>https://lisongrc.github.io/p/2016095d76ea11/</guid><description>&lt;p>有时候我们需要处理图片，比如改变大小，旋转，截取等等，所以今天说一说图片处理相关的一些操作。
 本文所说的方法都是写在UIImage的Category中，这样使用起来也方便；由于代码太多，这里就不贴具体实现代码了，大家可以去我的Github查看&lt;a class="link" href="https://github.com/lisongrc/UIImage-Categories" target="_blank" rel="noopener"
 >demo&lt;/a>，效果如下：&lt;/p>
 &lt;img src="http://upload-images.jianshu.io/upload_images/1608265-5023a6afa907f819.gif?imageMogr2/auto-orient/strip" alt="demo效果.gif" style="zoom: 67%;" />
-&lt;!-- more -->
 &lt;h1 id="颜色相关">颜色相关&lt;/h1>
 &lt;p>&lt;strong>1.根据颜色生成纯色图片&lt;/strong>
 就是根据制定的颜色生成一张纯色的图片&lt;/p>
@@ -3503,9 +3450,7 @@ firstImage在下面，secondImage在上面&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage animatedImageWithAnimatedGIFURL:[NSURL fileURLWithPath:path]];
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//或者
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">self.imageView.image = [UIImage animatedImageWithAnimatedGIFData:[NSData dataWithContentsOfFile:path]];
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>希望能帮到大家，持续更新中。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
-&lt;!-- more -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>希望能帮到大家，持续更新中。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
 &lt;p>&lt;strong>Alcatraz&lt;/strong>
 &lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
 >https://github.com/alcatraz/Alcatraz&lt;/a>
@@ -3711,9 +3656,7 @@ alt="image.jpg"
 loading="lazy"
 alt="image.gif"
 >&lt;/p>
-&lt;p>持续更新中……。&lt;/p></description></item><item><title>iOS小技巧总结，绝对有你想要的</title><link>https://lisongrc.github.io/p/201608ios%E5%B0%8F%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93%E7%BB%9D%E5%AF%B9%E6%9C%89%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84/</link><pubDate>Tue, 23 Aug 2016 17:37:54 +0000</pubDate><guid>https://lisongrc.github.io/p/201608ios%E5%B0%8F%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93%E7%BB%9D%E5%AF%B9%E6%9C%89%E4%BD%A0%E6%83%B3%E8%A6%81%E7%9A%84/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>在这里总结一些iOS开发中的小技巧，能大大方便我们的开发，持续更新。&lt;/p>
-&lt;!-- more -->
+&lt;p>持续更新中……。&lt;/p></description></item><item><title>iOS小技巧总结，绝对有你想要的</title><link>https://lisongrc.github.io/p/20160814f9ac89/</link><pubDate>Tue, 23 Aug 2016 17:37:54 +0000</pubDate><guid>https://lisongrc.github.io/p/20160814f9ac89/</guid><description>&lt;p>在这里总结一些iOS开发中的小技巧，能大大方便我们的开发，持续更新。&lt;/p>
 &lt;h1 id="uitableview的group样式下顶部空白处理">UITableView的Group样式下顶部空白处理&lt;/h1>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//分组列表头部空白处理
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="n">UIView&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">view&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[[&lt;/span>&lt;span class="n">UIView&lt;/span> &lt;span class="n">alloc&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="nl">initWithFrame&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">CGRectMake&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="mf">0.1&lt;/span>&lt;span class="p">)];&lt;/span>
@@ -4799,9 +4742,7 @@ alt="查看app启动耗时"
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="nb">nil&lt;/span>&lt;span class="p">;&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>持续更新中……。&lt;/p></description></item><item><title>iOS开发常用宏，持续更新中</title><link>https://lisongrc.github.io/p/201608ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%AE%8F%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/</link><pubDate>Thu, 18 Aug 2016 16:22:23 +0000</pubDate><guid>https://lisongrc.github.io/p/201608ios%E5%BC%80%E5%8F%91%E5%B8%B8%E7%94%A8%E5%AE%8F%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0%E4%B8%AD/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>大家都是知道使用宏不仅方便，而且可以提高开发效率。下面总结了iOS开发过程中的一些常用宏，会持续的往里面添加。&lt;/p>
-&lt;!-- more -->
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>持续更新中……。&lt;/p></description></item><item><title>iOS开发常用宏，持续更新中</title><link>https://lisongrc.github.io/p/201608c4f2d814/</link><pubDate>Thu, 18 Aug 2016 16:22:23 +0000</pubDate><guid>https://lisongrc.github.io/p/201608c4f2d814/</guid><description>&lt;p>大家都是知道使用宏不仅方便，而且可以提高开发效率。下面总结了iOS开发过程中的一些常用宏，会持续的往里面添加。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//字符串是否为空
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="cp">#define kStringIsEmpty(str) ([str isKindOfClass:[NSNull class]] || str == nil || [str length] &amp;lt; 1 ? YES : NO )
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>&lt;span class="c1">//数组是否为空

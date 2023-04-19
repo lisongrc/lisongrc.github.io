@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Linux on 小松哥的博客</title><link>https://lisongrc.github.io/categories/linux/</link><description>Recent content in Linux on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 27 Mar 2021 23:05:38 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/linux/index.xml" rel="self" type="application/rss+xml"/><item><title>Linux使用相关的一些东西</title><link>https://lisongrc.github.io/p/20210391370673/</link><pubDate>Sat, 27 Mar 2021 23:05:38 +0000</pubDate><guid>https://lisongrc.github.io/p/20210391370673/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
+&lt;p>本文记录一些我使用Linux时遇到的一些东西，因为我主要用&lt;a class="link" href="https://www.debian.org/" target="_blank" rel="noopener"
+>Debian&lt;/a>，所以这些基本上都是在Debian环境下的。&lt;/p>
+&lt;h1 id="启用root帐户登录ssh">启用root帐户登录ssh&lt;/h1>
+&lt;p>先用其它帐户登录ssh，然后su到root输入密码登录，然后修改 &lt;code>/etc/ssh/sshd_config&lt;/code> ：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#PermitRootLogin prohibit-password&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">PermitRootLogin yes
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后重启ssh服务，就可以root用户登录ssh了：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">/etc/init.d/ssh restart
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="设置或者修改时区">设置或者修改时区&lt;/h1>
+&lt;p>检查当前时区：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">timedatectl
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>修改时区：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo timedatectl set-timezone your_time_zone
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如修改为Shanghai:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">sudo timedatectl set-timezone Asia/Shanghai
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>至于具体有哪些时区可用呢，可以用 &lt;code>timedatectl list-timezones&lt;/code> 命令查看或者去 &lt;code>/usr/share/zoneinfo&lt;/code> 目录里面看。&lt;/p>
+&lt;h1 id="自定义开机启动项">自定义开机启动项&lt;/h1>
+&lt;p>首先，进入 &lt;code>/etc/init.d&lt;/code> 目录中：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="nb">cd&lt;/span> /etc/init.d/
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>你会发现里面已经有一些启动项了。然后我们创建一个自己的：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">vim MyTest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在里面输入以下内容：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#!/bin/sh
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### BEGIN INIT INFO&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Provides: MyTest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Required-Start: $network $remote_fs $local_fs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Required-Stop: $network $remote_fs $local_fs&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Default-Start: 2 3 4 5&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Default-Stop: 0 1 6&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Short-Description: MyTest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1"># Description: MyTest&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">### END INIT INFO&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">echo&lt;/span> &lt;span class="s2">&amp;#34;Hello World !&amp;#34;&lt;/span> &amp;gt;&amp;gt; ~/mytest.txt
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="nb">exit&lt;/span> &lt;span class="m">0&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是一个大概的模板，其中 &lt;code>echo &amp;quot;Hello World !&amp;quot; &amp;gt;&amp;gt; ~/mytest.txt&lt;/code> 部分就是系统启动时要执行的命令，意思在指定文件里写入一句话。你可以在根据自己的需要写一些命令。&lt;/p>
+&lt;p>写完保存之后，给文件加上可执行的属性：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">chmod +x MyTest
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>然后，将脚本加入开机启动项中：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">update-rc.d MyTest defaults
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>如果需要删除这个开机启动项，则使用命令：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">update-rc.d -f MyTest remove
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>nmap和masscan的使用</title><link>https://lisongrc.github.io/p/202103f85f9aaa/</link><pubDate>Thu, 25 Mar 2021 22:53:10 +0000</pubDate><guid>https://lisongrc.github.io/p/202103f85f9aaa/</guid><description>&lt;p>&lt;a class="link" href="https://nmap.org/man/zh/" target="_blank" rel="noopener"
+>nmap&lt;/a> 和 &lt;a class="link" href="https://github.com/robertdavidgraham/masscan" target="_blank" rel="noopener"
+>masscan&lt;/a> 都是出名的端口扫描工具，本文讲解一下大概怎么使用。&lt;/p>
+&lt;h1 id="nmap">nmap&lt;/h1>
+&lt;p>nmap是一个老牌的互联网端口扫描器。&lt;/p>
+&lt;h2 id="安装">安装&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install nmap
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用">使用&lt;/h2>
+&lt;p>一个最简单的例子，扫描ip &lt;code>10.0.0.0&lt;/code>的一些已知协议的端口：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>不判断主机是否在线：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0 -Pn
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>扫描多个ip:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0/24 -Pn
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">nmap 10.0.1-255.1-255 -Pn
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>扫描指定端口：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0 -Pn -p20-200,7777,8888
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>只显示开放端口：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0 -Pn -p0-65525 --open
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>从文件读取要扫描的ip：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap -Pn --open -iL ip.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>将结果输出到文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">nmap 10.0.0.0/8 -Pn --open -oG result.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="masscan">masscan&lt;/h1>
+&lt;p>masscan号称是最快的互联网端口扫描器，可以在六分钟内扫遍互联网。也支持nmap的一些参数设置。&lt;/p>
+&lt;h2 id="安装-1">安装&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install masscan
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="使用-1">使用&lt;/h2>
+&lt;p>一个最简单的例子，扫描ip &lt;code>10.0.0.0&lt;/code>的80端口:&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan -p80 10.0.0.0
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>扫描ip段的多端口：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan -p80 10.0.0.0/8
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>扫描多端口：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan 10.0.0.0/8 -p0-65535
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>设置扫描速度：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan 10.0.0.0/8 -p0-65535 --max-rate &lt;span class="m">10000&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>将结果输出到文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan 10.0.0.0/8 -p0-65535 --max-rate &lt;span class="m">10000&lt;/span> -oJ result.json
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">masscan 10.0.0.0/8 -p0-65535 --max-rate &lt;span class="m">10000&lt;/span> -oL result.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>从文件读取要扫描的ip：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan -p0-65535 --max-rate &lt;span class="m">10000&lt;/span> -iL ip.txt -oJ result.json
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用配置文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl"># myscan.conf
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">rate = 100000.00
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">output-format = xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">output-status = all
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">output-filename = scan.xml
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">ports = 0-65535
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">range = 0.0.0.0-255.255.255.255
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">excludefile = exclude.txt
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">masscan -c myscan.conf
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>更过高级和详细的用法可以去看官方文档。&lt;/p></description></item></channel></rss>

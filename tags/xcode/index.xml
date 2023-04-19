@@ -1,6 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xcode on 小松哥的博客</title><link>https://lisongrc.github.io/tags/xcode/</link><description>Recent content in Xcode on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 06 Mar 2021 21:58:55 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
-&lt;!-- more -->
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Xcode on 小松哥的博客</title><link>https://lisongrc.github.io/tags/xcode/</link><description>Recent content in Xcode on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-CN</language><lastBuildDate>Sat, 06 Mar 2021 21:58:55 +0000</lastBuildDate><atom:link href="https://lisongrc.github.io/tags/xcode/index.xml" rel="self" type="application/rss+xml"/><item><title>Xcode好用的快捷键</title><link>https://lisongrc.github.io/p/2021034535997/</link><pubDate>Sat, 06 Mar 2021 21:58:55 +0000</pubDate><guid>https://lisongrc.github.io/p/2021034535997/</guid><description>&lt;p>这片文章总结一些好用的Xcode快捷键，可以提高开发的效率。&lt;/p>
 &lt;h1 id="对应键位">对应键位&lt;/h1>
 &lt;blockquote>
 &lt;p>⌘：command&lt;/p>
@@ -66,12 +64,11 @@
 &lt;h1 id="cheatsheet">CheatSheet&lt;/h1>
 &lt;p>大家可以安装CheatSheet这个app，然后长按⌘键就会出现当前使用的app的快捷键。这样如果忘了某个快捷键可以快速查找。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install cheatsheet
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/201903ioser%E9%83%BD%E8%A6%81%E7%9F%A5%E9%81%93%E7%9A%84lldb%E4%BB%8B%E7%BB%8D%E4%B8%8Echisel%E8%BF%9B%E9%98%B6/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>iOSer都要知道的LLDB介绍与Chisel进阶</title><link>https://lisongrc.github.io/p/2019035053e96d/</link><pubDate>Sun, 10 Mar 2019 20:05:31 +0000</pubDate><guid>https://lisongrc.github.io/p/2019035053e96d/</guid><description>&lt;h1 id="一lldb">一、LLDB&lt;/h1>
 &lt;h2 id="什么是lldb">什么是LLDB&lt;/h2>
 &lt;p>&lt;a class="link" href="http://lldb.llvm.org/" target="_blank" rel="noopener"
 >LLDB&lt;/a> 是一个有着 REPL 的特性和 C++ ,Python 插件的开源调试器。Xcode中绑定了LLDB，调试器允许你在程序运行时暂停它，可以查看变量的值，执行自定的指令。&lt;/p>
 &lt;p>在程序里你需要的地方设置断点。当断点断住的时候你就能看到我们进入LLDB调试器了，下面这个界面对于iOS开发者来说应该不陌生了：&lt;/p>
-&lt;!-- more -->
 &lt;p>&lt;img src="https://upload-images.jianshu.io/upload_images/1608265-b21e475e796f9734.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
 >&lt;/p>
@@ -177,11 +174,9 @@ loading="lazy"
 &lt;h3 id="pcurl">pcurl&lt;/h3>
 &lt;p>把一个NSURLRequest (HTTP)打印成curl命令。&lt;/p>
 &lt;p>更多的命令大家可以去&lt;a class="link" href="https://github.com/facebook/chisel/wiki" target="_blank" rel="noopener"
->官方文档&lt;/a>看。&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。&lt;/p>
+>官方文档&lt;/a>看。&lt;/p></description></item><item><title>Xcode自定义模板实践</title><link>https://lisongrc.github.io/p/201704535c2bd8/</link><pubDate>Thu, 13 Apr 2017 00:11:43 +0000</pubDate><guid>https://lisongrc.github.io/p/201704535c2bd8/</guid><description>&lt;p>好久没来写文章了，因为生活中有一些琐事，也因为工作比较忙。今天我们来聊聊Xcode的自定义模板。&lt;/p>
 &lt;h1 id="为何要自定义xcode模板">为何要自定义Xcode模板&lt;/h1>
 &lt;p>有时候公司会要求一定的代码规范，例如控制器中需要用&lt;code>#pragma mark - &lt;/code>来分割各个方法们，像这样：&lt;/p>
-&lt;!-- more -->
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-objc" data-lang="objc">&lt;span class="line">&lt;span class="cl">&lt;span class="cp">#pragma mark - LifeCycle
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cp">&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">-&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="kt">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="nf">dealloc&lt;/span> &lt;span class="p">{}&lt;/span>
@@ -361,11 +356,9 @@ alt="新建一个控制器"
 loading="lazy"
 alt="选择模板"
 >
-好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612objective-c%E8%87%AA%E5%8A%A8%E7%94%9F%E6%88%90%E6%96%87%E6%A1%A3%E5%B7%A5%E5%85%B7appledoc/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。&lt;/p>
+好了，到这里大家应该都熟悉了Xcode模板的基本使用，快去探索更多高级用法吧！&lt;/p></description></item><item><title>Objective-C自动生成文档工具:appledoc</title><link>https://lisongrc.github.io/p/201612db31073b/</link><pubDate>Tue, 13 Dec 2016 15:47:22 +0000</pubDate><guid>https://lisongrc.github.io/p/201612db31073b/</guid><description>&lt;p>由于最近琐事比较多，所以好久没有写文章了。今天我们聊一聊Objective-C自动生成文档。&lt;/p>
 &lt;p>做项目的人多了，就需要文档了。手工写文档是一件苦差事，但是我们也有从源码中抽取注释生成文档的专用工具。&lt;/p>
 &lt;p>经过查找，比较大众的有三个：&lt;/p>
-&lt;!-- more -->
 &lt;blockquote>
 &lt;p>&lt;a class="link" href="http://www.stack.nl/~dimitri/doxygen/index.html" target="_blank" rel="noopener"
 >doxygen&lt;/a>：适于生成html文档与pdf文档。 支持的语言多，可以配置的地方也比较多。默认生成的风格与苹果的风格不一致。&lt;/p>
@@ -463,12 +456,10 @@ alt="编译生成文档"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> over multiple lines. No star
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="cm"> */&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>在Xcode里面，我们可以用&lt;code>command + option + /&lt;/code>方便快捷地生成注释，很方便。大家可以多尝试尝试各种注释。&lt;a class="link" href="https://github.com/tomaz/appledoc/blob/master/CommentsFormattingStyle.markdown" target="_blank" rel="noopener"
->更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
+>更多的注释格式可以看这里&lt;/a>&lt;/p></description></item><item><title>超详细的Xcode代码格式化教程，可自定义样式</title><link>https://lisongrc.github.io/p/2016099de00e69/</link><pubDate>Sat, 10 Sep 2016 21:44:04 +0000</pubDate><guid>https://lisongrc.github.io/p/2016099de00e69/</guid><description>&lt;h1 id="为什么要格式化代码">为什么要格式化代码&lt;/h1>
 &lt;p>当团队内有多人开发的时候，每个人写的代码格式都有自己的喜好，也可能会忙着写代码而忽略了格式的问题。
 在之前，我们可能会写完代码后，再一点一点去调格式，很浪费时间。&lt;/p>
 &lt;p>有了&lt;code>ClangFormat&lt;/code>插件后，就可以一键把代码格式化成统一的样式，不仅节省了时间，也使得代码更规范。我们还可以定制自己喜欢的样式。&lt;/p>
-&lt;!-- more -->
 &lt;h1 id="安装clangformat插件">安装ClangFormat插件&lt;/h1>
 &lt;p>可以手动安装(下载&lt;a class="link" href="https://github.com/travisjeffery/ClangFormat-Xcode" target="_blank" rel="noopener"
 >GitHub项目&lt;/a>编译)，也可以用&lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
@@ -675,9 +666,7 @@ alt="SpacesInParentheses-true"
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nt">DisableFormat&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="kc">true&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="nn">...&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>这个是我在用的&lt;a class="link" href="https://github.com/lisongrc/clang-format" target="_blank" rel="noopener"
->.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;meta name="referrer" content="no-referrer"/>
-&lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
-&lt;!-- more -->
+>.clang-format&lt;/a>文件。大家可以下载下来自己修改一下再用。&lt;/p></description></item><item><title>Xcode方便开发的插件推荐</title><link>https://lisongrc.github.io/p/2016087d8ef64b/</link><pubDate>Fri, 26 Aug 2016 17:40:39 +0000</pubDate><guid>https://lisongrc.github.io/p/2016087d8ef64b/</guid><description>&lt;p>Xcode的插件可以使我们开发更方便，效率更高。你没有理由拒绝哈哈，下面推荐一些插件：&lt;/p>
 &lt;p>&lt;strong>Alcatraz&lt;/strong>
 &lt;a class="link" href="https://github.com/alcatraz/Alcatraz" target="_blank" rel="noopener"
 >https://github.com/alcatraz/Alcatraz&lt;/a>
