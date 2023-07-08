@@ -1,4 +1,26 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 10 Jun 2023 18:54:27 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>引入MLeaksFinder报错的解决办法</title><link>https://lisongrc.github.io/p/2023066d00befe/</link><pubDate>Sat, 10 Jun 2023 18:54:27 +0800</pubDate><guid>https://lisongrc.github.io/p/2023066d00befe/</guid><description>&lt;p>前段时间想导入 &lt;a class="link" href="https://github.com/Tencent/MLeaksFinder" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 08 Jul 2023 20:35:22 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>ESXI开启RDM硬盘直通</title><link>https://lisongrc.github.io/p/2023078a0a4260/</link><pubDate>Sat, 08 Jul 2023 20:35:22 +0800</pubDate><guid>https://lisongrc.github.io/p/2023078a0a4260/</guid><description>&lt;h1 id="进入esxi后台打开ssh功能">进入ESXI后台，打开SSH功能&lt;/h1>
+&lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/93985ccea566b66629199d1d1461a7a3.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="进入esxi后台查看硬盘信息">进入ESXI后台，查看硬盘信息&lt;/h1>
+&lt;h2 id="点击-存储设备选择硬盘查找硬盘标识符记住括号里面这一串">点击 &lt;code>存储&amp;gt;&amp;gt;设备&amp;gt;&amp;gt;选择硬盘&lt;/code>，查找硬盘标识符，记住括号里面这一串&lt;/h2>
+&lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/0e9f572b673ac66b9b34bfa98d8e3d6a.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="查找esxi系统盘的路径点击-存储数据存储选择esxi的系统盘复制位置对应的路径">查找ESXI系统盘的路径，点击 &lt;code>存储&amp;gt;&amp;gt;数据存储&amp;gt;&amp;gt;选择ESXI的系统盘&lt;/code>，复制&lt;code>位置&lt;/code>对应的路径&lt;/h2>
+&lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/61de9d0622c733085027046bee6ea704.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="登陆esxi的ssh进行配置rdm">登陆ESXI的SSH进行配置RDM&lt;/h1>
+&lt;p>输入命令，回车无任何提示说明配置成功，注意将里面的东西换成自己的：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vmkfstools -z /vmfs/devices/disks/未格式化硬盘标识符 /vmfs/volumes/ESXI系统盘路径/自定义名称.vmdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vmkfstools -z /vmfs/devices/disks/t10.ATA_____WDC_WD20EURS2D63S48Y0_________________________WD2DWCAZAJ063809 /vmfs/volumes/5ac791f9-74172f6b-18d1-e43a6e0448e3/DSM.vmdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="查看是否已经有dsmvmdk这个文件">查看是否已经有DSM.vmdk这个文件&lt;/h1>
+&lt;p>有这个文件就说明已经成功开启RDM直连硬盘了，我们新建虚拟机时选择现有磁盘时选择这个文件即可。
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/591442d1f556b020aed1a2e86d4b5beb.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>引入MLeaksFinder报错的解决办法</title><link>https://lisongrc.github.io/p/2023066d00befe/</link><pubDate>Sat, 10 Jun 2023 18:54:27 +0800</pubDate><guid>https://lisongrc.github.io/p/2023066d00befe/</guid><description>&lt;p>前段时间想导入 &lt;a class="link" href="https://github.com/Tencent/MLeaksFinder" target="_blank" rel="noopener"
 >MLeaksFinder&lt;/a> 看下内存泄露问题。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">pod &amp;#39;MLeaksFinder&amp;#39;
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>但是 &lt;code>pod install&lt;/code> 之后项目编译报错了，&lt;code>Cannot initialize a parameter of type 'id&amp;lt;NSCopying&amp;gt; _Nonnull' with an rvalue of type 'Class'&lt;/code>
