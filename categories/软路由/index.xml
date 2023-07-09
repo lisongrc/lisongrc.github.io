@@ -1,4 +1,54 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软路由 on 小松哥的博客</title><link>https://lisongrc.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/</link><description>Recent content in 软路由 on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 08 Jul 2023 20:35:22 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>ESXI开启RDM硬盘直通</title><link>https://lisongrc.github.io/p/2023078a0a4260/</link><pubDate>Sat, 08 Jul 2023 20:35:22 +0800</pubDate><guid>https://lisongrc.github.io/p/2023078a0a4260/</guid><description>&lt;h1 id="进入esxi后台打开ssh功能">进入ESXI后台，打开SSH功能&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软路由 on 小松哥的博客</title><link>https://lisongrc.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/</link><description>Recent content in 软路由 on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 09 Jul 2023 12:11:18 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/%E8%BD%AF%E8%B7%AF%E7%94%B1/index.xml" rel="self" type="application/rss+xml"/><item><title>ESXi上安装OpenWrt虚拟机</title><link>https://lisongrc.github.io/p/202307da3c2c71/</link><pubDate>Sun, 09 Jul 2023 12:11:18 +0800</pubDate><guid>https://lisongrc.github.io/p/202307da3c2c71/</guid><description>&lt;h1 id="下载openwrt固件">下载OpenWrt固件&lt;/h1>
+&lt;p>获取固件的方式大概有三种：&lt;/p>
+&lt;ul>
+&lt;li>直接下载别人编译好的固件 例如 &lt;a class="link" href="https://github.com/coolsnowwolf/lede/releases" target="_blank" rel="noopener"
+>Github&lt;/a>、&lt;a class="link" href="https://drive.google.com/drive/folders/1uRXg_krKHPrQneI3F2GNcSVRoCgkqESr" target="_blank" rel="noopener"
+>eSir固件谷歌硬盘&lt;/a>&lt;/li>
+&lt;li>去 &lt;a class="link" href="https://supes.top/" target="_blank" rel="noopener"
+>supes.top&lt;/a> 网站下载或定制适用于您设备的OpenWrt固件，可以自定义一些插件和设置。&lt;/li>
+&lt;li>自己编译，定制化程度高，但是需要时间学习相关的东西，这里不讨论。&lt;/li>
+&lt;/ul>
+&lt;h1 id="将openwrt固件镜像img转换为vmware-esxi支持的vmdk格式文件">将OpenWrt固件镜像(.img)转换为VMWare ESXi支持的.vmdk格式文件&lt;/h1>
+&lt;p>由于ESXi并不支持直接从img镜像创建虚拟机，需要先将.img文件转换为.vmdk文件。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install qemu
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">qemu-img convert -f raw -O vmdk &amp;lt;OpenWrt固件镜像&amp;gt;.img &amp;lt;目标新文件名&amp;gt;.vmdk
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="将vmdk上传到esxi主机的数据存储空间">将VMDK上传到ESXi主机的数据存储空间。&lt;/h1>
+&lt;p>打开数据存储浏览器，把刚刚转换好的.vmdk文件上传到数据存储空间。
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/5c71bc95b2befa1ab8d741b0d0b97be0.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="ssh进入esxi使用-vmkfstools-将不支持的vmdk转换为esxi支持的vmdk格式">SSH进入ESXi，使用 &lt;code>vmkfstools&lt;/code> 将不支持的vmdk转换为ESXi支持的vmdk格式&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh root@esxi
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vmkfstools -i &amp;lt;旧的.vmdk&amp;gt; &amp;lt;新的.vmdk&amp;gt; -d thin
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="安装openwrt虚拟机">安装OpenWrt虚拟机&lt;/h1>
+&lt;h2 id="创建虚拟机-选择linux其他linux64位">创建虚拟机, 选择Linux/其他Linux(64位)&lt;/h2>
+&lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/908c8167f590c17408f76b32bd601f63.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="删掉默认的硬盘设置好cpu和内存">删掉默认的硬盘，设置好cpu和内存&lt;/h2>
+&lt;h2 id="添加vmdk文件作为硬盘选择刚刚已经转好的esxi支持的vmdk文件">添加vmdk文件作为硬盘，选择刚刚已经转好的ESXi支持的vmdk文件。&lt;/h2>
+&lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/c1115762e3f38654461bb7a39b21a3e4.png"
+loading="lazy"
+>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/815426441470663b51aeb6945b3ff8d7.png"
+loading="lazy"
+>&lt;/p>
+&lt;h2 id="完成创建打开电源">完成创建，打开电源。&lt;/h2>
+&lt;p>等控制台不再刷新以后，按下回车，出现下边的画面，表示安装成功了。
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/1e61a7b6793fb3936032531474074f2e.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="在esxi控制台中修改openwrt的网卡ip">在ESXi控制台中修改OpenWrt的网卡ip&lt;/h1>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vi /etc/config/network
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>将ip改成自己想要的。
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/bff73302f56470af9a0f83de7455e74f.png"
+loading="lazy"
+>&lt;/p>
+&lt;h1 id="通过浏览器访问openwrt管理界面">通过浏览器访问OpenWrt管理界面&lt;/h1>
+&lt;p>在浏览器里输入刚刚修改的OpenWrt IP，例如192.168.1.5，就会看到登陆界面了。&lt;/p>
+&lt;p>参考：&lt;br>
+&lt;a class="link" href="https://wi1dcard.dev/posts/convert-openwrt-image-to-esxi-vmdk/" target="_blank" rel="noopener"
+>Convert OpenWrt Image to ESXi VMDK&lt;/a>&lt;/p></description></item><item><title>ESXI开启RDM硬盘直通</title><link>https://lisongrc.github.io/p/2023078a0a4260/</link><pubDate>Sat, 08 Jul 2023 20:35:22 +0800</pubDate><guid>https://lisongrc.github.io/p/2023078a0a4260/</guid><description>&lt;h1 id="进入esxi后台打开ssh功能">进入ESXI后台，打开SSH功能&lt;/h1>
 &lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/93985ccea566b66629199d1d1461a7a3.png"
 loading="lazy"
 >&lt;/p>
