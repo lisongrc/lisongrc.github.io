@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 15 Jul 2023 13:50:24 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWrt旁路由设置</title><link>https://lisongrc.github.io/p/2023071c69725e/</link><pubDate>Sat, 15 Jul 2023 13:50:24 +0800</pubDate><guid>https://lisongrc.github.io/p/2023071c69725e/</guid><description>&lt;h1 id="旁路由自身设置">旁路由自身设置&lt;/h1>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 22 Jul 2023 15:21:59 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWrt常用插件</title><link>https://lisongrc.github.io/p/20230727e43bef/</link><pubDate>Sat, 22 Jul 2023 15:21:59 +0800</pubDate><guid>https://lisongrc.github.io/p/20230727e43bef/</guid><description>&lt;p>OpenWrt上插件非常多，可以实现我们各种各样的需求，大家可以在 &lt;code>系统-软件包&lt;/code> 里搜索自己想要的插件，还可以去网上看下别人的推荐。&lt;/p>
+&lt;p>这里我推荐几个我用的。&lt;/p>
+&lt;ul>
+&lt;li>
+&lt;p>&lt;code>AdGuard Home&lt;/code> ：免费开源，功能强大的全网络广告和跟踪程序拦截DNS服务器&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Docker&lt;/code> ：可以用docker来跑一些服务&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>ZeroTier&lt;/code> ：一个开源，跨平台，而且适合内网穿透互联的傻瓜配置虚拟 VPN LAN&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>unblockneteasemusic&lt;/code> ：解锁网易云灰色歌曲&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>DiskMan&lt;/code> ：通过 Luci 管理磁盘&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>Socat&lt;/code> ：实现公网IPV6转发至内网IP&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>ServerChan&lt;/code> ：微信推送，可以在微信上收到路由器的一些事件通知&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>&lt;code>动态DNS插件&lt;/code> ：动态DNS解析，用域名访问OpenWrt&lt;/p>
+&lt;/li>
+&lt;li>
+&lt;p>还有几款不可言说的插件，你懂的。&lt;/p>
+&lt;/li>
+&lt;/ul></description></item><item><title>OpenWrt旁路由设置</title><link>https://lisongrc.github.io/p/2023071c69725e/</link><pubDate>Sat, 15 Jul 2023 13:50:24 +0800</pubDate><guid>https://lisongrc.github.io/p/2023071c69725e/</guid><description>&lt;h1 id="旁路由自身设置">旁路由自身设置&lt;/h1>
 &lt;p>进入 &lt;code>OpenWrt&lt;/code> 后台，打开 &lt;code>网络-接口&lt;/code> 菜单，编辑 &lt;code>LAN&lt;/code> 口：&lt;/p>
 &lt;ul>
 &lt;li>将协议改为 &lt;code>静态地址&lt;/code> ，然后把 &lt;code>IP&lt;/code> 设置为一个和现有局域网同网段的静态IP地址&lt;/li>
