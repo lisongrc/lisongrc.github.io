@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on 小松哥的博客</title><link>https://lisongrc.github.io/categories/blog/</link><description>Recent content in blog on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 20 May 2023 22:51:34 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客搭建+Stack主题</title><link>https://lisongrc.github.io/p/2023051d887323/</link><pubDate>Sat, 20 May 2023 22:51:34 +0800</pubDate><guid>https://lisongrc.github.io/p/2023051d887323/</guid><description>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/147a04013614c94609c5788402cfe3f2.jpeg" alt="Featured image of post Hugo博客搭建+Stack主题" />&lt;p>&lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>blog on 小松哥的博客</title><link>https://lisongrc.github.io/categories/blog/</link><description>Recent content in blog on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Fri, 20 May 2022 22:51:34 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/categories/blog/index.xml" rel="self" type="application/rss+xml"/><item><title>Hugo博客搭建+Stack主题</title><link>https://lisongrc.github.io/p/2022051d887323/</link><pubDate>Fri, 20 May 2022 22:51:34 +0800</pubDate><guid>https://lisongrc.github.io/p/2022051d887323/</guid><description>&lt;p>&lt;a class="link" href="https://gohugo.io/" target="_blank" rel="noopener"
 >Hugo&lt;/a> 是用 Go 实现的博客工具，采用 Markdown 进行文章编辑，自动生成静态站点文件，支持丰富的主题配置，也可以通过 js 嵌入像是评论系统等插件。Hugo大大加快了网页生成的速度，而且在源文件处修改的内容可以实时地显示在网页上。&lt;/p>
 &lt;h2 id="安装">安装&lt;/h2>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-shell" data-lang="shell">&lt;span class="line">&lt;span class="cl">brew install hugo
@@ -49,7 +49,7 @@
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">slug: {{ substr (md5 (printf &amp;#34;%s%s&amp;#34; .Date (replace .TranslationBaseName &amp;#34;-&amp;#34; &amp;#34; &amp;#34; | title))) 4 8 }}
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="其它">其它&lt;/h3>
 &lt;p>还有很多其它的配置可以查看&lt;a class="link" href="https://stack.jimmycai.com/config/" target="_blank" rel="noopener"
->官方文档&lt;/a>，根据自己需要修改。&lt;/p></description></item><item><title>Hexo切换NexT主题</title><link>https://lisongrc.github.io/p/202103259164c9/</link><pubDate>Tue, 02 Mar 2021 12:44:06 +0000</pubDate><guid>https://lisongrc.github.io/p/202103259164c9/</guid><description>&lt;p>Hexo默认的主题是 &lt;code>landscape&lt;/code>，由于它的功能和样式我都不太喜欢，所以决定换个样式玩玩。&lt;/p>
+>官方文档&lt;/a>，根据自己需要修改。&lt;/p></description></item><item><title>Hexo切换NexT主题</title><link>https://lisongrc.github.io/p/201903259164c9/</link><pubDate>Sat, 02 Mar 2019 12:44:06 +0000</pubDate><guid>https://lisongrc.github.io/p/201903259164c9/</guid><description>&lt;p>Hexo默认的主题是 &lt;code>landscape&lt;/code>，由于它的功能和样式我都不太喜欢，所以决定换个样式玩玩。&lt;/p>
 &lt;p>找Hexo主题的话可以去Github搜索 &lt;code>hexo-theme&lt;/code>，然后都点进去看看，挑一个自己喜欢的样式；一般主题下都有使用教程。&lt;/p>
 &lt;p>这里以 &lt;a class="link" href="https://github.com/theme-next/hexo-theme-next" target="_blank" rel="noopener"
 >hexo-theme-next&lt;/a> 为例。&lt;/p>
@@ -69,7 +69,7 @@
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">#scheme: Gemini
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="详细设置">详细设置&lt;/h1>
 &lt;p>这个主题的一些详细设置，比如添加菜单、添加分类什么的，可以看 &lt;a class="link" href="https://theme-next.iissnan.com/" target="_blank" rel="noopener"
->官方文档&lt;/a> ，讲的很详细。&lt;/p></description></item><item><title>给博客绑定域名并启用HTTPS</title><link>https://lisongrc.github.io/p/2021039700ba13/</link><pubDate>Tue, 02 Mar 2021 01:12:48 +0000</pubDate><guid>https://lisongrc.github.io/p/2021039700ba13/</guid><description>&lt;p>你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。&lt;/p>
+>官方文档&lt;/a> ，讲的很详细。&lt;/p></description></item><item><title>给博客绑定域名并启用HTTPS</title><link>https://lisongrc.github.io/p/2019039700ba13/</link><pubDate>Sat, 02 Mar 2019 01:12:48 +0000</pubDate><guid>https://lisongrc.github.io/p/2019039700ba13/</guid><description>&lt;p>你可能觉得 username.gitlab.io 和 username.github.io 这样的域名有点长，或者说不好看，可以设置用自己的域名来访问自己的博客，接下来我们一个一个说。&lt;/p>
 &lt;h1 id="gitlab-pages">GitLab Pages&lt;/h1>
 &lt;p>在仓库的 &lt;code>Settings -&amp;gt; Pages&lt;/code> 里面，点击 &lt;code>New Domain&lt;/code> 出现这个界面：&lt;/p>
 &lt;p>&lt;img src="https://lisongrc.github.io/images/NewPagesDomain.png"
@@ -97,7 +97,7 @@ loading="lazy"
 &lt;p>配置完成后稍等一会，就可以用自己的域名访问GitHub博客了。&lt;/p>
 &lt;p>为了防止以后每次 &lt;code>hexo d&lt;/code> 会清空 &lt;code>CNAME&lt;/code> 文件导致GitHub Pages域名解绑，需要在本地博客的 &lt;code>source&lt;/code>目录下创建一个 &lt;code>CNAME&lt;/code> 文件，文件内容为你的域名，例如：&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">blog.lisong.com
-&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hexo搭建个人博客并部署到Gitlab和GitHub</title><link>https://lisongrc.github.io/p/202102d52b09e8/</link><pubDate>Sun, 28 Feb 2021 22:37:01 +0000</pubDate><guid>https://lisongrc.github.io/p/202102d52b09e8/</guid><description>&lt;h1 id="前言">前言&lt;/h1>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Hexo搭建个人博客并部署到Gitlab和GitHub</title><link>https://lisongrc.github.io/p/201902d52b09e8/</link><pubDate>Thu, 28 Feb 2019 22:37:01 +0000</pubDate><guid>https://lisongrc.github.io/p/201902d52b09e8/</guid><description>&lt;h1 id="前言">前言&lt;/h1>
 &lt;p>之前在一些平台写过一段时间博客，后来由于各种原因就慢慢荒废了；最近心血来潮想要把一些东西记录下来，所以决定搭建一个博客玩玩。&lt;/p>
 &lt;h1 id="hexo介绍">Hexo介绍&lt;/h1>
 &lt;p>&lt;a class="link" href="https://hexo.io/zh-cn/" target="_blank" rel="noopener"
