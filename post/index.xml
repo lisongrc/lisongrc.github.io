@@ -1,4 +1,28 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 小松哥的博客</title><link>https://lisongrc.github.io/post/</link><description>Recent content in Posts on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sat, 22 Jul 2023 15:21:59 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>OpenWrt常用插件</title><link>https://lisongrc.github.io/p/20230727e43bef/</link><pubDate>Sat, 22 Jul 2023 15:21:59 +0800</pubDate><guid>https://lisongrc.github.io/p/20230727e43bef/</guid><description>&lt;p>OpenWrt上插件非常多，可以实现我们各种各样的需求，大家可以在 &lt;code>系统-软件包&lt;/code> 里搜索自己想要的插件，还可以去网上看下别人的推荐。&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 小松哥的博客</title><link>https://lisongrc.github.io/post/</link><description>Recent content in Posts on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 27 Aug 2023 20:09:07 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Homebrew安装指定版本的软件</title><link>https://lisongrc.github.io/p/202308b596a6c5/</link><pubDate>Sun, 27 Aug 2023 20:09:07 +0800</pubDate><guid>https://lisongrc.github.io/p/202308b596a6c5/</guid><description>&lt;p>Homebrew安装软件的时候默认都是最新版本的，某些软件可能会提供几个版本选择，但大部分没有。&lt;br>
+有的时候我们需要安装一个特殊版本的软件该怎么办呢。下面以Flutter为例进行演示。&lt;/p>
+&lt;p>&lt;strong>1、通过&lt;code>brew info flutter&lt;/code>查看软件包安装来源&lt;/strong>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/cb1858e7af8dcb15577e0204744756c3.png"
+loading="lazy"
+>
+可以看到版本是3.13.1，如果我们想安装3.7.10版本怎么办呢。&lt;/p>
+&lt;p>&lt;strong>2、 打开&lt;code>*.rb&lt;/code>的链接，然后点击History查看历史版本&lt;/strong>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/7d36a7bc32b3ebe45925b60d54086cc9.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;strong>3、找到3.7.10版本，并点击右侧按钮打开&lt;/strong>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/5e6d018eba05df0d1c9e00f00ccfdce1.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;strong>4、点击右侧的下载按钮把rb文件下载下来&lt;/strong>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/8e819e5b9105f0a94a0048d55cc5580b.png"
+loading="lazy"
+>&lt;/p>
+&lt;p>&lt;strong>5、通过下载的文件进行安装&lt;/strong>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install --force ~/Downloads/flutter.rb
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>6、安装完成后查看版本，没有问题&lt;/strong>
+&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/3137077421d7ca1deb51372bc7317d4a.png"
+loading="lazy"
+>&lt;/p></description></item><item><title>OpenWrt常用插件</title><link>https://lisongrc.github.io/p/20230727e43bef/</link><pubDate>Sat, 22 Jul 2023 15:21:59 +0800</pubDate><guid>https://lisongrc.github.io/p/20230727e43bef/</guid><description>&lt;p>OpenWrt上插件非常多，可以实现我们各种各样的需求，大家可以在 &lt;code>系统-软件包&lt;/code> 里搜索自己想要的插件，还可以去网上看下别人的推荐。&lt;/p>
 &lt;p>这里我推荐几个我用的。&lt;/p>
 &lt;ul>
 &lt;li>
