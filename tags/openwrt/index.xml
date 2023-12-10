@@ -69,8 +69,8 @@
 loading="lazy"
 >&lt;/p>
 &lt;h1 id="ssh进入esxi使用-vmkfstools-将不支持的vmdk转换为esxi支持的vmdk格式">SSH进入ESXi，使用 &lt;code>vmkfstools&lt;/code> 将不支持的vmdk转换为ESXi支持的vmdk格式&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh root@esxi
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vmkfstools -i &amp;lt;旧的.vmdk&amp;gt; &amp;lt;新的.vmdk&amp;gt; -d thin
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">ssh&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">esxi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">vmkfstools&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">旧的&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">新的&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="n">thin&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="安装openwrt虚拟机">安装OpenWrt虚拟机&lt;/h1>
 &lt;h2 id="创建虚拟机-选择linux其他linux64位">创建虚拟机, 选择Linux/其他Linux(64位)&lt;/h2>
 &lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/908c8167f590c17408f76b32bd601f63.png"

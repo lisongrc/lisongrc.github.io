@@ -35,25 +35,25 @@ alt="Paste_Image.png"
 &lt;p>别着急，我们一个一个看。&lt;/p>
 &lt;h2 id="1获取成员变量">1、获取成员变量&lt;/h2>
 &lt;p>下面这个方法就是获取类的成员变量列表，其中包括属性生成的成员变量。我们可以用ivar_getTypeEncoding()来获取成员变量的类型，用ivar_getName()来获取成员变量的名称：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchIvarList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Ivar *ivarList = class_copyIvarList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchIvarList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Ivar&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyIvarList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++ )
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:2];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *ivarName = ivar_getName(ivarList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *ivarType = ivar_getTypeEncoding(ivarList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dic[@&amp;#34;type&amp;#34;] = [NSString stringWithUTF8String: ivarType];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dic[@&amp;#34;ivarName&amp;#34;] = [NSString stringWithUTF8String: ivarName];
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">dic&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="n">dictionaryWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ivar_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarType&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ivar_getTypeEncoding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="s2">&amp;#34;type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ivarType&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="s2">&amp;#34;ivarName&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ivarName&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:dic];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(ivarList);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">dic&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">free&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchIvarList]&lt;/code>方法获取TestClass类的成员变量结果：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-68b9595bcfbeea46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -61,20 +61,20 @@ alt="TestClass的成员变量列表"
 >&lt;/p>
 &lt;h2 id="2获取属性列表">2、获取属性列表&lt;/h2>
 &lt;p>下面这个方法获取的是属性列表，包括私有和公有属性，也包括分类中的属性：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchPropertyList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> objc_property_t *propertyList = class_copyPropertyList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchPropertyList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">objc_property_t&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">propertyList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyPropertyList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *propertyName = property_getName(propertyList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:[NSString stringWithUTF8String:propertyName]];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(propertyList);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">propertyName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">property_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">propertyList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">propertyName&lt;/span>&lt;span class="p">]];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">free&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">propertyList&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchPropertyList]&lt;/code>获取TestClass的属性列表结果:&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cd35b30a7aac027b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -126,21 +126,21 @@ alt="TestClass类方法列表"
 >&lt;/p>
 &lt;h2 id="5获取协议列表">5、获取协议列表&lt;/h2>
 &lt;p>下面是获取类所遵循协议列表的方法：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchProtocolList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> __unsafe_unretained Protocol **protocolList = class_copyProtocolList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchProtocolList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">__unsafe_unretained&lt;/span> &lt;span class="n">Protocol&lt;/span> &lt;span class="o">**&lt;/span>&lt;span class="n">protocolList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyProtocolList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++ )
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Protocol *protocol = protocolList[i];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *protocolName = protocol_getName(protocol);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:[NSString stringWithUTF8String:protocolName]];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Protocol&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">protocol&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">protocolList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">protocolName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">protocol_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">protocol&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">protocolName&lt;/span>&lt;span class="p">]];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchProtocolList]&lt;/code>获取TestClass类所遵循的协议列表的结果：　&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-fb48a73483a7a5b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -148,13 +148,13 @@ alt="TestClass的协议列表"
 >&lt;/p>
 &lt;h2 id="6给类添加一个方法">6、给类添加一个方法&lt;/h2>
 &lt;p>下面的方法就是给类添加方法。第一个参数是方法的SEL，第二个参数则是提供方法实现的SEL。这个可以用在找不到某个方法时就添加一个，不然有可能会崩溃。详见Demo。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)addMethod:(SEL)methodSel methodImp:(SEL)methodImp;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method method = class_getInstanceMethod(self, methodImp);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> IMP methodIMP = method_getImplementation(method);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *types = method_getTypeEncoding(method);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> class_addMethod(self, methodSel, methodIMP, types);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">addMethod&lt;/span>&lt;span class="p">:(&lt;/span>&lt;span class="n">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">methodSel&lt;/span> &lt;span class="n">methodImp&lt;/span>&lt;span class="p">:(&lt;/span>&lt;span class="n">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">methodImp&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Method&lt;/span> &lt;span class="n">method&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_getInstanceMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodImp&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">IMP&lt;/span> &lt;span class="n">methodIMP&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">method_getImplementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">method&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">types&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">method_getTypeEncoding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">method&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">class_addMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodSel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodIMP&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">types&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7交换实例方法">7、交换实例方法&lt;/h2>
 &lt;p>下面的方法就是将类的两个实例方法进行交换。如果将originMethod与currentMethod的方法实现进行交换的话，调用originMethod时就会执行currentMethod的内容。详见Demo。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)swapMethod:(SEL)originMethod currentMethod:(SEL)currentMethod;

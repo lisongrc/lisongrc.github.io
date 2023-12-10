@@ -9,8 +9,8 @@
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装主题">安装主题&lt;/h2>
 &lt;p>我用的&lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
 >stack&lt;/a>主题，大家根据自己的喜好选择。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">git&lt;/span> &lt;span class="nv">submodule&lt;/span> &lt;span class="nv">add&lt;/span> &lt;span class="nv">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="c1">//github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="配置文件">配置文件&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="配置文件">配置文件&lt;/h2>
 &lt;p>将&lt;code>themes/hugo-theme-stack/exampleSite&lt;/code>文件夹下的&lt;code>config.yaml&lt;/code>、&lt;code>content&lt;/code>、&lt;code>.gitignore&lt;/code>文件复制到博客根目录，并删除&lt;code>config.toml&lt;/code>。&lt;/p>
 &lt;p>将&lt;code>themes/hugo-theme-stack/archetypes&lt;/code>文件夹复制到博客根目录，这里面是博文模版，可以根据自己的情况自定义修改里面的内容。&lt;/p>
 &lt;h2 id="生成博文">生成博文&lt;/h2>

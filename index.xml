@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Sun, 27 Aug 2023 20:09:07 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Homebrew安装指定版本的软件</title><link>https://lisongrc.github.io/p/202308b596a6c5/</link><pubDate>Sun, 27 Aug 2023 20:09:07 +0800</pubDate><guid>https://lisongrc.github.io/p/202308b596a6c5/</guid><description>&lt;p>Homebrew安装软件的时候默认都是最新版本的，某些软件可能会提供几个版本选择，但大部分没有。&lt;br>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>小松哥的博客</title><link>https://lisongrc.github.io/</link><description>Recent content on 小松哥的博客</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><lastBuildDate>Tue, 10 Oct 2023 13:20:04 +0800</lastBuildDate><atom:link href="https://lisongrc.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>手机自动抓包配置</title><link>https://lisongrc.github.io/p/2023107a3c567a/</link><pubDate>Tue, 10 Oct 2023 13:20:04 +0800</pubDate><guid>https://lisongrc.github.io/p/2023107a3c567a/</guid><description>&lt;h1 id="问题描述">问题描述&lt;/h1>
+&lt;p>在使用Charles进行抓包的时候，需要修改手机中的代理设置，而且当Charles关闭后，需要关闭手机代理后才能正常访问网络。这样频繁设置比较繁琐，可以使用手机的自动代理模式来解决这个问题。&lt;/p>
+&lt;h1 id="解决办法">解决办法&lt;/h1>
+&lt;p>1、首先开启Apache服务器：&lt;code>sudo apachectl -k start&lt;/code>，浏览器中打开&lt;a class="link" href="http://localhost/" target="_blank" rel="noopener"
+>http://localhost/&lt;/a>，如果显示It works说明服务器开启成功。&lt;/p>
+&lt;p>2、新建一个&lt;code>proxy.pac&lt;/code>的文件，内容大致如下，其中&lt;code>192.168.1.100&lt;/code>为电脑的ip，&lt;code>8888&lt;/code>为Charles的端口。根据自己的情况修改。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">function FindProxyForURL(url, host) {
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return &amp;#34;PROXY 192.168.1.100:8888; DIRECT&amp;#34;;
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>将配置文件放入Apache根目录：&lt;code>/Library/WebServer/Documents&lt;/code>。&lt;/p>
+&lt;p>3、在手机网络的代理设置中选择自动代理，url填入proxy.pac文件所在地址，例如：&lt;code>http://192.168.1.100/proxy.pac&lt;/code>，断开重连下手机的网络。&lt;/p>
+&lt;p>这样设置后，当打开Charles时就自动抓包，关闭charles后也不会断网。&lt;/p>
+&lt;h1 id="优化">优化：&lt;/h1>
+&lt;p>电脑的ip地址有可能频繁变化，这个有两种解决办法：&lt;br>
+一种是电脑设置静态ip。&lt;br>
+一种是通过定时脚本将电脑的ip解析到自己的域名上，然后将用到ip的地方全部替换为域名。&lt;/p>
+&lt;h1 id="参考链接">参考链接：&lt;/h1>
+&lt;p>&lt;a class="link" href="https://www.jianshu.com/p/437c11fd864f" target="_blank" rel="noopener"
+>IPhone手机抓包自动代理配置&lt;/a>&lt;br>
+&lt;a class="link" href="https://www.simplified.guide/apache/macos-start-on-boot" target="_blank" rel="noopener"
+>How to set up Apache to start automatically on macOS boot
+&lt;/a>&lt;/p></description></item><item><title>Homebrew安装指定版本的软件</title><link>https://lisongrc.github.io/p/202308b596a6c5/</link><pubDate>Sun, 27 Aug 2023 20:09:07 +0800</pubDate><guid>https://lisongrc.github.io/p/202308b596a6c5/</guid><description>&lt;p>Homebrew安装软件的时候默认都是最新版本的，某些软件可能会提供几个版本选择，但大部分没有。&lt;br>
 有的时候我们需要安装一个特殊版本的软件该怎么办呢。下面以Flutter为例进行演示。&lt;/p>
 &lt;p>&lt;strong>1、通过&lt;code>brew info flutter&lt;/code>查看软件包安装来源&lt;/strong>
 &lt;img src="https://gitee.com/lisongrc/images/raw/master/image/cb1858e7af8dcb15577e0204744756c3.png"
@@ -18,7 +39,7 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;p>&lt;strong>5、通过下载的文件进行安装&lt;/strong>&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">brew install --force ~/Downloads/flutter.rb
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">brew&lt;/span> &lt;span class="n">install&lt;/span> &lt;span class="o">--&lt;/span>&lt;span class="n">force&lt;/span> &lt;span class="o">~/&lt;/span>&lt;span class="n">Downloads&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">flutter&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">rb&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>6、安装完成后查看版本，没有问题&lt;/strong>
 &lt;img src="https://gitee.com/lisongrc/images/raw/master/image/3137077421d7ca1deb51372bc7317d4a.png"
 loading="lazy"
@@ -93,8 +114,8 @@ loading="lazy"
 loading="lazy"
 >&lt;/p>
 &lt;h1 id="ssh进入esxi使用-vmkfstools-将不支持的vmdk转换为esxi支持的vmdk格式">SSH进入ESXi，使用 &lt;code>vmkfstools&lt;/code> 将不支持的vmdk转换为ESXi支持的vmdk格式&lt;/h1>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">ssh root@esxi
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">vmkfstools -i &amp;lt;旧的.vmdk&amp;gt; &amp;lt;新的.vmdk&amp;gt; -d thin
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">ssh&lt;/span> &lt;span class="n">root&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="n">esxi&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="n">vmkfstools&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">旧的&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">新的&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>&lt;span class="o">&amp;gt;&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">d&lt;/span> &lt;span class="n">thin&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="安装openwrt虚拟机">安装OpenWrt虚拟机&lt;/h1>
 &lt;h2 id="创建虚拟机-选择linux其他linux64位">创建虚拟机, 选择Linux/其他Linux(64位)&lt;/h2>
 &lt;p>&lt;img src="https://gitee.com/lisongrc/images/raw/master/image/908c8167f590c17408f76b32bd601f63.png"
@@ -138,9 +159,9 @@ loading="lazy"
 >&lt;/p>
 &lt;h1 id="登陆esxi的ssh进行配置rdm">登陆ESXI的SSH进行配置RDM&lt;/h1>
 &lt;p>输入命令，回车无任何提示说明配置成功，注意将里面的东西换成自己的：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vmkfstools -z /vmfs/devices/disks/未格式化硬盘标识符 /vmfs/volumes/ESXI系统盘路径/自定义名称.vmdk
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">vmkfstools&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">z&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">vmfs&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">devices&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">disks&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="err">未格式化硬盘标识符&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">vmfs&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">volumes&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">ESXI系统盘路径&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="err">自定义名称&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>例如：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">vmkfstools -z /vmfs/devices/disks/t10.ATA_____WDC_WD20EURS2D63S48Y0_________________________WD2DWCAZAJ063809 /vmfs/volumes/5ac791f9-74172f6b-18d1-e43a6e0448e3/DSM.vmdk
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="n">vmkfstools&lt;/span> &lt;span class="o">-&lt;/span>&lt;span class="n">z&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">vmfs&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">devices&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">disks&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">t10&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">ATA_____WDC_WD20EURS2D63S48Y0_________________________WD2DWCAZAJ063809&lt;/span> &lt;span class="o">/&lt;/span>&lt;span class="n">vmfs&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">volumes&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="mi">5&lt;/span>&lt;span class="n">ac791f9&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">74172&lt;/span>&lt;span class="n">f6b&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="mi">18&lt;/span>&lt;span class="n">d1&lt;/span>&lt;span class="o">-&lt;/span>&lt;span class="n">e43a6e0448e3&lt;/span>&lt;span class="o">/&lt;/span>&lt;span class="n">DSM&lt;/span>&lt;span class="o">.&lt;/span>&lt;span class="n">vmdk&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h1 id="查看是否已经有dsmvmdk这个文件">查看是否已经有DSM.vmdk这个文件&lt;/h1>
 &lt;p>有这个文件就说明已经成功开启RDM直连硬盘了，我们新建虚拟机时选择现有磁盘时选择这个文件即可。
 &lt;img src="https://gitee.com/lisongrc/images/raw/master/image/591442d1f556b020aed1a2e86d4b5beb.png"
@@ -186,8 +207,8 @@ loading="lazy"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="安装主题">安装主题&lt;/h2>
 &lt;p>我用的&lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
 >stack&lt;/a>主题，大家根据自己的喜好选择。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-v" data-lang="v">&lt;span class="line">&lt;span class="cl">&lt;span class="nv">git&lt;/span> &lt;span class="nv">submodule&lt;/span> &lt;span class="nv">add&lt;/span> &lt;span class="nv">https&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="c1">//github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="配置文件">配置文件&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">git submodule add https://github.com/CaiJimmy/hugo-theme-stack.git themes/hugo-theme-stack
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="配置文件">配置文件&lt;/h2>
 &lt;p>将&lt;code>themes/hugo-theme-stack/exampleSite&lt;/code>文件夹下的&lt;code>config.yaml&lt;/code>、&lt;code>content&lt;/code>、&lt;code>.gitignore&lt;/code>文件复制到博客根目录，并删除&lt;code>config.toml&lt;/code>。&lt;/p>
 &lt;p>将&lt;code>themes/hugo-theme-stack/archetypes&lt;/code>文件夹复制到博客根目录，这里面是博文模版，可以根据自己的情况自定义修改里面的内容。&lt;/p>
 &lt;h2 id="生成博文">生成博文&lt;/h2>
@@ -1387,25 +1408,25 @@ alt="Paste_Image.png"
 &lt;p>别着急，我们一个一个看。&lt;/p>
 &lt;h2 id="1获取成员变量">1、获取成员变量&lt;/h2>
 &lt;p>下面这个方法就是获取类的成员变量列表，其中包括属性生成的成员变量。我们可以用ivar_getTypeEncoding()来获取成员变量的类型，用ivar_getName()来获取成员变量的名称：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchIvarList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Ivar *ivarList = class_copyIvarList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchIvarList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Ivar&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyIvarList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++ )
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableDictionary *dic = [NSMutableDictionary dictionaryWithCapacity:2];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *ivarName = ivar_getName(ivarList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *ivarType = ivar_getTypeEncoding(ivarList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dic[@&amp;#34;type&amp;#34;] = [NSString stringWithUTF8String: ivarType];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> dic[@&amp;#34;ivarName&amp;#34;] = [NSString stringWithUTF8String: ivarName];
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">dic&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableDictionary&lt;/span> &lt;span class="n">dictionaryWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ivar_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">ivarType&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">ivar_getTypeEncoding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="s2">&amp;#34;type&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ivarType&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">dic&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="err">@&lt;/span>&lt;span class="s2">&amp;#34;ivarName&amp;#34;&lt;/span>&lt;span class="p">]&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span> &lt;span class="n">ivarName&lt;/span>&lt;span class="p">];&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:dic];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(ivarList);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">dic&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">free&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">ivarList&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchIvarList]&lt;/code>方法获取TestClass类的成员变量结果：&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-68b9595bcfbeea46.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -1413,20 +1434,20 @@ alt="TestClass的成员变量列表"
 >&lt;/p>
 &lt;h2 id="2获取属性列表">2、获取属性列表&lt;/h2>
 &lt;p>下面这个方法获取的是属性列表，包括私有和公有属性，也包括分类中的属性：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchPropertyList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> objc_property_t *propertyList = class_copyPropertyList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchPropertyList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">objc_property_t&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">propertyList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyPropertyList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++)
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *propertyName = property_getName(propertyList[i]);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:[NSString stringWithUTF8String:propertyName]];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> free(propertyList);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">propertyName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">property_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">propertyList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">]);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">propertyName&lt;/span>&lt;span class="p">]];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">free&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">propertyList&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchPropertyList]&lt;/code>获取TestClass的属性列表结果:&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-cd35b30a7aac027b.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -1478,21 +1499,21 @@ alt="TestClass类方法列表"
 >&lt;/p>
 &lt;h2 id="5获取协议列表">5、获取协议列表&lt;/h2>
 &lt;p>下面是获取类所遵循协议列表的方法：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (NSArray *)fetchProtocolList
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> unsigned int count = 0;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> __unsafe_unretained Protocol **protocolList = class_copyProtocolList(self, &amp;amp;count);
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">fetchProtocolList&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">count&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">__unsafe_unretained&lt;/span> &lt;span class="n">Protocol&lt;/span> &lt;span class="o">**&lt;/span>&lt;span class="n">protocolList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_copyProtocolList&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="o">&amp;amp;&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">);&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> NSMutableArray *mutableList = [NSMutableArray arrayWithCapacity:count];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> for (unsigned int i = 0; i &amp;lt; count; i++ )
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> {
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Protocol *protocol = protocolList[i];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *protocolName = protocol_getName(protocol);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> [mutableList addObject:[NSString stringWithUTF8String:protocolName]];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> }
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">NSMutableArray&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSMutableArray&lt;/span> &lt;span class="n">arrayWithCapacity&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">count&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">for&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">unsigned&lt;/span> &lt;span class="ne">int&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span> &lt;span class="o">&amp;lt;&lt;/span> &lt;span class="n">count&lt;/span>&lt;span class="p">;&lt;/span> &lt;span class="n">i&lt;/span>&lt;span class="o">++&lt;/span> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Protocol&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">protocol&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">protocolList&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">i&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">protocolName&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">protocol_getName&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">protocol&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">[&lt;/span>&lt;span class="n">mutableList&lt;/span> &lt;span class="n">addObject&lt;/span>&lt;span class="p">:[&lt;/span>&lt;span class="n">NSString&lt;/span> &lt;span class="n">stringWithUTF8String&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">protocolName&lt;/span>&lt;span class="p">]];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> return [NSArray arrayWithArray:mutableList];
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">return&lt;/span> &lt;span class="p">[&lt;/span>&lt;span class="n">NSArray&lt;/span> &lt;span class="n">arrayWithArray&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="n">mutableList&lt;/span>&lt;span class="p">];&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>使用&lt;code>[TestClass fetchProtocolList]&lt;/code>获取TestClass类所遵循的协议列表的结果：　&lt;/p>
 &lt;p>&lt;img src="http://upload-images.jianshu.io/upload_images/1608265-fb48a73483a7a5b7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240"
 loading="lazy"
@@ -1500,13 +1521,13 @@ alt="TestClass的协议列表"
 >&lt;/p>
 &lt;h2 id="6给类添加一个方法">6、给类添加一个方法&lt;/h2>
 &lt;p>下面的方法就是给类添加方法。第一个参数是方法的SEL，第二个参数则是提供方法实现的SEL。这个可以用在找不到某个方法时就添加一个，不然有可能会崩溃。详见Demo。&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)addMethod:(SEL)methodSel methodImp:(SEL)methodImp;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> Method method = class_getInstanceMethod(self, methodImp);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> IMP methodIMP = method_getImplementation(method);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> const char *types = method_getTypeEncoding(method);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> class_addMethod(self, methodSel, methodIMP, types);
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-gdscript3" data-lang="gdscript3">&lt;span class="line">&lt;span class="cl">&lt;span class="o">+&lt;/span> &lt;span class="p">(&lt;/span>&lt;span class="n">void&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">addMethod&lt;/span>&lt;span class="p">:(&lt;/span>&lt;span class="n">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">methodSel&lt;/span> &lt;span class="n">methodImp&lt;/span>&lt;span class="p">:(&lt;/span>&lt;span class="n">SEL&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="n">methodImp&lt;/span>&lt;span class="p">;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">Method&lt;/span> &lt;span class="n">method&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">class_getInstanceMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodImp&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">IMP&lt;/span> &lt;span class="n">methodIMP&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">method_getImplementation&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">method&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">const&lt;/span> &lt;span class="n">char&lt;/span> &lt;span class="o">*&lt;/span>&lt;span class="n">types&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="n">method_getTypeEncoding&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">method&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="n">class_addMethod&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="bp">self&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodSel&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">methodIMP&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="n">types&lt;/span>&lt;span class="p">);&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="7交换实例方法">7、交换实例方法&lt;/h2>
 &lt;p>下面的方法就是将类的两个实例方法进行交换。如果将originMethod与currentMethod的方法实现进行交换的话，调用originMethod时就会执行currentMethod的内容。详见Demo。&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">+ (void)swapMethod:(SEL)originMethod currentMethod:(SEL)currentMethod;
